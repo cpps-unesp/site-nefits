@@ -2,7 +2,7 @@ import React from "react";
 import clsx from "clsx";
 // import Layout from "@theme/Layout";
 import styles from "./styles.module.css";
-import image from "../../assets/img/logo-banner.png";
+
 
 
 const intro = [
@@ -86,7 +86,7 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
     <div class="row justify-content-center text-center">
       <div className={clsx(styles.containerCards, "col col--3 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "mb-3")} />
+            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "mb-3")}></img>
             <h2><a href={link} className={clsx(styles.titulo)}>{titulo}</a></h2>
             <p className={clsx(styles.texto)}>{texto}</p>
             <a href={link} className={clsx(styles.btnUm)}>Saiba mais</a>
@@ -148,7 +148,7 @@ function Intro({ imgBanner, link1, link2, link3, link4, link5, link6 }) {
     <div className={clsx(styles.heroBanner)}>
       <div class="row">
         <div className="col-md-3 col-sm-12">
-          <img className="intro" src={imgBanner} alt="Logo NéFiTs" />
+          <img className="intro" src={imgBanner} alt="Logo NéFiTs"></img>
         </div>
         <div className="col-md-9 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
