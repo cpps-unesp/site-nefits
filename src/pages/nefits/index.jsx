@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 
 const intro = [
   {
-    imgBanner: "nefits/img/logo-banner.png",
+    imgBanner: "/src/assets/img/logo-banner.png",
     link1: "/nefits",
     link2: "/nefits/sobre",
     link3: "/nefits/equipe",
@@ -18,7 +18,7 @@ const intro = [
 
 const primeiroContainer = [
   {
-    img1: "src/img/img_1.png",
+    img1: "/src/assets/img/img_1.png",
     texto1: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -41,7 +41,7 @@ const containerSobre = [
     ),
     btn1: "Saiba mais",
     link: "/nefits/sobre",
-    img1: "src/img/img_3.svg",
+    img1: "/src/assets/img/img_3.svg",
   },
 ];
 
@@ -49,7 +49,7 @@ const containerCards = [
   {
     titulo: "Notícias",
     link: "/nefits/noticias",
-    imgFoto: "src/img/img_2.svg",
+    imgFoto: "/src/assets/img/img_2.svg",
     texto: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -59,7 +59,7 @@ const containerCards = [
     ),
     titulo2: "Projetos",
     linkDois1: "/nefits/projetos",
-    imgFoto2: "src/img/img_2.svg",
+    imgFoto2: "/src/assets/img/img_2.svg",
     texto2: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -69,7 +69,7 @@ const containerCards = [
     ),
     titulo3: "Publicações",
     linkTres1: "/nefits/publicacoes",
-    imgFoto3: "src/img/img_2.svg",
+    imgFoto3: "/src/assets/img/img_2.svg",
     texto3: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
