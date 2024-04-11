@@ -2,12 +2,12 @@ import React from "react";
 import clsx from "clsx";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import Layout from "@theme/Layout";
+/* import Layout from "@theme/Layout"; */
 import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "../src/img/logo-banner.png",
+        imgBanner: "../src/assets/img/logo-banner.png",
         link1: "/nefits",
         link2: "/nefits/sobre",
         link3: "/nefits/equipe",
@@ -222,7 +222,7 @@ function Intro({imgBanner, link1, link2, link3, link4, link5, link6}){
 
 function Projetos() {
   return (
-    <Layout title="NéFiTs">
+    <div title="NéFiTs">
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -262,7 +262,7 @@ function Projetos() {
           
         </section>
       </main>
-    </Layout>
+    </div>
   );
 }
 

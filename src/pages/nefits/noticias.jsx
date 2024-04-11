@@ -1,11 +1,11 @@
 import React from "react";
 import clsx from "clsx";
-import Layout from "@theme/Layout";
+/* import Layout from "@theme/Layout"; */
 import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "../src/img/logo-banner.png",
+        imgBanner: "../src/assets/img/logo-banner.png",
         link1: "/nefits",
         link2: "/nefits/sobre",
         link3: "/nefits/equipe",
@@ -28,21 +28,21 @@ const primeiroContainer = [
 
 const noticiasCards = [
   {
-    foto: "../src/img/img_4.png",
+    foto: "../src/assets/img/img_4.png",
     titulo: "Título Notícia",
     texto: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn: "Saiba mais",
-    foto2: "../src/img/img_4.png",
+    foto2: "../src/assets/img/img_4.png",
     titulo2: "Título Notícia",
     texto2: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn2: "Saiba mais",
   },
   {
-    foto: "../src/img/img_4.png",
+    foto: "../src/assets/img/img_4.png",
     titulo: "Título Notícia",
     texto: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn: "Saiba mais",
-    foto2: "../src/img/img_4.png",
+    foto2: "../src/assets/img/img_4.png",
     titulo2: "Título Notícia",
     texto2: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn2: "Saiba mais",
@@ -119,7 +119,7 @@ function Intro({imgBanner, link1, link2, link3, link4, link5, link6}){
 
 function Noticias() {
   return (
-    <Layout title="NéFiTs">
+    <div title="NéFiTs">
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -158,7 +158,7 @@ function Noticias() {
           </div>
         </section>
       </main>
-    </Layout>
+    </div>
   );
 }
 

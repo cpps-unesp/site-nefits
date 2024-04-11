@@ -1,11 +1,11 @@
 import React from "react";
 import clsx from "clsx";
-import Layout from "@theme/Layout";
+/* import Layout from "@theme/Layout"; */
 import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "../img/nefits/logo-banner.png",
+        imgBanner: "../src/assets/img/logo-banner.png",
         link1: "/nefits",
         link2: "/nefits/sobre",
         link3: "/nefits/equipe",
@@ -28,38 +28,38 @@ const primeiroContainer = [
 
 const membrosEquipe = [
   {
-    foto: "../img/nefits/icon.png",
+    foto: "../src/assets/img/icon.png",
     nome: "Hélio Alexandre da Silva",
     cargo: "Líder",
-    social1: "../img/nefits/linkedin.svg",
-    social2: "../img/nefits/lattes.svg",
-    foto2: "../img/nefits/icon.png",
+    social1: "../src/assets/img/linkedin.svg",
+    social2: "../src/assets/img/lattes.svg",
+    foto2: "../src/assets/img/icon.png",
     nome2: "Membro da Equipe",
     cargo2: "Cargo",
-    socialDois1: "../img/nefits/linkedin.svg",
-    socialDois2: "../img/nefits/lattes.svg",
-    foto3: "../img/nefits/icon.png",
+    socialDois1: "../src/assets/img/linkedin.svg",
+    socialDois2: "../src/assets/img/lattes.svg",
+    foto3: "../src/assets/img/icon.png",
     nome3: "Membro da Equipe",
     cargo3: "Cargo",
-    socialTres1: "../img/nefits/linkedin.svg",
-    socialTres2: "../img/nefits/lattes.svg",
+    socialTres1: "../src/assets/img/linkedin.svg",
+    socialTres2: "../src/assets/img/lattes.svg",
   },
   {
-    foto: "../img/nefits/icon.png",
+    foto: "../src/assets/img/icon.png",
     nome: "Membro da Equipe",
     cargo: "Cargo",
-    social1: "../img/nefits/linkedin.svg",
-    social2: "../img/nefits/lattes.svg",
-    foto2: "../img/nefits/icon.png",
+    social1: "../src/assets/img/linkedin.svg",
+    social2: "../src/assets/img/lattes.svg",
+    foto2: "../src/assets/img/icon.png",
     nome2: "Membro da Equipe",
     cargo2: "Cargo",
-    socialDois1: "../img/nefits/linkedin.svg",
-    socialDois2: "../img/nefits/lattes.svg",
-    foto3: "../img/nefits/icon.png",
+    socialDois1: "../src/assets/img/linkedin.svg",
+    socialDois2: "../src/assets/img/lattes.svg",
+    foto3: "../src/assets/img/icon.png",
     nome3: "Membro da Equipe",
     cargo3: "Cargo",
-    socialTres1: "../img/nefits/linkedin.svg",
-    socialTres2: "../img/nefits/lattes.svg",
+    socialTres1: "../src/assets/img/linkedin.svg",
+    socialTres2: "../src/assets/img/lattes.svg",
   },
 ]
 
@@ -166,7 +166,7 @@ function Intro({imgBanner, link1, link2, link3, link4, link5, link6}){
 
 function Equipe() {
   return (
-    <Layout title="NéFiTs">
+    <div title="NéFiTs">
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -205,7 +205,7 @@ function Equipe() {
           </div>
         </section>
       </main>
-    </Layout>
+    </div>
   );
 }
 
