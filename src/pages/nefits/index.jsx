@@ -2,6 +2,7 @@ import React from "react";
 import clsx from "clsx";
 // import Layout from "@theme/Layout";
 import styles from "./styles.module.css";
+import Card from "../../components/Card.astro";
 
 
 
