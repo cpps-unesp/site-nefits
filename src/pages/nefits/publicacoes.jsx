@@ -159,160 +159,175 @@ const abas = [
 
 function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, btn1, link1, titulo2, autores2, descricao2, btn2, link2, titulo3, autores3, descricao3, btn3, link3, texto2, t1, texto3, a1, d1, btn4, link4, t2, a2, d2, btn5, link5, t3, a3, d3, btn6, link6, t4, d4, a4, btn7, link7, t5, d5, a5, btn8, link8, t6, d6, a6, btn9, link9, textoUm, tUm, aUm, dUm, btnUm, linkUm, tDois, aDois, dDois, btnDois, linkDois, tTres, aTres, dTres, btnTres, linkTres}){
   return(
-    <Tabs
-      defaultActiveKey="livros"
-      id="uncontrolled-tab-example"
-      className="mb-3"
-    >
-      <Tab eventKey="livros" title={aba1}>
-        <div class="row justify-content-center">
-            <p className={clsx(styles.texto)}>{texto1}</p>
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo1}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{autores1}</p>
-                  <p className={clsx(styles.cardTexto)}>{descricao1}</p>
-                  <a href={link1} className={clsx(styles.btnUm)}>{btn1}</a>
+    <div class="col-12">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="livros-tab" data-bs-toggle="tab" data-bs-target="#livros-tab-pane" type="button" role="tab" aria-controls="livros-tab-pane" aria-selected="true">Livros</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="artigos-tab" data-bs-toggle="tab" data-bs-target="#artigos-tab-pane" type="button" role="tab" aria-controls="artigos-tab-pane" aria-selected="false">Artigos Científicos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="teses-tab" data-bs-toggle="tab" data-bs-target="#teses-tab-pane" type="button" role="tab" aria-controls="teses-tab-pane" aria-selected="false">Teses e Dissertações</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tccs-tab" data-bs-toggle="tab" data-bs-target="#tccs-tab-pane" type="button" role="tab" aria-controls="tccs-tab-pane" aria-selected="false">TCCs</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="livros-tab-pane" role="tabpanel" aria-labelledby="livros-tab" tabindex="0">
+          <div class="row justify-content-center">
+              <p className={clsx(styles.texto)}>{texto1}</p>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo1}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores1}</p>
+                    <p className={clsx(styles.cardTexto)}>{descricao1}</p>
+                    <a href={link1} className={clsx(styles.btnUm)}>{btn1}</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo2}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{autores2}</p>
-                  <p className={clsx(styles.cardTexto)}>{descricao2}</p>
-                  <a href={link2} className={clsx(styles.btnUm)}>{btn2}</a>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo2}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores2}</p>
+                    <p className={clsx(styles.cardTexto)}>{descricao2}</p>
+                    <a href={link2} className={clsx(styles.btnUm)}>{btn2}</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo3}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{autores3}</p>
-                  <p className={clsx(styles.cardTexto)}>{descricao3}</p>
-                  <a href={link3} className={clsx(styles.btnUm)}>{btn3}</a>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo3}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores3}</p>
+                    <p className={clsx(styles.cardTexto)}>{descricao3}</p>
+                    <a href={link3} className={clsx(styles.btnUm)}>{btn3}</a>
+                  </div>
                 </div>
               </div>
-            </div>
+          </div>
         </div>
-      </Tab>
-      <Tab eventKey="artigos-cientificos" title={aba2}>
-      <div class="row justify-content-center">
-            <p className={clsx(styles.texto)}>{texto2}</p>
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t1}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{a1}</p>
-                  <p className={clsx(styles.cardTexto)}>{d1}</p>
-                  <a href={link4} className={clsx(styles.btnUm)}>{btn4}</a>
-                </div>
-              </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t2}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{a2}</p>
-                  <p className={clsx(styles.cardTexto)}>{d2}</p>
-                  <a href={link5} className={clsx(styles.btnUm)}>{btn5}</a>
+        <div class="tab-pane fade" id="artigos-tab-pane" role="tabpanel" aria-labelledby="artigos-tab" tabindex="0">
+          <div class="row justify-content-center">
+              <p className={clsx(styles.texto)}>{texto2}</p>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t1}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a1}</p>
+                    <p className={clsx(styles.cardTexto)}>{d1}</p>
+                    <a href={link4} className={clsx(styles.btnUm)}>{btn4}</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t3}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{a3}</p>
-                  <p className={clsx(styles.cardTexto)}>{d3}</p>
-                  <a href={link6} className={clsx(styles.btnUm)}>{btn6}</a>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t2}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a2}</p>
+                    <p className={clsx(styles.cardTexto)}>{d2}</p>
+                    <a href={link5} className={clsx(styles.btnUm)}>{btn5}</a>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t3}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a3}</p>
+                    <p className={clsx(styles.cardTexto)}>{d3}</p>
+                    <a href={link6} className={clsx(styles.btnUm)}>{btn6}</a>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-      </Tab>
-      <Tab eventKey="teses-dissertacoes" title={aba3}>
-      <div class="row justify-content-center">
-            <p className={clsx(styles.texto)}>{texto3}</p>
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t4}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{a4}</p>
-                  <p className={clsx(styles.cardTexto)}>{d4}</p>
-                  <a href={link7} className={clsx(styles.btnUm)}>{btn7}</a>
-                </div>
-              </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t5}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{a5}</p>
-                  <p className={clsx(styles.cardTexto)}>{d5}</p>
-                  <a href={link8} className={clsx(styles.btnUm)}>{btn8}</a>
+        <div class="tab-pane fade" id="teses-tab-pane" role="tabpanel" aria-labelledby="teses-tab" tabindex="0">
+          <div class="row justify-content-center">
+              <p className={clsx(styles.texto)}>{texto3}</p>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t4}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a4}</p>
+                    <p className={clsx(styles.cardTexto)}>{d4}</p>
+                    <a href={link7} className={clsx(styles.btnUm)}>{btn7}</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t6}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{a6}</p>
-                  <p className={clsx(styles.cardTexto)}>{d6}</p>
-                  <a href={link9} className={clsx(styles.btnUm)}>{btn9}</a>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t5}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a5}</p>
+                    <p className={clsx(styles.cardTexto)}>{d5}</p>
+                    <a href={link8} className={clsx(styles.btnUm)}>{btn8}</a>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t6}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a6}</p>
+                    <p className={clsx(styles.cardTexto)}>{d6}</p>
+                    <a href={link9} className={clsx(styles.btnUm)}>{btn9}</a>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-      </Tab>
-      <Tab eventKey="tccs" title={aba4}>
-      <div class="row justify-content-center">
-            <p className={clsx(styles.texto)}>{textoUm}</p>
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tUm}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{aUm}</p>
-                  <p className={clsx(styles.cardTexto)}>{dUm}</p>
-                  <a href={linkUm} className={clsx(styles.btnUm)}>{btnUm}</a>
-                </div>
-              </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tDois}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{aDois}</p>
-                  <p className={clsx(styles.cardTexto)}>{dDois}</p>
-                  <a href={linkDois} className={clsx(styles.btnUm)}>{btnDois}</a>
+        <div class="tab-pane fade" id="tccs-tab-pane" role="tabpanel" aria-labelledby="tccs-tab" tabindex="0">
+          <div class="row justify-content-center">
+              <p className={clsx(styles.texto)}>{textoUm}</p>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tUm}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aUm}</p>
+                    <p className={clsx(styles.cardTexto)}>{dUm}</p>
+                    <a href={linkUm} className={clsx(styles.btnUm)}>{btnUm}</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
-              <div class="row">
-                <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tTres}</h3>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{aTres}</p>
-                  <p className={clsx(styles.cardTexto)}>{dTres}</p>
-                  <a href={linkTres} className={clsx(styles.btnUm)}>{btnTres}</a>
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tDois}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDois}</p>
+                    <p className={clsx(styles.cardTexto)}>{dDois}</p>
+                    <a href={linkDois} className={clsx(styles.btnUm)}>{btnDois}</a>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tTres}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aTres}</p>
+                    <p className={clsx(styles.cardTexto)}>{dTres}</p>
+                    <a href={linkTres} className={clsx(styles.btnUm)}>{btnTres}</a>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
-      </Tab>
-    </Tabs>
+      </div>
+    </div>
   )
 }
 

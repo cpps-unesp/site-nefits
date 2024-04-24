@@ -247,3 +247,8 @@ a{
     text-align: start;
     margin-bottom: .75rem;
 }
+
+.nav-link{
+    font-family: "Comfortaa", sans-serif;
+    color: #bfbfbf !important;
+}
