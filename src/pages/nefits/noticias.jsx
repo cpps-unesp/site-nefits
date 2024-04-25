@@ -52,10 +52,10 @@ const noticiasCards = [
 function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, btn2, link2}){
   return(
     <div class="row justify-content-center">
-      <div className={clsx(styles.cardNoticias, "col col--5 mt-1 mx-2 mb-2 px-0 text-center")}>
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
         <div class="row">
           <div class="col-6">
-            <img src={foto} alt="Logo" className={clsx(styles.imgNoticias)} />
+            <img src={foto} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
             <h1 className={clsx(styles.tituloEquipe)}>{titulo}</h1>
@@ -65,10 +65,10 @@ function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, 
         </div>
       </div>
 
-      <div className={clsx(styles.cardNoticias, "col col--5 mt-1 mx-2 mb-2 px-0 text-center")}>
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
         <div class="row">
           <div class="col-6">
-            <img src={foto2} alt="Logo" className={clsx(styles.imgNoticias)} />
+            <img src={foto2} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
             <h1 className={clsx(styles.tituloEquipe)}>{titulo2}</h1>
