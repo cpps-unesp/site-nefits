@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "../src/assets/img/logo-banner.png",
+        imgBanner: "/nefits/images/logo-banner.png",
         link1: "/nefits",
         link2: "/nefits/sobre",
         link3: "/nefits/equipe",
@@ -18,7 +18,7 @@ const intro = [
 const quemSomos = [
   {
     titulo: "Quem somos",
-    img1: "../src/assets/img/img_1.png",
+    img1: "/nefits/images/img_1.png",
     texto1: (
       <>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus velit. Sed malesuada risus sit amet pretium tristique. Sed malesuada risus sit amet pretium tristique. Quisque mollis tortor eget eros egestas blandit. Mauris eu commodo metus.</p>
@@ -38,7 +38,7 @@ const quemSomos = [
 const objetivos = [
   {
     titulo: "Objetivos",
-    img1: "../src/assets/img/img_1.png",
+    img1: "/nefits/images/img_1.png",
     texto1: (
       <>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus velit. Sed malesuada risus sit amet pretium tristique. Sed malesuada risus sit amet pretium tristique. Quisque mollis tortor eget eros egestas blandit. Mauris eu commodo metus.</p>

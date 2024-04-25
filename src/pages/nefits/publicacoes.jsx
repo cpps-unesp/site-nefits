@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "../src/assets/img/logo-banner.png",
+        imgBanner: "/nefits/images/logo-banner.png",
         link1: "/nefits",
         link2: "/nefits/sobre",
         link3: "/nefits/equipe",

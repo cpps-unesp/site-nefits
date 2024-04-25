@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "../src/assets/img/logo-banner.png",
+        imgBanner: "/nefits/images/logo-banner.png",
         link1: "/nefits",
         link2: "/nefits/sobre",
         link3: "/nefits/equipe",
@@ -28,21 +28,21 @@ const primeiroContainer = [
 
 const noticiasCards = [
   {
-    foto: "../src/assets/img/img_4.png",
+    foto: "/nefits/images/img_4.png",
     titulo: "Título Notícia",
     texto: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn: "Saiba mais",
-    foto2: "../src/assets/img/img_4.png",
+    foto2: "/nefits/images/img_4.png",
     titulo2: "Título Notícia",
     texto2: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn2: "Saiba mais",
   },
   {
-    foto: "../src/assets/img/img_4.png",
+    foto: "/nefits/images/img_4.png",
     titulo: "Título Notícia",
     texto: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn: "Saiba mais",
-    foto2: "../src/assets/img/img_4.png",
+    foto2: "/nefits/images/img_4.png",
     titulo2: "Título Notícia",
     texto2: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
     btn2: "Saiba mais",
