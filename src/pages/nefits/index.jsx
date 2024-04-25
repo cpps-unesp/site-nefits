@@ -2,13 +2,11 @@ import React from "react";
 import clsx from "clsx";
 // import Layout from "@theme/Layout";
 import styles from "./styles.module.css";
-import Card from "../../components/Card.astro";
 
 
 
 const intro = [
   {
-    imgBanner: "/src/assets/img/logo-banner.png",
     link1: "/nefits",
     link2: "/nefits/sobre",
     link3: "/nefits/equipe",
@@ -20,7 +18,7 @@ const intro = [
 
 const primeiroContainer = [
   {
-    img1: "/src/assets/img/img_1.png",
+    img1: "/nefits/images/img_1.png",
     texto1: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -43,7 +41,7 @@ const containerSobre = [
     ),
     btn1: "Saiba mais",
     link: "/nefits/sobre",
-    img1: "/src/assets/img/img_3.svg",
+    img1: "/nefits/images/img_3.svg",
   },
 ];
 
@@ -51,7 +49,7 @@ const containerCards = [
   {
     titulo: "Notícias",
     link: "/nefits/noticias",
-    imgFoto: "/src/assets/img/img_2.svg",
+    imgFoto: "/nefits/images/img_2.svg",
     texto: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -61,7 +59,7 @@ const containerCards = [
     ),
     titulo2: "Projetos",
     linkDois1: "/nefits/projetos",
-    imgFoto2: "/src/assets/img/img_2.svg",
+    imgFoto2: "/nefits/images/img_2.svg",
     texto2: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -71,7 +69,7 @@ const containerCards = [
     ),
     titulo3: "Publicações",
     linkTres1: "/nefits/publicacoes",
-    imgFoto3: "/src/assets/img/img_2.svg",
+    imgFoto3: "/nefits/images/img_2.svg",
     texto3: (
       <>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
@@ -144,12 +142,12 @@ function PrimeiroContainer({ img1, texto1 }) {
   );
 }
 
-function Intro({ imgBanner, link1, link2, link3, link4, link5, link6 }) {
+function Intro({ link1, link2, link3, link4, link5, link6 }) {
   return (
     <div className={clsx(styles.heroBanner)}>
       <div class="row">
         <div className="col-md-3 col-sm-12">
-          <img className="intro" src={imgBanner} alt="Logo NéFiTs"></img>
+          <img className="intro" src="/nefits/images/logo-banner.png" alt="Logo NéFiTs" />
         </div>
         <div className="col-md-9 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
