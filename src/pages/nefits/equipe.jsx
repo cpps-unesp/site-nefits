@@ -5,13 +5,13 @@ import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "/nefits/images/logo-banner.png",
+        imgBanner: "/images/logo-banner.png",
         link1: "/nefits",
-        link2: "/nefits/sobre",
-        link3: "/nefits/equipe",
-        link4: "/nefits/noticias",
-        link5: "/nefits/projetos",
-        link6: "/nefits/publicacoes"
+        link2: "/sobre",
+        link3: "/equipe",
+        link4: "/noticias",
+        link5: "/projetos",
+        link6: "/publicacoes"
     }
 ]
 
@@ -28,38 +28,38 @@ const primeiroContainer = [
 
 const membrosEquipe = [
   {
-    foto: "/nefits/images/icon.png",
+    foto: "/images/icon.png",
     nome: "Hélio Alexandre da Silva",
     cargo: "Líder",
-    social1: "/nefits/images/linkedin.svg",
-    social2: "/nefits/images/lattes.svg",
-    foto2: "/nefits/images/icon.png",
+    social1: "/images/linkedin.svg",
+    social2: "/images/lattes.svg",
+    foto2: "/images/icon.png",
     nome2: "Membro da Equipe",
     cargo2: "Cargo",
-    socialDois1: "/nefits/images/linkedin.svg",
-    socialDois2: "/nefits/images/lattes.svg",
-    foto3: "/nefits/images/icon.png",
+    socialDois1: "/images/linkedin.svg",
+    socialDois2: "/images/lattes.svg",
+    foto3: "/images/icon.png",
     nome3: "Membro da Equipe",
     cargo3: "Cargo",
-    socialTres1: "/nefits/images/linkedin.svg",
-    socialTres2: "/nefits/images/lattes.svg",
+    socialTres1: "/images/linkedin.svg",
+    socialTres2: "/images/lattes.svg",
   },
   {
-    foto: "/nefits/images/icon.png",
+    foto: "/images/icon.png",
     nome: "Membro da Equipe",
     cargo: "Cargo",
-    social1: "/nefits/images/linkedin.svg",
-    social2: "/nefits/images/lattes.svg",
-    foto2: "/nefits/images/icon.png",
+    social1: "/images/linkedin.svg",
+    social2: "/images/lattes.svg",
+    foto2: "/images/icon.png",
     nome2: "Membro da Equipe",
     cargo2: "Cargo",
-    socialDois1: "/nefits/images/linkedin.svg",
-    socialDois2: "/nefits/images/lattes.svg",
-    foto3: "/nefits/images/icon.png",
+    socialDois1: "/images/linkedin.svg",
+    socialDois2: "/images/lattes.svg",
+    foto3: "/images/icon.png",
     nome3: "Membro da Equipe",
     cargo3: "Cargo",
-    socialTres1: "/nefits/images/linkedin.svg",
-    socialTres2: "/nefits/images/lattes.svg",
+    socialTres1: "/images/linkedin.svg",
+    socialTres2: "/images/lattes.svg",
   },
 ]
 

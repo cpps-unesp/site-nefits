@@ -5,13 +5,13 @@ import styles from "./styles.module.css";
 
 const intro = [
     {
-        imgBanner: "/nefits/images/logo-banner.png",
+        imgBanner: "/images/logo-banner.png",
         link1: "/nefits",
-        link2: "/nefits/sobre",
-        link3: "/nefits/equipe",
-        link4: "/nefits/noticias",
-        link5: "/nefits/projetos",
-        link6: "/nefits/publicacoes"
+        link2: "/sobre",
+        link3: "/equipe",
+        link4: "/noticias",
+        link5: "/projetos",
+        link6: "/publicacoes"
     }
 ]
 
