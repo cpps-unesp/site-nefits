@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 
 const intro = [
   {
-    link1: "/nefits",
+    link1: "/",
     link2: "/sobre",
     link3: "/equipe",
     link4: "/noticias",
