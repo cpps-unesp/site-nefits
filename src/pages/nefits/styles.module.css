@@ -120,9 +120,17 @@
 .textoEquipe{
     font-family: "Comfortaa", sans-serif;
     color: #656565;
-    font-size: .8rem;
+    font-size: .75rem;
     font-weight: 300;
     margin-bottom: .25rem;
+}
+
+.descricao{
+    font-family: "Comfortaa", sans-serif;
+    color: #656565;
+    font-size: .7rem;
+    font-weight: 300;
+    margin-bottom: 0;
 }
 
 .containerUm{
@@ -183,12 +191,12 @@ a{
 }
 
 .containerEquipe{
-    border: 2px solid #656565;
+    border: 2px solid transparent;
     border-radius: 1rem;
 }
 
 .fotoEquipe{
-    width: 1.5rem;
+    min-height: 165px;
 }
 
 .tituloEquipe{
@@ -234,21 +242,37 @@ a{
     margin: 0;
     padding: 0;
     text-align: start;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
 }
 
-.cardTexto{
+.cardSubtitulo{
     font-family: "Comfortaa", sans-serif;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 300;
     color: #656565;
     margin: 0;
     padding: 0;
     text-align: start;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
+
+}
+
+.cardTexto{
+    font-family: "Comfortaa", sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+    color: #656565;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-bottom: .5rem;
 }
 
 .nav-link{
     font-family: "Comfortaa", sans-serif;
     color: #bfbfbf !important;
+}
+
+.card{
+    max-width: 540px !important;
 }

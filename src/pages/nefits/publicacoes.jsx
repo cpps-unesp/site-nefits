@@ -22,7 +22,7 @@ const primeiroContainer = [
     titulo: "Publicações",
     texto: (
       <>
-      <p>Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lectus varius mattis egestas. </p>
+      <p></p>
       </>
     )
   }
@@ -38,14 +38,12 @@ const abas = [
       <>
       </>
     ),
-    titulo1: "Ethical Challenges in the Climate Crisis: Thomas Pogge's Perspective and the Challenges for Global Cooperation",
+    titulo1: "Ethical Challenges in the Climate Crisis",
+    subtitulo1: "Thomas Pogge's Perspective and the Challenges for Global Cooperation",
     autores1: "Matheus de Vilhena Moraes",
-    descricao1: (
-      <>
-      This article explores the climate crisis, examining not only the urgency of action but also the ethical and social complexities associated with it...
-      </>
-    ),
-    btn1: "Saiba mais",
+    ano1: "2023",
+    btn1: "Visualizar",
+    link1: "/arquivos/2023-Matheus_de_Vilhena_Moraes-ETHICAL_CHALLENGES_IN_THE_CLIMATE.pdf",
 
 
     t1: "Alienação de negras e negros em Achille Mbembe",
@@ -54,166 +52,103 @@ const abas = [
       </>
     ),
     a1: "Matheus Sena Asevedo Campanhã",
-    d1: (
-      <>
-      Este estudo teve como objetivo reunir e compreender os aspectos e os
-      contornos mais relevantes do conceito de alienação para negras e negros
-      na obra <i>Crítica da razão negra</i> (2020a) do filósofo Achille Mbembe através de uma análise
-      textual, na qual se fez uma reconstrução da obra em questão...
-      </>
-    ),
-    btn4: "Saiba mais",
+    ano2: "2023",
+    btn4: "Visualizar",
+    link4: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-Alienacao_de_negras_e_negros_em_Achille_Mbembe.pdf",
+
     t2: "Pobreza como Déficit dos Direitos Humanos em Thomas Pogge",
     a2: "Matheus de Vilhena Moraes",
-    d2: (
-      <>
-      Thomas Pogge é um dos mais importantes filósofos políticos a ter como tema central
-      o problema da pobreza. Segundo o autor, boa parte da pobreza global poderia ser resolvida a
-      partir de pequenas mudanças na ordem global...
-      </>
-    ),
-    btn5: "Saiba mais",
+    ano3: "2023",
+    btn5: "Visualizar",
+    link5: "/arquivos/2023-Matheus_de_Vilhena_Moraes-POBREZA_COMO_DEFICIT_DOS_DIREITOS_HUMANOS_EM_THOMAS_POGGE.pdf",
     
-    t4: "O Benefício de Prestação Continuada: um estudo sobre a centralidade da pobreza no seu quadro normativo.",
+    t4: "O Benefício de Prestação Continuada",
+    subtitulo2: "Um estudo sobre a centralidade da pobreza no seu quadro normativo",
     a4: "Andreia Celia Silva de Oliveira",
-    d4: (
-      <>
-      O estudo objetiva analisar as concepções de pobreza apresentadas no quadro normativo do programa 
-      Benefício de Prestação Continuada (BPC), criado pela Lei 8.742 (Lei Orgânica da Assistência Social – LOAS), 
-      de 07 de dezembro de 1993 e suas alterações posteriores...
-      </>
-    ),
-    btn7: "Saiba mais",
-    t5: "Teoria Democrática Deliberativa: uma análise dos conselhos municipais de assistência social",
-    a5: "Talismara Guilherme Molina",
-    d5: (
-      <>
-      As diversas experiências sobre a institucionalização de espaços deliberativos, como forma de
-      renovação democrática, têm despertado interesse de estudos tanto no campo teórico quanto no
-      empírico, em que a teoria democrática deliberativa figura como sustentáculo da
-      institucionalização...
-      </>
-    ),
-    btn8: "Saiba mais",
+    ano4: "2022",
+    btn7: "Visualizar",
+    link7: "/arquivos/2022-Andreia_Celia-O_BENEFICIO_DE_PRESTACAO_CONTINUADA.docx",
 
-    tUm: "A Autodeterminação Negra: uma análise da filosofia social e política de Achille Mbembe",
+    t5: "Teoria Democrática Deliberativa",
+    subtitulo3: "Uma análise dos conselhos municipais de assistência social",
+    a5: "Talismara Guilherme Molina",
+    ano5: "2022",
+    btn8: "Visualizar",
+    link8: "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf",
+
+    tUm: "A Autodeterminação Negra",
+    subtitulo4: "Uma análise da filosofia social e política de Achille Mbembe",
     texto4: (
       <>
       </>
     ),
     aUm: "Matheus Sena Asevedo Campanhã",
-    dUm: (
-      <>
-      Esta monografia buscou analisar, principalmente, os conceitos de raça, alienação e
-      violência no pensamento de Achille Mbembe em vista de buscar um sentido acerca da
-      emancipação e superação da situação da população negra...
-      </>
-    ),
-    btnUm: "Saiba mais",
-    tDois: "O Cotidiano e o Estranhamento em Lukács",
-    aDois: "Roan Matthaeus Chimello Dias",
-    dDois: (
-      <>
-      A filosofia de Lukács é composta de obras monumentais. Em específico seu período de
-      maturidade, sua produção agrega esforços de assentamento e desenvolvimento das bases
-      materialista-dialéticas, oferecendo uma rica captura das múltiplas determinações do ser social...
-      </>
-    ),
-    btnDois: "Saiba mais",
-    tTres: "Os Contornos da Questão Social em Sobre a Revolução de Hannah Arendt",
-    aTres: "Larissa Barcellos Rodrigues",
-    dTres: (
-      <>
-      A compreensão sobre o pensamento político de Hannah Arendt depreende a
-      consideração dos diversos momentos e objetivos que conduziram a produção de seus trabalhos
-      Os delineamentos sobre a separação da esfera política e social ocupam um espaço privilegiado...
-      </>
-    ),
-    btnTres: "Saiba mais",
-    tQuatro: "Malucos de Estrada: a (r)existência de uma forma de vida no Brasil",
-    aQuatro: "Daniela Leonardi Polizio",
-    dQuatro: (
-      <>
-      O objetivo deste trabalho é abordar a existência da formação social dos malucos de estrada no
-      Brasil como um exemplo de uma Forma de Vida...
-      </>
-    ),
-    btnQuatro: "Saiba mais",
+    ano6: "2023",
+    btnUm: "Visualizar",
+    linkUm: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-TCC.pdf",
+
+    tDois: "Malucos de Estrada",
+    subtitulo5: "A (r)existência de uma forma de vida no Brasil",
+    aDois: "Daniela Leonardi Polizio",
+    ano7: "2021",
+    btnDois: "Visualizar",
+    linkDois: "/arquivos/2021-Daniela_Leonardi_Polizio-TCC.pdf",
+
+    tTres: "Necropolítica",
+    subtitulo6: "A Política de Negação do Negro",
+    aTres: "Mayara Cristina Oliveira Pires",
+    ano8: "2021",
+    btnTres: "Visualizar",
+    linkTres: "/arquivos/2021-Mayara_Cristina_Oliveira_Pires-TCC.docx",
+
+    tQuatro: "O Cotidiano e o Estranhamento em Lukács",
+    aQuatro: "Roan Matthaeus Chimello Dias",
+    ano9: "2020",
+    btnQuatro: "Visualizar",
+    linkQuatro: "/arquivos/2020-Roan_Matheus_Chimello_Dias-TCC.pdf",
+
     tCinco: "Relações entre a Ética da Responsabilidade Jonasiana e o Direito",
     aCinco: "Péricles de Freitas Nogueira",
-    dCinco: (
-      <>
-      O presente trabalho tem como objetivo apresentar a teoria da responsabilidade
-      desenvolvida por Hans Jonas em seu livro “O Princípio Responsabilidade: Ensaio de uma
-      Ética para a Civilização Tecnológica”...
-      </>
-    ),
-    btnCinco: "Saiba mais",
-    tSeis: "Necropolítica: a Política de Negação do Negro",
-    aSeis: "Mayara Cristina Oliveira Pires",
-    dSeis: (
-      <>
-      O racismo não é apenas um fenômeno evidenciado nas microações presentes na sociedade, 
-      ele permeia as estruturas, as noções de poder, os modelos políticos e societais...
-      </>
-    ),
-    btnSeis: "Saiba mais",
+    ano10: "2021",
+    btnCinco: "Visualizar",
+    linkCinco: "/arquivos/2021-Pericles_de_Freitas_Nogueira-TCC.pdf",
+
+    tSeis: "Os Contornos da Questão Social em Sobre a Revolução de Hannah Arendt",
+    aSeis: "Larissa Barcellos Rodrigues",
+    ano11: "2022",
+    btnSeis: "Visualizar",
+    linkSeis: "/arquivos/2022-Larissa_Barcellos_Rodrigues-TCC.pdf",
+
     tSete: "Vítimas, Ética e Libertação na Obra de Enrique Dussel",
     aSete: "Beatriz Batista do Nascimento Alkmin",
-    dSete: (
-      <>
-      O número de refugiados que recentemente tem crescido na Europa e nos EUA é um fenômeno que 
-      pode ser legitimamente abordado pelas Relações internacionais a partir de várias dimensões...
-      </>
-    ),
-    btnSete: "Saiba mais",
-    tOito: "O Cotidiano e o Estranhamento em Lukács",
-    aOito: "Roan Matthaeus Chimello Dias",
-    dOito: (
-      <>
-      A filosofia de Lukács é composta de obras monumentais. Em específico seu período de
-      maturidade, sua produção agrega esforços de assentamento e desenvolvimento das bases
-      materialista-dialéticas...
-      </>
-    ),
-    btnOito: "Saiba mais",
-    tNove: "Desigualdade e Diferença: a desigualdade benéfica para todos na teoria da justiça como equidade de John Rawls",
-    aNove: "Luana Ambiel Marachini",
-    dNove: (
-      <>
-      A desigualdade e a diferença têm sido fatores articulantes das relações sociais, sejam elas
-      analisadas dentro de uma perspectiva interna, ou externa, nacional ou internacionalmente...
-      </>
-    ),
-    btnNove: "Saiba mais",
-    tDez: "Igualdade material como instrumento de inclusão social-debate sobre a constitucionalidade das cotas raciais nas Universidades Públicas",
-    aDez: "Gabriel Ferreira dos Santos",
-    dDez: (
-      <>
-      O presente trabalho tem como objetivo expor um estudo acerca das ações afirmativas,
-      especialmente aquilo que se refere à política de cotas raciais para o ingresso ao ensino superior
-      público...
-      </>
-    ),
-    btnDez: "Saiba mais",
-    tOnze: "Entre Freire e Jacotot: Emancipação, Saber e Razão",
-    aOnze: "Tark Fraig",
-    dOnze: (
-      <>
-      O presente projeto de pesquisa tem por objetivo realizar uma leitura comparada entre
-      os educadores Paulo Freire e Joseph Jacotot, a partir de três questões: emancipação, saber e
-      razão...
-      </>
-    ),
-    btnOnze: "Saiba mais",
+    ano12: "2021",
+    btnSete: "Visualizar",
+    linkSete: "/arquivos/2021-Beatriz_Batista_do_Nascimento_Alkmin-TCC.docx",
+
+    tOito: "Desigualdade e Diferença",
+    aOito: "Luana Ambiel Marachini",
+    ano13: "2020",
+    btnOito: "Visualizar",
+    linkOito: "/arquivos/2020-Luana_Ambiel_Marachini-TCC.pdf",
+
+    tNove: "Igualdade material como instrumento de inclusão social-debate sobre a constitucionalidade das cotas raciais nas Universidades Públicas",
+    aNove: "Gabriel Ferreira dos Santos",
+    ano14: "2020",
+    btnNove: "Visualizar",
+    linkNove: "/arquivos/2020-Gabriel_Ferreira_dos_Santos-TCC.pdf",
+
+    tDez: "Entre Freire e Jacotot",
+    aDez: "Tark Fraig",
+    ano15: "2020",
+    btnDez: "Visualizar",
+    linkDez: "/arquivos/2020-Tark_Fraig-TCC.pdf",
   }
 ]
 
-function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, btn1, link1, titulo2, autores2, descricao2, btn2, link2, titulo3, autores3, descricao3, btn3, link3, 
-  texto2, t1, texto3, a1, d1, btn4, link4, t2, a2, d2, btn5, link5, t3, a3, d3, btn6, link6, t4, d4, a4, btn7, link7, t5, d5, a5, btn8, link8, t6, d6, a6, btn9, link9, textoUm, tUm, 
-  aUm, dUm, btnUm, linkUm, tDois, aDois, dDois, btnDois, linkDois, tTres, aTres, dTres, btnTres, linkTres, tQuatro, aQuatro, dQuatro, btnQuatro, linkQuatro, tCinco, aCinco, dCinco, btnCinco, linkCinco,
- tSeis, aSeis, dSeis, btnSeis, linkSeis, tSete, aSete, dSete, btnSete, linkSete, tOito, aOito, dOito, btnOito, linkOito, tNove, aNove, dNove, btnNove, linkNove, tDez, aDez, dDez, btnDez, 
- linkDez, tOnze, aOnze, dOnze, btnOnze, linkOnze}){
+function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, t1, texto3, a1, ano2, btn4, link4, t2, a2, ano3, btn5, link5, t4, ano4, a4, subtitulo2, btn7, link7, t5, 
+  subtitulo3, ano5, a5, btn8, link8, textoUm, tUm, subtitulo4, aUm, ano6, btnUm, linkUm, tDois, subtitulo5, aDois, ano7, btnDois, linkDois, tTres, subtitulo6, aTres, ano8, btnTres, 
+  linkTres, tQuatro, aQuatro, ano9, btnQuatro, linkQuatro, tCinco, aCinco, ano10, btnCinco, linkCinco, tSeis, aSeis, ano11, btnSeis, linkSeis, tSete, aSete, ano12, btnSete, linkSete, 
+  tOito, aOito, ano13, btnOito, linkOito, tNove, aNove, ano14, btnNove, linkNove, tDez, aDez, ano15, btnDez, linkDez}){
   return(
     <div class="col-12">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -234,13 +169,13 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
         <div class="tab-pane fade show active" id="livros-tab-pane" role="tabpanel" aria-labelledby="livros-tab" tabindex="0">
           <div class="row justify-content-start">
               <p className={clsx(styles.texto, "mt-2")}>{texto1}</p>
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-4 p-3 gy-2 mx-3")}>
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo1}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores1}</p>
-                    <p className={clsx(styles.cardTexto)}>{descricao1}</p>
-                    <a href={link1} className={clsx(styles.btnUm)}>{btn1}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo1}</p>
+                    <p className={clsx(styles.cardTexto, "fw-medium")}>{autores1} • {ano1}</p>
+                    <a href={link1} target="_blank" className={clsx(styles.btnUm)}>{btn1}</a>
                   </div>
                 </div>
               </div>
@@ -250,24 +185,22 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
         <div class="tab-pane fade" id="artigos-tab-pane" role="tabpanel" aria-labelledby="artigos-tab" tabindex="0">
           <div class="row justify-content-start">
               <p className={clsx(styles.texto)}>{texto2}</p>
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-4 p-3 gy-2 mx-3")}>
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t1}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a1}</p>
-                    <p className={clsx(styles.cardTexto)}>{d1}</p>
-                    <a href={link4} className={clsx(styles.btnUm)}>{btn4}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a1} • {ano2}</p>
+                    <a href={link4} target="_blank" className={clsx(styles.btnUm)}>{btn4}</a>
                   </div>
                 </div>
               </div>
 
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-4 p-3 gy-2 mx-3")}>
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t2}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a2}</p>
-                    <p className={clsx(styles.cardTexto)}>{d2}</p>
-                    <a href={link5} className={clsx(styles.btnUm)}>{btn5}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a2} • {ano3}</p>
+                    <a href={link5} target="_blank" className={clsx(styles.btnUm)}>{btn5}</a>
                   </div>
                 </div>
               </div>
@@ -277,24 +210,24 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
         <div class="tab-pane fade" id="teses-tab-pane" role="tabpanel" aria-labelledby="teses-tab" tabindex="0">
           <div class="row justify-content-start">
               <p className={clsx(styles.texto)}>{texto3}</p>
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-4 p-3 gy-2 mx-3")}>
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t4}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a4}</p>
-                    <p className={clsx(styles.cardTexto)}>{d4}</p>
-                    <a href={link7} className={clsx(styles.btnUm)}>{btn7}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo2}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a4} • {ano4}</p>
+                    <a href={link7} target="_blank" className={clsx(styles.btnUm)}>{btn7}</a>
                   </div>
                 </div>
               </div>
 
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-4 p-3 gy-2 mx-3")}>
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t5}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a5}</p>
-                    <p className={clsx(styles.cardTexto)}>{d5}</p>
-                    <a href={link8} className={clsx(styles.btnUm)}>{btn8}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo3}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a5} • {ano5}</p>
+                    <a href={link8} target="_blank" className={clsx(styles.btnUm)}>{btn8}</a>
                   </div>
                 </div>
               </div>
@@ -308,9 +241,9 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tUm}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aUm}</p>
-                    <p className={clsx(styles.cardTexto)}>{dUm}</p>
-                    <a href={linkUm} className={clsx(styles.btnUm)}>{btnUm}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo4}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aUm} • {ano6}</p>
+                    <a href={linkUm} target="_blank" className={clsx(styles.btnUm)}>{btnUm}</a>
                   </div>
                 </div>
               </div>
@@ -319,9 +252,9 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tDois}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDois}</p>
-                    <p className={clsx(styles.cardTexto)}>{dDois}</p>
-                    <a href={linkDois} className={clsx(styles.btnUm)}>{btnDois}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo5}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDois} • {ano7}</p>
+                    <a href={linkDois} target="_blank" className={clsx(styles.btnUm)}>{btnDois}</a>
                   </div>
                 </div>
               </div>
@@ -330,9 +263,9 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tTres}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aTres}</p>
-                    <p className={clsx(styles.cardTexto)}>{dTres}</p>
-                    <a href={linkTres} className={clsx(styles.btnUm)}>{btnTres}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo6}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aTres} • {ano8}</p>
+                    <a href={linkTres} target="_blank" className={clsx(styles.btnUm)}>{btnTres}</a>
                   </div>
                 </div>
               </div>
@@ -341,9 +274,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tQuatro}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aQuatro}</p>
-                    <p className={clsx(styles.cardTexto)}>{dQuatro}</p>
-                    <a href={linkQuatro} className={clsx(styles.btnUm)}>{btnQuatro}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aQuatro} • {ano9}</p>
+                    <a href={linkQuatro} target="_blank" className={clsx(styles.btnUm)}>{btnQuatro}</a>
                   </div>
                 </div>
               </div>
@@ -352,9 +284,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tCinco}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aCinco}</p>
-                    <p className={clsx(styles.cardTexto)}>{dCinco}</p>
-                    <a href={linkCinco} className={clsx(styles.btnUm)}>{btnCinco}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aCinco} • {ano10}</p>
+                    <a href={linkCinco} target="_blank" className={clsx(styles.btnUm)}>{btnCinco}</a>
                   </div>
                 </div>
               </div>
@@ -363,9 +294,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tSeis}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aSeis}</p>
-                    <p className={clsx(styles.cardTexto)}>{dSeis}</p>
-                    <a href={linkSeis} className={clsx(styles.btnUm)}>{btnSeis}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aSeis} • {ano11}</p>
+                    <a href={linkSeis} target="_blank" className={clsx(styles.btnUm)}>{btnSeis}</a>
                   </div>
                 </div>
               </div>
@@ -374,9 +304,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tSete}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aSete}</p>
-                    <p className={clsx(styles.cardTexto)}>{dSete}</p>
-                    <a href={linkSete} className={clsx(styles.btnUm)}>{btnSete}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aSete} • {ano12}</p>
+                    <a href={linkSete} target="_blank" className={clsx(styles.btnUm)}>{btnSete}</a>
                   </div>
                 </div>
               </div>
@@ -385,9 +314,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tOito}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aOito}</p>
-                    <p className={clsx(styles.cardTexto)}>{dOito}</p>
-                    <a href={linkOito} className={clsx(styles.btnUm)}>{btnOito}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aOito} • {ano13}</p>
+                    <a href={linkOito} target="_blank" className={clsx(styles.btnUm)}>{btnOito}</a>
                   </div>
                 </div>
               </div>
@@ -396,9 +324,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tNove}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aNove}</p>
-                    <p className={clsx(styles.cardTexto)}>{dNove}</p>
-                    <a href={linkNove} className={clsx(styles.btnUm)}>{btnNove}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aNove} • {ano14}</p>
+                    <a href={linkNove} target="_blank" className={clsx(styles.btnUm)}>{btnNove}</a>
                   </div>
                 </div>
               </div>
@@ -407,20 +334,8 @@ function Abas({aba1, aba2, aba3, aba4, texto1, titulo1, autores1, descricao1, bt
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tDez}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDez}</p>
-                    <p className={clsx(styles.cardTexto)}>{dDez}</p>
-                    <a href={linkDez} className={clsx(styles.btnUm)}>{btnDez}</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
-                <div class="row">
-                  <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tOnze}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aOnze}</p>
-                    <p className={clsx(styles.cardTexto)}>{dOnze}</p>
-                    <a href={linkOnze} className={clsx(styles.btnUm)}>{btnOnze}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDez} • {ano15}</p>
+                    <a href={linkDez} target="_blank" className={clsx(styles.btnUm)}>{btnDez}</a>
                   </div>
                 </div>
               </div>
