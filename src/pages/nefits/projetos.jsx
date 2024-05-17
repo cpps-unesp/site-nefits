@@ -20,7 +20,6 @@ const primeiroContainer = [
     titulo: "Projetos",
     texto: (
       <>
-      <p>Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lectus varius mattis egestas. </p>
       </>
     )
   }
@@ -28,77 +27,82 @@ const primeiroContainer = [
 
 const abas = [
   {
-    aba1: "Projetos em Andamento",
-    aba2: "Projetos Concluídos",
-    texto1: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lectus varius mattis egestas. 
-      </>
-    ),
-    titulo1: "Título do Projeto",
-    autores1: "Autor 1, Autor 2, Autor 3",
-    descricao1: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </>
-    ),
-    btn1: "Saiba mais",
-    titulo2: "Título do Projeto",
-    autores2: "Autor 1, Autor 2, Autor 3",
-    texto2: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      </>
-    ),
-    descricao2: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </>
-    ),
-    btn2: "Saiba mais",
-    titulo3: "Título do Projeto",
-    autores3: "Autor 1, Autor 2, Autor 3",
-    texto3: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      </>
-    ),
-    descricao3: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </>
-    ),
-    btn3: "Saiba mais",
+    titulo1: "Liberdades e opressões",
+    subtitulo1: "A interseccionalidade como crítica do neoliberalismo",
+    autor1: "Ana Júlia Diniz Neves do Lago",
+    ano1: "2023-2024",
+    link1: "/arquivos/Ana_Julia_Diniz-Projeto_FAPESP.pdf",
+
+    titulo2: "A relação entre ideologia, propriedade e desigualdade na obra Capital e Ideologia de Thomas Piketty",
+    autor2: "Eduarda Pereira Pires Barboza",
+    ano2: "2023-2024",
+    link2: "/arquivos/2023_2024-Eduarda_Barboza_Projeto_PIBIC.docx",
+
+    titulo3: "Pobreza e dever moral na Metafísica dos Costumes de Kant",
+    autor3: "Julia de Andrade Fernandes Francisco",
+    ano3: "2023-2024",
+    link3: "/arquivos/2023_2024-Julia_Andrade-Projeto_PIBIC.pdf",
+
+    titulo4: "Tempo livre, lazer e ócio",
+    autor4: "Julia de Andrade Fernandes Francisco",
+    subtitulo2: "Dimensões da indústria cultural em Adorno e Horkheimer",
+    ano9: "2023-2024",
+    link4: "/arquivos/2023_2024-Julia_Andrade-Projeto_PIBIC.pdf",
+
+    titulo5: "Entendendo o Feminismo Islâmico",
+    autor5: "Bianca Regina Poltronieri",
+    subtitulo3: "Uma Análise sobre os Desafios que Obstam ente Movimento Político-Religioso Transnacional",
+    ano10: "2023-2024",
+    link5: "/arquivos/Feminismo_Islamico--Margot_Badran-Projeto_PIBIC.docx",
 
 
-    t1: "Título do Projeto",
-    a1: "Autor 1, Autor 2, Autor 3",
-    d1: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </>
-    ),
-    btn4: "Saiba mais",
-    t2: "Título do Projeto",
-    a2: "Autor 1, Autor 2, Autor 3",
-    d2: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </>
-    ),
-    btn5: "Saiba mais",
-    t3: "Título do Projeto",
-    a3: "Autor 1, Autor 2, Autor 3",
-    d3: (
-      <>
-      Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </>
-    ),
-    btn6: "Saiba mais",
+    t1: "Religião, Política e Retórica",
+    s1: "Contornos da Relação entre Fé e Razão no Estado Civil de Thomas Hobbes.",
+    a1: "Vinícius Antonio Ramos Zecca",
+    ano4: "2020-2021",
+    l1: "/arquivos/Vinicius_Antonio_Ramos_Zecca-Projeto_FAPESP.pdf",
+
+    t2: "A erradicação da pobreza extrema através da reforma das instituições compartilhadas proposta por Thomas Pogge",
+    a2: "Matheus de Vilhena Moraes",
+    ano5: "2022-2023",
+    l2: "/arquivos/MATHEUS_VILHENA-Projeto_FAPESP.docx",
+
+    t3: "Alienação de Negras e Negros em Achille Mbembe",
+    a3: "Matheus Sena Asevedo Campanhã",
+    ano6: "2022-2023",
+    l3: "/arquivos/Matheus_Sena-Projeto_FAPESP.pdf",
+
+    t4: "Critério de Justiça Universal, Dever Negativo e Dever Positivo de Justiça",
+    a4: "Matheus de Vilhena Moraes",
+    ano7: "2022-2023",
+    l4: "/arquivos/2022-Matheus_de_Vilhena_Moraes-PROJETO_BEPE.docx",
+
+    t5: "Subjetividade e Opressão",
+    s2: "Um Recorte de Gênero no Neoliberalismo",
+    a5: "Ana Júlia Diniz Neves do Lago",
+    ano8: "2020-2021",
+    l5: "/arquivos/2023-Ana_Julia-Projeto_BEPE.pdf",
+
+    t6: "O conceito de interseccionalidade e seu uso para análise da justiça social nas políticas globais",
+    a6: "Ana Júlia Diniz Neves do Lago",
+    ano11: "2020-2021",
+    l6: "/arquivos/Interseccionalidade--Silma_Bilge_e_Patricia_Hill_Collins-Projeto_PIBIC.pdf",
+
+    t7: "Pobreza, funcionamentos [functionings] e capacidades [capabilities] na obra Desigualdade Reexaminada de Amartya Sen",
+    a7: "Guilherme Vicente Moura",
+    ano12: "2021-2022",
+    l7: "/arquivos/Amartya_Sen--Pobreza_functionings_e_capabilities-Projeto_PIBIC.pdf",
+
+    t8: "Alienação De Negras E Negros Em Achille Mbembe",
+    a8: "Matheus Sena Asevedo Campanhã",
+    ano13: "2021-2022",
+    l8: "/arquivos/Achille_Mbembe--Alienacao_escravidao_colonizacao_e_apartheid-Projeto_PIBIC.pdf",
   },
 ]
 
-function Abas({aba1, aba2, texto1, texto2, titulo1, titulo2, titulo3, autores1, autores2, autores3, descricao1, descricao2, descricao3, btn1, btn2, btn3, link1, link2, link3, t1, t2, t3, a1, a2, a3, d1, d2, d3, btn4, btn5, btn6, link4, link5, link6}){
+function Abas({titulo1, titulo2, titulo3, titulo4, titulo5, t1, t2, t3, t4, t5, t6, t7, t8, subtitulo1, subtitulo2, subtitulo3, s1, s2, ano1, ano2, ano3, ano4, ano5, ano6, 
+  ano7, ano8, ano9, ano10, ano11, ano12, ano13, autor1, autor2, autor3, autor4, autor5, a1, a2, a3, a4, a5, a6, a7, a8, link1, link2, link3, link4, link5, l1, l2, l3, l4, l5, 
+  l6, l7, l8}){
   return(
     <div class="row justify-content-center">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -113,77 +117,144 @@ function Abas({aba1, aba2, texto1, texto2, titulo1, titulo2, titulo3, autores1, 
         
         <div class="tab-pane fade show active" id="andamento-tab-pane" role="tabpanel" aria-labelledby="andamento-tab" tabindex="0">
           <div class="row justify-content-center">
-              <p className={clsx(styles.texto)}>{texto1}</p>
-              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo1}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores1}</p>
-                    <p className={clsx(styles.cardTexto)}>{descricao1}</p>
-                    <a href={link1} className={clsx(styles.btnUm)}>{btn1}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo1}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor1} • {ano1}</p>
+                    <a href={link1} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
-              </div>
+            </div> 
 
-              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo2}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores2}</p>
-                    <p className={clsx(styles.cardTexto)}>{descricao2}</p>
-                    <a href={link2} className={clsx(styles.btnUm)}>{btn2}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor2} • {ano2}</p>
+                    <a href={link2} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
-              </div>
+            </div> 
 
-              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo3}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores3}</p>
-                    <p className={clsx(styles.cardTexto)}>{descricao3}</p>
-                    <a href={link3} className={clsx(styles.btnUm)}>{btn3}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor3} • {ano3}</p>
+                    <a href={link3} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
-              </div>
+            </div> 
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo4}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo2}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor4} • {ano9}</p>
+                    <a href={link4} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo5}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo3}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor5} • {ano10}</p>
+                    <a href={link5} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
         
         <div class="tab-pane fade" id="concluidos-tab-pane" role="tabpanel" aria-labelledby="concluidos-tab" tabindex="0">
           <div class="row justify-content-center">
-              <p className={clsx(styles.texto)}>{texto2}</p>
-              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t1}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a1}</p>
-                    <p className={clsx(styles.cardTexto)}>{d1}</p>
-                    <a href={link4} className={clsx(styles.btnUm)}>{btn4}</a>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{s1}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a1} • {ano4}</p>
+                    <a href={l1} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
-              </div>
+            </div> 
 
-              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t2}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a2}</p>
-                    <p className={clsx(styles.cardTexto)}>{d2}</p>
-                    <a href={link5} className={clsx(styles.btnUm)}>{btn5}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a2} • {ano5}</p>
+                    <a href={l2} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
-              </div>
+            </div>
 
-              <div className={clsx(styles.cardProjetos, "col col--3 p-3 mx-3")}>
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t3}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a3}</p>
-                    <p className={clsx(styles.cardTexto)}>{d3}</p>
-                    <a href={link6} className={clsx(styles.btnUm)}>{btn6}</a>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a3} • {ano6}</p>
+                    <a href={l3} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
-              </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t4}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a4} • {ano7}</p>
+                    <a href={l4} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t5}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{s2}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a5} • {ano8}</p>
+                    <a href={l5} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t6}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a6} • {ano11}</p>
+                    <a href={l6} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t7}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a7} • {ano12}</p>
+                    <a href={l7} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t8}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a8} • {ano13}</p>
+                    <a href={l8} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>

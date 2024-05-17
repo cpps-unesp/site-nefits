@@ -52,9 +52,7 @@ const containerCards = [
     imgFoto: "/images/img_2.svg",
     texto: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
-        velit. Sed malesuada risus sit amet pretium tristique. Mauris eu commodo
-        metus. Donec elementum id turpis at tincidunt.
+        Sed malesuada risus sit amet pretium tristique. Mauris eu commodo metus.
       </>
     ),
     titulo2: "Projetos",
@@ -62,9 +60,7 @@ const containerCards = [
     imgFoto2: "/images/img_2.svg",
     texto2: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
-        velit. Sed malesuada risus sit amet pretium tristique. Mauris eu commodo
-        metus. Donec elementum id turpis at tincidunt.
+        Conheça os projetos em andamento e concluídos desenvolvidos pela equipe NéFiTs. 
       </>
     ),
     titulo3: "Publicações",
@@ -72,9 +68,7 @@ const containerCards = [
     imgFoto3: "/images/img_2.svg",
     texto3: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
-        velit. Sed malesuada risus sit amet pretium tristique. Mauris eu commodo
-        metus. Donec elementum id turpis at tincidunt.
+        Acesse as publicações realizadas pela equipe NéFiTs.
       </>
     )
   },
@@ -82,28 +76,28 @@ const containerCards = [
 
 function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
   return(
-    <div class="row justify-content-center text-center">
-      <div className={clsx(styles.containerCards, "col col--3 mt-3 gx-4 border-0 bg-transparent")}>
+    <div class="row justify-content-center text-center mb-3">
+      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "mb-3")}></img>
+            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards)}></img>
             <h2><a href={link} className={clsx(styles.titulo)}>{titulo}</a></h2>
             <p className={clsx(styles.texto)}>{texto}</p>
             <a href={link} className={clsx(styles.btnUm)}>Saiba mais</a>
         </div>
       </div>
 
-      <div className={clsx(styles.containerCards, "col col--3 mt-3 gx-4 border-0 bg-transparent")}>
+      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards, "mb-3")} />
+            <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards)} />
             <h2><a href={linkDois1} className={clsx(styles.titulo)}>{titulo2}</a></h2>
             <p className={clsx(styles.texto)}>{texto2}</p>
             <a href={linkDois1} className={clsx(styles.btnUm)}>Saiba mais</a>
         </div>
       </div>
 
-      <div className={clsx(styles.containerCards, "col col--3 mt-3 gx-4 border-0 bg-transparent")}>
+      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto3} alt="Logo" className={clsx(styles.SobreCards, "mb-3")} />
+            <img src={imgFoto3} alt="Logo" className={clsx(styles.SobreCards)} />
             <h2><a href={linkTres1} className={clsx(styles.titulo)}>{titulo3}</a></h2>
             <p className={clsx(styles.texto)}>{texto3}</p>
             <a href={linkTres1} className={clsx(styles.btnUm)}>Saiba mais</a>
