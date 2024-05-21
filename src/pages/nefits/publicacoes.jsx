@@ -76,6 +76,13 @@ const abas = [
     btn8: "Visualizar",
     link8: "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf",
 
+    t6: "A inteligência de ninguém",
+    subtitulo7: "Igualdade, emancipação e pobreza em O mestre ignorante de Jacques Rancière",
+    a6: "Tark Fraig",
+    ano16: "2024",
+    btn9: "Visualizar",
+    link9: "/arquivos/2024-Tark_Fraig-A_Inteligencia_de_Ninguem.pdf",
+
     tUm: "A Autodeterminação Negra",
     subtitulo4: "Uma análise da filosofia social e política de Achille Mbembe",
     texto4: (
@@ -148,7 +155,7 @@ const abas = [
 function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, t1, texto3, a1, ano2, btn4, link4, t2, a2, ano3, btn5, link5, t4, ano4, a4, subtitulo2, btn7, link7, t5, 
   subtitulo3, ano5, a5, btn8, link8, textoUm, tUm, subtitulo4, aUm, ano6, btnUm, linkUm, tDois, subtitulo5, aDois, ano7, btnDois, linkDois, tTres, subtitulo6, aTres, ano8, btnTres, 
   linkTres, tQuatro, aQuatro, ano9, btnQuatro, linkQuatro, tCinco, aCinco, ano10, btnCinco, linkCinco, tSeis, aSeis, ano11, btnSeis, linkSeis, tSete, aSete, ano12, btnSete, linkSete, 
-  tOito, aOito, ano13, btnOito, linkOito, tNove, aNove, ano14, btnNove, linkNove, tDez, aDez, ano15, btnDez, linkDez}){
+  tOito, aOito, ano13, btnOito, linkOito, tNove, aNove, ano14, btnNove, linkNove, tDez, aDez, ano15, btnDez, linkDez, t6, subtitulo7, ano16, a6, btn9, link9}){
   return(
     <div class="col-12">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -228,6 +235,17 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
                     <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo3}</p>
                     <p className={clsx(styles.cardTexto, "fw-bold")}>{a5} • {ano5}</p>
                     <a href={link8} target="_blank" className={clsx(styles.btnUm)}>{btn8}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t6}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo7}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a6} • {ano16}</p>
+                    <a href={link9} target="_blank" className={clsx(styles.btnUm)}>{btn9}</a>
                   </div>
                 </div>
               </div>

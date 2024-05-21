@@ -68,7 +68,7 @@ const containerCards = [
     imgFoto3: "/images/img_2.svg",
     texto3: (
       <>
-        Acesse as publicações realizadas pela equipe NéFiTs.
+        Acesse as publicações desenvolvidas e publicadas pela equipe NéFiTs.
       </>
     )
   },

@@ -43,16 +43,10 @@ const abas = [
     ano3: "2023-2024",
     link3: "/arquivos/2023_2024-Julia_Andrade-Projeto_PIBIC.pdf",
 
-    titulo4: "Tempo livre, lazer e ócio",
-    autor4: "Julia de Andrade Fernandes Francisco",
-    subtitulo2: "Dimensões da indústria cultural em Adorno e Horkheimer",
-    ano9: "2023-2024",
-    link4: "/arquivos/2023_2024-Julia_Andrade-Projeto_PIBIC.pdf",
-
     titulo5: "Entendendo o Feminismo Islâmico",
     autor5: "Bianca Regina Poltronieri",
     subtitulo3: "Uma Análise sobre os Desafios que Obstam ente Movimento Político-Religioso Transnacional",
-    ano10: "2023-2024",
+    ano10: "2022-2023",
     link5: "/arquivos/Feminismo_Islamico--Margot_Badran-Projeto_PIBIC.docx",
 
 
@@ -80,12 +74,12 @@ const abas = [
     t5: "Subjetividade e Opressão",
     s2: "Um Recorte de Gênero no Neoliberalismo",
     a5: "Ana Júlia Diniz Neves do Lago",
-    ano8: "2020-2021",
+    ano8: "2023-2024",
     l5: "/arquivos/2023-Ana_Julia-Projeto_BEPE.pdf",
 
     t6: "O conceito de interseccionalidade e seu uso para análise da justiça social nas políticas globais",
     a6: "Ana Júlia Diniz Neves do Lago",
-    ano11: "2020-2021",
+    ano11: "2021-2022",
     l6: "/arquivos/Interseccionalidade--Silma_Bilge_e_Patricia_Hill_Collins-Projeto_PIBIC.pdf",
 
     t7: "Pobreza, funcionamentos [functionings] e capacidades [capabilities] na obra Desigualdade Reexaminada de Amartya Sen",
@@ -147,28 +141,6 @@ function Abas({titulo1, titulo2, titulo3, titulo4, titulo5, t1, t2, t3, t4, t5, 
                   </div>
                 </div>
             </div> 
-
-            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
-                <div class="row">
-                  <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo4}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo2}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor4} • {ano9}</p>
-                    <a href={link4} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
-                  </div>
-                </div>
-            </div>
-
-            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
-                <div class="row">
-                  <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo5}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo3}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor5} • {ano10}</p>
-                    <a href={link5} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
-                  </div>
-                </div>
-            </div>
           </div>
         </div>
         
@@ -252,6 +224,17 @@ function Abas({titulo1, titulo2, titulo3, titulo4, titulo5, t1, t2, t3, t4, t5, 
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t8}</h3>
                     <p className={clsx(styles.cardTexto, "fw-bold")}>{a8} • {ano13}</p>
                     <a href={l8} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
+                  </div>
+                </div>
+            </div>
+
+            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo5}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo3}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor5} • {ano10}</p>
+                    <a href={link5} target="_blank" className={clsx(styles.btnUm)}>Visualizar</a>
                   </div>
                 </div>
             </div>

@@ -27,11 +27,11 @@ const primeiroContainer = [
 
 const membrosEquipe = [
   {
-    foto: "/images/icon.svg",
+    foto: "/images/Professor_Helio.svg",
     nome: "Hélio Alexandre da Silva",
     cargo: "Líder",
     descricao: (
-      <></>
+      <></> 
     ),
     foto2: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
     nome2: "Ana Júlia Diniz Neves do Lago",
