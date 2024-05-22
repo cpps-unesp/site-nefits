@@ -15,6 +15,18 @@ const intro = [
     }
 ]
 
+const rodape = [
+  {
+    icon1: "/images/facebook_rodape2.svg",
+    icon2: "/images/instagram_rodape2.svg",
+    icon3: "/images/linkedin_rodape2.svg",
+    link1: "#",
+    link2: "#",
+    link3: "#",
+    logo1: "/images/logos_rodape.svg",
+  }
+];
+
 const primeiroContainer = [
   {
     titulo: "Projetos",
@@ -258,12 +270,63 @@ function PrimeiroContainer({titulo, texto}){
   )
 }
 
+function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
+  return(
+    <div class="container rodape">
+      <div class="row">
+        <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
+          <div class="row">
+            <div class="col-12 mb-1">
+              <h4 className={clsx(styles.tituloRodape)}>Redes Sociais</h4>
+            </div>
+            <div class="col-3 gx-2 ps-3">
+              <a href={link1} target="_blank"><img src={icon1} alt="Rede Social 1" /></a>
+            </div>
+
+            <div class="col-3 gx-2">
+              <a href={link2} target="_blank"><img src={icon2} alt="Rede Social 2" /></a>
+            </div>
+
+            <div class="col-3 gx-2">
+              <a href={link3} target="_blank"><img src={icon3} alt="Rede Social 3" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
+          <div class="row">
+            <div class="col-12 mb-1 pt-3">
+              <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
+            </div>
+            <div class="col-12">
+              <p className={clsx(styles.textoRodape)}>exemplo@exemplo.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 d-flex justify-content-sm-center justify-content-lg-end">
+          <div class="row">
+            <div class="col-4 pt-3">
+              <img src={logo1} alt="Logos" />
+            </div>
+          </div>
+        </div>
+
+        <hr className={clsx(styles.hr, "mt-3 mb-3")} />
+
+        <p className={clsx(styles.textoRodape)}>Design por <b className={clsx(styles.textoRodape)}>Júlia dos Santos Silveira</b> © 2024 Current</p>
+
+      </div>
+    </div>
+  )
+}
+
 function Intro({imgBanner, link1, link2, link3, link4, link5, link6}){
     return(
         <div className={clsx(styles.heroBanner)}>
             <div class="row">
                 <div className="col-md-3 col-sm-12">
-                    <img className="intro" src={imgBanner} alt="Logo NéFiTs" />
+                  <a href="/"><img className="intro" src={imgBanner} alt="Logo NéFiTs" /></a>
                 </div>
                 <div className="col-md-9 text-end mt-2">
                     <ul className={clsx(styles.ulLista)}>
@@ -319,9 +382,16 @@ function Projetos() {
               ))}
             </div>
           </div>
-          
         </section>
       </main>
+
+      <footer className={clsx(styles.rodape)}>
+        <div>
+          {rodape.map((props, idx) => (
+            <Rodape key={idx} {...props} />
+            ))}
+        </div>
+      </footer>
     </div>
   );
 }

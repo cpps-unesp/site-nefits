@@ -15,6 +15,18 @@ const intro = [
     }
 ]
 
+const rodape = [
+  {
+    icon1: "/images/facebook_rodape2.svg",
+    icon2: "/images/instagram_rodape2.svg",
+    icon3: "/images/linkedin_rodape2.svg",
+    link1: "#",
+    link2: "#",
+    link3: "#",
+    logo1: "/images/logos_rodape.svg",
+  }
+];
+
 const primeiroContainer = [
   {
     titulo: "Equipe",
@@ -44,12 +56,11 @@ const membrosEquipe = [
         Paris-Nanterre, sob a supervisão do Prof. Dr. Pierre Sauvêtre com o tema "Subjetividade e opressão: um recorte de gênero no neoliberalismo" (Processo nº 2023/08867-5). 
       </>
     ),
-  },
-  {
-    foto: "/images/Bianca_Regina_Poltronieri.svg",
-    nome: "Bianca Regina Poltronieri",
-    cargo: "Membro",
-    descricao: (
+
+    foto3: "/images/Bianca_Regina_Poltronieri.svg",
+    nome3: "Bianca Regina Poltronieri",
+    cargo3: "Membro",
+    descricao3: (
       <>
         Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) na UNESP. Foi pesquisadora bolsista do Programa Institucional de Bolsas de Iniciação 
         Científica (PIBIC) - CNPq, entre 2022 e 2023, com o tema: "Entendendo o Feminismo Islâmico: Uma investigação sobre os desafios que obstam este movimento político-religioso 
@@ -57,10 +68,10 @@ const membrosEquipe = [
         de Defesa e Segurança Internacional (GEDES-UNESP).
       </>
     ),
-    foto2: "/images/Eduarda_Barboza.svg",
-    nome2: "Eduarda Pereira Pires Barboza",
-    cargo2: "Membro",
-    descricao2: (
+    foto4: "/images/Eduarda_Barboza.svg",
+    nome4: "Eduarda Pereira Pires Barboza",
+    cargo4: "Membro",
+    descricao4: (
       <>
         Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) da UNESP. Foi pesquisadora bolsista do Programa Institucional de Bolsas de Iniciação 
         Científica (PIBIC)- CNPq no ciclo 2022-2023. Participou do Programa de Escala Estudantil AUGM na Universidade de Playa Ancha (UPLA) durante o primeiro semestre letivo de 2024. 
@@ -68,22 +79,21 @@ const membrosEquipe = [
         orientação do Prof. Dr. Hélio Alexandre da Silva, faz parte também do Observatório de Conflitos, vinculado ao Grupo de Estudos de Defesa e Segurança Internacional (GEDES-UNESP).
       </>
     ),
-  },
-  {
-    foto: "/images/Gabriel_Henrique_de_Andrade.svg",
-    nome: "Gabriel Henrique de Andrade ",
-    cargo: "Membro",
-    descricao: (
+
+    foto5: "/images/Gabriel_Henrique_de_Andrade.svg",
+    nome5: "Gabriel Henrique de Andrade ",
+    cargo5: "Membro",
+    descricao5: (
       <>
         Graduando em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais de Franca (FCHS) - UNESP. Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e 
         Teoria Social (NéFiTs) e do grupo de pesquisa em Filosofia, Arte e Política (FIAPO). Além disso, é membro coordenador do Grupo de Estudos em Cultura e Antropologia (GECA) e 
         membro do Núcleo de Estudos Linguísticos e Culturais (NELC).
       </>
     ),
-    foto2: "/images/Gabrielle_Nascimento.svg",
-    nome2: "Gabrielle Nascimento",
-    cargo2: "Membro",
-    descricao2: (
+    foto6: "/images/Gabrielle_Nascimento.svg",
+    nome6: "Gabrielle Nascimento",
+    cargo6: "Membro",
+    descricao6: (
       <>
         Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) na UNESP. Pesquisadora bolsista pela Vunesp em colaboração com a Secretaria de Educação 
         do Estado de São Paulo (SEDUC) desde de 2022 com finalização prevista para 2024 com o tema: "Planificação: um mapa conceitual do debate", sob a orientação do Prof. Dr Hélio 
@@ -91,54 +101,51 @@ const membrosEquipe = [
         Pesquisa em Ética, Filosofia e Teoria Social (NéFiTs).
       </>
     ),
-  },
-  {
-    foto: "/images/Natalie.svg",
-    nome: "Natalie Storti Corbani",
-    cargo: "Membro",
-    descricao: (
+    
+    foto7: "/images/Natalie.svg",
+    nome7: "Natalie Storti Corbani",
+    cargo7: "Membro",
+    descricao7: (
       <>
         Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp).  
         Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e Teoria Social (NéFiTs).
       </>
     ),
-    foto2: "/images/Roan.svg",
-    nome2: "Roan Matthaeus Chimello Dias",
-    cargo2: "Membro",
-    descricao2: (
+    foto8: "/images/Roan.svg",
+    nome8: "Roan Matthaeus Chimello Dias",
+    cargo8: "Membro",
+    descricao8: (
       <>
         Possui graduação em Direito pela UNESP (Universidade Estadual Paulista Júlio de Mesquita Filho) - FCHS - Faculdade de Ciências Humanas e Sociais Câmpus de Franca (2021), 
         mestrando no Programa de Pós-Graduação em Filosofia, Curso de Mestrado Acadêmico, na UNESP Faculdade de Filosofia e Ciências - Câmpus de Marília. Tem experiência na área de 
         Filosofia, com ênfase em "Teoria Crítica" e "Ética". Ex integrante da Assessoria Jurídica Popular/AJUP da UNESP-Franca.
       </>
     ),
-  },
-  {
-    foto: "/images/Sofia_Grandini.svg",
-    nome: "Sofia Grandini",
-    cargo: "Membro",
-    descricao: (
+    
+    foto9: "/images/Sofia_Grandini.svg",
+    nome9: "Sofia Grandini",
+    cargo9: "Membro",
+    descricao9: (
       <>
         Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais (FCHS) da UNESP, desenvolve pesquisa no Programa Institucional de Bolsas de Iniciação Científica 
         (PIBIC) sobre indústria cultural e os conceitos de tempo livre, lazer e ócio intitulada "Tempo livre, lazer e ócio: dimensões da indústria cultural em Adorno e Horkheimer". 
         Participa do Núcleo de Pesquisa em Ética, Filosofia e Teoria Social (NéFiTs).
       </>
     ),
-    foto2: "/images/Icaro_Costa_Ferreira.svg",
-    nome2: "Ícaro Costa Ferreira",
-    cargo2: "Membro",
-    descricao2: (
+    foto10: "/images/Icaro_Costa_Ferreira.svg",
+    nome10: "Ícaro Costa Ferreira",
+    cargo10: "Membro",
+    descricao10: (
       <>
         Graduando em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais de Franca (FCHS) - UNESP. Integrante do Núcleo de Pesquisa em Ética, Filosofia e Teoria Social 
         (NéFiTs). Com interesse pessoal em explorar as interseções entre Relações Internacionais e Filosofia.
       </>
     ),
-  },
-  {
-    foto: "/images/Julia_de_Andrade.svg",
-    nome: "Julia de Andrade Fernandes Francisco",
-    cargo: "Membro",
-    descricao: (
+    
+    foto11: "/images/Julia_de_Andrade.svg",
+    nome11: "Julia de Andrade Fernandes Francisco",
+    cargo11: "Membro",
+    descricao11: (
       <>
         Graduanda em Relações Internacionais, pela Universidade Estadual Paulista Júlio de Mesquita Filho, Faculdade de Ciências Humanas e Sociais, câmpus de Franca. Integrante do 
         Núcleo de Pesquisa em Ética, Filosofia, Teoria Política e Social (NéFITs) e pesquisadora do Programa de Inicação Científica Sem Bolsa (ICSB) - CNPQ, sob orientação do Professor 
@@ -147,10 +154,10 @@ const membrosEquipe = [
         gênero.
       </>
     ),
-    foto2: "/images/Matheus_Sena.svg",
-    nome2: "Matheus Sena Asevedo Campanhã",
-    cargo2: "Membro",
-    descricao2: (
+    foto12: "/images/Matheus_Sena.svg",
+    nome12: "Matheus Sena Asevedo Campanhã",
+    cargo12: "Membro",
+    descricao12: (
       <>
         Bacharel e Licenciado em Ciências Sociais pela Faculdade de Ciências e Letras - campus de Araraquara -, da Universidade Estadual Paulista (FCLAr/UNESP) com a monografia 
         "A autodeterminação negra: uma análise da filosofia social e política de Achille Mbembe". Integra o Núcleo de Pesquisa em Ética, Filosofia e Teoria Social (NéFiTs) e o Núcleo Negro da UNESP para Pesquisa e 
@@ -158,12 +165,11 @@ const membrosEquipe = [
         Universidade Estadual Paulista (FFC/UNESP) com o projeto "Violência em Frantz Fanon e Achille Mbembe”.
       </>
     ),
-  },
-  {
-    foto: "/images/Matheus_Vilhena.svg",
-    nome: "Matheus de Vilhena Moraes",
-    cargo: "Membro",
-    descricao: (
+    
+    foto13: "/images/Matheus_Vilhena.svg",
+    nome13: "Matheus de Vilhena Moraes",
+    cargo13: "Membro",
+    descricao13: (
       <>
         Mestrando em Filosofia na Faculdade de Filosofia e Ciências (FFC) - Unesp/Marília. Bacharel em Direito pela Faculdade de Ciências Humanas e Sociais (FCHS) - Unesp/Franca. 
         Realizou Iniciação Científica financiada pela FAPESP, orientado pelo professor Dr. Hélio Alexandre da Silva, sob o título: "A erradicação da pobreza extrema através da reforma 
@@ -172,17 +178,13 @@ const membrosEquipe = [
         Dever Negativo e Dever Positivo de Justiça: o estudo teórico dos conceitos da reforma institucional de Thomas Pogge" (Processo Nº 2022/04654-4). 
       </>
     ),
-    foto2: "",
-    nome2: "",
-    cargo2: "",
-    descricao2: (
-      <>
-      </>
-    ),
   },
 ]
 
-function MembrosEquipe({foto, foto2, nome, nome2, cargo, cargo2, descricao, descricao2}){
+function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, 
+  nome, nome2, nome3, nome4, nome5, nome6, nome7, nome8, nome9, nome10, nome11, nome12, nome13,
+  cargo, cargo2, cargo3, cargo4, cargo5, cargo6, cargo7, cargo8, cargo9, cargo10, cargo11, cargo12, cargo13,
+  descricao, descricao2, descricao3, descricao4, descricao5, descricao6, descricao7, descricao8, descricao9, descricao10, descricao11, descricao12, descricao13}){
   return(
     <div class="row justify-content-center">
       <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
@@ -214,6 +216,171 @@ function MembrosEquipe({foto, foto2, nome, nome2, cargo, cargo2, descricao, desc
           </div>
         </div>
       </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto3} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome3}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo3}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao3}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto4} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome4}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo4}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao4}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto5} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome5}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo5}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao5}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto6} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome6}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo6}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao6}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto7} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome7}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo7}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao7}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto8} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome8}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo8}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao8}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto9} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome9}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo9}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao9}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto10} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome10}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo10}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao10}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto11} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome11}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo11}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao11}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto12} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome12}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo12}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao12}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto13} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome13}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo13}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao13}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
@@ -231,12 +398,63 @@ function PrimeiroContainer({titulo, texto}){
   )
 }
 
+function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
+  return(
+    <div class="container rodape">
+      <div class="row">
+        <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
+          <div class="row">
+            <div class="col-12 mb-1">
+              <h4 className={clsx(styles.tituloRodape)}>Redes Sociais</h4>
+            </div>
+            <div class="col-3 gx-2 ps-3">
+              <a href={link1} target="_blank"><img src={icon1} alt="Rede Social 1" /></a>
+            </div>
+
+            <div class="col-3 gx-2">
+              <a href={link2} target="_blank"><img src={icon2} alt="Rede Social 2" /></a>
+            </div>
+
+            <div class="col-3 gx-2">
+              <a href={link3} target="_blank"><img src={icon3} alt="Rede Social 3" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
+          <div class="row">
+            <div class="col-12 mb-1 pt-3">
+              <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
+            </div>
+            <div class="col-12">
+              <p className={clsx(styles.textoRodape)}>exemplo@exemplo.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 d-flex justify-content-sm-center justify-content-lg-end">
+          <div class="row">
+            <div class="col-4 pt-3">
+              <img src={logo1} alt="Logos" />
+            </div>
+          </div>
+        </div>
+
+        <hr className={clsx(styles.hr, "mt-3 mb-3")} />
+
+        <p className={clsx(styles.textoRodape)}>Design por <b className={clsx(styles.textoRodape)}>Júlia dos Santos Silveira</b> © 2024 Current</p>
+
+      </div>
+    </div>
+  )
+}
+
 function Intro({imgBanner, link1, link2, link3, link4, link5, link6}){
     return(
         <div className={clsx(styles.heroBanner)}>
             <div class="row">
                 <div className="col-md-3 col-sm-12">
-                    <img className="intro" src={imgBanner} alt="Logo NéFiTs" />
+                  <a href="/"><img className="intro" src={imgBanner} alt="Logo NéFiTs" /></a>
                 </div>
                 <div className="col-md-9 text-end mt-2">
                     <ul className={clsx(styles.ulLista)}>
@@ -294,6 +512,14 @@ function Equipe() {
           </div>
         </section>
       </main>
+
+      <footer className={clsx(styles.rodape)}>
+        <div>
+          {rodape.map((props, idx) => (
+            <Rodape key={idx} {...props} />
+            ))}
+        </div>
+      </footer>
     </div>
   );
 }

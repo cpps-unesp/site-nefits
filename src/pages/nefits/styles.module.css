@@ -276,3 +276,50 @@ a{
 .card{
     max-width: 540px !important;
 }
+
+.rodape{
+    background-color: #eeeeee;
+    padding: 1rem 3rem .5rem 2rem;
+    width: 100%;
+    bottom: 0;
+    width: 100%;
+}
+
+.abas{
+    min-height: 100vh;
+}
+
+.hr{
+    color: #B1B2B5;
+    margin-top: 1rem;
+}
+
+.textoRodape b{
+    color: #AB090E;
+    font-weight: 900;
+}
+
+.textoRodape{
+    font-family: "Comfortaa", sans-serif;
+    color: #656565;
+    font-size: .85rem;
+    font-weight: 300;
+}
+
+.tituloRodape{
+    font-family: "Comfortaa", sans-serif;
+    color: #AB090E;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.nav-link{
+    font-family: "Comfortaa", sans-serif !important;
+    color: #AB090E !important;
+}
+
+.logoMenu img{
+    width: 3rem;
+}
