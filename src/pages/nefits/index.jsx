@@ -226,8 +226,8 @@ function Intro({ link1, link2, link3, link4, link5, link6 }) {
             </li>
           </ul>
         </div>
-        <div className="col-md-2 col-sm-12">
-          <img className="img-fluid px-5 pt-3" src="/images/logo_unesp.svg" alt="Logo UNESP" />
+        <div className={clsx(styles.logoMenu, "col-md-2 col-sm-12")}>
+          <img  src="/images/logo_unesp.svg" alt="Logo UNESP" />
         </div>
       </div>
     </div>
