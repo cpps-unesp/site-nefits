@@ -181,6 +181,49 @@ const membrosEquipe = [
   },
 ]
 
+const data = [
+  {
+    foto: "/images/Professor_Helio.svg",
+    nome: "Hélio Alexandre da Silva",
+    cargo: "Líder",
+    descricao: (
+      <></> 
+    ),
+  },
+  {
+    foto: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
+    nome: "Ana Júlia Diniz Neves do Lago",
+    cargo: "Membro",
+    descricao: (
+      <>
+        Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp). 
+        Atualmente é pesquisadora bolsista FAPESP sob orientação do Prof. Dr. Hélio Alexandre da Silva, com o tema "Liberdades e opressões: a interseccionalidade como crítica do 
+        neoliberalismo" (Processo nº 2022/08490-6). Realizou Estágio de Pesquisa no Exterior com bolsa BEPE/Fapesp (Bolsa de Estágio de Pesquisa no Exterior) na Université 
+        Paris-Nanterre, sob a supervisão do Prof. Dr. Pierre Sauvêtre com o tema "Subjetividade e opressão: um recorte de gênero no neoliberalismo" (Processo nº 2023/08867-5). 
+      </>
+    ),
+  }
+]
+
+function Cards(props){
+  return(
+    <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={props.foto} alt="Foto do membro da equipe" className="img-fluid rounded-start" />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{props.nome}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{props.cargo}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{props.descricao}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  )
+}
+
 function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, 
   nome, nome2, nome3, nome4, nome5, nome6, nome7, nome8, nome9, nome10, nome11, nome12, nome13,
   cargo, cargo2, cargo3, cargo4, cargo5, cargo6, cargo7, cargo8, cargo9, cargo10, cargo11, cargo12, cargo13,
