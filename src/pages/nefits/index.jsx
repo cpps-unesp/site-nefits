@@ -32,9 +32,8 @@ const containerSobre = [
     titulo1: "Sobre",
     texto1: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
-        velit. Sed malesuada risus sit amet pretium tristique. Mauris eu commodo
-        metus. Donec elementum id turpis at tincidunt.
+        O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de 
+        pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais. 
       </>
     ),
     btn1: "Saiba mais",
@@ -77,12 +76,15 @@ const rodape = [
     icon1: "/images/facebook_rodape2.svg",
     icon2: "/images/instagram_rodape2.svg",
     icon3: "/images/linkedin_rodape2.svg",
+    icon4: "/images/youtube_rodape.svg",
     link1: "#",
     link2: "#",
     link3: "#",
+    link4: "https://www.youtube.com/@nefits8028",
     logo1: "/images/logos_rodape.svg",
   }
 ];
+
 
 function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
   return(
@@ -146,7 +148,7 @@ function PrimeiroContainer({ img1, texto1 }) {
   );
 }
 
-function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
+function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
     <div class="container rodape">
       <div class="row">
@@ -166,6 +168,10 @@ function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
             <div class="col-3 gx-2">
               <a href={link3} target="_blank"><img src={icon3} alt="Rede Social 3" /></a>
             </div>
+
+            <div class="col-3 gx-2">
+              <a href={link4} target="_blank"><img src={icon4} alt="Rede Social 4" /></a>
+            </div>
           </div>
         </div>
 
@@ -175,7 +181,7 @@ function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
               <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
             </div>
             <div class="col-12">
-              <p className={clsx(styles.textoRodape)}>exemplo@exemplo.com</p>
+              <p className={clsx(styles.textoRodape)}>nefits.unesp@gmail.com</p>
             </div>
           </div>
         </div>

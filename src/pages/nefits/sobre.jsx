@@ -20,9 +20,11 @@ const rodape = [
     icon1: "/images/facebook_rodape2.svg",
     icon2: "/images/instagram_rodape2.svg",
     icon3: "/images/linkedin_rodape2.svg",
+    icon4: "/images/youtube_rodape.svg",
     link1: "#",
     link2: "#",
     link3: "#",
+    link4: "https://www.youtube.com/@nefits8028",
     logo1: "/images/logos_rodape.svg",
   }
 ];
@@ -30,18 +32,20 @@ const rodape = [
 const quemSomos = [
   {
     titulo: "Quem somos",
-    img1: "/images/img_1.png",
+    img1: "/images/equipe_nefits.jpg",
     texto1: (
       <>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus velit. Sed malesuada risus sit amet pretium tristique. Sed malesuada risus sit amet pretium tristique. Quisque mollis tortor eget eros egestas blandit. Mauris eu commodo metus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus velit. Sed malesuada risus sit amet pretium tristique. Sed malesuada risus sit amet pretium tristique. Quisque mollis tortor eget eros egestas blandit. Mauris eu commodo metus.</p>
+        O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de 
+        pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais. Nesse sentido, ele se 
+        estrutura a partir da articulação de pesquisas que reúnem disciplinas como filosofia, sociologia, história, antropologia, psicologia, direito, relações internacionais 
+        entre outras. 
       </>
     ),
     texto2: (
       <>
-        <p className="texto">Vivamus ornare ullamcorper nulla, sit amet vulputate justo dapibus ac. Fusce fringilla, sem sed porta finibus, tortor lorem porttitor quam, ut convallis ante lectus eu tortor. Phasellus justo ipsum, fermentum at neque in, lacinia facilisis neque. Phasellus facilisis, nunc at fermentum vulputate, erat orci scelerisque erat, ut mattis lectus augue quis velit. Fusce nulla erat, hendrerit vitae facilisis vel, commodo non nunc. </p>
-        <p className="texto">Donec elementum id turpis at tincidunt. Donec ullamcorper eros sit amet congue dictum. Fusce luctus eros eget ex posuere fringilla. Donec laoreet, dolor sed feugiat feugiat, mi metus malesuada tortor, dignissim bibendum nunc justo sed orci. Maecenas in auctor tortor.</p>
-        <p className="texto">Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lectus varius mattis egestas. Donec congue nisl eget ligula hendrerit feugiat. Morbi sed leo nibh. In ac ultrices turpis.</p>
+        Os temas analisados e os trabalhos produzidos pelo NéFiTs, a partir desse enfoque teórico de matriz abertamente interdisciplinar, lidam com questões que 
+        articulam, ao mesmo tempo, diferentes abordagens de crítica social sem perder de vista o esforço de imaginar novas formas de vida e de combate às injustiças e 
+        desigualdades que marcam a forma atual do capitalismo neoliberal.
       </>
     )
   }
@@ -53,13 +57,20 @@ const objetivos = [
     img1: "/images/img_1.png",
     texto1: (
       <>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus velit. Sed malesuada risus sit amet pretium tristique. Sed malesuada risus sit amet pretium tristique. Quisque mollis tortor eget eros egestas blandit. Mauris eu commodo metus.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus velit. Sed malesuada risus sit amet pretium tristique. Sed malesuada risus sit amet pretium tristique. Quisque mollis tortor eget eros egestas blandit. Mauris eu commodo metus.</p>
+        O objetivo do NéFiTs é incentivar e promover pesquisas que se orientam pela articulação de duas dimensões estruturantes: a primeira busca construir diagnósticos críticos 
+        sobre as diversas dimensões das sociedades capitalistas, isso significa, entre outras coisas, pesquisar e analisar os obstáculos que impedem com que essas sociedades 
+        superem diferentes formas de experiências sociais negativas. Nesse sentido, ganham maior interesse a investigação crítica de temas ligados às diferentes formas de opressão 
+        e injustiça que estão no centro dos debates que informam as sociedades capitalistas neoliberais tais como pobreza, sofrimento social, alienação, desigualdade e os desafios 
+        da emergência climática e da ameaça de colapso ambiental.  
       </>
     ),
     texto2: (
       <>
-        <p className="texto">Vivamus ornare ullamcorper nulla, sit amet vulputate justo dapibus ac. Fusce fringilla, sem sed porta finibus, tortor lorem porttitor quam, ut convallis ante lectus eu tortor. Phasellus justo ipsum, fermentum at neque in, lacinia facilisis neque. Phasellus facilisis, nunc at fermentum vulputate, erat orci scelerisque erat, ut mattis lectus augue quis velit. Fusce nulla erat, hendrerit vitae facilisis vel, commodo non nunc. </p>
+        A segunda dimensão estruturante procura reunir esforços de pesquisa que buscam analisar movimentos sociais, com um 
+        intuito particular de procurar neles elementos que incentivam a imaginação e a criação que possam emergir da mobilização e articulação de diferentes formas de ação no espaço 
+        público. Assim, o espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões 
+        e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção 
+        podem, através das mediações necessárias, servirem de impulso para análise e formulação de políticas públicas.
       </>
     )
   }
@@ -122,8 +133,8 @@ function QuemSomos({titulo, img1, texto1, texto2}){
           </div>
         </div>
       </div>
-      <div class="col-4 text-center gy-2">
-        <img src={img1} alt="Quem somos" className={clsx(styles.sobreImg, "mb-2")} />
+      <div class="col-12 col-xl-4 order-sm-0 text-center gy-2">
+        <img src={img1} alt="Quem somos" className={clsx(styles.sobreImg, "mb-2 img-fluid")} />
       </div>
       
       <div class="col-12 gy-2">
@@ -133,7 +144,7 @@ function QuemSomos({titulo, img1, texto1, texto2}){
   );
 }
 
-function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
+function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
     <div class="container rodape">
       <div class="row">
@@ -153,6 +164,10 @@ function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
             <div class="col-3 gx-2">
               <a href={link3} target="_blank"><img src={icon3} alt="Rede Social 3" /></a>
             </div>
+
+            <div class="col-3 gx-2">
+              <a href={link4} target="_blank"><img src={icon4} alt="Rede Social 4" /></a>
+            </div>
           </div>
         </div>
 
@@ -162,7 +177,7 @@ function Rodape({icon1, icon2, icon3, link1, link2, link3, logo1, logo2}){
               <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
             </div>
             <div class="col-12">
-              <p className={clsx(styles.textoRodape)}>exemplo@exemplo.com</p>
+              <p className={clsx(styles.textoRodape)}>nefits.unesp@gmail.com</p>
             </div>
           </div>
         </div>
