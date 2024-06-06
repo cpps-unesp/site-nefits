@@ -32,7 +32,7 @@ const rodape = [
 const quemSomos = [
   {
     titulo: "Quem somos",
-    img1: "/images/equipe_nefits.jpg",
+    img1: "/images/equipe_nefits_2.svg",
     texto1: (
       <>
         O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de 
@@ -75,22 +75,6 @@ const objetivos = [
     )
   }
 ]
-
-const historico = [
-  {
-    titulo: "Histórico",
-  }
-]
-
-function Historico({titulo, texto}){
-  return(
-    <div className={clsx(styles.containerUm)}>
-      <div class="row p-3">
-        <h1 className={clsx(styles.titulo, "text-start")}>{titulo}</h1>
-      </div>
-    </div>
-  );
-}
 
 function Objetivos({titulo, img1, texto1, texto2}) {
   return (
@@ -257,14 +241,6 @@ function Sobre() {
             <div className={clsx(styles.row, "row")}>
               {objetivos.map((props, idx) => (
                 <Objetivos key={idx} {...props} />
-              ))}
-            </div>
-          </div>
-
-          <div className={clsx(styles.container)}>
-            <div className={clsx(styles.row, "row")}>
-              {historico.map((props, idx) => (
-                <Historico key={idx} {...props} />
               ))}
             </div>
           </div>

@@ -45,7 +45,7 @@ const primeiroContainer = [
 const abas = [
   {
     aba1: "Livros",
-    aba2: "Artigos Científicos",
+    aba2: "Artigos e Capítulos de Livros",
     aba3: "Teses e Dissertações",
     aba4: "TCCs",
     texto1: (
@@ -174,10 +174,7 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
     <div class="col-12 abas">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="livros-tab" data-bs-toggle="tab" data-bs-target="#livros-tab-pane" type="button" role="tab" aria-controls="livros-tab-pane" aria-selected="true">Livros</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="artigos-tab" data-bs-toggle="tab" data-bs-target="#artigos-tab-pane" type="button" role="tab" aria-controls="artigos-tab-pane" aria-selected="false">Artigos Científicos</button>
+          <button class="nav-link active" id="artigos-tab" data-bs-toggle="tab" data-bs-target="#artigos-tab-pane" type="button" role="tab" aria-controls="artigos-tab-pane" aria-selected="true">Artigos e Capítulos de Livros</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="teses-tab" data-bs-toggle="tab" data-bs-target="#teses-tab-pane" type="button" role="tab" aria-controls="teses-tab-pane" aria-selected="false">Teses e Dissertações</button>
@@ -187,25 +184,19 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="livros-tab-pane" role="tabpanel" aria-labelledby="livros-tab" tabindex="0">
+        <div class="tab-pane fade show active" id="artigos-tab-pane" role="tabpanel" aria-labelledby="artigos-tab" tabindex="0">
           <div class="row justify-content-start">
-              <p className={clsx(styles.texto, "mt-2")}>{texto1}</p>
+              <p className={clsx(styles.texto)}>{texto2}</p>
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo1}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo1}</p>
-                    <p className={clsx(styles.cardTexto, "fw-medium")}>{autores1} • {ano1}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores1} • {ano1}</p>
                     <a href={link1} target="_blank" className={clsx(styles.btnUm)}>{btn1}</a>
                   </div>
                 </div>
               </div>
-          </div>
-        </div>
 
-        <div class="tab-pane fade" id="artigos-tab-pane" role="tabpanel" aria-labelledby="artigos-tab" tabindex="0">
-          <div class="row justify-content-start">
-              <p className={clsx(styles.texto)}>{texto2}</p>
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">

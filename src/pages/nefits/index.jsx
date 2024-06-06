@@ -19,9 +19,8 @@ const primeiroContainer = [
     img1: "/images/img_1.png",
     texto1: (
       <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel lacus
-        velit. Sed malesuada risus sit amet pretium tristique. Mauris eu commodo
-        metus. Donec elementum id turpis at tincidunt.
+        O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços 
+        de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através de políticas públicas.
       </>
     ),
   },

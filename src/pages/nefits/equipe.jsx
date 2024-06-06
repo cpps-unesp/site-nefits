@@ -43,13 +43,13 @@ const membrosEquipe = [
   {
     foto: "/images/Professor_Helio.svg",
     nome: "Hélio Alexandre da Silva",
-    cargo: "Líder",
+    cargo: "Pesquisador – Coordenador",
     descricao: (
       <></> 
     ),
     foto2: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
     nome2: "Ana Júlia Diniz Neves do Lago",
-    cargo2: "Membro",
+    cargo2: "Graduanda",
     descricao2: (
       <>
         Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp). 
@@ -61,7 +61,7 @@ const membrosEquipe = [
 
     foto3: "/images/Bianca_Regina_Poltronieri.svg",
     nome3: "Bianca Regina Poltronieri",
-    cargo3: "Membro",
+    cargo3: "Graduanda",
     descricao3: (
       <>
         Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) na UNESP. Foi pesquisadora bolsista do Programa Institucional de Bolsas de Iniciação 
@@ -72,7 +72,7 @@ const membrosEquipe = [
     ),
     foto4: "/images/Eduarda_Barboza.svg",
     nome4: "Eduarda Pereira Pires Barboza",
-    cargo4: "Membro",
+    cargo4: "Graduanda",
     descricao4: (
       <>
         Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) da UNESP. Foi pesquisadora bolsista do Programa Institucional de Bolsas de Iniciação 
@@ -84,7 +84,7 @@ const membrosEquipe = [
 
     foto5: "/images/Gabriel_Henrique_de_Andrade.svg",
     nome5: "Gabriel Henrique de Andrade ",
-    cargo5: "Membro",
+    cargo5: "Graduando",
     descricao5: (
       <>
         Graduando em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais de Franca (FCHS) - UNESP. Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e 
@@ -94,7 +94,7 @@ const membrosEquipe = [
     ),
     foto6: "/images/Gabrielle_Nascimento.svg",
     nome6: "Gabrielle Nascimento",
-    cargo6: "Membro",
+    cargo6: "Graduanda",
     descricao6: (
       <>
         Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) na UNESP. Pesquisadora bolsista pela Vunesp em colaboração com a Secretaria de Educação 
@@ -106,7 +106,7 @@ const membrosEquipe = [
     
     foto7: "/images/Natalie.svg",
     nome7: "Natalie Storti Corbani",
-    cargo7: "Membro",
+    cargo7: "Graduanda",
     descricao7: (
       <>
         Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp).  
@@ -115,7 +115,7 @@ const membrosEquipe = [
     ),
     foto8: "/images/Roan.svg",
     nome8: "Roan Matthaeus Chimello Dias",
-    cargo8: "Membro",
+    cargo8: "Mestrando",
     descricao8: (
       <>
         Possui graduação em Direito pela UNESP (Universidade Estadual Paulista Júlio de Mesquita Filho) - FCHS - Faculdade de Ciências Humanas e Sociais Câmpus de Franca (2021), 
@@ -126,7 +126,7 @@ const membrosEquipe = [
     
     foto9: "/images/Sofia_Grandini.svg",
     nome9: "Sofia Grandini",
-    cargo9: "Membro",
+    cargo9: "Graduanda",
     descricao9: (
       <>
         Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais (FCHS) da UNESP, desenvolve pesquisa no Programa Institucional de Bolsas de Iniciação Científica 
@@ -136,7 +136,7 @@ const membrosEquipe = [
     ),
     foto10: "/images/Icaro_Costa_Ferreira.svg",
     nome10: "Ícaro Costa Ferreira",
-    cargo10: "Membro",
+    cargo10: "Graduando",
     descricao10: (
       <>
         Graduando em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais de Franca (FCHS) - UNESP. Integrante do Núcleo de Pesquisa em Ética, Filosofia e Teoria Social 
@@ -146,7 +146,7 @@ const membrosEquipe = [
     
     foto11: "/images/Julia_de_Andrade.svg",
     nome11: "Julia de Andrade Fernandes Francisco",
-    cargo11: "Membro",
+    cargo11: "Graduanda",
     descricao11: (
       <>
         Graduanda em Relações Internacionais, pela Universidade Estadual Paulista Júlio de Mesquita Filho, Faculdade de Ciências Humanas e Sociais, câmpus de Franca. Integrante do 
@@ -158,7 +158,7 @@ const membrosEquipe = [
     ),
     foto12: "/images/Matheus_Sena.svg",
     nome12: "Matheus Sena Asevedo Campanhã",
-    cargo12: "Membro",
+    cargo12: "Mestrando",
     descricao12: (
       <>
         Bacharel e Licenciado em Ciências Sociais pela Faculdade de Ciências e Letras - campus de Araraquara -, da Universidade Estadual Paulista (FCLAr/UNESP) com a monografia 
@@ -170,7 +170,7 @@ const membrosEquipe = [
     
     foto13: "/images/Matheus_Vilhena.svg",
     nome13: "Matheus de Vilhena Moraes",
-    cargo13: "Membro",
+    cargo13: "Mestrando",
     descricao13: (
       <>
         Mestrando em Filosofia na Faculdade de Filosofia e Ciências (FFC) - Unesp/Marília. Bacharel em Direito pela Faculdade de Ciências Humanas e Sociais (FCHS) - Unesp/Franca. 
@@ -187,7 +187,7 @@ const data = [
   {
     foto: "/images/Professor_Helio.svg",
     nome: "Hélio Alexandre da Silva",
-    cargo: "Líder",
+    cargo: "Pesquisador – Coordenador",
     descricao: (
       <></> 
     ),

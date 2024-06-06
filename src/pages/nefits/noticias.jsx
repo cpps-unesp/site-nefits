@@ -31,7 +31,7 @@ const rodape = [
 
 const primeiroContainer = [
   {
-    titulo: "Equipe",
+    titulo: "Notícias",
     texto: (
       <>
       <p>Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lectus varius mattis egestas. </p>
