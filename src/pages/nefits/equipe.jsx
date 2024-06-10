@@ -45,7 +45,13 @@ const membrosEquipe = [
     nome: "Hélio Alexandre da Silva",
     cargo: "Pesquisador – Coordenador",
     descricao: (
-      <></> 
+      <>
+        Professor Assistente doutor da UNESP/Franca e do Programa de Pós-graduação em Filosofia da UNESP/Marilia. Coordenador do Programa de Pós-graduação em Planejamento e Análise em 
+        Políticas Públicas UNESP/Franca. Possui graduação e mestrado em Filosofia pela Unesp/Marília e Doutorado em Filosofia pela Universidade Estadual de Campinas. Realizou doutorado 
+        sandwich em Filosofia na École des Hautes Études en Sciences Sociales (2011) e Pós-doutorado em Filosofia (2018) na École des Hautes Études en Sciences Sociales. Possui interesse 
+        nos seguintes temas: Filosofia social e política, pobreza, crítica social, modernidade, desigualdade, alienação, sofrimento social, conflitos sociais, movimentos sociais. Atualmente 
+        desenvolve a pesquisa "Crítica da pobreza como objeto da filosofia social" com financiamento Fapesp processo 22/02922-1.
+      </> 
     ),
     foto2: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
     nome2: "Ana Júlia Diniz Neves do Lago",
@@ -180,6 +186,60 @@ const membrosEquipe = [
         Dever Negativo e Dever Positivo de Justiça: o estudo teórico dos conceitos da reforma institucional de Thomas Pogge" (Processo Nº 2022/04654-4). 
       </>
     ),
+
+    foto15: "/images/Beatriz_Furlan.svg",
+    nome15: "Beatriz Furlan de Carvalho",
+    cargo15: "Mestranda",
+    descricao15: (
+      <>
+        Mestranda em Filosofia pela Universidade Estadual Paulista (UNESP-Marília), na qual desenvolve uma pesquisa com o tema de noção de esfera pública em Nancy Fraser, sob orientação do 
+        Prof. Dr. Hélio Alexandre da Silva. Graduada em direito pela Universidade Estadual de Londrina (UEL).
+      </>
+    ),
+
+    foto14: "/images/Bruno_Gomes.svg",
+    nome14: "Bruno Gomes Dos Santos",
+    cargo14: "Mestrando",
+    descricao14: (
+      <>
+        Mestrando em Filosofia pela Universidade Estadual Paulista (UNESP-Marília), na linha "Conhecimento, Ética e Política", sob orientação do Prof. Dr. Hélio Alexandre da Silva. 
+        Membro do Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social (NéFiTs) (UNESP-Franca). Graduado em Psicologia pela Pontifícia Universidade Católica de Campinas. 
+        Desenvolveu projeto de Iniciação Científica sob orientação da Prof Dra Raquel Souza Lobo Guzzo, nas temáticas de Ideologia e Subjetividade. Tem interesse no diálogo entre 
+        Psicanálise e Teoria Crítica, Psicanálise e Filosofia Política,Sofrimento Social, Reconhecimento.
+      </>
+    ),
+
+    foto16: "/images/Isabela-Masciarelli.svg",
+    nome16: "Isabela Masciarelli",
+    cargo16: "Graduanda",
+    descricao16: (
+      <>
+        Graduanda em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais de Franca (FCHS) - UNESP. Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e Teoria 
+        Social (NéFiTs). 
+      </>
+    ),
+
+    foto18: "/images/icon.svg",
+    nome18: "Júlia Almeida",
+    cargo18: "Graduanda",
+    descricao17: (
+      <>
+        Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp). Tem interesse 
+        nas áreas de sociologia, desigualdade social e precarização do trabalho.   Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e Teoria Social (NéFiTs). 
+      </>
+    ),
+
+    foto17: "/images/Luiz_Bispo.svg",
+    nome17: "Luiz Eduardo Alves Bispo",
+    cargo17: "Graduando",
+    descricao17: (
+      <>
+        Graduando em Relações Internacionais pela Faculdade de Ciências Humanas e Sociais (FCHS) na UNESP. Pesquisador bolsista do programa VUNESP (2022-2024) com o tema "Injustiça 
+        Testemunhal: uma forma de olhar a aporofobia" sob orientação do Prof. Dr. Hélio Alexandre da Silva. Faz parte também do Núcleo de Pesquisa em Ética, Filosofia e Teoria Social 
+        (NéFiTs) e do Núcleo de Estudos da Violência, Criminalidade e Forças Armadas na América latina (NEFA), onde desenvolve um projeto sob orientação da Prof. Dra. Marília Carolina 
+        Barbosa de Souza Pimenta na área de Segurança e América Latina em Relações Internacionais.
+      </>
+    ),
   },
 ]
 
@@ -226,10 +286,11 @@ function Cards(props){
   )
 }
 
-function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, 
-  nome, nome2, nome3, nome4, nome5, nome6, nome7, nome8, nome9, nome10, nome11, nome12, nome13,
-  cargo, cargo2, cargo3, cargo4, cargo5, cargo6, cargo7, cargo8, cargo9, cargo10, cargo11, cargo12, cargo13,
-  descricao, descricao2, descricao3, descricao4, descricao5, descricao6, descricao7, descricao8, descricao9, descricao10, descricao11, descricao12, descricao13}){
+function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, foto14, foto15, foto16, foto17, foto18,
+  nome, nome2, nome3, nome4, nome5, nome6, nome7, nome8, nome9, nome10, nome11, nome12, nome13, nome14, nome15, nome16, nome17, nome18,
+  cargo, cargo2, cargo3, cargo4, cargo5, cargo6, cargo7, cargo8, cargo9, cargo10, cargo11, cargo12, cargo13, cargo14, cargo15, cargo16, cargo17, cargo18,
+  descricao, descricao2, descricao3, descricao4, descricao5, descricao6, descricao7, descricao8, descricao9, descricao10, descricao11, descricao12, descricao13,
+  descricao14, descricao15, descricao16, descricao17, descricao18}){
   return(
     <div class="row justify-content-center">
       <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
@@ -422,6 +483,81 @@ function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, f
               <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome13}</h3>
               <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo13}</p>
               <p class={clsx(styles.descricao, "gy-0")}>{descricao13}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5 h-100 d-inline-block">
+            <img src={foto14} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome14}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo14}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao14}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto15} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome15}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo15}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao15}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto16} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome16}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo16}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao16}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto17} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome17}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo17}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao17}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto18} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome18}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo18}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao18}</p>
             </div>
           </div>
         </div>

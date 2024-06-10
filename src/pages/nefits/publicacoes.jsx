@@ -54,122 +54,248 @@ const abas = [
     ),
     titulo1: "Ethical Challenges in the Climate Crisis",
     subtitulo1: "Thomas Pogge's Perspective and the Challenges for Global Cooperation",
-    autores1: "Matheus de Vilhena Moraes",
+    autor1: "Matheus de Vilhena Moraes",
     ano1: "2023",
     btn1: "Visualizar",
     link1: "/arquivos/2023-Matheus_de_Vilhena_Moraes-ETHICAL_CHALLENGES_IN_THE_CLIMATE.pdf",
 
 
-    t1: "Alienação de negras e negros em Achille Mbembe",
+    titulo2: "Alienação de negras e negros em Achille Mbembe",
     texto3: (
       <>
       </>
     ),
-    a1: "Matheus Sena Asevedo Campanhã",
+    autor2: "Matheus Sena Asevedo Campanhã",
     ano2: "2023",
-    btn4: "Visualizar",
-    link4: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-Alienacao_de_negras_e_negros_em_Achille_Mbembe.pdf",
+    btn2: "Visualizar",
+    link2: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-Alienacao_de_negras_e_negros_em_Achille_Mbembe.pdf",
 
-    t2: "Pobreza como Déficit dos Direitos Humanos em Thomas Pogge",
-    a2: "Matheus de Vilhena Moraes",
+    titulo3: "Pobreza como Déficit dos Direitos Humanos em Thomas Pogge",
+    autor3: "Matheus de Vilhena Moraes",
     ano3: "2023",
-    btn5: "Visualizar",
-    link5: "/arquivos/2023-Matheus_de_Vilhena_Moraes-POBREZA_COMO_DEFICIT_DOS_DIREITOS_HUMANOS_EM_THOMAS_POGGE.pdf",
+    btn3: "Visualizar",
+    link3: "/arquivos/2023-Matheus_de_Vilhena_Moraes-POBREZA_COMO_DEFICIT_DOS_DIREITOS_HUMANOS_EM_THOMAS_POGGE.pdf",
     
-    t4: "O Benefício de Prestação Continuada",
-    subtitulo2: "Um estudo sobre a centralidade da pobreza no seu quadro normativo",
-    a4: "Andreia Celia Silva de Oliveira",
+    titulo4: "O Benefício de Prestação Continuada",
+    subtitulo4: "Um estudo sobre a centralidade da pobreza no seu quadro normativo",
+    autor4: "Andreia Celia Silva de Oliveira",
     ano4: "2022",
-    btn7: "Visualizar",
-    link7: "/arquivos/2022-Andreia_Celia-O_BENEFICIO_DE_PRESTACAO_CONTINUADA.docx",
+    btn4: "Visualizar",
+    link4: "/arquivos/2022-Andreia_Celia-O_BENEFICIO_DE_PRESTACAO_CONTINUADA.docx",
 
-    t5: "Teoria Democrática Deliberativa",
-    subtitulo3: "Uma análise dos conselhos municipais de assistência social",
-    a5: "Talismara Guilherme Molina",
+    titulo5: "Teoria Democrática Deliberativa",
+    subtitulo5: "Uma análise dos conselhos municipais de assistência social",
+    autor5: "Talismara Guilherme Molina",
     ano5: "2022",
-    btn8: "Visualizar",
-    link8: "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf",
+    btn5: "Visualizar",
+    link5: "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf",
 
-    t6: "A inteligência de ninguém",
-    subtitulo7: "Igualdade, emancipação e pobreza em O mestre ignorante de Jacques Rancière",
-    a6: "Tark Fraig",
-    ano16: "2024",
-    btn9: "Visualizar",
-    link9: "/arquivos/2024-Tark_Fraig-A_Inteligencia_de_Ninguem.pdf",
+    titulo6: "A inteligência de ninguém",
+    subtitulo6: "Igualdade, emancipação e pobreza em O mestre ignorante de Jacques Rancière",
+    autor6: "Tark Fraig",
+    ano6: "2024",
+    btn6: "Visualizar",
+    link6: "/arquivos/2024-Tark_Fraig-A_Inteligencia_de_Ninguem.pdf",
 
-    tUm: "A Autodeterminação Negra",
-    subtitulo4: "Uma análise da filosofia social e política de Achille Mbembe",
+    titulo7: "A Autodeterminação Negra",
+    subtitulo7: "Uma análise da filosofia social e política de Achille Mbembe",
     texto4: (
       <>
       </>
     ),
-    aUm: "Matheus Sena Asevedo Campanhã",
-    ano6: "2023",
-    btnUm: "Visualizar",
-    linkUm: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-TCC.pdf",
+    autor7: "Matheus Sena Asevedo Campanhã",
+    ano7: "2023",
+    btn7: "Visualizar",
+    link7: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-TCC.pdf",
 
-    tDois: "Malucos de Estrada",
-    subtitulo5: "A (r)existência de uma forma de vida no Brasil",
-    aDois: "Daniela Leonardi Polizio",
-    ano7: "2021",
-    btnDois: "Visualizar",
-    linkDois: "/arquivos/2021-Daniela_Leonardi_Polizio-TCC.pdf",
-
-    tTres: "Necropolítica",
-    subtitulo6: "A Política de Negação do Negro",
-    aTres: "Mayara Cristina Oliveira Pires",
+    titulo8: "Malucos de Estrada",
+    subtitulo8: "A (r)existência de uma forma de vida no Brasil",
+    autor8: "Daniela Leonardi Polizio",
     ano8: "2021",
-    btnTres: "Visualizar",
-    linkTres: "/arquivos/2021-Mayara_Cristina_Oliveira_Pires-TCC.docx",
+    btn8: "Visualizar",
+    link8: "/arquivos/2021-Daniela_Leonardi_Polizio-TCC.pdf",
 
-    tQuatro: "O Cotidiano e o Estranhamento em Lukács",
-    aQuatro: "Roan Matthaeus Chimello Dias",
-    ano9: "2020",
-    btnQuatro: "Visualizar",
-    linkQuatro: "/arquivos/2020-Roan_Matheus_Chimello_Dias-TCC.pdf",
+    titulo9: "Necropolítica",
+    subtitulo9: "A Política de Negação do Negro",
+    autor9: "Mayara Cristina Oliveira Pires",
+    ano9: "2021",
+    btn9: "Visualizar",
+    link9: "/arquivos/2021-Mayara_Cristina_Oliveira_Pires-TCC.docx",
 
-    tCinco: "Relações entre a Ética da Responsabilidade Jonasiana e o Direito",
-    aCinco: "Péricles de Freitas Nogueira",
-    ano10: "2021",
-    btnCinco: "Visualizar",
-    linkCinco: "/arquivos/2021-Pericles_de_Freitas_Nogueira-TCC.pdf",
+    titulo10: "O Cotidiano e o Estranhamento em Lukács",
+    autor10: "Roan Matthaeus Chimello Dias",
+    ano10: "2020",
+    btn10: "Visualizar",
+    link10: "/arquivos/2020-Roan_Matheus_Chimello_Dias-TCC.pdf",
 
-    tSeis: "Os Contornos da Questão Social em Sobre a Revolução de Hannah Arendt",
-    aSeis: "Larissa Barcellos Rodrigues",
-    ano11: "2022",
-    btnSeis: "Visualizar",
-    linkSeis: "/arquivos/2022-Larissa_Barcellos_Rodrigues-TCC.pdf",
+    titulo11: "Relações entre a Ética da Responsabilidade Jonasiana e o Direito",
+    autor11: "Péricles de Freitas Nogueira",
+    ano11: "2021",
+    btn11: "Visualizar",
+    link11: "/arquivos/2021-Pericles_de_Freitas_Nogueira-TCC.pdf",
 
-    tSete: "Vítimas, Ética e Libertação na Obra de Enrique Dussel",
-    aSete: "Beatriz Batista do Nascimento Alkmin",
-    ano12: "2021",
-    btnSete: "Visualizar",
-    linkSete: "/arquivos/2021-Beatriz_Batista_do_Nascimento_Alkmin-TCC.docx",
+    titulo12: "Os Contornos da Questão Social em Sobre a Revolução de Hannah Arendt",
+    autor12: "Larissa Barcellos Rodrigues",
+    ano12: "2022",
+    btn12: "Visualizar",
+    link12: "/arquivos/2022-Larissa_Barcellos_Rodrigues-TCC.pdf",
 
-    tOito: "Desigualdade e Diferença",
-    aOito: "Luana Ambiel Marachini",
-    ano13: "2020",
-    btnOito: "Visualizar",
-    linkOito: "/arquivos/2020-Luana_Ambiel_Marachini-TCC.pdf",
+    titulo13: "Vítimas, Ética e Libertação na Obra de Enrique Dussel",
+    autor13: "Beatriz Batista do Nascimento Alkmin",
+    ano13: "2021",
+    btn13: "Visualizar",
+    link13: "/arquivos/2021-Beatriz_Batista_do_Nascimento_Alkmin-TCC.docx",
 
-    tNove: "Igualdade material como instrumento de inclusão social-debate sobre a constitucionalidade das cotas raciais nas Universidades Públicas",
-    aNove: "Gabriel Ferreira dos Santos",
+    titulo14: "Desigualdade e Diferença",
+    autor14: "Luana Ambiel Marachini",
     ano14: "2020",
-    btnNove: "Visualizar",
-    linkNove: "/arquivos/2020-Gabriel_Ferreira_dos_Santos-TCC.pdf",
+    btn14: "Visualizar",
+    link14: "/arquivos/2020-Luana_Ambiel_Marachini-TCC.pdf",
 
-    tDez: "Entre Freire e Jacotot",
-    aDez: "Tark Fraig",
+    titulo15: "Igualdade material como instrumento de inclusão social-debate sobre a constitucionalidade das cotas raciais nas Universidades Públicas",
+    autor15: "Gabriel Ferreira dos Santos",
     ano15: "2020",
-    btnDez: "Visualizar",
-    linkDez: "/arquivos/2020-Tark_Fraig-TCC.pdf",
+    btn15: "Visualizar",
+    link15: "/arquivos/2020-Gabriel_Ferreira_dos_Santos-TCC.pdf",
+
+    titulo16: "Entre Freire e Jacotot",
+    autor16: "Tark Fraig",
+    ano16: "2020",
+    btn16: "Visualizar",
+    link16: "/arquivos/2020-Tark_Fraig-TCC.pdf",
+
+    titulo17: "Paixões Humanas",
+    autor17: "Hélio Alexandre da Silva",
+    ano17: "2009",
+    btn17: "Visualizar",
+    link17: "/arquivos/2009-Helio_Alexandre_da_Silva-Paixoes humanas-Livro.pdf",
+
+    titulo18: "Ciência e Filosofia",
+    subtitulo18: "Notas acerca da re-significação de conceitos científicos na filosofia hobbesiana",
+    autor18: "Hélio Alexandre da Silva",
+    ano18: "2009",
+    btn18: "Visualizar",
+    link18: "/arquivos/2009-Helio_Alexandre_da_Silva-Ciencia_e_Filosofia.pdf",
+
+    titulo19: "Cinismo e Falência da Crítica (Resenha)",
+    autor19: "Leonardo Jorge da Hora e Hélio Alexandre da Silva",
+    ano19: "20010",
+    btn19: "Visualizar",
+    link19: "/arquivos/2010-Helio_Alexandre_da_Silva-Cinismo_e_Falencia_da_Critica_de_Vladimir_Safatle-Resenha.pdf",
+
+    titulo20: "Estruturas e Fundamentos Sociais",
+    subtitulo20: "A leitura honnethiana de Habermas",
+    autor20: "Hélio Alexandre da Silva e Herbert Barucci Ravagnani",
+    ano20: "2013",
+    btn20: "Visualizar",
+    link20: "/arquivos/2013-Helio_Alexandre_da_Silva-Estruturas_e_fundamentos_sociais_a leitura honnethiana de habermas.pdf",
+
+    titulo21: "Hobbes, Rousseau e a Teoria Crítica",
+    subtitulo21: "Características e consequências de uma apropriação",
+    autor21: "Hélio Alexandre da Silva",
+    ano21: "2013",
+    btn21: "Visualizar",
+    link21: "/arquivos/2013-Helio_Alexandre_da_Silva-Hobbes_Rousseau_e_a_Teoria Critica-caracteristicas_e_consequencias_de_uma_apropriacao-Tese.pdf",
+
+    titulo22: "Patologias da Autoridade",
+    subtitulo22: "Alguns aspectos da noção de “personalidade autoritária” na escola de Frankfurt",
+    autor22: "Stéphane Haber. Trad. Hélio Alexandre da Silva",
+    ano22: "2014",
+    btn22: "Visualizar",
+    link22: "/arquivos/2014-Stephane_Haber-Patologias_da_autoridade-Traducao.pdf",
+
+    titulo23: "Habermas, Honneth e os movimentos sociais",
+    subtitulo23: "Repensando diagnósticos e alternativas",
+    autor23: "Hélio Alexandre da Silva",
+    ano23: "2016",
+    btn23: "Visualizar",
+    link23: "/arquivos/2016-Helio_Alexandre_da_Silva-Habermas_e_Honneth_repensando_diagnosticos_e_alternativas.pdf",
+
+    titulo24: "O Iluminismo Relutante de Jean-Jacques Rousseau",
+    autor24: "Hélio Alexandre da Silva",
+    ano24: "2016",
+    btn24: "Visualizar",
+    link24: "/arquivos/2016-Helio_Alexandre_da_Silva-O_Iluminismo_relutante_de_Jean-Jacques_Rousseau.pdf",
+
+    titulo25: "Como pensar filosoficamente o social?",
+    autor25: "Franck Fischbach. Trad. Hélio Alexandre da Silva",
+    ano25: "2017",
+    btn25: "Visualizar",
+    link25: "/arquivos/2017-Helio_Alexandre_da_Silva-Como_pensar_filosoficamente_o_social-Traducao.pdf",
+
+    titulo26: "Sob os Olhos da Crítica",
+    autor26: "Hélio Alexandre da Silva",
+    ano26: "2017",
+    btn26: "Visualizar",
+    link26: "/arquivos/2017-Helio_Alexandre_da_Silva-Sob_os_olhos_da_critica-Livro.pdf",
+
+    titulo27: "Thomas Hobbes: Política, medo e conflitos sociais",
+    autor27: "Hélio Alexandre da Silva",
+    ano27: "2017",
+    btn27: "Visualizar",
+    link27: "/arquivos/2017-Helio_Alexandre_da_Silva-Thomas Hobbes_ política, medo e conflitos sociais.pdf",
+
+    titulo28: "TA experiência da pobreza em “Vidas Secas” e no “Auto da Compadecida”",
+    autor28: "Heurisgleides Sousa Teixeira e Hélio Alexandre da Silva",
+    ano28: "2018",
+    btn28: "Visualizar",
+    link28: "/arquivos/2018-Helio_Alexandre_da_Silva-A experiencia da pobreza em Vidas secas e no Auto da compadecida.pdf",
+
+    titulo29: "Alienação como dimensão constitutiva da pobreza",
+    autor29: "Hélio Alexandre da Silva",
+    ano29: "2018",
+    btn29: "Visualizar",
+    link29: "/arquivos/2018-Helio_Alexandre_da_Silva-Alienacao como dimensao constitutiva da pobreza.pdf",
+
+    titulo30: "Por que razão pretendeis ser pagos às nossas expensas? Pobreza e desigualdade no Segundo discurso de Rousseau",
+    autor30: "Hélio Alexandre da Silva",
+    ano30: "2019",
+    btn30: "Visualizar",
+    link30: "/arquivos/2019-Helio_Alexandre_da_Silva-Por que razao pretendeis ser pagos as nossas expensas_ Pobreza e desigualdade no Segundo discurso de Rousseau_.pdf",
+
+    titulo31: "Ainda é mais fácil pensar no fim do mundo que no fim do capitalismo?",
+    autor31: "Hélio Alexandre da Silva",
+    ano31: "2020",
+    btn31: "Visualizar",
+    link31: "/arquivos/2020-Helio_Alexandre_da_Silva-Ainda e mais facil pensar no fim do mundo que no fim do capitalismo_ Piketty capital e ideologia.pdf",
+  
+    titulo32: "A Critique of Poverty",
+    subtitulo32: "Exploring the Underground of Social Philosophy",
+    autor32: "Hélio Alexandre da Silva",
+    ano32: "2021",
+    btn32: "Visualizar",
+    link32: "/arquivos/2021-Helio_Alexandre_da_Silva-A Critique of Poverty- Exploring the Underground of Social Philosophy.pdf",
+
+    titulo33: "Quem são os mais pobres? Explorando tensões sociais e horizontes políticos",
+    autor33: "Hélio Alexandre da Silva",
+    ano33: "2021",
+    btn33: "Visualizar",
+    link33: "/arquivos/2021-Helio_Alexandre_da_Silva-Quem sao os mais pobres_ Explorando tensoes sociais e horizontes politicos.pdf",
+
+    titulo34: "Sofrimento social como dimensão da pobreza",
+    autor34: "Hélio Alexandre da Silva",
+    ano34: "2022",
+    btn34: "Visualizar",
+    link34: "/arquivos/2022-Helio_Alexandre_da_Silva-Sofrimento social como dimensao da pobreza.pdf",
+
+    titulo35: "Sonhos e Resistências",
+    subtitulo35: "MTST e os testemunhos da luta popular urbana",
+    autor35: "Hélio Alexandre da Silva",
+    ano35: "2023",
+    btn35: "Visualizar",
+    link35: "/arquivos/2023-Helio_Alexandre_da_Silva-Sonhos e resistencias- MTST e os testemunhos da luta popular urbana.pdf",
   }
 ]
 
-function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, t1, texto3, a1, ano2, btn4, link4, t2, a2, ano3, btn5, link5, t4, ano4, a4, subtitulo2, btn7, link7, t5, 
-  subtitulo3, ano5, a5, btn8, link8, textoUm, tUm, subtitulo4, aUm, ano6, btnUm, linkUm, tDois, subtitulo5, aDois, ano7, btnDois, linkDois, tTres, subtitulo6, aTres, ano8, btnTres, 
-  linkTres, tQuatro, aQuatro, ano9, btnQuatro, linkQuatro, tCinco, aCinco, ano10, btnCinco, linkCinco, tSeis, aSeis, ano11, btnSeis, linkSeis, tSete, aSete, ano12, btnSete, linkSete, 
-  tOito, aOito, ano13, btnOito, linkOito, tNove, aNove, ano14, btnNove, linkNove, tDez, aDez, ano15, btnDez, linkDez, t6, subtitulo7, ano16, a6, btn9, link9}){
+function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, autor2, ano2, btn2, link2, titulo3, autor3, ano3, btn3, link3, titulo4, ano4, autor4, subtitulo4, btn4, link4, 
+  titulo5, subtitulo5, ano5, autor5, btn5, link5, titulo6, subtitulo6, ano6, autor6, btn6, link6, textoUm, titulo7, subtitulo7, autor7, ano7, btn7, link7, titulo8, subtitulo8, autor8, 
+  ano8, btn8, link8, titulo9, subtitulo9, autor9, ano9, btn9, link9, titulo10, autor10, ano10, btn10, link10, titulo11, autor11, ano11, btn11, link11, titulo12, autor12, ano12, btn12, link12, 
+  titulo13, autor13, ano13, btn13, link13, titulo14, autor14, ano14, btn14, link14, titulo15, autor15, ano15, btn15, link15, titulo16, autor16, ano16, btn16, link16, 
+  titulo17, autor17, ano17, btn17, link17, titulo18, subtitulo18, autor18, ano18, btn18, link18, titulo19, autor19, ano19, btn19, link19, titulo20, subtitulo20, autor20, ano20, btn20, link20,
+  titulo21, subtitulo21, autor21, ano21, btn21, link21, titulo22, subtitulo22, autor22, ano22, btn22, link22, titulo23, subtitulo23, autor23, ano23, btn23, link23, titulo24, autor24, ano24, btn24, link24, titulo25, autor25, ano25, btn25, link25,
+  titulo26, autor26, ano26, btn26, link26, titulo27, autor27, ano27, btn27, link27, titulo28, autor28, ano28, btn28, link28, titulo29, autor29, ano29, btn29, link29, titulo30, autor30, ano30, btn30, link30,
+  titulo31, autor31, ano31, btn31, link31, titulo32, subtitulo32, autor32, ano32, btn32, link32, titulo33, autor33, ano33, btn33, link33, titulo34, autor34, ano34, btn34, link34, titulo35, subtitulo35, autor35, ano35, btn35, link35
+  }){
   return(
     <div class="col-12 abas">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -185,13 +311,13 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="artigos-tab-pane" role="tabpanel" aria-labelledby="artigos-tab" tabindex="0">
-          <div class="row justify-content-start">
+          <div class="row justify-content-center">
               <p className={clsx(styles.texto)}>{texto2}</p>
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo1}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autores1} • {ano1}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor1} • {ano1}</p>
                     <a href={link1} target="_blank" className={clsx(styles.btnUm)}>{btn1}</a>
                   </div>
                 </div>
@@ -200,8 +326,220 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t1}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a1} • {ano2}</p>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo2}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor2} • {ano2}</p>
+                    <a href={link2} target="_blank" className={clsx(styles.btnUm)}>{btn2}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo3}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor3} • {ano3}</p>
+                    <a href={link3} target="_blank" className={clsx(styles.btnUm)}>{btn3}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo17}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor17} • {ano17}</p>
+                    <a href={link17} target="_blank" className={clsx(styles.btnUm)}>{btn17}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo18}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo18}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor18} • {ano18}</p>
+                    <a href={link18} target="_blank" className={clsx(styles.btnUm)}>{btn18}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo19}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor19} • {ano19}</p>
+                    <a href={link19} target="_blank" className={clsx(styles.btnUm)}>{btn19}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo20}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo20}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor20} • {ano20}</p>
+                    <a href={link20} target="_blank" className={clsx(styles.btnUm)}>{btn20}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo22}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo22}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor22} • {ano22}</p>
+                    <a href={link22} target="_blank" className={clsx(styles.btnUm)}>{btn22}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo23}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo23}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor23} • {ano23}</p>
+                    <a href={link23} target="_blank" className={clsx(styles.btnUm)}>{btn23}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo24}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor24} • {ano24}</p>
+                    <a href={link24} target="_blank" className={clsx(styles.btnUm)}>{btn24}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo25}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor25} • {ano25}</p>
+                    <a href={link25} target="_blank" className={clsx(styles.btnUm)}>{btn25}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo26}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor26} • {ano26}</p>
+                    <a href={link26} target="_blank" className={clsx(styles.btnUm)}>{btn26}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo27}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor27} • {ano27}</p>
+                    <a href={link27} target="_blank" className={clsx(styles.btnUm)}>{btn27}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo28}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor28} • {ano28}</p>
+                    <a href={link28} target="_blank" className={clsx(styles.btnUm)}>{btn28}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo29}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor29} • {ano29}</p>
+                    <a href={link29} target="_blank" className={clsx(styles.btnUm)}>{btn29}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo30}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor30} • {ano30}</p>
+                    <a href={link30} target="_blank" className={clsx(styles.btnUm)}>{btn30}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo31}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor31} • {ano31}</p>
+                    <a href={link31} target="_blank" className={clsx(styles.btnUm)}>{btn31}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo32}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo32}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor32} • {ano32}</p>
+                    <a href={link32} target="_blank" className={clsx(styles.btnUm)}>{btn32}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo33}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor33} • {ano33}</p>
+                    <a href={link33} target="_blank" className={clsx(styles.btnUm)}>{btn33}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo34}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor34} • {ano34}</p>
+                    <a href={link34} target="_blank" className={clsx(styles.btnUm)}>{btn34}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo35}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo35}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor35} • {ano35}</p>
+                    <a href={link35} target="_blank" className={clsx(styles.btnUm)}>{btn35}</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="teses-tab-pane" role="tabpanel" aria-labelledby="teses-tab" tabindex="0">
+          <div class="row justify-content-center">
+              <p className={clsx(styles.texto)}>{texto3}</p>
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo4}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo4}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor4} • {ano4}</p>
                     <a href={link4} target="_blank" className={clsx(styles.btnUm)}>{btn4}</a>
                   </div>
                 </div>
@@ -210,25 +548,21 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t2}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a2} • {ano3}</p>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo5}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo5}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor5} • {ano5}</p>
                     <a href={link5} target="_blank" className={clsx(styles.btnUm)}>{btn5}</a>
                   </div>
                 </div>
               </div>
-          </div>
-        </div>
 
-        <div class="tab-pane fade" id="teses-tab-pane" role="tabpanel" aria-labelledby="teses-tab" tabindex="0">
-          <div class="row justify-content-start">
-              <p className={clsx(styles.texto)}>{texto3}</p>
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t4}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo2}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a4} • {ano4}</p>
-                    <a href={link7} target="_blank" className={clsx(styles.btnUm)}>{btn7}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo6}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo6}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor6} • {ano6}</p>
+                    <a href={link6} target="_blank" className={clsx(styles.btnUm)}>{btn6}</a>
                   </div>
                 </div>
               </div>
@@ -236,21 +570,10 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t5}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo3}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a5} • {ano5}</p>
-                    <a href={link8} target="_blank" className={clsx(styles.btnUm)}>{btn8}</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
-                <div class="row">
-                  <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{t6}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo7}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{a6} • {ano16}</p>
-                    <a href={link9} target="_blank" className={clsx(styles.btnUm)}>{btn9}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo21}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo21}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor21} • {ano21}</p>
+                    <a href={link21} target="_blank" className={clsx(styles.btnUm)}>{btn21}</a>
                   </div>
                 </div>
               </div>
@@ -263,10 +586,10 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tUm}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo4}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aUm} • {ano6}</p>
-                    <a href={linkUm} target="_blank" className={clsx(styles.btnUm)}>{btnUm}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo7}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo7}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor7} • {ano7}</p>
+                    <a href={link7} target="_blank" className={clsx(styles.btnUm)}>{btn7}</a>
                   </div>
                 </div>
               </div>
@@ -274,10 +597,10 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tDois}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo5}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDois} • {ano7}</p>
-                    <a href={linkDois} target="_blank" className={clsx(styles.btnUm)}>{btnDois}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo8}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo8}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor8} • {ano8}</p>
+                    <a href={link8} target="_blank" className={clsx(styles.btnUm)}>{btn8}</a>
                   </div>
                 </div>
               </div>
@@ -285,10 +608,10 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tTres}</h3>
-                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo6}</p>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aTres} • {ano8}</p>
-                    <a href={linkTres} target="_blank" className={clsx(styles.btnUm)}>{btnTres}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo9}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo9}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor9} • {ano9}</p>
+                    <a href={link9} target="_blank" className={clsx(styles.btnUm)}>{btn9}</a>
                   </div>
                 </div>
               </div>
@@ -296,9 +619,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tQuatro}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aQuatro} • {ano9}</p>
-                    <a href={linkQuatro} target="_blank" className={clsx(styles.btnUm)}>{btnQuatro}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo10}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor10} • {ano10}</p>
+                    <a href={link10} target="_blank" className={clsx(styles.btnUm)}>{btn10}</a>
                   </div>
                 </div>
               </div>
@@ -306,9 +629,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tCinco}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aCinco} • {ano10}</p>
-                    <a href={linkCinco} target="_blank" className={clsx(styles.btnUm)}>{btnCinco}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo11}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor11} • {ano11}</p>
+                    <a href={link11} target="_blank" className={clsx(styles.btnUm)}>{btn11}</a>
                   </div>
                 </div>
               </div>
@@ -316,9 +639,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tSeis}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aSeis} • {ano11}</p>
-                    <a href={linkSeis} target="_blank" className={clsx(styles.btnUm)}>{btnSeis}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo12}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor12} • {ano12}</p>
+                    <a href={link12} target="_blank" className={clsx(styles.btnUm)}>{btn12}</a>
                   </div>
                 </div>
               </div>
@@ -326,9 +649,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tSete}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aSete} • {ano12}</p>
-                    <a href={linkSete} target="_blank" className={clsx(styles.btnUm)}>{btnSete}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo13}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor13} • {ano13}</p>
+                    <a href={link13} target="_blank" className={clsx(styles.btnUm)}>{btn13}</a>
                   </div>
                 </div>
               </div>
@@ -336,9 +659,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tOito}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aOito} • {ano13}</p>
-                    <a href={linkOito} target="_blank" className={clsx(styles.btnUm)}>{btnOito}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo14}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor14} • {ano14}</p>
+                    <a href={link14} target="_blank" className={clsx(styles.btnUm)}>{btn14}</a>
                   </div>
                 </div>
               </div>
@@ -346,9 +669,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tNove}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aNove} • {ano14}</p>
-                    <a href={linkNove} target="_blank" className={clsx(styles.btnUm)}>{btnNove}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo15}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor15} • {ano15}</p>
+                    <a href={link15} target="_blank" className={clsx(styles.btnUm)}>{btn15}</a>
                   </div>
                 </div>
               </div>
@@ -356,9 +679,9 @@ function Abas({texto1, titulo1, subtitulo1, autores1,ano1, btn1, link1, texto2, 
               <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-3 mx-3")}>
                 <div class="row">
                   <div class="col-12">
-                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{tDez}</h3>
-                    <p className={clsx(styles.cardTexto, "fw-bold")}>{aDez} • {ano15}</p>
-                    <a href={linkDez} target="_blank" className={clsx(styles.btnUm)}>{btnDez}</a>
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo16}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor16} • {ano16}</p>
+                    <a href={link16} target="_blank" className={clsx(styles.btnUm)}>{btn16}</a>
                   </div>
                 </div>
               </div>
