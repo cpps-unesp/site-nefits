@@ -16,7 +16,7 @@ const intro = [
 
 const primeiroContainer = [
   {
-    img1: "/images/img_1.png",
+    img1: "/images/1.jpeg",
     texto1: (
       <>
         O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços 
@@ -37,7 +37,7 @@ const containerSobre = [
     ),
     btn1: "Saiba mais",
     link: "/sobre",
-    img1: "/images/img_3.svg",
+    img1: "/images/sobre1.png",
   },
 ];
 
@@ -45,7 +45,7 @@ const containerCards = [
   {
     titulo: "Notícias",
     link: "/noticias",
-    imgFoto: "/images/img_2.svg",
+    imgFoto: "/images/noticias1.svg",
     texto: (
       <>
         Sed malesuada risus sit amet pretium tristique. Mauris eu commodo metus.
@@ -53,7 +53,7 @@ const containerCards = [
     ),
     titulo2: "Projetos",
     linkDois1: "/projetos",
-    imgFoto2: "/images/img_2.svg",
+    imgFoto2: "/images/projetos1.svg",
     texto2: (
       <>
         Conheça os projetos em andamento e concluídos desenvolvidos pela equipe NéFiTs. 
@@ -61,7 +61,7 @@ const containerCards = [
     ),
     titulo3: "Publicações",
     linkTres1: "/publicacoes",
-    imgFoto3: "/images/img_2.svg",
+    imgFoto3: "/images/publicacoes1.svg",
     texto3: (
       <>
         Acesse as publicações desenvolvidas e publicadas pela equipe NéFiTs.
@@ -87,10 +87,10 @@ const rodape = [
 
 function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
   return(
-    <div class="row justify-content-center text-center mb-3">
+    <div class="row justify-content-center text-center">
       <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards)}></img>
+            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")}></img>
             <h2><a href={link} className={clsx(styles.titulo)}>{titulo}</a></h2>
             <p className={clsx(styles.texto)}>{texto}</p>
             <a href={link} className={clsx(styles.btnUm)}>Saiba mais</a>
@@ -99,7 +99,7 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
 
       <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards)} />
+            <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
             <h2><a href={linkDois1} className={clsx(styles.titulo)}>{titulo2}</a></h2>
             <p className={clsx(styles.texto)}>{texto2}</p>
             <a href={linkDois1} className={clsx(styles.btnUm)}>Saiba mais</a>
@@ -108,7 +108,7 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
 
       <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto3} alt="Logo" className={clsx(styles.SobreCards)} />
+            <img src={imgFoto3} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
             <h2><a href={linkTres1} className={clsx(styles.titulo)}>{titulo3}</a></h2>
             <p className={clsx(styles.texto)}>{texto3}</p>
             <a href={linkTres1} className={clsx(styles.btnUm)}>Saiba mais</a>
@@ -119,15 +119,15 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
 }
 function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
   return (
-    <div className={clsx(styles.containerUm, "text-center")}>
+    <div className={clsx(styles.containerUm, "text-center rounded p-3")}>
       <div class="row mb-3 align-items-center p-3">
-        <div class="col-md-8 col-sm-12 text-start">
+        <div class="col-md-6 col-sm-12 text-start">
             <h1 className={clsx(styles.titulo)}>{titulo1}</h1>
             <p className={clsx(styles.texto)}>{texto1}</p>
             <a href={link} className={clsx(styles.btnUm)}>{btn1}</a>
         </div>
-        <div class="col-md-4 col-sm-12 text-end">
-          <img className={clsx(styles.sobreImg)} src={img1} alt="Imagem 1" />
+        <div class="col-md-6 col-sm-12 text-center">
+          <img className="img-fluid" src={img1} alt="Imagem 1" />
         </div>
       </div>
     </div>
@@ -136,11 +136,11 @@ function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
 
 function PrimeiroContainer({ img1, texto1 }) {
   return (
-    <div class="row mt-3 mb-3">
-      <div class="col-md-6 col-sm-12 text-end pe-5">
-        <img src={img1} className={clsx(styles.imgHome)} alt="Imagem 1" />
+    <div class="row mt-3 mb-4">
+      <div class="col-md-6 col-sm-12 text-center">
+        <img src={img1} className={clsx(styles.imgHome, "img-fluid")} alt="Imagem 1" />
       </div>
-      <div class="col-md-6 col-sm-12 text-start pe-5 mt-3">
+      <div class="col-md-6 col-sm-12 text-start d-flex align-items-center text-wrap">
         <p className={clsx(styles.texto)}>{texto1}</p>
       </div>
     </div>

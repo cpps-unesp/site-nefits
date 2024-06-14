@@ -371,7 +371,7 @@ function Projetos() {
           ))}
         </div>
       </header>
-      <main className={clsx(styles.main, "p-5")}>
+      <main className={clsx(styles.main, "p-5 h-100")}>
         <section className={styles.content}>
           <div className={clsx(styles.container)}>
             <div className={clsx(styles.row, "row")}>

@@ -113,7 +113,7 @@
 .texto{
     font-family: "Comfortaa", sans-serif;
     color: #656565;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .containerUm{
-    background-color: #fafafa;
+    background-color: #F1E6E6;
 }
 
 .titulo{
@@ -165,7 +165,6 @@
 }
 
 .containerCards{
-    margin-bottom: 5rem;
     width: 80%;
 }
 
@@ -225,7 +224,7 @@ a{
 }
 
 .imgHome{
-    width: 18rem;
+    max-width: 25rem !important;
 }
 
 .cardProjetos{
@@ -278,6 +277,7 @@ a{
 }
 
 .rodape{
+    height: fit-content;
     background-color: #eeeeee;
     padding: 1rem 3rem .5rem 2rem;
     width: 100%;
