@@ -13,7 +13,8 @@ const intro = [
         link3: "/equipe",
         link4: "/noticias",
         link5: "/projetos",
-        link6: "/publicacoes"
+        link6: "/publicacoes",
+        link7: "/videos"
     }
 ]
 
@@ -760,26 +761,45 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
   )
 }
 
-function Intro({imgBanner, link1, link2, link3, link4, link5, link6}){
-    return(
-        <div className={clsx(styles.heroBanner)}>
-            <div class="row">
-                <div className="col-md-3 col-sm-12">
-                  <a href="/"><img className="intro" src={imgBanner} alt="Logo NéFiTs" /></a>
-                </div>
-                <div className="col-md-9 text-end mt-2">
-                    <ul className={clsx(styles.ulLista)}>
-                        <li className={clsx(styles.liLista)}><a href={link1}>Home</a></li>
-                        <li className={clsx(styles.liLista)}><a href={link2}>Sobre</a></li>
-                        <li className={clsx(styles.liLista)}><a href={link3}>Equipe</a></li>
-                        <li className={clsx(styles.liLista)}><a href={link4}>Notícias</a></li>
-                        <li className={clsx(styles.liLista)}><a href={link5}>Projetos</a></li>
-                        <li className={clsx(styles.liListaSelecionado)}><a href={link6}>Publicações</a></li>
-                    </ul>
-                </div>
-            </div>
+function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
+  return (
+    <div className={clsx(styles.heroBanner)}>
+      <div class="row">
+        <div className="col-md-3 col-sm-12">
+          <img className="intro" src="/images/logo-banner.png" alt="Logo NéFiTs" />
         </div>
-    )
+        <div className="col-md-7 text-end mt-2">
+          <ul className={clsx(styles.ulLista)}>
+            <li className={clsx(styles.liLista)}>
+              <a href={link1}>Home</a>
+            </li>
+            <li className={clsx(styles.liLista)}>
+              <a href={link2}>Sobre</a>
+            </li>
+            <li className={clsx(styles.liLista)}>
+              <a href={link3}>Equipe</a>
+            </li>
+            <li className={clsx(styles.liLista)}>
+              <a href={link4}>Notícias</a>
+            </li>
+            <li className={clsx(styles.liLista)}>
+              <a href={link5}>Projetos</a>
+            </li>
+            <li className={clsx(styles.liListaSelecionado)}>
+              <a href={link6}>Publicações</a>
+            </li>
+
+            <li className={clsx(styles.liLista)}>
+              <a href={link7}>Vídeos</a>
+            </li>
+          </ul>
+        </div>
+        <div className={clsx(styles.logoMenu, "col-md-2 col-sm-12")}>
+          <img  src="/images/logo_unesp.svg" alt="Logo UNESP" />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 function Publicacoes() {

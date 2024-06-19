@@ -1,74 +1,21 @@
 import React from "react";
 import clsx from "clsx";
-// import Layout from "@theme/Layout";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+/* import Layout from "@theme/Layout"; */
 import styles from "./styles.module.css";
 
 const intro = [
-  {
-    link1: "/",
-    link2: "/sobre",
-    link3: "/equipe",
-    link4: "/noticias",
-    link5: "/projetos",
-    link6: "/publicacoes",
-    link7: "/videos",
-  },
-];
-
-const primeiroContainer = [
-  {
-    img1: "/images/1.jpeg",
-    texto1: (
-      <>
-        O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços 
-        de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através de políticas públicas.
-      </>
-    ),
-  },
-];
-
-const containerSobre = [
-  {
-    titulo1: "Sobre",
-    texto1: (
-      <>
-        O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de 
-        pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais. 
-      </>
-    ),
-    btn1: "Saiba mais",
-    link: "/sobre",
-    img1: "/images/sobre1.png",
-  },
-];
-
-const containerCards = [
-  {
-    titulo: "Notícias",
-    link: "/noticias",
-    imgFoto: "/images/noticias1.svg",
-    texto: (
-      <>
-        Sed malesuada risus sit amet pretium tristique. Mauris eu commodo metus.
-      </>
-    ),
-    titulo2: "Projetos",
-    linkDois1: "/projetos",
-    imgFoto2: "/images/projetos1.svg",
-    texto2: (
-      <>
-        Conheça os projetos em andamento e concluídos desenvolvidos pela equipe NéFiTs. 
-      </>
-    ),
-    titulo3: "Publicações",
-    linkTres1: "/publicacoes",
-    imgFoto3: "/images/publicacoes1.svg",
-    texto3: (
-      <>
-        Acesse as publicações desenvolvidas e publicadas pela equipe NéFiTs.
-      </>
-    )
-  },
+    {
+        imgBanner: "/images/logo-banner.png",
+        link1: "/",
+        link2: "/sobre",
+        link3: "/equipe",
+        link4: "/noticias",
+        link5: "/projetos",
+        link6: "/publicacoes",
+        link7: "/videos"
+    }
 ]
 
 const rodape = [
@@ -85,67 +32,76 @@ const rodape = [
   }
 ];
 
+const primeiroContainer = [
+  {
+    titulo: "Vídeos",
+    texto: (
+      <>
+        Confira os vídeos postados em nosso <b className={clsx(styles.textoLink)}><a href="https://www.youtube.com/@nefits8028/videos" target="_blank">canal do Youtube</a></b>.
+      </>
+    )
+  }
+]
 
-function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
+const listaVideos = [
+  {
+    video1: "https://www.youtube.com/embed/8jm3WiNnTJg?si=y30xatmohRaJyu7n",
+    video2: "https://www.youtube.com/embed/UDwJN2f_SyU?si=cThK2Og541iyl6TP",
+    video3: "https://www.youtube.com/embed/0IxnnS-fJWw?si=2sffqYb5ScFUckww",
+    video4: "https://www.youtube.com/embed/E_iFbGYRxt0?si=RK9P_N0SmVTvGD2w",
+    video5: "https://www.youtube.com/embed/1HeMXPti7A4?si=JnhZYTpfquDgklSC",
+    video6: "https://www.youtube.com/embed/PCQ078PnUoI?si=umhMP-EKSL4vpKnt"
+  }
+]
+
+function ListaVideos({video1, video2, video3, video4, video5, video6}){
   return(
-    <div class="row justify-content-center text-center">
-      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
-        <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")}></img>
-            <h2><a href={link} className={clsx(styles.titulo)}>{titulo}</a></h2>
-            <p className={clsx(styles.texto)}>{texto}</p>
-            <a href={link} className={clsx(styles.btnUm)}>Saiba mais</a>
+    <div class="col-12">
+      <div class="row text-center">
+        <div class="col-12 col-xl-4 gx-2 gy-3">
+          <iframe width="420" height="315" className="object-fit-cover border rounded" src={video1} allowfullscreen></iframe>
         </div>
-      </div>
 
-      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
-        <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
-            <h2><a href={linkDois1} className={clsx(styles.titulo)}>{titulo2}</a></h2>
-            <p className={clsx(styles.texto)}>{texto2}</p>
-            <a href={linkDois1} className={clsx(styles.btnUm)}>Saiba mais</a>
+        <div class="col-12 col-xl-4 gx-3 gy-3">
+          <iframe width="420" height="315" className="object-fit-cover border rounded" src={video2} allowfullscreen></iframe>
         </div>
-      </div>
 
-      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
-        <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto3} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
-            <h2><a href={linkTres1} className={clsx(styles.titulo)}>{titulo3}</a></h2>
-            <p className={clsx(styles.texto)}>{texto3}</p>
-            <a href={linkTres1} className={clsx(styles.btnUm)}>Saiba mais</a>
+        <div class="col-12 col-xl-4 gx-3 gy-3">
+          <iframe width="420" height="315" className="object-fit-cover border rounded" src={video3} allowfullscreen></iframe>
+        </div>
+
+        <div class="col-12 col-xl-4 gx-3 gy-3">
+          <iframe width="420" height="315" className="object-fit-cover border rounded" src={video4} allowfullscreen></iframe>
+        </div>
+
+        <div class="col-12 col-xl-4 gx-3 gy-3">
+          <iframe width="420" height="315" className="object-fit-cover border rounded" src={video5} allowfullscreen></iframe>
+        </div>
+
+        <div class="col-12 col-xl-4 gx-3 gy-3">
+          <iframe width="420" height="315" className="object-fit-cover border rounded" src={video6} allowfullscreen></iframe>
         </div>
       </div>
     </div>
-  ) 
-}
-function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
-  return (
-    <div className={clsx(styles.containerUm, "text-center rounded p-3")}>
-      <div class="row mb-3 align-items-center p-3">
-        <div class="col-md-6 col-sm-12 text-start">
-            <h1 className={clsx(styles.titulo)}>{titulo1}</h1>
-            <p className={clsx(styles.texto)}>{texto1}</p>
-            <a href={link} className={clsx(styles.btnUm)}>{btn1}</a>
-        </div>
-        <div class="col-md-6 col-sm-12 text-center">
-          <img className="img-fluid" src={img1} alt="Imagem 1" />
-        </div>
-      </div>
-    </div>
-  );
+  )
 }
 
-function PrimeiroContainer({ img1, texto1 }) {
-  return (
-    <div class="row mt-3 mb-4">
-      <div class="col-md-6 col-sm-12 text-center">
-        <img src={img1} className={clsx(styles.imgHome, "img-fluid")} alt="Imagem 1" />
-      </div>
-      <div class="col-md-6 col-sm-12 text-start d-flex align-items-center text-wrap">
-        <p className={clsx(styles.texto)}>{texto1}</p>
+function PrimeiroContainer({titulo, texto}){
+  return(
+    <div class="col-12">
+      <div class="row">
+        <div class="col-12">
+          <h1 className={clsx(styles.titulo)}>{titulo}</h1>
+          <p className={clsx(styles.texto)}>{texto}</p>
+        </div>
+
+        {/*<div class="row">
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+          <div class="elfsight-app-8fc49845-33db-425c-a6f6-319414138f09" data-elfsight-app-lazy></div>
+        </div> */}
       </div>
     </div>
-  );
+  )
 }
 
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
@@ -212,7 +168,7 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
         </div>
         <div className="col-md-7 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
-            <li className={clsx(styles.liListaSelecionado)}>
+            <li className={clsx(styles.liLista)}>
               <a href={link1}>Home</a>
             </li>
             <li className={clsx(styles.liLista)}>
@@ -231,7 +187,7 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
               <a href={link6}>Publicações</a>
             </li>
 
-            <li className={clsx(styles.liLista)}>
+            <li className={clsx(styles.liListaSelecionado)}>
               <a href={link7}>Vídeos</a>
             </li>
           </ul>
@@ -243,8 +199,7 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
     </div>
   );
 }
-
-function Home() {
+function Videos() {
   return (
     <div title="NéFiTs">
       <link
@@ -278,16 +233,8 @@ function Home() {
 
           <div className={clsx(styles.container)}>
             <div className={clsx(styles.row, "row")}>
-              {containerSobre.map((props, idx) => (
-                <ContainerSobre key={idx} {...props} />
-              ))}
-            </div>
-          </div>
-
-          <div className={clsx(styles.container)}>
-            <div className={clsx(styles.row, "row")}>
-              {containerCards.map((props, idx) => (
-                <ContainerCards key={idx} {...props} />
+              {listaVideos.map((props, idx) => (
+                <ListaVideos key={idx} {...props} />
               ))}
             </div>
           </div>
@@ -305,4 +252,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Videos;
