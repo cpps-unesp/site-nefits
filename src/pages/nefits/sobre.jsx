@@ -55,7 +55,7 @@ const quemSomos = [
 const objetivos = [
   {
     titulo: "Objetivos",
-    img1: "/images/img_1.png",
+    img1: "/images/sobre2.svg",
     texto1: (
       <>
         O objetivo do NéFiTs é incentivar e promover pesquisas que se orientam pela articulação de duas dimensões estruturantes: a primeira busca construir diagnósticos críticos 
@@ -83,7 +83,7 @@ function Objetivos({titulo, img1, texto1, texto2}) {
       <div class="col-12">
         <div class="row">
           <div class="col-4 text-center">
-            <img src={img1} alt="Objetivos" className={clsx(styles.sobreImg, "mt-2 mb-2")} />
+            <img src={img1} alt="Objetivos" className="img-fluid px-5 pb-4 pt-2" />
           </div>
           <div class="col-8">
             <div class="row">

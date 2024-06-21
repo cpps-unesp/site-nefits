@@ -139,7 +139,7 @@ function PrimeiroContainer({ img1, texto1 }) {
   return (
     <div class="row mt-3 mb-4">
       <div class="col-md-6 col-sm-12 text-center">
-        <img src={img1} className={clsx(styles.imgHome, "img-fluid")} alt="Imagem 1" />
+        <img src={img1} className={clsx(styles.imgHome, "img-fluid rounded")} alt="Imagem 1" />
       </div>
       <div class="col-md-6 col-sm-12 text-start d-flex align-items-center text-wrap">
         <p className={clsx(styles.texto)}>{texto1}</p>

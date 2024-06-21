@@ -221,12 +221,12 @@ const membrosEquipe = [
     ),
 
     foto18: "/images/icon.svg",
-    nome18: "Júlia Almeida",
+    nome18: "Júlia de Almeida",
     cargo18: "Graduanda",
-    descricao17: (
+    descricao18: (
       <>
-        Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp). Tem interesse 
-        nas áreas de sociologia, desigualdade social e precarização do trabalho.   Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e Teoria Social (NéFiTs). 
+        Graduanda em Relações Internacionais na Faculdade de Ciências Humanas e Sociais de Franca (FCHS) da Universidade Estadual Paulista "Júlio de Mesquita Filho" (Unesp). Tem interesse nas 
+        áreas de sociologia, desigualdade social e precarização do trabalho.   Atualmente participa do Núcleo de Pesquisa em Ética Filosofia e Teoria Social (NéFiTs).
       </>
     ),
 
@@ -239,6 +239,18 @@ const membrosEquipe = [
         Testemunhal: uma forma de olhar a aporofobia" sob orientação do Prof. Dr. Hélio Alexandre da Silva. Faz parte também do Núcleo de Pesquisa em Ética, Filosofia e Teoria Social 
         (NéFiTs) e do Núcleo de Estudos da Violência, Criminalidade e Forças Armadas na América latina (NEFA), onde desenvolve um projeto sob orientação da Prof. Dra. Marília Carolina 
         Barbosa de Souza Pimenta na área de Segurança e América Latina em Relações Internacionais.
+      </>
+    ),
+
+    foto19: "/images/Laura_Capucci.svg",
+    nome19: "Laura Capucci ",
+    cargo19: "Graduanda",
+    descricao19: (
+      <>
+        Curso o quinto semestre de Relações Internacionais pela UNESP (Universidade Estadual Paulista “Júlio de Mesquita Filho”) - Campus Franca. Fiz parte da administração do grupo de extensão 
+        GEPESOI por 2 anos. Além disso, também fiz parte do âmbito administrativo do Cursinho Popular atrelado à universidade, bem como lecionei a matéria de biologia aos cursistas por mais de 
+        1 ano. Atualmente, faço parte do time de Relações Comerciais da ORBE - Consultoria Internacional como Analista do Projeto Governamental e sou membro do Núcleo de Pesquisa em Ética, 
+        Filosofia, Teoria Política e Social (NéFTis) desde agosto de 2022.
       </>
     ),
   },
@@ -287,11 +299,11 @@ function Cards(props){
   )
 }
 
-function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, foto14, foto15, foto16, foto17, foto18,
-  nome, nome2, nome3, nome4, nome5, nome6, nome7, nome8, nome9, nome10, nome11, nome12, nome13, nome14, nome15, nome16, nome17, nome18,
-  cargo, cargo2, cargo3, cargo4, cargo5, cargo6, cargo7, cargo8, cargo9, cargo10, cargo11, cargo12, cargo13, cargo14, cargo15, cargo16, cargo17, cargo18,
-  descricao, descricao2, descricao3, descricao4, descricao5, descricao6, descricao7, descricao8, descricao9, descricao10, descricao11, descricao12, descricao13,
-  descricao14, descricao15, descricao16, descricao17, descricao18}){
+function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, foto14, foto15, foto16, foto17, foto18, foto19,
+  nome, nome2, nome3, nome4, nome5, nome6, nome7, nome8, nome9, nome10, nome11, nome12, nome13, nome14, nome15, nome16, nome17, nome18, nome19,
+  cargo, cargo2, cargo3, cargo4, cargo5, cargo6, cargo7, cargo8, cargo9, cargo10, cargo11, cargo12, cargo13, cargo14, cargo15, cargo16, cargo17, cargo18, cargo19,
+  descricao, descricao2, descricao3, descricao4, descricao5, descricao6, descricao7, descricao8, descricao9, descricao10, descricao11, descricao12, descricao13, 
+  descricao14, descricao15, descricao16, descricao17, descricao18, descricao19}){
   return(
     <div class="row justify-content-center">
       <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
@@ -559,6 +571,21 @@ function MembrosEquipe({foto, foto2, foto3, foto4, foto5, foto6, foto7, foto8, f
               <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome18}</h3>
               <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo18}</p>
               <p class={clsx(styles.descricao, "gy-0")}>{descricao18}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("card col-12 col-lg-5 mt-3 mx-2 p-0 shadow border-0")}>
+        <div className="row g-0">
+          <div class="col-md-5">
+            <img src={foto19} alt="Foto do membro da equipe" className={clsx(styles.fotoEquipe, "img-fluid rounded-start")} />
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h3 className={clsx(styles.tituloEquipe, "gy-0")}>{nome19}</h3>
+              <p className={clsx(styles.textoEquipe, "gy-0 fw-bold")}>{cargo19}</p>
+              <p class={clsx(styles.descricao, "gy-0")}>{descricao19}</p>
             </div>
           </div>
         </div>
