@@ -12,7 +12,6 @@ const intro = [
         link2: "/sobre",
         link3: "/equipe",
         link4: "/noticias",
-        link5: "/projetos",
         link6: "/publicacoes",
         link7: "/videos"
     }
@@ -181,12 +180,8 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
               <a href={link4}>Notícias</a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link5}>Projetos</a>
-            </li>
-            <li className={clsx(styles.liLista)}>
               <a href={link6}>Publicações</a>
             </li>
-
             <li className={clsx(styles.liListaSelecionado)}>
               <a href={link7}>Vídeos</a>
             </li>

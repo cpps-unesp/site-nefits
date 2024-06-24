@@ -9,7 +9,6 @@ const intro = [
     link2: "/sobre",
     link3: "/equipe",
     link4: "/noticias",
-    link5: "/projetos",
     link6: "/publicacoes",
     link7: "/videos",
   },
@@ -52,22 +51,14 @@ const containerCards = [
         Sed malesuada risus sit amet pretium tristique. Mauris eu commodo metus.
       </>
     ),
-    titulo2: "Projetos",
-    linkDois1: "/projetos",
+    titulo2: "Publicações",
+    linkDois1: "/publicacoes",
     imgFoto2: "/images/projetos1.svg",
     texto2: (
       <>
-        Conheça os projetos em andamento e concluídos desenvolvidos pela equipe NéFiTs. 
-      </>
-    ),
-    titulo3: "Publicações",
-    linkTres1: "/publicacoes",
-    imgFoto3: "/images/publicacoes1.svg",
-    texto3: (
-      <>
         Acesse as publicações desenvolvidas e publicadas pela equipe NéFiTs.
       </>
-    )
+    ),
   },
 ]
 
@@ -89,7 +80,7 @@ const rodape = [
 function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
   return(
     <div class="row justify-content-center text-center">
-      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
+      <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
             <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")}></img>
             <h2><a href={link} className={clsx(styles.titulo)}>{titulo}</a></h2>
@@ -98,21 +89,12 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
         </div>
       </div>
 
-      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
+      <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
             <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
             <h2><a href={linkDois1} className={clsx(styles.titulo)}>{titulo2}</a></h2>
             <p className={clsx(styles.texto)}>{texto2}</p>
             <a href={linkDois1} className={clsx(styles.btnUm)}>Saiba mais</a>
-        </div>
-      </div>
-
-      <div className={clsx(styles.containerCards, "col-12 col-lg-4 mt-3 gx-4 border-0 bg-transparent")}>
-        <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto3} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
-            <h2><a href={linkTres1} className={clsx(styles.titulo)}>{titulo3}</a></h2>
-            <p className={clsx(styles.texto)}>{texto3}</p>
-            <a href={linkTres1} className={clsx(styles.btnUm)}>Saiba mais</a>
         </div>
       </div>
     </div>
@@ -225,12 +207,8 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
               <a href={link4}>Notícias</a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link5}>Projetos</a>
-            </li>
-            <li className={clsx(styles.liLista)}>
               <a href={link6}>Publicações</a>
             </li>
-
             <li className={clsx(styles.liLista)}>
               <a href={link7}>Vídeos</a>
             </li>
