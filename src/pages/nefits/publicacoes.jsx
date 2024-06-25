@@ -235,7 +235,7 @@ const abas = [
     btn27: "Visualizar",
     link27: "/arquivos/2017-Helio_Alexandre_da_Silva-Thomas Hobbes_ política, medo e conflitos sociais.pdf",
 
-    titulo28: "TA experiência da pobreza em “Vidas Secas” e no “Auto da Compadecida”",
+    titulo28: "A experiência da pobreza em “Vidas Secas” e no “Auto da Compadecida”",
     autor28: "Heurisgleides Sousa Teixeira e Hélio Alexandre da Silva",
     ano28: "2018",
     btn28: "Visualizar",
@@ -253,7 +253,7 @@ const abas = [
     btn30: "Visualizar",
     link30: "/arquivos/2019-Helio_Alexandre_da_Silva-Por que razao pretendeis ser pagos as nossas expensas_ Pobreza e desigualdade no Segundo discurso de Rousseau_.pdf",
 
-    titulo31: "Ainda é mais fácil pensar no fim do mundo que no fim do capitalismo?",
+    titulo31: "Ainda é mais fácil pensar no fim do mundo que no fim do capitalismo? (Resenha)",
     autor31: "Hélio Alexandre da Silva",
     ano31: "2020",
     btn31: "Visualizar",
@@ -410,17 +410,6 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
             <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
               <div class="row">
                 <div class="col-12">
-                  <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo22}</h3>
-                  <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo22}</p>
-                  <p className={clsx(styles.cardTexto, "fw-bold")}>{autor22} • {ano22}</p>
-                  <a href={link22} target="_blank" className={clsx(styles.btnUm)}>{btn22}</a>
-                </div>
-              </div>
-            </div>
-
-            <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
-              <div class="row">
-                <div class="col-12">
                   <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo26}</h3>
                   <p className={clsx(styles.cardTexto, "fw-bold")}>{autor26} • {ano26}</p>
                   <a href={link26} target="_blank" className={clsx(styles.btnUm)}>{btn26}</a>
@@ -502,6 +491,17 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
                     <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo20}</p>
                     <p className={clsx(styles.cardTexto, "fw-bold")}>{autor20} • {ano20}</p>
                     <a href={link20} target="_blank" className={clsx(styles.btnUm)}>{btn20}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo22}</h3>
+                    <p className={clsx(styles.cardSubtitulo, "fst-italic")}>{subtitulo22}</p>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor22} • {ano22}</p>
+                    <a href={link22} target="_blank" className={clsx(styles.btnUm)}>{btn22}</a>
                   </div>
                 </div>
               </div>

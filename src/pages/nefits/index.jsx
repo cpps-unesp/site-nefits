@@ -20,7 +20,7 @@ const primeiroContainer = [
     texto1: (
       <>
         O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços 
-        de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através de políticas públicas.
+        de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servirem de impulso para análise e formulação de políticas públicas.
       </>
     ),
   },
