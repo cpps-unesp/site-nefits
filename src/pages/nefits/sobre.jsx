@@ -70,7 +70,7 @@ const objetivos = [
         intuito particular de procurar neles elementos que incentivam a imaginação e a criação que possam emergir da mobilização e articulação de diferentes formas de ação no espaço 
         público. Assim, o espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões 
         e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção 
-        podem, através das mediações necessárias, servirem de impulso para análise e formulação de políticas públicas.
+        podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas.
       </>
     )
   }
