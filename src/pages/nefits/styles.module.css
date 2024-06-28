@@ -4,6 +4,12 @@
 [data-theme='dark'] .main{
     background-color: transparent;
 }
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
  
 .heroBanner {
     text-align: center;
@@ -277,12 +283,12 @@ a{
 }
 
 .rodape{
-    height: fit-content;
+    height: 177px;
     background-color: #eeeeee;
     padding: 1rem 3rem .5rem 2rem;
     width: 100%;
     bottom: 0;
-    width: 100%;
+    margin-top: auto;
 }
 
 .abas{
