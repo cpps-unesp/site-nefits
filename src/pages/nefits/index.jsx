@@ -191,7 +191,7 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
     <div className={clsx(styles.heroBanner)}>
       <div class="row">
         <div className="col-md-3 col-sm-12">
-          <img className="intro" src="/images/logo-banner.png" alt="Logo NéFiTs" />
+          <a href="/"><img className="intro" src="/images/logo-banner.png" alt="Logo NéFiTs" /></a> 
         </div>
         <div className="col-md-7 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
