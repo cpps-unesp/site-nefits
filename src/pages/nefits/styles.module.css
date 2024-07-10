@@ -353,3 +353,15 @@ a{
     border: 1px solid #ccc;
     border-radius: 5px;
   } */
+
+.imgCarrossel{
+    opacity: 0.75 !important;
+}
+
+    .imgCarrossel:hover{
+        opacity: 1 !important;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        background-color: #ab090e;
+    }

@@ -77,6 +77,14 @@ const rodape = [
   }
 ];
 
+const carrossel = [
+  {
+    img1: "/images/carrossel2.svg",
+    img2: "/images/carrossel2.svg",
+    img3: "/images/carrossel2.svg",
+  }
+]
+
 
 function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
   return(
@@ -186,6 +194,55 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
   )
 }
 
+function Carrossel({img1, img2, img3}){
+  return(
+    <div class="container gx-4 gy-3 mb-3">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleCaptions" class="carousel slide rounded">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src={img1} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Notícia 1</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <img src={img2} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Notícia 2</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src={img3} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Notícia 3</h5>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
   return (
     <div className={clsx(styles.heroBanner)}>
@@ -251,6 +308,15 @@ function Home() {
             <div className={clsx(styles.row, "row")}>
               {primeiroContainer.map((props, idx) => (
                 <PrimeiroContainer key={idx} {...props} />
+              ))}
+            </div>
+          </div>
+
+          
+          <div className={clsx(styles.container)}>
+            <div className={clsx(styles.row, "row")}>
+              {carrossel.map((props, idx) => (
+                <Carrossel key={idx} {...props} />
               ))}
             </div>
           </div>
