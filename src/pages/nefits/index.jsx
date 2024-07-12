@@ -202,7 +202,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
     <div class="container gx-4 gy-3 mb-3">
       <div class="row">
         <div class="col-12">
-          <div id="carouselExampleCaptions" class="carousel slide rounded">
+          <div id="carouselExampleCaptions" class="carousel slide rounded" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
