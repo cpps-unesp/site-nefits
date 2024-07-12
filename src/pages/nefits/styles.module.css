@@ -356,12 +356,36 @@ a{
 
 .imgCarrossel{
     opacity: 0.75 !important;
+    filter: grayscale(25%);
 }
 
-    .imgCarrossel:hover{
+    .imgCarrossel:hover, .imgCarrossel::selection{
         opacity: 1 !important;
+        filter: grayscale(0%);
     }
 
     .carousel-control-prev-icon, .carousel-control-next-icon{
         background-color: #ab090e;
     }
+
+.tituloCarrossel{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+}
+
+@media(max-width:1400px) {
+    .tituloCarrossel{
+        font-size: 1rem;
+    }
+
+    .btnUm{
+        font-size: .8rem;
+    }
+}

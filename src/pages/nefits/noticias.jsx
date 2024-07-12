@@ -34,7 +34,7 @@ const primeiroContainer = [
     titulo: "Notícias",
     texto: (
       <>
-      <p>Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus lectus varius mattis egestas. </p>
+        Leia as últimas notícias sobre o Núcleo de Estudos em Filosofia, Teoria e Sociedade.	
       </>
     )
   }
@@ -42,31 +42,77 @@ const primeiroContainer = [
 
 const noticiasCards = [
   {
-    foto: "/images/img_4.png",
-    titulo: "Título Notícia",
-    texto: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
+    foto: "/images/noticia-1.svg",
+    titulo: "Experiências Internacionais – Yale University (Matheus de Vilhena Moraes)",
+    texto: (
+      <>
+      O discente do curso de Direito da FCHS, Matheus de Vilhena Moraes, foi contemplado com a bolsa BEPE – Bolsa de Estágio de Pesquisa no Exterior para desenvolver parte da sua pesquisa realizada no Brasil com o financiamento da FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob a orientação do Prof. Dr. Hélio Alexandre da Silva.
+      Entre agosto e novembro de 2022, Matheus integrou o Programa de Justiça Global da Universidade de Yale...
+      </>
+    ),
     btn: "Saiba mais",
-    foto2: "/images/img_4.png",
-    titulo2: "Título Notícia",
-    texto2: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
+    link: "https://www.franca.unesp.br/#!/noticia/643/pesquisa-internacional--universidade-de-yale/",
+    foto2: "/images/noticia-2.svg",
+    titulo2: "Experiências Internacionais – Universidade Paris-Nanterre (Ana Júlia Diniz Neves do Lago)",
+    texto2: (
+      <>
+      Ana Júlia Diniz Neves do Lago, graduanda do curso de Relações Internacionais da Unesp e bolsista de Iniciação Científica, foi contemplada com uma Bolsa Estágio de Pesquisa no Exterior - BEPE (Processo nº 2023/08867-5) na Universidade Paris-Nanterre, França, financiada pela FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob supervisão do Prof. Dr. Pierre Sauvêtre.
+      O projeto de pesquisa de Ana Júlia, intitulado "Subjetividade e opressão: um recorte de gênero no neoliberalismo", foi desenvolvido entre 01/11/2023 e 29/02/2024...
+      </>
+    ),
     btn2: "Saiba mais",
+    link2: "https://bv.fapesp.br/pt/bolsas/211973/subjetividade-e-opressao-um-recorte-de-genero-no-neoliberalismo/",
   },
   {
-    foto: "/images/img_4.png",
-    titulo: "Título Notícia",
-    texto: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
+    foto: "/images/noticia-3.svg",
+    titulo: "Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)",
+    texto: (
+      <>
+      Gabrielle Nascimento, discente do curso de Relações Internacionais, que estuda Planejamento Econômico como crítica anti-capitalista, foi contemplada com uma oportunidade de intercâmbio na Universidad de Santiago de Chile. Entre agosto de 2023 e janeiro de 2024, Gabrielle desenvolveu sua pesquisa focada na conceituação e mapeamento do debate sobre a planificação econômica, suas experiências e sua efetividade na construção do socialismo.
+      Durante sua estadia no Chile, Gabrielle esteve presente no aniversário de 50 anos da ditadura militar...
+      </>
+    ),
     btn: "Saiba mais",
-    foto2: "/images/img_4.png",
-    titulo2: "Título Notícia",
-    texto2: "Nulla pretium dolor lectus, vel vulputate orci porta id. Aenean ac porta risus.",
+    link: "",
+    foto2: "/images/noticia-4.svg",
+    titulo2: "Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)",
+    texto2: (
+      <>
+      Entre 3 de março e 18 de julho, Eduarda Pereira Pires Barboza, discente do curso de Relações Internacionais, realizou uma visita na Universidad de Playa Ancha (UPLA), no Chile. Seu estudo centraliza-se na desigualdade social, e o intercâmbio foi crucial para expandir sua compreensão desse tema.
+      Durante sua estadia, Eduarda observou uma abordagem diferente em relação à desigualdade. Participando de congressos e jornadas, e conversando com colegas e professores, a discente notou que a distinção entre público e estatal é frequentemente enfatizada...
+      </>
+    ),
     btn2: "Saiba mais",
+    link2: "",
+  },
+  {
+    foto: "/images/noticia-5.svg",
+    titulo: "Lançamento do Livro: Experiências Sociais Negativas",
+    texto: (
+      <>
+      O Núcleo de Estudos em Ética e Teoria Política e Social tem o prazer de anunciar o lançamento do livro "Experiências Sociais Negativas", uma obra que explora o sofrimento e outras experiências negativas que acompanham a vivência de determinados indivíduos, sob uma perspectiva interdisciplinar e crítica.
+      O livro questiona se a Filosofia e as Ciências Sociais podem se ocupar do problema do sofrimento, tradicionalmente considerado objeto exclusivo da psicologia e das terapias. A resposta afirmativa baseia-se na compreensão de que tais experiências não são meramente individuais...
+      </>
+    ),
+    btn: "Saiba mais",
+    link: "",
+    foto2: "/images/noticia-6.svg",
+    titulo2: "II Seminário Permanente de Filosofia Crítica e Sociedade",
+    texto2: (
+      <>
+      Nos dias 24 e 25 de abril, o campus de Franca da UNESP sediou o II Encontro do Seminário Permanente de Filosofia, Crítica e Sociedade. O evento, que surgiu como um esforço de construção de um espaço de debates durante a pandemia, reuniu pesquisadores do Brasil e da América Latina.
+      Com o tema "Crítica e subjetividade: experiências do presente para imaginar o futuro", o encontro privilegiou a profundidade dos debates, focando em cada sessão em uma única apresentação, seja um trabalho em progresso ou uma publicação recente... 
+      </>
+    ),
+    btn2: "Saiba mais",
+    link2: "",
   },
 ]
 
 function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, btn2, link2}){
   return(
     <div class="row justify-content-center">
-      <div className={clsx(styles.cardNoticias, "col-12 col col-xl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
         <div class="row">
           <div class="col-6">
             <img src={foto} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
@@ -74,12 +120,12 @@ function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, 
           <div class="col-6 text-start mt-3">
             <h1 className={clsx(styles.tituloEquipe)}>{titulo}</h1>
             <p className={clsx(styles.textoEquipe, "mb-4")}>{texto}</p>
-            <a href={link} className={clsx(styles.btnUm)}>{btn}</a>
+            <a href={link} target="_blank" className={clsx(styles.btnUm)}>{btn}</a>
           </div>
         </div>
       </div>
 
-      <div className={clsx(styles.cardNoticias, "col-12 col col-xl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
         <div class="row">
           <div class="col-6">
             <img src={foto2} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
@@ -87,7 +133,7 @@ function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, 
           <div class="col-6 text-start mt-3">
             <h1 className={clsx(styles.tituloEquipe)}>{titulo2}</h1>
             <p className={clsx(styles.textoEquipe, "mb-4")}>{texto2}</p>
-            <a href={link2} className={clsx(styles.btnUm)}>{btn2}</a>
+            <a href={link2} target="_blank" className={clsx(styles.btnUm)}>{btn2}</a>
           </div>
         </div>
       </div>

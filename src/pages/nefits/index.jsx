@@ -79,9 +79,12 @@ const rodape = [
 
 const carrossel = [
   {
-    img1: "/images/carrossel2.svg",
-    img2: "/images/carrossel2.svg",
-    img3: "/images/carrossel2.svg",
+    img1: "/images/noticia-home-1.png",
+    img2: "/images/noticia-home-2.png",
+    img3: "/images/noticia-home-3.png",
+    img4: "/images/noticia-home-4.png",
+    img5: "/images/noticia-home-5.png",
+    img6: "/images/noticia-home-6.png",
   }
 ]
 
@@ -194,37 +197,82 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
   )
 }
 
-function Carrossel({img1, img2, img3}){
+function Carrossel({img1, img2, img3, img4, img5, img6}){
   return(
     <div class="container gx-4 gy-3 mb-3">
       <div class="row">
         <div class="col-12">
           <div id="carouselExampleCaptions" class="carousel slide rounded">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={img1} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Notícia 1</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                  <div class="col-7 col-xxl-6">
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Yale University <br /> (Matheus de Vilhena Moraes)</h5>
+                  </div>
+                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
                 </div>
               </div>
               <div class="carousel-item">
                   <img src={img2} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Notícia 2</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                  <div class="row">
+                    <div class="col-5 col-xxl-6"></div>
+                    <div class="col-7 col-xxl-6 text-end ps-3">
+                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais – Universidade Paris-Nanterre <br /> (Ana Júlia Diniz Neves do Lago)</h5>
+                    </div>
+                  </div>
+                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src={img3} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Notícia 3</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                  <div class="col-6 col-xxl-6">
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)</h5>
+                  </div>
+                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src={img4} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
+                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                  <div class="row">
+                    <div class="col-5 col-xxl-6"></div>
+                    <div class="col-7 col-xxl-6 text-end ps-3">
+                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)</h5>
+                    </div>
+                  </div>
+                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src={img5} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
+                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                  <div class="col-6 col-xxl-6">
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Lançamento do Livro: Experiências Sociais Negativas</h5>
+                  </div>
+                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src={img6} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
+                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                  <div class="row">
+                    <div class="col-5 col-xxl-6"></div>
+                    <div class="col-7 col-xxl-6 text-end ps-3">
+                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>II Seminário Permanente de Filosofia Crítica e Sociedade</h5>
+                    </div>
+                  </div>
+                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
                 </div>
               </div>
             </div>
