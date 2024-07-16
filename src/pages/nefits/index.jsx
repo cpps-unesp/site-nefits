@@ -79,12 +79,12 @@ const rodape = [
 
 const carrossel = [
   {
-    img1: "/images/noticia-home-1.png",
-    img2: "/images/noticia-home-2.png",
-    img3: "/images/noticia-home-3.png",
-    img4: "/images/noticia-home-4.png",
-    img5: "/images/noticia-home-5.png",
-    img6: "/images/noticia-home-6.png",
+    img1: "/images/noticia-home-1.svg",
+    img2: "/images/noticia-home-2.svg",
+    img3: "/images/noticia-home-3.svg",
+    img4: "/images/noticia-home-4.svg",
+    img5: "/images/noticia-home-5.svg",
+    img6: "/images/noticia-home-6.svg",
   }
 ]
 
@@ -202,7 +202,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
     <div class="container gx-4 gy-3 mb-3">
       <div class="row">
         <div class="col-12">
-          <div id="carouselExampleCaptions" class="carousel slide rounded" data-bs-ride="carousel">
+          <div id="carouselExampleCaptions" class="carousel px-xxl-5 slide rounded justify-content-center" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -214,7 +214,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src={img1} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="col-7 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Yale University <br /> (Matheus de Vilhena Moraes)</h5>
                   </div>
@@ -223,7 +223,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
               </div>
               <div class="carousel-item">
                   <img src={img2} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="row">
                     <div class="col-5 col-xxl-6"></div>
                     <div class="col-7 col-xxl-6 text-end ps-3">
@@ -235,7 +235,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
               </div>
               <div class="carousel-item">
                 <img src={img3} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="col-6 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)</h5>
                   </div>
@@ -244,7 +244,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
               </div>
               <div class="carousel-item">
                 <img src={img4} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="row">
                     <div class="col-5 col-xxl-6"></div>
                     <div class="col-7 col-xxl-6 text-end ps-3">
@@ -256,7 +256,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
               </div>
               <div class="carousel-item">
                 <img src={img5} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="col-6 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Lançamento do Livro: Experiências Sociais Negativas</h5>
                   </div>
@@ -265,7 +265,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
               </div>
               <div class="carousel-item">
                 <img src={img6} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-4 pb-xxl-5">
+                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="row">
                     <div class="col-5 col-xxl-6"></div>
                     <div class="col-7 col-xxl-6 text-end ps-3">

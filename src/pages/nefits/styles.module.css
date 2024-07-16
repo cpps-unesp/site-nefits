@@ -380,6 +380,10 @@ a{
     text-transform: uppercase;
 }
 
+.widthCarrossel{
+    max-width: 1750px;
+}
+
 @media(max-width:1400px) {
     .tituloCarrossel{
         font-size: 1rem;
