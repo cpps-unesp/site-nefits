@@ -1,0 +1,21 @@
+--- 
+layout: ../../layouts/LayoutPostagem.astro
+titulo: "Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)"
+---
+
+# Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)
+
+<div class="row h-100">
+    <div class="col-5 text-center gy-3">
+        <img src="https://i.imgur.com/70xNlJD.jpeg" alt="drawing" class="img-fluid" style="height: 80%"/>
+    </div>
+<div class="col-7 gy-3">
+<p class="texto">Gabrielle Nascimento, discente do curso de Relações Internacionais, que estuda Planejamento Econômico como crítica anti-capitalista, foi contemplada com uma oportunidade de intercâmbio na Universidad de Santiago de Chile. Entre agosto de 2023 e janeiro de 2024, Gabrielle desenvolveu sua pesquisa focada na conceituação e mapeamento do debate sobre a planificação econômica, suas experiências e sua efetividade na construção do socialismo.</p>
+
+<p class="texto">Durante sua estadia no Chile, Gabrielle esteve presente no aniversário de 50 anos da ditadura militar, um momento significativo que marcou o fim do governo socialista de Salvador Allende com seu assassinato e o golpe de estado. Esse período foi rico em eventos políticos e culturais, proporcionando a ela uma compreensão mais profunda da realidade latino-americana, do governo de Allende e do histórico das ditaduras na região.</p>
+
+<p class="texto">Esses eventos, juntamente com as aulas frequentadas na Universidad de Santiago de Chile, enriqueceram significativamente sua formação acadêmica e política. Além disso, Gabrielle teve a oportunidade de conhecer pessoalmente o autor de um dos livros que a introduziu ao tema da planificação econômica, Prof. Martin Arboleda. Essa interação permitiu a ela aprofundar seus conhecimentos e críticas sobre o tema de sua pesquisa.</p>
+
+<p class="texto">A experiência no Chile foi fundamental para o desenvolvimento do projeto de Gabrielle, contribuindo para seu crescimento acadêmico e oferecendo uma perspectiva crítica e aprofundada sobre o planejamento econômico e suas implicações na construção do socialismo.</p>
+</div>
+</div>

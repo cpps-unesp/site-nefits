@@ -51,7 +51,7 @@ const noticiasCards = [
       </>
     ),
     btn: "Saiba mais",
-    link: "https://www.franca.unesp.br/#!/noticia/643/pesquisa-internacional--universidade-de-yale/",
+    link: "/noticias/noticia-1",
     foto2: "/images/noticia-2.svg",
     titulo2: "Experiências Internacionais – Universidade Paris-Nanterre (Ana Júlia Diniz Neves do Lago)",
     texto2: (
@@ -61,7 +61,7 @@ const noticiasCards = [
       </>
     ),
     btn2: "Saiba mais",
-    link2: "https://bv.fapesp.br/pt/bolsas/211973/subjetividade-e-opressao-um-recorte-de-genero-no-neoliberalismo/",
+    link2: "/noticias/noticia-2",
   },
   {
     foto: "/images/noticia-3.svg",
@@ -73,7 +73,7 @@ const noticiasCards = [
       </>
     ),
     btn: "Saiba mais",
-    link: "",
+    link: "/noticias/noticia-3",
     foto2: "/images/noticia-4.svg",
     titulo2: "Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)",
     texto2: (
@@ -83,7 +83,7 @@ const noticiasCards = [
       </>
     ),
     btn2: "Saiba mais",
-    link2: "",
+    link2: "/noticias/noticia-4",
   },
   {
     foto: "/images/noticia-5.svg",
@@ -95,7 +95,7 @@ const noticiasCards = [
       </>
     ),
     btn: "Saiba mais",
-    link: "",
+    link: "/noticias/noticia-5",
     foto2: "/images/noticia-6.svg",
     titulo2: "II Seminário Permanente de Filosofia Crítica e Sociedade",
     texto2: (
@@ -105,7 +105,7 @@ const noticiasCards = [
       </>
     ),
     btn2: "Saiba mais",
-    link2: "",
+    link2: "/noticias/noticia-6",
   },
 ]
 

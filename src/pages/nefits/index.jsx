@@ -85,6 +85,12 @@ const carrossel = [
     img4: "/images/noticia-home-4.svg",
     img5: "/images/noticia-home-5.svg",
     img6: "/images/noticia-home-6.svg",
+    link1: "/noticias/noticia-1",
+    link2: "/noticias/noticia-2",
+    link3: "/noticias/noticia-3",
+    link4: "/noticias/noticia-4",
+    link5: "/noticias/noticia-5",
+    link6: "/noticias/noticia-6",
   }
 ]
 
@@ -197,7 +203,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
   )
 }
 
-function Carrossel({img1, img2, img3, img4, img5, img6}){
+function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, link4, link5, link6}) {
   return(
     <div class="container gx-4 gy-3 mb-3">
       <div class="row">
@@ -218,7 +224,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
                   <div class="col-7 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Yale University <br /> (Matheus de Vilhena Moraes)</h5>
                   </div>
-                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                  <a href={link1} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -230,7 +236,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
                       <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais – Universidade Paris-Nanterre <br /> (Ana Júlia Diniz Neves do Lago)</h5>
                     </div>
                   </div>
-                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                  <a href={link2} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -239,7 +245,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
                   <div class="col-6 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)</h5>
                   </div>
-                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                  <a href={link3} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -251,7 +257,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
                       <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)</h5>
                     </div>
                   </div>
-                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                  <a href={link4} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -260,7 +266,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
                   <div class="col-6 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Lançamento do Livro: Experiências Sociais Negativas</h5>
                   </div>
-                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                  <a href={link5} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
               <div class="carousel-item">
@@ -272,7 +278,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6}){
                       <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>II Seminário Permanente de Filosofia Crítica e Sociedade</h5>
                     </div>
                   </div>
-                  <button className={clsx(styles.btnUm)}>Ler Mais</button>
+                  <a href={link6} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
             </div>
