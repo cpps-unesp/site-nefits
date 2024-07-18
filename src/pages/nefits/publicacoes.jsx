@@ -24,7 +24,7 @@ const rodape = [
     icon3: "/images/linkedin_rodape2.svg",
     icon4: "/images/youtube_rodape.svg",
     link1: "#",
-    link2: "#",
+    link2: "https://www.instagram.com/nefits.unesp?igsh=MTQxcXhiYjd5N2R1",
     link3: "#",
     link4: "https://www.youtube.com/@nefits8028",
     logo1: "/images/logos_rodape.svg",
