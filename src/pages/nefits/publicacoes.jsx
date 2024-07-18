@@ -60,7 +60,7 @@ const abas = [
     link1: "/arquivos/2023-Matheus_de_Vilhena_Moraes-ETHICAL_CHALLENGES_IN_THE_CLIMATE.pdf",
 
 
-    titulo2: "Alienação de negras e negros em Achille Mbembe",
+    titulo2: "As forma de opressão e violência de negras e negros em Achille Mbembe",
     texto3: (
       <>
       </>
@@ -68,7 +68,7 @@ const abas = [
     autor2: "Matheus Sena Asevedo Campanhã",
     ano2: "2023",
     btn2: "Visualizar",
-    link2: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-Alienacao_de_negras_e_negros_em_Achille_Mbembe.pdf",
+    link2: "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-As_formas_de_opressao_e_violencia_de_negras_e_negros_em_Achille_Mbembe.pdf",
 
     titulo3: "Pobreza como Déficit dos Direitos Humanos em Thomas Pogge",
     autor3: "Matheus de Vilhena Moraes",
