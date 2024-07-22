@@ -80,6 +80,10 @@ function ListaVideos({video1, video2, video3, video4, video5, video6}){
         <div class="col-12 col-xl-4 gx-3 gy-3">
           <iframe width="420" height="315" className="object-fit-cover border rounded" src={video6} allowfullscreen></iframe>
         </div>
+
+        <div class="col-12 gx-3 gy-3 text-center">
+          <a href="https://www.youtube.com/@nefits8028/videos" target="_blank" className={clsx(styles.btnUm)}>Ver Lista Completa</a>
+        </div>
       </div>
     </div>
   )
