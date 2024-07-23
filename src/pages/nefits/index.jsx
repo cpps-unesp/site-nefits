@@ -49,7 +49,7 @@ const containerCards = [
     imgFoto: "/images/noticias1.svg",
     texto: (
       <>
-        Sed malesuada risus sit amet pretium tristique. Mauris eu commodo metus.
+        Acesse as notícias mais recentes sobre o NéFiTs e suas atividades.
       </>
     ),
     titulo2: "Publicações",
