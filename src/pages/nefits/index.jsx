@@ -222,7 +222,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
                 <img src={img1} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
                 <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div class="col-7 col-xxl-6">
-                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Yale University <br /> (Matheus de Vilhena Moraes)</h5>
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Universidade Yale <br /> (Matheus de Vilhena Moraes)</h5>
                   </div>
                   <a href={link1} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>

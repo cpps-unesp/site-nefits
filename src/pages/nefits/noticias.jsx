@@ -43,7 +43,7 @@ const primeiroContainer = [
 const noticiasCards = [
   {
     foto: "/images/noticia-1.svg",
-    titulo: "Experiências Internacionais – Yale University (Matheus de Vilhena Moraes)",
+    titulo: "Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes)",
     texto: (
       <>
       O discente do curso de Direito da FCHS, Matheus de Vilhena Moraes, foi contemplado com a bolsa BEPE – Bolsa de Estágio de Pesquisa no Exterior para desenvolver parte da sua pesquisa realizada no Brasil com o financiamento da FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob a orientação do Prof. Dr. Hélio Alexandre da Silva.

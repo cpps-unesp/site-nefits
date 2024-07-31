@@ -3,7 +3,7 @@ layout: ../../layouts/LayoutPostagem.astro
 titulo: Experiências Internacionais – Yale University (Matheus de Vilhena Moraes)
 ---
 
-# Experiências Internacionais – Yale University (Matheus de Vilhena Moraes) 
+# Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes) 
 
 <div class="row h-100">
     <div class="col-5 text-center gy-3">
