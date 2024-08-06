@@ -63,6 +63,12 @@ const containerCards = [
   },
 ]
 
+const fapesp = [
+  {
+    logo: "/images/fapesp_logo.svg"
+  }
+]
+
 const rodape = [
   {
     icon1: "/images/facebook_rodape2.svg",
@@ -79,12 +85,12 @@ const rodape = [
 
 const carrossel = [
   {
-    img1: "/images/noticia-home-1.svg",
-    img2: "/images/noticia-home-2.svg",
-    img3: "/images/noticia-home-3.svg",
-    img4: "/images/noticia-home-4.svg",
-    img5: "/images/noticia-home-5.svg",
-    img6: "/images/noticia-home-6.svg",
+    img1: "/images/noticia-home-1.jpg",
+    img2: "/images/noticia-home-2.jpg",
+    img3: "/images/noticia-home-3.jpg",
+    img4: "/images/noticia-home-4.jpg",
+    img5: "/images/noticia-home-5.jpg",
+    img6: "/images/noticia-home-6.jpg",
     link1: "/noticias/noticia-1",
     link2: "/noticias/noticia-2",
     link3: "/noticias/noticia-3",
@@ -100,19 +106,17 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
     <div class="row justify-content-center text-center">
       <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")}></img>
-            <h2><a href={link} className={clsx(styles.titulo)}>{titulo}</a></h2>
-            <p className={clsx(styles.texto)}>{texto}</p>
-            <a href={link} className={clsx(styles.btnUm)}>Saiba mais</a>
+            <h2><a href={link} className={clsx(styles.sobreTitulo)}>{titulo}</a></h2>
+            <p className={clsx(styles.sobreTexto, "text-center")}>{texto}</p>
+            <a href={link} className={clsx(styles.btnSobre)}>Saiba mais</a>
         </div>
       </div>
 
       <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <img src={imgFoto2} alt="Logo" className={clsx(styles.SobreCards, "img-fluid")} />
-            <h2><a href={linkDois1} className={clsx(styles.titulo)}>{titulo2}</a></h2>
-            <p className={clsx(styles.texto)}>{texto2}</p>
-            <a href={linkDois1} className={clsx(styles.btnUm)}>Saiba mais</a>
+            <h2><a href={linkDois1} className={clsx(styles.sobreTitulo)}>{titulo2}</a></h2>
+            <p className={clsx(styles.sobreTexto, "text-center")}>{texto2}</p>
+            <a href={linkDois1} className={clsx(styles.btnSobre)}>Saiba mais</a>
         </div>
       </div>
     </div>
@@ -148,13 +152,34 @@ function PrimeiroContainer({ img1, texto1 }) {
   );
 }
 
+function Fapesp({logo}){
+  return(
+    <div class="container rodape2">
+      <div class="row d-flex">
+        <div class="col-12 d-flex align-items-center text-start">
+          <div class="row">
+            <div class="col-3 d-flex align-items-center">
+              <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
+            </div>
+            <div class="col-9 gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape)}>Esse site foi construído com apoio da Fapesp através do    
+                <b className={clsx(styles.textoRodape)}> Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
     <div class="container rodape">
       <div class="row">
-        <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
+        <div class="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
-            <div class="col-12 mb-1">
+            <div class="col-12 mb-1 text-center text-xl-start">
               <h4 className={clsx(styles.tituloRodape)}>Redes Sociais</h4>
             </div>
             <div class="col-3 gx-2 ps-3">
@@ -175,9 +200,9 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
           </div>
         </div>
 
-        <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
+        <div class="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
-            <div class="col-12 mb-1 pt-3">
+            <div class="col-12 mb-1 pt-3 text-center text-xl-start">
               <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
             </div>
             <div class="col-12">
@@ -186,7 +211,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 d-flex justify-content-sm-center justify-content-lg-end">
+        <div class="col-12 col-xl-6 d-flex justify-content-sm-center justify-content-xl-end">
           <div class="row">
             <div class="col-4 pt-3">
               <img src={logo1} alt="Logos" />
@@ -196,7 +221,15 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
 
         <hr className={clsx(styles.hr, "mt-3 mb-3")} />
 
-        <p className={clsx(styles.textoRodape)}>Design por <b className={clsx(styles.textoRodape)}>Júlia dos Santos Silveira</b> © 2024 Current</p>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-xl-5 col-xxl-4 gx-2 gy-2">
+              <p className={clsx(styles.textoRodape)}>Design por <b className={clsx(styles.textoRodape)}>Júlia dos Santos Silveira</b> © 2024 Current</p>
+            </div>
+          </div>
+        </div>
+
+        
 
       </div>
     </div>
@@ -356,21 +389,20 @@ function Home() {
           ))}
         </div>
       </header>
-      <main className={clsx(styles.main, "p-5")}>
+      <main className={clsx(styles.main, "p-5 pb-4 pt-3")}>
         <section className={styles.content}>
-          <div className={clsx(styles.container)}>
-            <div className={clsx(styles.row, "row")}>
-              {primeiroContainer.map((props, idx) => (
-                <PrimeiroContainer key={idx} {...props} />
-              ))}
-            </div>
-          </div>
-
-          
           <div className={clsx(styles.container)}>
             <div className={clsx(styles.row, "row")}>
               {carrossel.map((props, idx) => (
                 <Carrossel key={idx} {...props} />
+              ))}
+            </div>
+          </div>
+
+          <div className={clsx(styles.container)}>
+            <div className={clsx(styles.row, "row")}>
+              {primeiroContainer.map((props, idx) => (
+                <PrimeiroContainer key={idx} {...props} />
               ))}
             </div>
           </div>
@@ -393,8 +425,14 @@ function Home() {
         </section>
       </main>
 
-      <footer className={clsx(styles.rodape)}>
-        <div>
+      <div className={clsx(styles.rodape2)}>
+        {fapesp.map((props, idx) => (
+          <Fapesp key={idx} {...props} />
+          ))}
+      </div>
+
+      <footer>
+        <div className={clsx(styles.rodape)}>
           {rodape.map((props, idx) => (
             <Rodape key={idx} {...props} />
             ))}

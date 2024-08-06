@@ -128,6 +128,33 @@ function QuemSomos({titulo, img1, texto1, texto2}){
   );
 }
 
+const fapesp = [
+  {
+    logo: "/images/fapesp_logo.svg"
+  }
+]
+
+function Fapesp({logo}){
+  return(
+    <div class="container rodape2">
+      <div class="row d-flex">
+        <div class="col-12 d-flex align-items-center text-start">
+          <div class="row">
+            <div class="col-3 d-flex align-items-center">
+              <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
+            </div>
+            <div class="col-9 gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape)}>Esse site foi construído com apoio da Fapesp através do    
+                <b className={clsx(styles.textoRodape)}> Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
     <div class="container rodape">
@@ -261,7 +288,7 @@ function Sobre() {
           </div>
         </section>
       </main>
-
+ 
       <footer className={clsx(styles.rodape)}>
         <div>
           {rodape.map((props, idx) => (

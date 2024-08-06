@@ -174,10 +174,48 @@
     width: 80%;
 }
 
-.SobreCards img{
+.SobreCards{
     text-align: center;
     width: 5rem;
     height: 5rem;
+}
+
+.sobreTitulo{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ab090e;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-bottom: .75rem;
+}
+
+.sobreTexto{
+    font-family: "Comfortaa", sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+    color: #656565;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+    margin-bottom: .5rem;
+}
+
+.btnSobre{
+    background-color: #ab090e;
+    color: #eeeeee;
+    font-family: "DM Sans", sans-serif;
+    font-size: .7rem;
+    font-weight: 700;
+    padding: .5rem .5rem;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.5rem;
 }
 
 .Cards{
@@ -283,7 +321,6 @@ a{
 }
 
 .rodape{
-    height: 177px;
     background-color: #eeeeee;
     padding: 1rem 3rem .5rem 2rem;
     width: 100%;
@@ -392,4 +429,17 @@ a{
     .btnUm{
         font-size: .8rem;
     }
+}
+
+
+.logoRodape{
+    width: 10rem;
+}
+
+.rodape2{
+    background-color: #f1e6e6;
+    padding: .5rem 2rem .5rem 1rem;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
 }
