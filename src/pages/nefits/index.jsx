@@ -156,14 +156,14 @@ function Fapesp({logo}){
   return(
     <div class="container rodape2">
       <div class="row d-flex">
-        <div class="col-12 d-flex align-items-center text-start">
+        <div class="col-12 d-flex align-items-center text-start justify-content-center">
           <div class="row">
-            <div class="col-3 d-flex align-items-center">
+            <div class="col-1 d-flex align-items-center">
               <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
             </div>
-            <div class="col-9 gx-2 gy-4 text-wrap">
-              <p className={clsx(styles.textoRodape)}>Esse site foi construído com apoio da Fapesp através do    
-                <b className={clsx(styles.textoRodape)}> Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI</b>.
+            <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape2)}>Esse site foi construído com apoio da Fapesp através do    
+                <b className={clsx(styles.textoRodape2)}> Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI</b>.
               </p>
             </div>
           </div>
