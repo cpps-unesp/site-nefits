@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 // import Layout from "@theme/Layout";
+import LanguageSelector from "../../components/LanguageSelector";
+import Translator from "../../components/i18n/translator";
 import styles from "./styles.module.css";
 
 const intro = [
@@ -146,7 +148,7 @@ function PrimeiroContainer({ img1, texto1 }) {
         <img src={img1} className={clsx(styles.imgHome, "img-fluid rounded")} alt="Imagem 1" />
       </div>
       <div class="col-md-6 col-sm-12 text-start d-flex align-items-center text-wrap">
-        <p className={clsx(styles.texto)}>{texto1}</p>
+        <p className={clsx(styles.texto)}><Translator path="1.home" /></p>
       </div>
     </div>
   );
@@ -357,6 +359,9 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
             <li className={clsx(styles.liLista)}>
               <a href={link7}>Vídeos</a>
             </li>
+            <li className={clsx(styles.liLista, "gx-5 mt-1")}>
+              <LanguageSelector />
+            </li>
           </ul>
         </div>
         <div className={clsx(styles.logoMenu, "col-md-2 col-sm-12")}>
@@ -374,12 +379,12 @@ function Home() {
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       ></script>
 
       <header className={clsx(styles.heroBanner)}>
