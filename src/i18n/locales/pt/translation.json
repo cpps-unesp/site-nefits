@@ -1,13 +1,17 @@
 {
     "1": {
         "home": "O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas.",
-        "sobre": "O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais.",
+        "sobre": {
+            "titulo": "Sobre",
+            "texto": "O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais."
+        },
         "btn": "Saiba Mais",
         "noticias": "Notícias",
         "publicacoes": "Publicações",
         "textoNoticias": "Acesse as notícias mais recentes sobre o NéFiTs e suas atividades.",
         "textoPublicacoes": "Acesse as publicações desenvolvidas e publicadas pela equipe NéFiTs.",
-        "fapesp": "Esse site foi construído com apoio da Fapesp através do Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI.",
+        "fapesp1": "Esse site foi construído com apoio da Fapesp através do ",
+        "fapesp2": "Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI",
         "contato": "Contato",
         "social": "Rede Social"
     },
@@ -20,7 +24,7 @@
         "texto2": "A segunda dimensão estruturante procura reunir esforços de pesquisa que buscam analisar movimentos sociais, com um intuito particular de procurar neles elementos que incentivam a imaginação e a criação que possam emergir da mobilização e articulação de diferentes formas de ação no espaço público. Assim, o espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas."
     },
     "3": {
-        "equipe": "Team",
+        "equipe": "Equipe",
         "1": {
             "nome": "Hélio Alexandre da Silva",
             "cargo": "Pesquisador – Coordenador",
@@ -136,5 +140,13 @@
         "videos": "Vídeos",
         "texto": "Confira os vídeos postados em nosso canal do Youtube.",
         "btn": "Ver Lista Completa"
+    },
+    "7": {
+        "home": "Home",
+        "sobre": "Sobre",
+        "equipe": "Equipe",
+        "noticias": "Notícias",
+        "publicacoes": "Publicações",
+        "videos": "Vídeos"
     }
 }

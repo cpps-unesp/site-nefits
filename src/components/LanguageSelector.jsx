@@ -1,25 +1,17 @@
 import React, {useState} from "react";
-import clsx from "clsx";
-import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
-import styles from "./styles.module.css";
+import clsx from 'clsx';
+import styles from './styles.module.css';
+import i18n from '../i18n';
 
 const LanguageSelector = () => {
+    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
 
-    // const { i18n } = useTranslation(); // useTranslation() is a hook provided by react-i18next to access the i18n instance.
-
-    function handleChangeLanguage(language) {
-        // Trocando o idioma na chamada da função
-        i18n.changeLanguage(language)
-      }
-    
-      const selectedLanguage = i18n.language // Idioma selecionado
-
-   // const chooseLanguage = (e) => {
-     //   e.preventDefault();
-       // i18n.changeLanguage(e.target.value);   // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
-       // setSelectedLanguage(e.target.value);
-    //}
+    const chooseLanguage = (e) => {
+        e.preventDefault();
+        i18n.changeLanguage(e.target.value);   // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
+        setSelectedLanguage(e.target.value);
+        localStorage.setItem("lang", e.target.value);
+    }
 
     return (
         <div class="dropdown">
@@ -30,12 +22,12 @@ const LanguageSelector = () => {
             </button>
             <ul class="dropdown-menu">
                 <li>
-                    <button className={clsx(styles.textoTrad, "dropdown-item")} type="button" isSelected={selectedLanguage === 'pt'} onClick={() => handleChangeLanguage('pt')}>
+                    <button className={clsx(styles.textoTrad, "dropdown-item")} type="button" isSelected={selectedLanguage === 'pt'} onClick={chooseLanguage}>
                         <img className={clsx(styles.imgTrad)} src="/images/brazil-flag-icon.svg" />  Português
                     </button>
                 </li>
                 <li>
-                    <button className={clsx(styles.textoTrad, "dropdown-item")} type="button" isSelected={selectedLanguage === 'en'} onClick={() => handleChangeLanguage('en')}>
+                    <button className={clsx(styles.textoTrad, "dropdown-item")} type="button" isSelected={selectedLanguage === 'en'} onClick={chooseLanguage}>
                         <img className={clsx(styles.imgTrad)} src="/images/united-states-flag-icon.svg" />  Inglês
                     </button>
                 </li>

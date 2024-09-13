@@ -108,17 +108,17 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
     <div class="row justify-content-center text-center">
       <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <h2><a href={link} className={clsx(styles.sobreTitulo)}>{titulo}</a></h2>
-            <p className={clsx(styles.sobreTexto, "text-center")}>{texto}</p>
-            <a href={link} className={clsx(styles.btnSobre)}>Saiba mais</a>
+            <h2><a href={link} className={clsx(styles.sobreTitulo)}><Translator path="1.noticias" /></a></h2>
+            <p className={clsx(styles.sobreTexto, "text-center")}><Translator path="1.textoNoticias" /></p>
+            <a href={link} className={clsx(styles.btnSobre)}><Translator path="1.btn" /></a>
         </div>
       </div>
 
       <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
-            <h2><a href={linkDois1} className={clsx(styles.sobreTitulo)}>{titulo2}</a></h2>
-            <p className={clsx(styles.sobreTexto, "text-center")}>{texto2}</p>
-            <a href={linkDois1} className={clsx(styles.btnSobre)}>Saiba mais</a>
+            <h2><a href={linkDois1} className={clsx(styles.sobreTitulo)}><Translator path="1.publicacoes" /></a></h2>
+            <p className={clsx(styles.sobreTexto, "text-center")}><Translator path="1.textoPublicacoes" /></p>
+            <a href={linkDois1} className={clsx(styles.btnSobre)}><Translator path="1.btn" /></a>
         </div>
       </div>
     </div>
@@ -129,9 +129,9 @@ function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
     <div className={clsx(styles.containerUm, "text-center rounded p-3")}>
       <div class="row mb-3 align-items-center p-3">
         <div class="col-md-6 col-sm-12 text-start">
-            <h1 className={clsx(styles.titulo)}>{titulo1}</h1>
-            <p className={clsx(styles.texto)}>{texto1}</p>
-            <a href={link} className={clsx(styles.btnUm)}>{btn1}</a>
+            <h1 className={clsx(styles.titulo)}><Translator path="1.sobre.titulo" /></h1>
+            <p className={clsx(styles.texto)}><Translator path="1.sobre.texto" /></p>
+            <a href={link} className={clsx(styles.btnUm)}><Translator path="1.btn" /></a>
         </div>
         <div class="col-md-6 col-sm-12 text-center">
           <img className="img-fluid" src={img1} alt="Imagem 1" />
@@ -164,8 +164,8 @@ function Fapesp({logo}){
               <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
             </div>
             <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
-              <p className={clsx(styles.textoRodape2)}>Esse site foi construído com apoio da Fapesp através do    
-                <b className={clsx(styles.textoRodape2)}> Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI</b>.
+              <p className={clsx(styles.textoRodape2)}><Translator path="1.fapesp1" />    
+                <b className={clsx(styles.textoRodape2)}><Translator path="1.fapesp2" /></b>.
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
         <div class="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
             <div class="col-12 mb-1 text-center text-xl-start">
-              <h4 className={clsx(styles.tituloRodape)}>Redes Sociais</h4>
+              <h4 className={clsx(styles.tituloRodape)}><Translator path="1.social" /></h4>
             </div>
             <div class="col-3 gx-2 ps-3">
               <a href={link1} target="_blank"><img src={icon1} alt="Rede Social 1" /></a>
@@ -205,7 +205,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
         <div class="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
             <div class="col-12 mb-1 pt-3 text-center text-xl-start">
-              <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
+              <h4 className={clsx(styles.tituloRodape)}><Translator path="1.contato" /></h4>
             </div>
             <div class="col-12">
               <p className={clsx(styles.textoRodape)}>nefits.unesp@gmail.com</p>
@@ -341,23 +341,23 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
         </div>
         <div className="col-md-7 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
+            <li className={clsx(styles.liLista)}>
+              <a href={link1}><Translator path="7.home" /></a>
+            </li>
+            <li className={clsx(styles.liLista)}>
+              <a href={link2}><Translator path="7.sobre" /></a>
+            </li>
             <li className={clsx(styles.liListaSelecionado)}>
-              <a href={link1}>Home</a>
+              <a href={link3}><Translator path="7.equipe" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link2}>Sobre</a>
+              <a href={link4}><Translator path="7.noticias" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link3}>Equipe</a>
+              <a href={link6}><Translator path="7.publicacoes" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link4}>Notícias</a>
-            </li>
-            <li className={clsx(styles.liLista)}>
-              <a href={link6}>Publicações</a>
-            </li>
-            <li className={clsx(styles.liLista)}>
-              <a href={link7}>Vídeos</a>
+              <a href={link7}><Translator path="7.videos" /></a>
             </li>
             <li className={clsx(styles.liLista, "gx-5 mt-1")}>
               <LanguageSelector />

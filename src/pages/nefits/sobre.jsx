@@ -1,5 +1,7 @@
 import React from "react";
 import clsx from "clsx";
+import LanguageSelector from "../../components/LanguageSelector";
+import Translator from "../../components/i18n/translator";
 import styles from "./styles.module.css";
 
 
@@ -87,10 +89,10 @@ function Objetivos({titulo, img1, texto1, texto2}) {
           <div class="col-8">
             <div class="row">
               <div class="col-12">
-                <h2 className={clsx(styles.titulo, "text-start")}>{titulo}</h2>
+                <h2 className={clsx(styles.titulo, "text-start")}><Translator path="2.objetivos" /></h2>
               </div>
               <div class="col-12 gy-2">
-                <p className={clsx(styles.texto)}>{texto1}</p>
+                <p className={clsx(styles.texto)}><Translator path="2.texto1" /></p>
               </div>
             </div>
           </div>
@@ -98,7 +100,7 @@ function Objetivos({titulo, img1, texto1, texto2}) {
       </div>
 
       <div class="col-12">
-        <p className={clsx(styles.texto)}>{texto2}</p>
+        <p className={clsx(styles.texto)}><Translator path="2.texto2" /></p>
       </div>
     </div>
   );
@@ -110,10 +112,10 @@ function QuemSomos({titulo, img1, texto1, texto2}){
       <div class="col-8">
         <div class="row">
           <div class="col-12">
-            <h2 className={clsx(styles.titulo, "text-start")}>{titulo}</h2>
+            <h2 className={clsx(styles.titulo, "text-start")}><Translator path="2.sobre" /></h2>
           </div>
           <div class="col-12 gy-2">
-            <p className={clsx(styles.texto)}>{texto1}</p>
+            <p className={clsx(styles.texto)}><Translator path="2.paragrafo1" /></p>
           </div>
         </div>
       </div>
@@ -122,7 +124,7 @@ function QuemSomos({titulo, img1, texto1, texto2}){
       </div>
       
       <div class="col-12 gy-2">
-        <p className={clsx(styles.texto)}>{texto2}</p>
+        <p className={clsx(styles.texto)}><Translator path="2.paragrafo2" /></p>
       </div>
     </div>
   );
@@ -162,7 +164,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
         <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
             <div class="col-12 mb-1">
-              <h4 className={clsx(styles.tituloRodape)}>Redes Sociais</h4>
+              <h4 className={clsx(styles.tituloRodape)}><Translator path="1.social" /></h4>
             </div>
             <div class="col-3 gx-2 ps-3">
               <a href={link1} target="_blank"><img src={icon1} alt="Rede Social 1" /></a>
@@ -185,7 +187,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
         <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
             <div class="col-12 mb-1 pt-3">
-              <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
+              <h4 className={clsx(styles.tituloRodape)}><Translator path="1.contato" /></h4>
             </div>
             <div class="col-12">
               <p className={clsx(styles.textoRodape)}>nefits.unesp@gmail.com</p>
@@ -220,35 +222,25 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
         <div className="col-md-7 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
             <li className={clsx(styles.liLista)}>
-              <a href={link1}>Home</a>
+              <a href={link1}><Translator path="7.home" /></a>
+            </li>
+            <li className={clsx(styles.liLista)}>
+              <a href={link2}><Translator path="7.sobre" /></a>
             </li>
             <li className={clsx(styles.liListaSelecionado)}>
-              <a href={link2}>Sobre</a>
+              <a href={link3}><Translator path="7.equipe" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link3}>Equipe</a>
+              <a href={link4}><Translator path="7.noticias" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link4}>Notícias</a>
+              <a href={link6}><Translator path="7.publicacoes" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link6}>Publicações</a>
-            </li>
-            <li className={clsx(styles.liLista)}>
-              <a href={link7}>Vídeos</a>
+              <a href={link7}><Translator path="7.videos" /></a>
             </li>
             <li className={clsx(styles.liLista, "gx-5 mt-1")}>
-              <div class="dropdown">
-                <button className={clsx(styles.textoTrad, "btn bg-transparent dropdown-toggle")} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
-                  </svg>
-                </button>
-                <ul class="dropdown-menu">
-                  <li><button className={clsx(styles.textoTrad, "dropdown-item")} type="button"><img className={clsx(styles.imgTrad)} src="/images/brazil-flag-icon.svg" />  Português</button></li>
-                  <li><button className={clsx(styles.textoTrad, "dropdown-item")} type="button"><img className={clsx(styles.imgTrad)} src="/images/united-states-flag-icon.svg" />  Inglês</button></li>
-                </ul>
-              </div>
+              <LanguageSelector />
             </li>
           </ul>
         </div>

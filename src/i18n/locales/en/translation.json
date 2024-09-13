@@ -1,13 +1,17 @@
 {
     "1": {
         "home": "The spirit that mobilizes the Research Center in Ethics, Philosophy, Political and Social Theory intends to always rub the dimension of the diagnosis of oppressions and injustices with the comprehension efforts of the imaginative and creative potential that emerge from the conflicts that constitute social dynamics. Through the necessary mediations, the results of this friction can serve as an impulse for the analysis and formulation of public policies.",
-        "sobre": "The Research Center in Ethics, Philosophy, Political and Social Theory (NéFiTs, acronym in Portuguese) is based on UNESP, campus of Franca, and builds itself around research guided by a primarily philosophical approach constructed from an intimate dialogue with human and social sciences.",
+        "sobre": {
+            "titulo": "About us",
+            "texto": "The Research Center in Ethics, Philosophy, Political and Social Theory (NéFiTs, acronym in Portuguese) is based on UNESP, campus of Franca, and builds itself around research guided by a primarily philosophical approach constructed from an intimate dialogue with human and social sciences."
+        },
         "btn": "Learn More",
         "noticias": "News",
         "publicacoes": "Publication",
         "textoNoticias": "Access the most recent news on NéFiTs and its activities.",
         "textoPublicacoes": "Access publications developed and published by the NéFiTs team.",
-        "fapesp": "This website was created with the support of the São Paulo Research Foundation (FAPESP) through the Research Grants - Special Program - The π (Pi) Initial Project Grant",
+        "fapesp1": "This website was created with the support of the São Paulo Research Foundation (FAPESP) through the",
+        "fapesp2": "Research Grants - Special Program - The π (Pi) Initial Project Grant",
         "contato": "Contact",
         "social": "Social Media"
     },
@@ -136,5 +140,13 @@
         "videos": "Videos",
         "texto": "Check the videos posted on our YouTube channel.",
         "btn": "See Full List"
+    },
+    "7": {
+        "home": "Home",
+        "sobre": "About Us",
+        "equipe": "Team",
+        "noticias": "News",
+        "publicacoes": "Publication",
+        "videos": "Videos"
     }
 }
