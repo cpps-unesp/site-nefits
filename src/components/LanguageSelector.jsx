@@ -4,14 +4,18 @@ import styles from './styles.module.css';
 import i18n from '../i18n';
 
 const LanguageSelector = () => {
-    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
+    //const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
 
-    const chooseLanguage = (e) => {
+   /* const chooseLanguage = (e) => {
         e.preventDefault();
         i18n.changeLanguage(e.target.value);   // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
         setSelectedLanguage(e.target.value);
         localStorage.setItem("lang", e.target.value);
-    }
+    } */
+
+        const changeLanguage = (lng) => {
+            i18n.changeLanguage(lng);
+          }
 
     return (
         <div class="dropdown">
@@ -22,12 +26,12 @@ const LanguageSelector = () => {
             </button>
             <ul class="dropdown-menu">
                 <li>
-                    <button className={clsx(styles.textoTrad, "dropdown-item")} type="button" isSelected={selectedLanguage === 'pt'} onClick={chooseLanguage}>
+                    <button value="pt" className={clsx(styles.textoTrad, "dropdown-item")} type="button" onClick={() => changeLanguage('pt')}>
                         <img className={clsx(styles.imgTrad)} src="/images/brazil-flag-icon.svg" />  Português
                     </button>
                 </li>
                 <li>
-                    <button className={clsx(styles.textoTrad, "dropdown-item")} type="button" isSelected={selectedLanguage === 'en'} onClick={chooseLanguage}>
+                    <button value="en" className={clsx(styles.textoTrad, "dropdown-item")} type="button" onClick={() => changeLanguage('en')}>
                         <img className={clsx(styles.imgTrad)} src="/images/united-states-flag-icon.svg" />  Inglês
                     </button>
                 </li>

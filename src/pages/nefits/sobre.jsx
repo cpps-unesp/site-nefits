@@ -224,10 +224,10 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
             <li className={clsx(styles.liLista)}>
               <a href={link1}><Translator path="7.home" /></a>
             </li>
-            <li className={clsx(styles.liLista)}>
+            <li className={clsx(styles.liListaSelecionado)}>
               <a href={link2}><Translator path="7.sobre" /></a>
             </li>
-            <li className={clsx(styles.liListaSelecionado)}>
+            <li className={clsx(styles.liLista)}>
               <a href={link3}><Translator path="7.equipe" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
