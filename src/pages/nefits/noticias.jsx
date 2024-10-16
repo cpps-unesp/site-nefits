@@ -44,16 +44,16 @@ const primeiroContainer = [
 
 const noticiasCards = [
   {
-    foto: "/images/noticia-1.svg",
-    titulo: "Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes)",
-    texto: (
+    foto1: "/images/noticia-1.svg",
+    titulo1: "Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes)",
+    texto1: (
       <>
       O discente do curso de Direito da FCHS, Matheus de Vilhena Moraes, foi contemplado com a bolsa BEPE – Bolsa de Estágio de Pesquisa no Exterior para desenvolver parte da sua pesquisa realizada no Brasil com o financiamento da FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob a orientação do Prof. Dr. Hélio Alexandre da Silva.
       Entre agosto e novembro de 2022, Matheus integrou o Programa de Justiça Global da Universidade de Yale...
       </>
     ),
-    btn: "Saiba mais",
-    link: "/noticias/noticia-1",
+    btn1: "Saiba mais",
+    link1: "/noticias/noticia-1",
     foto2: "/images/noticia-2.svg",
     titulo2: "Experiências Internacionais – Universidade Paris-Nanterre (Ana Júlia Diniz Neves do Lago)",
     texto2: (
@@ -64,65 +64,72 @@ const noticiasCards = [
     ),
     btn2: "Saiba mais",
     link2: "/noticias/noticia-2",
-  },
-  {
-    foto: "/images/noticia-3.svg",
-    titulo: "Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)",
-    texto: (
+    foto3: "/images/noticia-3.svg",
+    titulo3: "Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)",
+    texto3: (
       <>
       Gabrielle Nascimento, discente do curso de Relações Internacionais, que estuda Planejamento Econômico como crítica anti-capitalista, foi contemplada com uma oportunidade de intercâmbio na Universidad de Santiago de Chile. Entre agosto de 2023 e janeiro de 2024, Gabrielle desenvolveu sua pesquisa focada na conceituação e mapeamento do debate sobre a planificação econômica, suas experiências e sua efetividade na construção do socialismo.
       Durante sua estadia no Chile, Gabrielle esteve presente no aniversário de 50 anos da ditadura militar...
       </>
     ),
-    btn: "Saiba mais",
-    link: "/noticias/noticia-3",
-    foto2: "/images/noticia-4.svg",
-    titulo2: "Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)",
-    texto2: (
+    btn3: "Saiba mais",
+    link3: "/noticias/noticia-3",
+    foto4: "/images/noticia-4.svg",
+    titulo4: "Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)",
+    texto4: (
       <>
       Entre 3 de março e 18 de julho, Eduarda Pereira Pires Barboza, discente do curso de Relações Internacionais, realizou uma visita na Universidad de Playa Ancha (UPLA), no Chile. Seu estudo centraliza-se na desigualdade social, e o intercâmbio foi crucial para expandir sua compreensão desse tema.
       Durante sua estadia, Eduarda observou uma abordagem diferente em relação à desigualdade. Participando de congressos e jornadas, e conversando com colegas e professores, a discente notou que a distinção entre público e estatal é frequentemente enfatizada...
       </>
     ),
-    btn2: "Saiba mais",
-    link2: "/noticias/noticia-4",
-  },
-  {
-    foto: "/images/noticia-5.svg",
-    titulo: "Lançamento do Livro: Experiências Sociais Negativas",
-    texto: (
+    btn4: "Saiba mais",
+    link4: "/noticias/noticia-4",
+    foto5: "/images/noticia-5.svg",
+    titulo5: "Lançamento do Livro: Experiências Sociais Negativas",
+    texto5: (
       <>
       O Núcleo de Estudos em Ética e Teoria Política e Social tem o prazer de anunciar o lançamento do livro "Experiências Sociais Negativas", uma obra que explora o sofrimento e outras experiências negativas que acompanham a vivência de determinados indivíduos, sob uma perspectiva interdisciplinar e crítica.
       O livro questiona se a Filosofia e as Ciências Sociais podem se ocupar do problema do sofrimento, tradicionalmente considerado objeto exclusivo da psicologia e das terapias. A resposta afirmativa baseia-se na compreensão de que tais experiências não são meramente individuais...
       </>
     ),
-    btn: "Saiba mais",
-    link: "/noticias/noticia-5",
-    foto2: "/images/noticia-6.svg",
-    titulo2: "II Seminário Permanente de Filosofia Crítica e Sociedade",
-    texto2: (
+    btn5: "Saiba mais",
+    link5: "/noticias/noticia-5",
+    foto6: "/images/noticia-6.svg",
+    titulo6: "II Seminário Permanente de Filosofia Crítica e Sociedade",
+    texto6: (
       <>
       Nos dias 24 e 25 de abril, o campus de Franca da UNESP sediou o II Encontro do Seminário Permanente de Filosofia, Crítica e Sociedade. O evento, que surgiu como um esforço de construção de um espaço de debates durante a pandemia, reuniu pesquisadores do Brasil e da América Latina.
       Com o tema "Crítica e subjetividade: experiências do presente para imaginar o futuro", o encontro privilegiou a profundidade dos debates, focando em cada sessão em uma única apresentação, seja um trabalho em progresso ou uma publicação recente... 
       </>
     ),
-    btn2: "Saiba mais",
-    link2: "/noticias/noticia-6",
+    btn6: "Saiba mais",
+    link6: "/noticias/noticia-6",
+    foto7: "/images/noticia-7.svg",
+    titulo7: "XXXVI Congresso de Iniciação Científica da Unesp",
+    texto7: (
+      <>
+      Nesta semana, os membros do grupo Néfits participaram do XXXVI Congresso de Iniciação Científica da Unesp, cujo tema foi "Ciência em tempos de crise climática e social". O evento destacou discussões fundamentais para o momento atual, e nossos integrantes contribuíram com temas 
+      relevantes em diversas áreas da filosofia, ciências humanas e sociais...
+      </>
+    ),
+    btn7: "Saiba mais",
+    link7: "/noticias/noticia-7",
   },
 ]
 
-function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, btn2, link2}){
+function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, texto2, btn2, link2, foto3, titulo3, texto3, btn3, link3, foto4, titulo4, texto4, btn4, link4,
+  foto5, titulo5, texto5, btn5, link5, foto6, titulo6, texto6, btn6, link6, foto7, titulo7, texto7, btn7, link7}){
   return(
     <div class="row justify-content-center">
       <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
         <div class="row">
           <div class="col-6">
-            <img src={foto} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
+            <img src={foto1} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto}</p>
-            <a href={link} target="_blank" className={clsx(styles.btnUm)}>{btn}</a>
+            <h1 className={clsx(styles.tituloEquipe)}>{titulo1}</h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto1}</p>
+            <a href={link1} target="_blank" className={clsx(styles.btnUm)}>{btn1}</a>
           </div>
         </div>
       </div>
@@ -136,6 +143,71 @@ function NoticiasCards({foto, titulo, texto, btn, link, foto2, titulo2, texto2, 
             <h1 className={clsx(styles.tituloEquipe)}>{titulo2}</h1>
             <p className={clsx(styles.textoEquipe, "mb-4")}>{texto2}</p>
             <a href={link2} target="_blank" className={clsx(styles.btnUm)}>{btn2}</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+        <div class="row">
+          <div class="col-6">
+            <img src={foto3} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
+          </div>
+          <div class="col-6 text-start mt-3">
+            <h1 className={clsx(styles.tituloEquipe)}>{titulo3}</h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto3}</p>
+            <a href={link3} target="_blank" className={clsx(styles.btnUm)}>{btn3}</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+        <div class="row">
+          <div class="col-6">
+            <img src={foto4} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
+          </div>
+          <div class="col-6 text-start mt-3">
+            <h1 className={clsx(styles.tituloEquipe)}>{titulo4}</h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto4}</p>
+            <a href={link4} target="_blank" className={clsx(styles.btnUm)}>{btn4}</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+        <div class="row">
+          <div class="col-6">
+            <img src={foto5} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
+          </div>
+          <div class="col-6 text-start mt-3">
+            <h1 className={clsx(styles.tituloEquipe)}>{titulo5}</h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto5}</p>
+            <a href={link5} target="_blank" className={clsx(styles.btnUm)}>{btn5}</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+        <div class="row">
+          <div class="col-6">
+            <img src={foto6} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
+          </div>
+          <div class="col-6 text-start mt-3">
+            <h1 className={clsx(styles.tituloEquipe)}>{titulo6}</h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto6}</p>
+            <a href={link6} target="_blank" className={clsx(styles.btnUm)}>{btn6}</a>
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx(styles.cardNoticias, "col-12 col col-xxl-5 mt-1 mx-2 mb-2 px-0 text-center")}>
+        <div class="row">
+          <div class="col-6">
+            <img src={foto7} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
+          </div>
+          <div class="col-6 text-start mt-3">
+            <h1 className={clsx(styles.tituloEquipe)}>{titulo7}</h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto7}</p>
+            <a href={link7} target="_blank" className={clsx(styles.btnUm)}>{btn7}</a>
           </div>
         </div>
       </div>
