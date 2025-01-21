@@ -31,6 +31,12 @@ const rodape = [
   }
 ];
 
+const fapesp = [
+  {
+    logo: "/images/fapesp_logo.svg"
+  }
+]
+
 const quemSomos = [
   {
     titulo: "Quem somos",
@@ -130,24 +136,18 @@ function QuemSomos({titulo, img1, texto1, texto2}){
   );
 }
 
-const fapesp = [
-  {
-    logo: "/images/fapesp_logo.svg"
-  }
-]
-
 function Fapesp({logo}){
   return(
     <div class="container rodape2">
       <div class="row d-flex">
-        <div class="col-12 d-flex align-items-center text-start">
+        <div class="col-12 d-flex align-items-center text-start justify-content-center">
           <div class="row">
-            <div class="col-3 d-flex align-items-center">
+            <div class="col-1 d-flex align-items-center">
               <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
             </div>
-            <div class="col-9 gx-2 gy-4 text-wrap">
-              <p className={clsx(styles.textoRodape)}>Esse site foi construído com apoio da Fapesp através do    
-                <b className={clsx(styles.textoRodape)}> Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI</b>.
+            <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape2)}><Translator path="1.fapesp1" />    
+                <b className={clsx(styles.textoRodape2)}><Translator path="1.fapesp2" /></b>.
               </p>
             </div>
           </div>
@@ -293,6 +293,12 @@ function Sobre() {
           </div>
         </section>
       </main>
+
+      <div className={clsx(styles.rodape2)}>
+        {fapesp.map((props, idx) => (
+          <Fapesp key={idx} {...props} />
+          ))}
+      </div>
  
       <footer className={clsx(styles.rodape)}>
         <div>

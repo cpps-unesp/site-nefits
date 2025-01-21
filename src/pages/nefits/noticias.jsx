@@ -31,6 +31,12 @@ const rodape = [
   }
 ];
 
+const fapesp = [
+  {
+    logo: "/images/fapesp_logo.svg"
+  }
+]
+
 const primeiroContainer = [
   {
     titulo: "Notícias",
@@ -229,6 +235,27 @@ function PrimeiroContainer({titulo, texto}){
   )
 }
 
+function Fapesp({logo}){
+  return(
+    <div class="container rodape2">
+      <div class="row d-flex">
+        <div class="col-12 d-flex align-items-center text-start justify-content-center">
+          <div class="row">
+            <div class="col-1 d-flex align-items-center">
+              <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
+            </div>
+            <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape2)}><Translator path="1.fapesp1" />    
+                <b className={clsx(styles.textoRodape2)}><Translator path="1.fapesp2" /></b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
     <div class="container rodape">
@@ -365,6 +392,12 @@ function Noticias() {
           </div>
         </section>
       </main>
+
+      <div className={clsx(styles.rodape2)}>
+        {fapesp.map((props, idx) => (
+          <Fapesp key={idx} {...props} />
+          ))}
+      </div>
 
       <footer className={clsx(styles.rodape)}>
         <div>
