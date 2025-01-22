@@ -52,6 +52,7 @@ const membrosEquipe = [
     foto: "/images/Professor_Helio.svg",
     foto2: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
     foto3: "/images/Bianca_Regina_Poltronieri.svg",
+    foto4: "/images/Eduarda_Barboza.svg",
     foto5: "/images/Gabriel_Henrique_de_Andrade.svg",
     foto6: "/images/Gabrielle_Nascimento.svg",
     foto7: "/images/Natalie.svg",
