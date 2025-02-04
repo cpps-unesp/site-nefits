@@ -15,6 +15,12 @@
     "astro": "^4.5.16",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "react-bootstrap": "^2.10.2"
+    "i18next": "^23.15.1",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.0.0",
+    "react-i18next": "^15.0.1",
+    "vite": "^6.0.11"
   }
 }
