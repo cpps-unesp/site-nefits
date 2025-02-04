@@ -30,4 +30,10 @@ i18n
     defaultNS: "translation"
   });
 
+  // Expondo o objeto i18n globalmente para testes no console
+if (typeof window !== "undefined") {
+  window.i18n = i18n;
+}
+
+
 export default i18n;

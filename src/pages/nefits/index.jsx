@@ -5,6 +5,8 @@ import LanguageSelector from "../../components/LanguageSelector";
 import Translator from "../../components/i18n/translator";
 import styles from "./styles.module.css";
 
+
+
 const intro = [
   {
     link1: "/",
@@ -105,7 +107,7 @@ const carrossel = [
 
 function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2, linkDois1, titulo3, texto3, imgFoto3, linkTres1 }){
   return(
-    <div class="row justify-content-center text-center">
+    <div className="row justify-content-center text-center">
       <div className={clsx(styles.containerCards, "col-12 col-lg-6 mt-3 gx-4 border-0 bg-transparent")}>
         <div className={clsx(styles.Cards, "card-body p-3")}>
             <h2><a href={link} className={clsx(styles.sobreTitulo)}><Translator path="1.noticias" /></a></h2>
@@ -127,13 +129,13 @@ function ContainerCards({titulo, texto, imgFoto, link, titulo2, texto2, imgFoto2
 function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
   return (
     <div className={clsx(styles.containerUm, "text-center rounded p-3")}>
-      <div class="row mb-3 align-items-center p-3">
-        <div class="col-md-6 col-sm-12 text-start">
+      <div className="row mb-3 align-items-center p-3">
+        <div className="col-md-6 col-sm-12 text-start">
             <h1 className={clsx(styles.titulo)}><Translator path="1.sobre.titulo" /></h1>
             <p className={clsx(styles.texto)}><Translator path="1.sobre.texto" /></p>
             <a href={link} className={clsx(styles.btnUm)}><Translator path="1.btn" /></a>
         </div>
-        <div class="col-md-6 col-sm-12 text-center">
+        <div className="col-md-6 col-sm-12 text-center">
           <img className="img-fluid" src={img1} alt="Imagem 1" />
         </div>
       </div>
@@ -143,11 +145,11 @@ function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
 
 function PrimeiroContainer({ img1, texto1 }) {
   return (
-    <div class="row mt-3 mb-4">
-      <div class="col-md-6 col-sm-12 text-center">
+    <div className="row mt-3 mb-4">
+      <div className="col-md-6 col-sm-12 text-center">
         <img src={img1} className={clsx(styles.imgHome, "img-fluid rounded")} alt="Imagem 1" />
       </div>
-      <div class="col-md-6 col-sm-12 text-start d-flex align-items-center text-wrap">
+      <div className="col-md-6 col-sm-12 text-start d-flex align-items-center text-wrap">
         <p className={clsx(styles.texto)}><Translator path="1.home" /></p>
       </div>
     </div>
@@ -156,14 +158,14 @@ function PrimeiroContainer({ img1, texto1 }) {
 
 function Fapesp({logo}){
   return(
-    <div class="container rodape2">
-      <div class="row d-flex">
-        <div class="col-12 d-flex align-items-center text-start justify-content-center">
-          <div class="row">
-            <div class="col-1 d-flex align-items-center">
+    <div className="container rodape2">
+      <div className="row d-flex">
+        <div className="col-12 d-flex align-items-center text-start justify-content-center">
+          <div className="row">
+            <div className="col-1 d-flex align-items-center">
               <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
             </div>
-            <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
+            <div className="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
               <p className={clsx(styles.textoRodape2)}><Translator path="1.fapesp1" />    
                 <b className={clsx(styles.textoRodape2)}><Translator path="1.fapesp2" /></b>.
               </p>
@@ -177,45 +179,45 @@ function Fapesp({logo}){
 
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
-    <div class="container rodape">
-      <div class="row">
-        <div class="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
-          <div class="row">
-            <div class="col-12 mb-1 text-center text-xl-start">
+    <div className="container rodape">
+      <div className="row">
+        <div className="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
+          <div className="row">
+            <div className="col-12 mb-1 text-center text-xl-start">
               <h4 className={clsx(styles.tituloRodape)}><Translator path="1.social" /></h4>
             </div>
-            <div class="col-3 gx-2 ps-3">
+            <div className="col-3 gx-2 ps-3">
               <a href={link1} target="_blank"><img src={icon1} alt="Rede Social 1" /></a>
             </div>
 
-            <div class="col-3 gx-2">
+            <div className="col-3 gx-2">
               <a href={link2} target="_blank"><img src={icon2} alt="Rede Social 2" /></a>
             </div>
 
-            <div class="col-3 gx-2">
+            <div className="col-3 gx-2">
               <a href={link3} target="_blank"><img src={icon3} alt="Rede Social 3" /></a>
             </div>
 
-            <div class="col-3 gx-2">
+            <div className="col-3 gx-2">
               <a href={link4} target="_blank"><img src={icon4} alt="Rede Social 4" /></a>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
-          <div class="row">
-            <div class="col-12 mb-1 pt-3 text-center text-xl-start">
+        <div className="col-12 col-xl-3 d-flex align-items-center justify-content-sm-center">
+          <div className="row">
+            <div className="col-12 mb-1 pt-3 text-center text-xl-start">
               <h4 className={clsx(styles.tituloRodape)}><Translator path="1.contato" /></h4>
             </div>
-            <div class="col-12">
+            <div className="col-12">
               <p className={clsx(styles.textoRodape)}>nefits.unesp@gmail.com</p>
             </div>
           </div>
         </div>
 
-        <div class="col-12 col-xl-6 d-flex justify-content-sm-center justify-content-xl-end">
-          <div class="row">
-            <div class="col-4 pt-3">
+        <div className="col-12 col-xl-6 d-flex justify-content-sm-center justify-content-xl-end">
+          <div className="row">
+            <div className="col-4 pt-3">
               <img src={logo1} alt="Logos" />
             </div>
           </div>
@@ -223,9 +225,9 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
 
         <hr className={clsx(styles.hr, "mt-3 mb-3")} />
 
-        <div class="col-12">
-          <div class="row">
-            <div class="col-12 col-xl-5 col-xxl-4 gx-2 gy-2">
+        <div className="col-12">
+          <div className="row">
+            <div className="col-12 col-xl-5 col-xxl-4 gx-2 gy-2">
               <p className={clsx(styles.textoRodape)}>Design por <b className={clsx(styles.textoRodape)}>Júlia dos Santos Silveira</b> © 2024 Current</p>
             </div>
           </div>
@@ -240,76 +242,76 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
 
 function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, link4, link5, link6}) {
   return(
-    <div class="container gx-4 gy-3 mb-3">
-      <div class="row">
-        <div class="col-12">
-          <div id="carouselExampleCaptions" class="carousel px-xxl-5 slide rounded justify-content-center" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <div className="container gx-4 gy-3 mb-3">
+      <div className="row">
+        <div className="col-12">
+          <div id="carouselExampleCaptions" className="carousel px-xxl-5 slide rounded justify-content-center" data-bs-ride="carousel">
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="3" aria-label="Slide 4"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="4" aria-label="Slide 5"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
                 <img src={img1} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
-                  <div class="col-7 col-xxl-6">
+                <div className="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
+                  <div className="col-7 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Universidade Yale <br /> (Matheus de Vilhena Moraes)</h5>
                   </div>
                   <a href={link1} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                   <img src={img2} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
-                  <div class="row">
-                    <div class="col-5 col-xxl-6"></div>
-                    <div class="col-7 col-xxl-6 text-end ps-3">
+                <div className="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
+                  <div className="row">
+                    <div className="col-5 col-xxl-6"></div>
+                    <div className="col-7 col-xxl-6 text-end ps-3">
                       <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais – Universidade Paris-Nanterre <br /> (Ana Júlia Diniz Neves do Lago)</h5>
                     </div>
                   </div>
                   <a href={link2} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img src={img3} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
-                  <div class="col-6 col-xxl-6">
+                <div className="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
+                  <div className="col-6 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)</h5>
                   </div>
                   <a href={link3} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img src={img4} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
-                  <div class="row">
-                    <div class="col-5 col-xxl-6"></div>
-                    <div class="col-7 col-xxl-6 text-end ps-3">
+                <div className="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
+                  <div className="row">
+                    <div className="col-5 col-xxl-6"></div>
+                    <div className="col-7 col-xxl-6 text-end ps-3">
                       <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)</h5>
                     </div>
                   </div>
                   <a href={link4} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img src={img5} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
-                  <div class="col-6 col-xxl-6">
+                <div className="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
+                  <div className="col-6 col-xxl-6">
                     <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Lançamento do Livro: Experiências Sociais Negativas</h5>
                   </div>
                   <a href={link5} className={clsx(styles.btnUm)}>Ler Mais</a>
                 </div>
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img src={img6} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
-                <div class="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
-                  <div class="row">
-                    <div class="col-5 col-xxl-6"></div>
-                    <div class="col-7 col-xxl-6 text-end ps-3">
+                <div className="carousel-caption text-end d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
+                  <div className="row">
+                    <div className="col-5 col-xxl-6"></div>
+                    <div className="col-7 col-xxl-6 text-end ps-3">
                       <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>II Seminário Permanente de Filosofia Crítica e Sociedade</h5>
                     </div>
                   </div>
@@ -317,13 +319,13 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>
@@ -335,7 +337,7 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
 function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
   return (
     <div className={clsx(styles.heroBanner)}>
-      <div class="row">
+      <div className="row">
         <div className="col-md-3 col-sm-12">
           <a href="/"><img className="intro" src="/images/logo-banner.png" alt="Logo NéFiTs" /></a> 
         </div>
@@ -365,7 +367,7 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
           </ul>
         </div>
         <div className={clsx(styles.logoMenu, "col-md-2 col-sm-12")}>
-          <img  src="/images/logo_unesp.svg" alt="Logo UNESP" />
+          <img  src="/images/logo_unesp.svg" alt="Seja bem vindo ao NéFiTS" />
         </div>
       </div>
     </div>
@@ -448,3 +450,4 @@ function Home() {
 }
 
 export default Home;
+
