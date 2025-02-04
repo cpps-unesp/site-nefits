@@ -31,6 +31,12 @@ const rodape = [
   }
 ];
 
+const fapesp = [
+  {
+    logo: "/images/fapesp_logo.svg"
+  }
+]
+
 const primeiroContainer = [
   {
     titulo: "Equipe",
@@ -46,6 +52,7 @@ const membrosEquipe = [
     foto: "/images/Professor_Helio.svg",
     foto2: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
     foto3: "/images/Bianca_Regina_Poltronieri.svg",
+    foto4: "/images/Eduarda_Barboza.svg",
     foto5: "/images/Gabriel_Henrique_de_Andrade.svg",
     foto6: "/images/Gabrielle_Nascimento.svg",
     foto7: "/images/Natalie.svg",
@@ -411,6 +418,27 @@ function PrimeiroContainer({titulo, texto}){
   )
 }
 
+function Fapesp({logo}){
+  return(
+    <div class="container rodape2">
+      <div class="row d-flex">
+        <div class="col-12 d-flex align-items-center text-start justify-content-center">
+          <div class="row">
+            <div class="col-1 d-flex align-items-center">
+              <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
+            </div>
+            <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape2)}><Translator path="1.fapesp1" />    
+                <b className={clsx(styles.textoRodape2)}><Translator path="1.fapesp2" /></b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
   return(
     <div class="container rodape">
@@ -499,7 +527,7 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
           </ul>
         </div>
         <div className={clsx(styles.logoMenu, "col-md-2 col-sm-12")}>
-          <img  src="/images/logo_unesp.svg" alt="Logo UNESP" />
+          <img  src="/images/logo_unesp.svg" alt="Seja bem vindo ao NéFiTS" />
         </div>
       </div>
     </div>
@@ -547,6 +575,12 @@ function Equipe() {
           </div>
         </section>
       </main>
+
+      <div className={clsx(styles.rodape2)}>
+        {fapesp.map((props, idx) => (
+          <Fapesp key={idx} {...props} />
+          ))}
+      </div>
 
       <footer className={clsx(styles.rodape)}>
         <div>
