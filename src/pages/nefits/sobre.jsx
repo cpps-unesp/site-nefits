@@ -1,5 +1,7 @@
 import React from "react";
 import clsx from "clsx";
+import LanguageSelector from "../../components/LanguageSelector";
+import Translator from "../../components/i18n/translator";
 import styles from "./styles.module.css";
 
 
@@ -22,12 +24,18 @@ const rodape = [
     icon3: "/images/linkedin_rodape2.svg",
     icon4: "/images/youtube_rodape.svg",
     link1: "#",
-    link2: "#",
+    link2: "https://www.instagram.com/nefits.unesp?igsh=MTQxcXhiYjd5N2R1",
     link3: "#",
     link4: "https://www.youtube.com/@nefits8028",
     logo1: "/images/logos_rodape.svg",
   }
 ];
+
+const fapesp = [
+  {
+    logo: "/images/fapesp_logo.svg"
+  }
+]
 
 const quemSomos = [
   {
@@ -87,10 +95,10 @@ function Objetivos({titulo, img1, texto1, texto2}) {
           <div class="col-8">
             <div class="row">
               <div class="col-12">
-                <h2 className={clsx(styles.titulo, "text-start")}>{titulo}</h2>
+                <h2 className={clsx(styles.titulo, "text-start")}><Translator path="2.objetivos" /></h2>
               </div>
               <div class="col-12 gy-2">
-                <p className={clsx(styles.texto)}>{texto1}</p>
+                <p className={clsx(styles.texto)}><Translator path="2.texto1" /></p>
               </div>
             </div>
           </div>
@@ -98,7 +106,7 @@ function Objetivos({titulo, img1, texto1, texto2}) {
       </div>
 
       <div class="col-12">
-        <p className={clsx(styles.texto)}>{texto2}</p>
+        <p className={clsx(styles.texto)}><Translator path="2.texto2" /></p>
       </div>
     </div>
   );
@@ -110,10 +118,10 @@ function QuemSomos({titulo, img1, texto1, texto2}){
       <div class="col-8">
         <div class="row">
           <div class="col-12">
-            <h2 className={clsx(styles.titulo, "text-start")}>{titulo}</h2>
+            <h2 className={clsx(styles.titulo, "text-start")}><Translator path="2.sobre" /></h2>
           </div>
           <div class="col-12 gy-2">
-            <p className={clsx(styles.texto)}>{texto1}</p>
+            <p className={clsx(styles.texto)}><Translator path="2.paragrafo1" /></p>
           </div>
         </div>
       </div>
@@ -122,10 +130,31 @@ function QuemSomos({titulo, img1, texto1, texto2}){
       </div>
       
       <div class="col-12 gy-2">
-        <p className={clsx(styles.texto)}>{texto2}</p>
+        <p className={clsx(styles.texto)}><Translator path="2.paragrafo2" /></p>
       </div>
     </div>
   );
+}
+
+function Fapesp({logo}){
+  return(
+    <div class="container rodape2">
+      <div class="row d-flex">
+        <div class="col-12 d-flex align-items-center text-start justify-content-center">
+          <div class="row">
+            <div class="col-1 d-flex align-items-center">
+              <img className={clsx(styles.logoRodape, "img-fluid")} src={logo} alt="Logo" />
+            </div>
+            <div class="col-11 d-flex align-items-center gx-2 gy-4 text-wrap">
+              <p className={clsx(styles.textoRodape2)}><Translator path="1.fapesp1" />    
+                <b className={clsx(styles.textoRodape2)}><Translator path="1.fapesp2" /></b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, logo2}){
@@ -135,7 +164,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
         <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
             <div class="col-12 mb-1">
-              <h4 className={clsx(styles.tituloRodape)}>Redes Sociais</h4>
+              <h4 className={clsx(styles.tituloRodape)}><Translator path="1.social" /></h4>
             </div>
             <div class="col-3 gx-2 ps-3">
               <a href={link1} target="_blank"><img src={icon1} alt="Rede Social 1" /></a>
@@ -158,7 +187,7 @@ function Rodape({icon1, icon2, icon3, icon4, link1, link2, link3, link4, logo1, 
         <div class="col-6 col-lg-3 d-flex align-items-center justify-content-sm-center">
           <div class="row">
             <div class="col-12 mb-1 pt-3">
-              <h4 className={clsx(styles.tituloRodape)}>Contato</h4>
+              <h4 className={clsx(styles.tituloRodape)}><Translator path="1.contato" /></h4>
             </div>
             <div class="col-12">
               <p className={clsx(styles.textoRodape)}>nefits.unesp@gmail.com</p>
@@ -193,27 +222,30 @@ function Intro({ link1, link2, link3, link4, link5, link6, link7 }) {
         <div className="col-md-7 text-end mt-2">
           <ul className={clsx(styles.ulLista)}>
             <li className={clsx(styles.liLista)}>
-              <a href={link1}>Home</a>
+              <a href={link1}><Translator path="7.home" /></a>
             </li>
             <li className={clsx(styles.liListaSelecionado)}>
-              <a href={link2}>Sobre</a>
+              <a href={link2}><Translator path="7.sobre" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link3}>Equipe</a>
+              <a href={link3}><Translator path="7.equipe" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link4}>Notícias</a>
+              <a href={link4}><Translator path="7.noticias" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link6}>Publicações</a>
+              <a href={link6}><Translator path="7.publicacoes" /></a>
             </li>
             <li className={clsx(styles.liLista)}>
-              <a href={link7}>Vídeos</a>
+              <a href={link7}><Translator path="7.videos" /></a>
+            </li>
+            <li className={clsx(styles.liLista, "gx-5 mt-1")}>
+              <LanguageSelector />
             </li>
           </ul>
         </div>
         <div className={clsx(styles.logoMenu, "col-md-2 col-sm-12")}>
-          <img  src="/images/logo_unesp.svg" alt="Logo UNESP" />
+          <img  src="/images/logo_unesp.svg" alt="Seja bem vindo ao NéFiTS" />
         </div>
       </div>
     </div>
@@ -262,6 +294,12 @@ function Sobre() {
         </section>
       </main>
 
+      <div className={clsx(styles.rodape2)}>
+        {fapesp.map((props, idx) => (
+          <Fapesp key={idx} {...props} />
+          ))}
+      </div>
+ 
       <footer className={clsx(styles.rodape)}>
         <div>
           {rodape.map((props, idx) => (
