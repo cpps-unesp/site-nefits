@@ -6,5 +6,7 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   site: 'https://labriunesp.github.io',
   base: '/',
-  integrations: [react(), mdx()]
+  integrations: [react({
+    include: ['**/react/*']
+  }), mdx()],
 });
