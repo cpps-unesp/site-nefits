@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import i18n from '../i18n';
 
 const LanguageSelector = () => {
-    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
+    const [selectedLanguage, setSelectedLanguage] = useState(() => {
+        if (typeof window !== "undefined") {
+            return localStorage.getItem("lang") || i18n.language;
+        }
+        return i18n.language;
+    });
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            localStorage.setItem("lang", selectedLanguage);
+        }
+        i18n.changeLanguage(selectedLanguage);
+    }, [selectedLanguage]);
 
     const changeLanguage = (lng) => {
-        console.log("Mudando para o idioma:", lng); // Verifique se isso é impresso ao clicar
-        i18n.changeLanguage(lng);  // Tenta mudar o idioma
-        setSelectedLanguage(lng);  // Atualiza o estado com o idioma selecionado
-        localStorage.setItem("lang", lng);  // Armazena no localStorage
-    }
+        setSelectedLanguage(lng);
+    };
 
     return (
         <div className="dropdown">
