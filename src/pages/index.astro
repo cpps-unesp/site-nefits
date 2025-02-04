@@ -1,7 +1,7 @@
 ---
 // Exemplo: Misturando múltiplos componentes de frameworks na mesma página.
 import HomeSite from './nefits/index.jsx';
-
+import LanguageSelector from '../components/LanguageSelector.jsx';
 ---
 
 <head>
@@ -12,6 +12,6 @@ import HomeSite from './nefits/index.jsx';
 <body>
   <div>
     <!-- Usando o componente React dentro do Astro -->
-    <HomeSite />
+    <HomeSite LanguageSelector client:load />
   </div>
 </body>

@@ -5,6 +5,8 @@ import LanguageSelector from "../../components/LanguageSelector";
 import Translator from "../../components/i18n/translator";
 import styles from "./styles.module.css";
 
+
+
 const intro = [
   {
     link1: "/",
@@ -448,3 +450,4 @@ function Home() {
 }
 
 export default Home;
+
