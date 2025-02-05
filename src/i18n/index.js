@@ -20,7 +20,6 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources, // resources are important to load translations for the languages.
-    lng: "pt", // It acts as default language. When the site loads, content is shown in this language.  
     debug: true,
     fallbackLng: "pt", // use de if selected language is not available
     interpolation: {
