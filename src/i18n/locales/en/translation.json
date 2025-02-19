@@ -13,7 +13,31 @@
         "fapesp1": "This website was created with the support of the São Paulo Research Foundation (FAPESP) through the",
         "fapesp2": " Research Grants - Special Program - The π (Pi) Initial Project Grant - Process 2022/02922-1",
         "contato": "Contact",
-        "social": "Social Media"
+        "social": "Social Media",
+        "1": {
+            "titulo": "International Experiences - Yale University",
+            "btn": "Read More"
+        },
+        "2": {
+            "titulo": "International Experiences - Paris Nanterre University",
+            "btn": "Read More"
+        },
+        "3": {
+            "titulo": "International Experiences: University of Santiago, Chile",
+            "btn": "Read More"
+        },
+        "4": {
+            "titulo": "International Experiences: Playa Ancha University",
+            "btn": "Read More"
+        },
+        "5": {
+            "titulo": "Book Launch: Experiências Sociais Negativas",
+            "btn": "Read More"
+        },
+        "6": {
+            "titulo": "2nd Permanent Seminar of Philosophy, Critique and Society",
+            "btn": "Read More"
+        }
     },
     "2": {
         "sobre": "About us",

@@ -466,3 +466,13 @@ a{
 .imgTrad{
     width: .8rem;
 }
+
+.imgSobre{
+    opacity: 0.75 !important;
+    filter: grayscale(25%);
+}
+
+    .imgSobre:hover{
+        opacity: 1 !important;
+        filter: grayscale(0%);
+    }

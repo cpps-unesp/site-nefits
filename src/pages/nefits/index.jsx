@@ -42,7 +42,7 @@ const containerSobre = [
     ),
     btn1: "Saiba mais",
     link: "/sobre",
-    img1: "/images/sobre1.png",
+    img1: "/images/sobre2.png",
   },
 ];
 
@@ -136,7 +136,7 @@ function ContainerSobre({ titulo1, texto1, btn1, img1, link }) {
             <a href={link} className={clsx(styles.btnUm)}><Translator path="1.btn" /></a>
         </div>
         <div className="col-md-6 col-sm-12 text-center">
-          <img className="img-fluid" src={img1} alt="Imagem 1" />
+          <a href={link}><img className={clsx(styles.imgSobre, "img-fluid w-75")} src={img1} alt="Imagem 1" /></a>
         </div>
       </div>
     </div>
@@ -259,9 +259,9 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
                 <img src={img1} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
                 <div className="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div className="col-7 col-xxl-6">
-                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais – Universidade Yale <br /> (Matheus de Vilhena Moraes)</h5>
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}><Translator path="1.1.titulo" /> <br /> (Matheus de Vilhena Moraes)</h5>
                   </div>
-                  <a href={link1} className={clsx(styles.btnUm)}>Ler Mais</a>
+                  <a href={link1} className={clsx(styles.btnUm)}><Translator path="1.1.btn" /></a>
                 </div>
               </div>
               <div className="carousel-item">
@@ -270,19 +270,19 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
                   <div className="row">
                     <div className="col-5 col-xxl-6"></div>
                     <div className="col-7 col-xxl-6 text-end ps-3">
-                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais – Universidade Paris-Nanterre <br /> (Ana Júlia Diniz Neves do Lago)</h5>
+                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}><Translator path="1.2.titulo" /> <br /> (Ana Júlia Diniz Neves do Lago)</h5>
                     </div>
                   </div>
-                  <a href={link2} className={clsx(styles.btnUm)}>Ler Mais</a>
+                  <a href={link2} className={clsx(styles.btnUm)}><Translator path="1.2.btn" /></a>
                 </div>
               </div>
               <div className="carousel-item">
                 <img src={img3} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
                 <div className="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div className="col-6 col-xxl-6">
-                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)</h5>
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}><Translator path="1.3.titulo" /> (Gabrielle Nascimento)</h5>
                   </div>
-                  <a href={link3} className={clsx(styles.btnUm)}>Ler Mais</a>
+                  <a href={link3} className={clsx(styles.btnUm)}><Translator path="1.3.btn" /></a>
                 </div>
               </div>
               <div className="carousel-item">
@@ -291,19 +291,19 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
                   <div className="row">
                     <div className="col-5 col-xxl-6"></div>
                     <div className="col-7 col-xxl-6 text-end ps-3">
-                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)</h5>
+                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}><Translator path="1.4.titulo" /> (Eduarda Pereira Pires Barboza)</h5>
                     </div>
                   </div>
-                  <a href={link4} className={clsx(styles.btnUm)}>Ler Mais</a>
+                  <a href={link4} className={clsx(styles.btnUm)}><Translator path="1.4.btn" /></a>
                 </div>
               </div>
               <div className="carousel-item">
                 <img src={img5} className={clsx(styles.imgCarrossel, "d-block img-fluid rounded")} alt="..." />
                 <div className="carousel-caption text-start d-none d-md-block mb-xxl-5 pb-3 pb-xxl-2">
                   <div className="col-6 col-xxl-6">
-                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}>Lançamento do Livro: Experiências Sociais Negativas</h5>
+                    <h5 className={clsx(styles.tituloCarrossel, "text-start text-break")}><Translator path="1.5.titulo" /></h5>
                   </div>
-                  <a href={link5} className={clsx(styles.btnUm)}>Ler Mais</a>
+                  <a href={link5} className={clsx(styles.btnUm)}><Translator path="1.5.btn" /></a>
                 </div>
               </div>
               <div className="carousel-item">
@@ -312,10 +312,10 @@ function Carrossel({img1, img2, img3, img4, img5, img6, link1, link2, link3, lin
                   <div className="row">
                     <div className="col-5 col-xxl-6"></div>
                     <div className="col-7 col-xxl-6 text-end ps-3">
-                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}>II Seminário Permanente de Filosofia Crítica e Sociedade</h5>
+                      <h5 className={clsx(styles.tituloCarrossel, "text-end text-break")}><Translator path="1.6.titulo" /></h5>
                     </div>
                   </div>
-                  <a href={link6} className={clsx(styles.btnUm)}>Ler Mais</a>
+                  <a href={link6} className={clsx(styles.btnUm)}><Translator path="1.6.btn" /></a>
                 </div>
               </div>
             </div>

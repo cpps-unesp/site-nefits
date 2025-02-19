@@ -13,7 +13,31 @@
         "fapesp1": "Esse site foi construído com apoio da Fapesp através do ",
         "fapesp2": "Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI - Processo 2022/02922-1",
         "contato": "Contato",
-        "social": "Rede Social"
+        "social": "Rede Social",
+        "1": {
+            "titulo": "Experiências Internacionais – Universidade Yale",
+            "btn": "Leia Mais"
+        },
+        "2": {
+            "titulo": "Experiências Internacionais – Universidade Paris-Nanterre",
+            "btn": "Leia Mais"
+        },
+        "3": {
+            "titulo": "Experiências Internacionais: Universidade de Santiago do Chile",
+            "btn": "Leia Mais"
+        },
+        "4": {
+            "titulo": "Experiências Internacionais: Universidad de Playa Ancha",
+            "btn": "Leia Mais"
+        },
+        "5": {
+            "titulo": "Lançamento do Livro: Experiências Sociais Negativas",
+            "btn": "Leia Mais"
+        },
+        "6": {
+            "titulo": "II Seminário Permanente de Filosofia Crítica e Sociedade",
+            "btn": "Leia Mais"
+        }
     },
     "2": {
         "sobre": "Quem somos",
