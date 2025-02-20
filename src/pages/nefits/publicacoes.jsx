@@ -385,19 +385,19 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
     <div class="col-12 abas">
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="livros-tab" data-bs-toggle="tab" data-bs-target="#livros-tab-pane" type="button" role="tab" aria-controls="livros-tab-pane" aria-selected="true"><Translator path="5.aba1" /></button>
+          <button className={clsx(styles.navLink, "nav-link active")} id="livros-tab" data-bs-toggle="tab" data-bs-target="#livros-tab-pane" type="button" role="tab" aria-controls="livros-tab-pane" aria-selected="true"><Translator path="5.aba1" /></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="artigos-tab" data-bs-toggle="tab" data-bs-target="#artigos-tab-pane" type="button" role="tab" aria-controls="artigos-tab-pane" aria-selected="false"><Translator path="5.aba2" /></button>
+          <button className={clsx(styles.navLink, "nav-link")} id="artigos-tab" data-bs-toggle="tab" data-bs-target="#artigos-tab-pane" type="button" role="tab" aria-controls="artigos-tab-pane" aria-selected="false"><Translator path="5.aba2" /></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="teses-tab" data-bs-toggle="tab" data-bs-target="#teses-tab-pane" type="button" role="tab" aria-controls="teses-tab-pane" aria-selected="false"><Translator path="5.aba3" /></button>
+          <button className={clsx(styles.navLink, "nav-link")} id="teses-tab" data-bs-toggle="tab" data-bs-target="#teses-tab-pane" type="button" role="tab" aria-controls="teses-tab-pane" aria-selected="false"><Translator path="5.aba3" /></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="tccs-tab" data-bs-toggle="tab" data-bs-target="#tccs-tab-pane" type="button" role="tab" aria-controls="tccs-tab-pane" aria-selected="false"><Translator path="5.aba4" /></button>
+          <button className={clsx(styles.navLink, "nav-link")} id="tccs-tab" data-bs-toggle="tab" data-bs-target="#tccs-tab-pane" type="button" role="tab" aria-controls="tccs-tab-pane" aria-selected="false"><Translator path="5.aba4" /></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="relatorios-tab" data-bs-toggle="tab" data-bs-target="#relatorios-tab-pane" type="button" role="tab" aria-controls="relatorios-tab-pane" aria-selected="false"><Translator path="5.aba5" /></button>
+          <button className={clsx(styles.navLink, "nav-link")} id="relatorios-tab" data-bs-toggle="tab" data-bs-target="#relatorios-tab-pane" type="button" role="tab" aria-controls="relatorios-tab-pane" aria-selected="false"><Translator path="5.aba5" /></button>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">

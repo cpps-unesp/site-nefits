@@ -259,11 +259,7 @@ a{
     border: 2px solid #f1f1f1;
 }
 
-.nav-link.active{
-    color: #ab090e !important;
-    font-weight: 700 !important;
-    font-family: "Comfortaa", sans-serif !important;
-}
+
 
 .imgHome{
     max-width: 25rem !important;
@@ -363,9 +359,15 @@ a{
     letter-spacing: .2rem;
 }
 
-.nav-link{
+.navLink:active, .navLink:focus, .navLink:hover{
     font-family: "Comfortaa", sans-serif !important;
-    color: #AB090E !important;
+    color: #656565 !important;
+}
+
+.navLink {
+    color: #ab090e !important;
+    font-weight: 700 !important;
+    font-family: "Comfortaa", sans-serif !important;
 }
 
 .textoLink a{
@@ -476,3 +478,4 @@ a{
         opacity: 1 !important;
         filter: grayscale(0%);
     }
+
