@@ -149,8 +149,34 @@
         "noticias": "News",
         "texto": "Read the most recent news on the Center of Studies in Philosophy, Theory and Society.",
         "1": {
-            "titulo": "International Experiences - Yale University (Matheus de Vilhena Moraes)"
-        }
+            "titulo": "International Experiences - Yale University (Matheus de Vilhena Moraes)",
+            "texto": "The law student from FCHS, Matheus de Vilhena Moraes, was awarded the BEPE scholarship - Research Internships Abroad Scholarship to develop part of his ongoing research in Brazil with the São Paulo Research Foundation (FAPESP) funding, under the supervision of Professor Dr. Hélio Alexandre da Silva. From August to November 2022, Matheus joined the Global Justice Program from Yale University..."
+        },
+        "2": {
+            "titulo": "International Experiences - Paris Nanterre University (Ana Júlia Diniz Neves do Lago)",
+            "texto": "Ana Júlia Diniz Neves do Lago, an undergraduate student of the International Relations course from UNESP and a research scholarship holder, was awarded the BEPE scholarship - Research Internships Abroad Scholarship (process No. 2023/08867-5) at Paris Nanterre University, France, funded by São Paulo Research Foundation (FAPESP), supervised by Professor Pierre Sauvêtre. Ana Júlia’s project, entitled “Subjectivity and oppression: a gender perspective in neoliberalism”, was developed from 11/01/2023 to 02/29/2024..."
+        },
+        "3": {
+            "titulo": "International Experiences: University of Santiago, Chile (Gabrielle Nascimento)",
+            "texto": "Gabrielle Nascimento, an undergraduate student of the International Relations course, who studies Economic Planning as an anti-capitalist critique, was awarded an exchange opportunity at the University of Santiago, Chile. From August 2023 to January 2024, Gabrielle developed her research, focused on conceptualization and mapping of the debate on economic planning, its experiences, and its effectiveness in the construction of socialism. During her stay in Chile, Gabrielle was present at the 50th anniversary of the military dictatorship..."
+        },
+        "4": {
+            "titulo": "International Experiences: Playa Ancha University (Eduarda Pereira Pires Barboza",
+            "texto": "From March 3 to July 18, Eduarda Pereira Pires Barboza, an undergraduate International Relations student, visited the Playa Ancha University (UPLA), Chile. Her study is focused on social inequality, and the student exchange was crucial for expanding her comprehension of the theme. During her stay, Eduarda observed a different approach concerning inequality..."
+        },
+        "5": {
+            "titulo": "Book Launch: Experiências Sociais Negativas",
+            "texto": "The Research Center in Ethics, Philosophy, Political and Social Theory is pleased to announce the launch of the book 'Experiências Sociais Negativas', a work that explores suffering and other negative experiences that accompany the experience of certain individuals, from an interdisciplinary and critical perspective. The book questions whether Philosophy and Social Sciences can deal with the problem of suffering..."
+        },
+        "6": {
+            "titulo": "2nd Permanent Seminar of Philosophy, Critique and Society",
+            "texto": "On April 24 and 25, the Franca campus of UNESP hosted the 2nd Meeting of the Permanent Seminar of Philosophy, Critique, and Society. The event, that was created as an effort of the construction of a space of debates during the pandemic, gathered researchers of Brazil and Latin America. With the theme 'Criticism and subjectivity: experiences of the present to imagine the future', the meeting privileged the depth of the debates, focusing each session on a single presentation, that being a work in progress or a recent publication."
+        },
+        "7": {
+            "titulo": "XXXVI Congresso de Iniciação Científica da Unesp",
+            "texto": "Nesta semana, os membros do grupo Néfits participaram do XXXVI Congresso de Iniciação Científica da Unesp, cujo tema foi 'Ciência em tempos de crise climática e social'. O evento destacou discussões fundamentais para o momento atual, e nossos integrantes contribuíram com temas relevantes em diversas áreas da filosofia, ciências humanas e sociais..."
+        },
+        "btn": "Read More"
     },
     "5": {
         "publicacoes": "Publication",

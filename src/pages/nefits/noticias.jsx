@@ -133,9 +133,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto1} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo1}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto1}</p>
-            <a href={link1} target="_blank" className={clsx(styles.btnUm)}>{btn1}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.1.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.1.texto" /></p>
+            <a href={link1} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>
@@ -146,9 +146,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto2} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo2}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto2}</p>
-            <a href={link2} target="_blank" className={clsx(styles.btnUm)}>{btn2}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.2.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.2.texto" /></p>
+            <a href={link2} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>
@@ -159,9 +159,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto3} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo3}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto3}</p>
-            <a href={link3} target="_blank" className={clsx(styles.btnUm)}>{btn3}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.3.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.3.texto" /></p>
+            <a href={link3} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>
@@ -172,9 +172,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto4} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo4}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto4}</p>
-            <a href={link4} target="_blank" className={clsx(styles.btnUm)}>{btn4}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.4.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.4.texto" /></p>
+            <a href={link4} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>
@@ -185,9 +185,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto5} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo5}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto5}</p>
-            <a href={link5} target="_blank" className={clsx(styles.btnUm)}>{btn5}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.5.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.5.texto" /></p>
+            <a href={link5} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>
@@ -198,9 +198,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto6} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo6}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto6}</p>
-            <a href={link6} target="_blank" className={clsx(styles.btnUm)}>{btn6}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.6.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.6.texto" /></p>
+            <a href={link6} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>
@@ -211,9 +211,9 @@ function NoticiasCards({foto1, titulo1, texto1, btn1, link1, foto2, titulo2, tex
             <img src={foto7} alt="Logo" className={clsx(styles.imgNoticias, "img-fluid")} />
           </div>
           <div class="col-6 text-start mt-3">
-            <h1 className={clsx(styles.tituloEquipe)}>{titulo7}</h1>
-            <p className={clsx(styles.textoEquipe, "mb-4")}>{texto7}</p>
-            <a href={link7} target="_blank" className={clsx(styles.btnUm)}>{btn7}</a>
+            <h1 className={clsx(styles.tituloEquipe)}><Translator path="4.7.titulo" /></h1>
+            <p className={clsx(styles.textoEquipe, "mb-4")}><Translator path="4.7.texto" /></p>
+            <a href={link7} target="_blank" className={clsx(styles.btnUm)}><Translator path="4.btn" /></a>
           </div>
         </div>
       </div>

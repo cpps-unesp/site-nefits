@@ -1,4 +1,6 @@
 ---
+import Translator from "../components/i18n/translator";
+import LanguageSelector from "../components/LanguageSelector";
 interface Props {
 	title: string;
 }
@@ -44,6 +46,9 @@ const { title } = Astro.props;
                       </li>
                       <li class="liLista">
                         <a href="/videos">Vídeos</a>
+                      </li>
+                      <li class="liLista gx-5 mt-2 pt-1">
+                        <LanguageSelector />
                       </li>
                     </ul>
                   </div>

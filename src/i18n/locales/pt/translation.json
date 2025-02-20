@@ -149,8 +149,34 @@
         "noticias": "Notícias",
         "texto": "Leia as últimas notícias sobre o Núcleo de Estudos em Filosofia, Teoria e Sociedade.",
         "1": {
-            "titulo": "International Experiences - Yale University (Matheus de Vilhena Moraes)"
-        }
+            "titulo": "Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes)",
+            "texto": "O discente do curso de Direito da FCHS, Matheus de Vilhena Moraes, foi contemplado com a bolsa BEPE – Bolsa de Estágio de Pesquisa no Exterior para desenvolver parte da sua pesquisa realizada no Brasil com o financiamento da FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob a orientação do Prof. Dr. Hélio Alexandre da Silva. Entre agosto e novembro de 2022, Matheus integrou o Programa de Justiça Global da Universidade de Yale..."
+        },
+        "2": {
+            "titulo": "Experiências Internacionais – Universidade Paris-Nanterre (Ana Júlia Diniz Neves do Lago)",
+            "texto": "Ana Júlia Diniz Neves do Lago, graduanda do curso de Relações Internacionais da Unesp e bolsista de Iniciação Científica, foi contemplada com uma Bolsa Estágio de Pesquisa no Exterior - BEPE (Processo nº 2023/08867-5) na Universidade Paris-Nanterre, França, financiada pela FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob supervisão do Prof. Dr. Pierre Sauvêtre. O projeto de pesquisa de Ana Júlia, intitulado 'Subjetividade e opressão: um recorte de gênero no neoliberalismo', foi desenvolvido entre 01/11/2023 e 29/02/2024..."
+        },
+        "3": {
+            "titulo": "Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)",
+            "texto": "Gabrielle Nascimento, discente do curso de Relações Internacionais, que estuda Planejamento Econômico como crítica anti-capitalista, foi contemplada com uma oportunidade de intercâmbio na Universidad de Santiago de Chile. Entre agosto de 2023 e janeiro de 2024, Gabrielle desenvolveu sua pesquisa focada na conceituação e mapeamento do debate sobre a planificação econômica, suas experiências e sua efetividade na construção do socialismo. Durante sua estadia no Chile, Gabrielle esteve presente no aniversário de 50 anos da ditadura militar..."
+        },
+        "4": {
+            "titulo": "Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)",
+            "texto": "Entre 3 de março e 18 de julho, Eduarda Pereira Pires Barboza, discente do curso de Relações Internacionais, realizou uma visita na Universidad de Playa Ancha (UPLA), no Chile. Seu estudo centraliza-se na desigualdade social, e o intercâmbio foi crucial para expandir sua compreensão desse tema. Durante sua estadia, Eduarda observou uma abordagem diferente em relação à desigualdade. Participando de congressos e jornadas, e conversando com colegas e professores, a discente notou que a distinção entre público e estatal é frequentemente enfatizada..."
+        },
+        "5": {
+            "titulo": "Lançamento do Livro: Experiências Sociais Negativas",
+            "texto": "O Núcleo de Estudos em Ética e Teoria Política e Social tem o prazer de anunciar o lançamento do livro 'Experiências Sociais Negativas', uma obra que explora o sofrimento e outras experiências negativas que acompanham a vivência de determinados indivíduos, sob uma perspectiva interdisciplinar e crítica. O livro questiona se a Filosofia e as Ciências Sociais podem se ocupar do problema do sofrimento, tradicionalmente considerado objeto exclusivo da psicologia e das terapias. A resposta afirmativa baseia-se na compreensão de que tais experiências não são meramente individuais..."
+        },
+        "6": {
+            "titulo": "II Seminário Permanente de Filosofia Crítica e Sociedade",
+            "texto": "Nos dias 24 e 25 de abril, o campus de Franca da UNESP sediou o II Encontro do Seminário Permanente de Filosofia, Crítica e Sociedade. O evento, que surgiu como um esforço de construção de um espaço de debates durante a pandemia, reuniu pesquisadores do Brasil e da América Latina. Com o tema 'Crítica e subjetividade: experiências do presente para imaginar o futuro', o encontro privilegiou a profundidade dos debates, focando em cada sessão em uma única apresentação, seja um trabalho em progresso ou uma publicação recente..."
+        },
+        "7": {
+            "titulo": "XXXVI Congresso de Iniciação Científica da Unesp",
+            "texto": "Nesta semana, os membros do grupo Néfits participaram do XXXVI Congresso de Iniciação Científica da Unesp, cujo tema foi 'Ciência em tempos de crise climática e social'. O evento destacou discussões fundamentais para o momento atual, e nossos integrantes contribuíram com temas relevantes em diversas áreas da filosofia, ciências humanas e sociais..."
+        },
+        "btn": "Leia Mais"
     },
     "5": {
         "publicacoes": "Publicações",
