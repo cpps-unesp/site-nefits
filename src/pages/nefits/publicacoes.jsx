@@ -367,6 +367,18 @@ const abas = [
     ano47: "2021-2022",
     btn47: "Visualizar",
     link47: "/arquivos/Achille_Mbembe--Alienacao_escravidao_colonizacao_e_apartheid-Projeto_PIBIC.pdf",
+
+    titulo48: "Experiencias Sociais Negativas - um conceito de filosofia social",
+    autor48: "Hélio Alexandre da Silva; Leonardo da Hora; Paulo Bodziak; Vinícius dos Santos",
+    ano48: "2024",
+    btn48: "Visualizar",
+    link48: "/arquivos/Experiencias sociais negativas - um conceito de filosofia social.pdf",
+
+    titulo49: "A interseccionalidade como crítica do neoliberalismo: uma análise das relações desiguais de gênero",
+    autor49: "Ana Júlia Diniz Neves do Lago",
+    ano49: "2025",
+    btn49: "Visualizar",
+    link49: "/arquivos/A interseccionalidade como crítica do neoliberalismo uma análise das relações.pdf",
   }
 ]
 
@@ -379,7 +391,8 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
   titulo26, autor26, ano26, btn26, link26, titulo27, autor27, ano27, btn27, link27, titulo28, autor28, ano28, btn28, link28, titulo29, autor29, ano29, btn29, link29, titulo30, autor30, ano30, btn30, link30,
   titulo31, autor31, ano31, btn31, link31, titulo32, subtitulo32, autor32, ano32, btn32, link32, titulo33, autor33, ano33, btn33, link33, titulo34, autor34, ano34, btn34, link34, titulo35, subtitulo35, autor35, ano35, btn35, link35,
   titulo36, autor36, ano36, btn36, link36, titulo37, autor37, ano37, btn37, link37, titulo38, autor38, ano38, btn38, link38, titulo39, autor39, ano39, btn39, link39, titulo40, autor40, ano40, btn40, link40, titulo41, autor41, ano41, btn41, link41,
-  titulo42, autor42, ano42, btn42, link42, titulo43, autor43, ano43, btn43, link43, titulo44, autor44, ano44, btn44, link44, titulo45, autor45, ano45, btn45, link45, titulo46, autor46, ano46, btn46, link46, titulo47, autor47, ano47, btn47, link47
+  titulo42, autor42, ano42, btn42, link42, titulo43, autor43, ano43, btn43, link43, titulo44, autor44, ano44, btn44, link44, titulo45, autor45, ano45, btn45, link45, titulo46, autor46, ano46, btn46, link46, titulo47, autor47, ano47, btn47, link47,
+  titulo48, autor48, ano48, btn48, link48, titulo49, autor49, ano49, btn49, link49
   }){
   return(
     <div class="col-12 abas">
@@ -433,6 +446,16 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
                 </div>
               </div>
             </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo48}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor48} • {ano48}</p>
+                    <a href={link48} target="_blank" className={clsx(styles.btnUm)}>{btn48}</a>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -620,6 +643,16 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
                     <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo34}</h3>
                     <p className={clsx(styles.cardTexto, "fw-bold")}>{autor34} • {ano34}</p>
                     <a href={link34} target="_blank" className={clsx(styles.btnUm)}>{btn34}</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className={clsx(styles.cardProjetos, "col-12 col-xl-3 p-3 gy-2 mx-3")}>
+                <div class="row">
+                  <div class="col-12">
+                    <h3 className={clsx(styles.cardTitulo, "fw-bold")}>{titulo49}</h3>
+                    <p className={clsx(styles.cardTexto, "fw-bold")}>{autor49} • {ano49}</p>
+                    <a href={link49} target="_blank" className={clsx(styles.btnUm)}>{btn49}</a>
                   </div>
                 </div>
               </div>
@@ -904,6 +937,7 @@ function Abas({titulo1, autor1, ano1, btn1, link1, texto2, titulo2, texto3, auto
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
