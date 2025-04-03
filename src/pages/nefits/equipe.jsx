@@ -51,10 +51,10 @@ const membrosEquipe = [
   {
     foto: "/images/Professor_Helio.svg",
     foto2: "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
-    foto3: "/images/Bianca_Regina_Poltronieri.svg",
+    foto3: "/images/Kemilly_Victoria_Conceicao_da_Silva.jpeg",
     foto4: "/images/Eduarda_Barboza.svg",
     foto5: "/images/Gabriel_Henrique_de_Andrade.svg",
-    foto6: "/images/Gabrielle_Nascimento.svg",
+    foto6: "/images/Maria_Laura_Cruz.jpeg",
     foto7: "/images/Natalie.svg",
     foto8: "/images/Roan.svg",
     foto9: "/images/Sofia_Grandini.svg",
@@ -66,7 +66,7 @@ const membrosEquipe = [
     foto14: "/images/Bruno_Gomes.svg",
     foto16: "/images/Isabela-Masciarelli.svg",
     foto18: "/images/icon.svg",
-    foto17: "/images/Luiz_Bispo.svg",
+    foto17: "/images/Rafael_Golucci.jpeg",
     foto19: "/images/Laura_Capucci.svg",
   },
 ]
