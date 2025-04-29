@@ -1,0 +1,18 @@
+---
+export interface Props {
+  imagem: string;
+  titulo: string;
+  texto: string;
+  link: string;
+  botao: string;
+}
+const { imagem, titulo, texto, link, botao } = Astro.props;
+
+---
+
+<div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] rounded-lg shadow-md overflow-hidden flex flex-col justify-between p-4">
+  <img src={imagem} alt={titulo} class="w-full object-cover mb-4" />
+  <h2 class="text-lg font-bold text-[#ab090e] mb-2">{titulo}</h2>
+  <p class="text-sm text-[#656565] mb-4">{texto}</p>
+  <a href={link} class="inline-block bg-[#ab090e] hover:bg-[#90070b] text-white font-bold py-2 px-4 rounded text-center">{botao}</a>
+</div>

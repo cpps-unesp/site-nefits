@@ -1,0 +1,12 @@
+---
+const { lang, t } = Astro.props;
+---
+
+<section class="bg-[#f1e6e6] w-full py-2">
+  <div class="max-w-7xl mx-auto px-4 py-6 flex items-center gap-4">
+    <img src="/images/fapesp_logo.svg" alt="Logo FAPESP" class="w-20 h-auto object-contain" />
+    <p class="text-xs text-[#656565] font-light">
+      {t("1.fapesp1")} <b class="text-[#ab090e] font-bold">{t("1.fapesp2")}</b>.
+    </p>
+  </div>
+</section>

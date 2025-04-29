@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import Intro from "../../../components/Intro.astro";
+import Fapesp from "../../../components/Fapesp.astro";
+import Rodape from "../../../components/Rodape.astro";
+import { useTranslations } from "../../../i18n/translations";
+
+export async function getStaticPaths() {
+  return ["pt", "en"].map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+
+// Pega todas as notícias DO IDIOMA atual
+const noticias = (await getCollection("noticias")).filter(
+  (n) => n.data.lang === lang,
+);
+---
+
+<Layout lang={lang}>
+  <Intro lang={lang} t={t} />
+
+  <main class="max-w-7xl mx-auto p-8">
+    <h1 class="text-3xl font-bold text-[#ab090e] mb-8">{t("7.noticias")}</h1>
+
+    {
+      noticias.length === 0 ? (
+        <p class="text-center text-gray-500 text-lg">
+          {lang === "pt"
+            ? "Nenhuma notícia disponível no momento."
+            : "No news available at the moment."}
+        </p>
+      ) : (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {noticias.map((item) => (
+            <a
+              href={`/${lang}/noticias/${item.data.slug}`}
+              class="block p-4 bg-gray-100 hover:bg-gray-200 rounded-lg shadow transition"
+            >
+              <img
+                src={item.data.imagem}
+                alt={item.data.title}
+                class="w-full h-48 object-cover rounded mb-4"
+              />
+              <h2 class="text-xl font-bold text-[#ab090e] mb-2">
+                {item.data.title}
+              </h2>
+              <p class="text-sm text-gray-600">{item.data.resumo}</p>
+            </a>
+          ))}
+        </div>
+      )
+    }
+  </main>
+
+  <Fapesp lang={lang} t={t} />
+  <Rodape lang={lang} t={t} />
+</Layout>

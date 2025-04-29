@@ -1,0 +1,95 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Intro from "../../components/Intro.astro";
+import { useTranslations } from "../../i18n/translations";
+import FooterSection from "../../components/FooterSection.astro";
+
+// Carrega o JSON com os dados fixos
+import * as fotoJson from "../../i18n/locales/equipe.json" assert { type: "json" };
+
+
+export async function getStaticPaths() {
+  return ["pt", "en"].map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+
+// Tipos
+type Membro = {
+  nome: string;
+  cargo: string;
+  sobre: string;
+};
+
+type DadosFixos = {
+  foto?: string;
+  rede1?: string;
+  icone1?: string;
+  rede2?: string;
+  icone2?: string;
+};
+
+// Extrai os membros traduzidos
+const membrosObj = t("3") as Record<string, Membro | string>;
+
+const membros = Object.entries(membrosObj)
+  .filter(([key]) => !isNaN(Number(key)))
+  .map(([key, membro]) => {
+    const dadosFixos: Record<string, DadosFixos> = fotoJson.default ?? {};
+    const dados = dadosFixos[key] ?? {};
+    const m = membro as Membro;
+    return {
+      ...m,
+      foto: dados.foto?.trim() || "/images/icon.svg",
+      rede1: dados.rede1,
+      icone1: dados.icone1,
+      rede2: dados.rede2,
+      icone2: dados.icone2,
+    };
+  });
+---
+
+<Layout lang={lang}>
+  <Intro lang={lang} t={t} />
+  <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
+    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("3.equipe")}</h1>
+
+    <div class="flex flex-wrap justify-center gap-6">
+      {membros.map((membro) => (
+        <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
+          <div class="aspect-square w-full overflow-hidden rounded-md mb-4">
+            <img 
+              src={membro.foto} 
+              alt={`Foto de ${membro.nome}`} 
+              class="object-cover w-full h-full rounded-md" 
+              loading="lazy" 
+            />
+          </div>
+      
+          <!-- Ícones logo abaixo da imagem -->
+          <div class="flex gap-3 justify-center mb-3">
+            {membro.rede1 && membro.icone1 && (
+              <a href={membro.rede1} target="_blank" rel="noopener noreferrer">
+                <img src={membro.icone1} alt="Ícone rede social 1" class="w-6 h-6" />
+              </a>
+            )}
+            {membro.rede2 && membro.icone2 && (
+              <a href={membro.rede2} target="_blank" rel="noopener noreferrer">
+                <img src={membro.icone2} alt="Ícone rede social 2" class="w-6 h-6" />
+              </a>
+            )}
+          </div>
+      
+          <h2 class="text-[#ab090e] text-lg font-bold mb-1">{membro.nome}</h2>
+          <p class="text-sm font-semibold mb-2">{membro.cargo}</p>
+          <p class="text-sm mb-3">{membro.sobre}</p>
+        </div>
+      ))}
+      
+    </div>
+  </main>
+
+  <FooterSection lang={lang} t={t} />
+
+</Layout>

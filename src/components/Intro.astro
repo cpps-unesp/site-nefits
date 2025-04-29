@@ -1,0 +1,28 @@
+---
+import LanguageSelector from "./LanguageSelector.astro";
+const { lang, t } = Astro.props;
+
+const parts = Astro.url.pathname.split("/").filter(Boolean);
+const slugAtual = parts.length >= 3 && parts[1] === "noticias" ? parts[2] : null;
+
+const link = (slug = '') => `/${lang}${slug ? '/' + slug : ''}`;
+---
+<section class="bg-gray-100 py-4">
+  <div class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4">
+    <a href={link()} class="mb-4 md:mb-0">
+      <img src="/images/logo-banner.png" alt="Logo NéFiTs" class="h-16" />
+    </a>
+    <ul class="flex flex-wrap justify-center gap-4 font-semibold text-sm md:text-base">
+      <li><a href={link()}>{t("7.home")}</a></li>
+      <li><a href={link('sobre')}>{t("7.sobre")}</a></li>
+      <li><a href={link('equipe')}>{t("7.equipe")}</a></li>
+      <li><a href={link('noticias')}>{t("7.noticias")}</a></li>
+      <li><a href={link('publicacoes')}>{t("7.publicacoes")}</a></li>
+      <li><a href={link('videos')}>{t("7.videos")}</a></li>
+      <li><LanguageSelector lang={lang} slugAtual={slugAtual} /></li>
+    </ul>
+    <div class="mt-4 md:mt-0">
+      <img src="/images/logo_unesp.svg" alt="Unesp" class="h-10" />
+    </div>
+  </div>
+</section>

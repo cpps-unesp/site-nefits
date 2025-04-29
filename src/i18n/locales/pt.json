@@ -53,7 +53,7 @@
             "nome": "Hélio Alexandre da Silva",
             "cargo": "Pesquisador – Coordenador",
             "sobre": "Professor Assistente doutor da UNESP/Franca e do Programa de Pós-graduação em Filosofia da UNESP/Marilia. Coordenador do Programa de Pós-graduação em Planejamento e Análise em Políticas Públicas UNESP/Franca. Possui graduação e mestrado em Filosofia pela Unesp/Marília e Doutorado em Filosofia pela Universidade Estadual de Campinas. Realizou doutorado sandwich em Filosofia na École des Hautes Études en Sciences Sociales (2011) e Pós-doutorado em Filosofia (2018) na École des Hautes Études en Sciences Sociales. Possui interesse nos seguintes temas: Filosofia social e política, pobreza, crítica social, modernidade, desigualdade, alienação, sofrimento social, conflitos sociais, movimentos sociais. Atualmente desenvolve a pesquisa “Crítica da pobreza como objeto da filosofia social” com financiamento Fapesp processo 22/02922-1."
-        }, 
+        },
         "2": {
             "nome": "Ana Júlia Diniz Neves do Lago",
             "cargo": "Graduanda",
@@ -146,6 +146,9 @@
         }
     },
     "4": {
+        "noticiaNaoEncontrada": "Notícia não encontrada",
+        "noticiaIndisponivelNesseIdioma": "Esta notícia não está disponível nesse idioma.",
+        "voltarParaNoticias": "Voltar para Notícias",
         "noticias": "Notícias",
         "texto": "Leia as últimas notícias sobre o Núcleo de Estudos em Filosofia, Teoria e Sociedade.",
         "1": {
@@ -188,7 +191,7 @@
     },
     "6": {
         "videos": "Vídeos",
-        "texto": "Confira os vídeos postados em nosso canal do Youtube.",
+        "texto": "Confira os vídeos postados em nosso canal do ",
         "btn": "Ver Lista Completa"
     },
     "7": {
