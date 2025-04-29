@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Intro from "../../components/Intro.astro";
+import Fapesp from "../../components/Fapesp.astro";
+import Rodape from "../../components/Rodape.astro";
+import { useTranslations } from "../../i18n/translations";
+import videosJson from "../../i18n/locales/videos.json" assert { type: "json" };
+
+export async function getStaticPaths() {
+  return ["pt", "en"].map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+
+const primeiroContainer = videosJson.primeiroContainer;
+const videos = videosJson.videos;
+---
+
+<Layout lang={lang}>
+  <Intro lang={lang} t={t} />
+
+  <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
+    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("6.videos")}</h1>
+
+    <p class="mb-8 text-center">
+      {t("6.texto")} 
+      <a href={primeiroContainer.Youtube} target="_blank" class="text-[#ab090e] underline hover:text-[#90070b]">
+        {t("Youtube")}
+      </a>.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      {videos.map(video => (
+        <div class="w-full flex justify-center">
+          <iframe 
+            src={video.url} 
+            width="420" 
+            height="315" 
+            class="rounded-lg shadow-md"
+            allowfullscreen
+          ></iframe>
+        </div>
+      ))}
+    </div>
+
+    <div class="text-center mt-10">
+      <a href={primeiroContainer.Youtube} target="_blank" class="inline-block px-6 py-3 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">
+        {t("6.btn")}
+      </a>
+    </div>
+
+  </main>
+
+  <Fapesp lang={lang} t={t} />
+  <Rodape lang={lang} t={t} />
+</Layout>

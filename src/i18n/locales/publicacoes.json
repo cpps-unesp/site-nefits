@@ -1,0 +1,93 @@
+{
+    "abas": {
+      "livros": [
+        {
+          "titulo": "Paixões Humanas",
+          "subtitulo": null,
+          "autor": "Hélio Alexandre da Silva",
+          "ano": "2009",
+          "link": "/arquivos/2009-Helio_Alexandre_da_Silva-Paixoes humanas-Livro.pdf"
+        },
+        {
+          "titulo": "Sob os Olhos da Crítica",
+          "subtitulo": null,
+          "autor": "Hélio Alexandre da Silva",
+          "ano": "2017",
+          "link": "/arquivos/2017-Helio_Alexandre_da_Silva-Sob_os_olhos_da_critica-Livro.pdf"
+        },
+        {
+          "titulo": "Sonhos e Resistências",
+          "subtitulo": "MTST e os testemunhos da luta popular urbana",
+          "autor": "Hélio Alexandre da Silva",
+          "ano": "2023",
+          "link": "/arquivos/2023-Helio_Alexandre_da_Silva-Sonhos e resistencias- MTST e os testemunhos da luta popular urbana.pdf"
+        },
+        {
+          "titulo": "Experiências Sociais Negativas",
+          "subtitulo": "Um conceito de filosofia social",
+          "autor": "Hélio Alexandre da Silva; Leonardo da Hora; Paulo Bodziak; Vinícius dos Santos",
+          "ano": "2024",
+          "link": "/arquivos/Experiencias sociais negativas - um conceito de filosofia social.pdf"
+        }
+      ],
+      "artigos": [
+        {
+          "titulo": "Ethical Challenges in the Climate Crisis",
+          "subtitulo": "Thomas Pogge's Perspective and the Challenges for Global Cooperation",
+          "autor": "Matheus de Vilhena Moraes",
+          "ano": "2023",
+          "link": "/arquivos/2023-Matheus_de_Vilhena_Moraes-ETHICAL_CHALLENGES_IN_THE_CLIMATE.pdf"
+        },
+        {
+          "titulo": "As formas de opressão e violência de negras e negros em Achille Mbembe",
+          "subtitulo": null,
+          "autor": "Matheus Sena Asevedo Campanhã",
+          "ano": "2023",
+          "link": "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-As_formas_de_opressao_e_violencia_de_negras_e_negros_em_Achille_Mbembe.pdf"
+        }
+      ],
+      "teses": [
+        {
+          "titulo": "O Benefício de Prestação Continuada",
+          "subtitulo": "Um estudo sobre a centralidade da pobreza no seu quadro normativo",
+          "autor": "Andreia Celia Silva de Oliveira",
+          "ano": "2022",
+          "link": "/arquivos/2022-Andreia_Celia-O_BENEFICIO_DE_PRESTACAO_CONTINUADA.docx"
+        },
+        {
+          "titulo": "Teoria Democrática Deliberativa",
+          "subtitulo": "Uma análise dos conselhos municipais de assistência social",
+          "autor": "Talismara Guilherme Molina",
+          "ano": "2022",
+          "link": "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf"
+        }
+      ],
+      "tccs": [
+        {
+          "titulo": "A Autodeterminação Negra",
+          "subtitulo": "Uma análise da filosofia social e política de Achille Mbembe",
+          "autor": "Matheus Sena Asevedo Campanhã",
+          "ano": "2023",
+          "link": "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-TCC.pdf"
+        },
+        {
+          "titulo": "Malucos de Estrada",
+          "subtitulo": "A (r)existência de uma forma de vida no Brasil",
+          "autor": "Daniela Leonardi Polizio",
+          "ano": "2021",
+          "link": "/arquivos/2021-Daniela_Leonardi_Polizio-TCC.pdf"
+        }
+
+      ],
+      "relatorios": [
+        {
+          "titulo": "Liberdades e opressões",
+          "subtitulo": "A interseccionalidade como crítica do neoliberalismo",
+          "autor": "Ana Júlia Diniz Neves do Lago",
+          "ano": "2023-2024",
+          "link": "/arquivos/Ana_Julia_Diniz-Projeto_FAPESP.pdf"
+        }
+      ]
+    }
+  }
+  

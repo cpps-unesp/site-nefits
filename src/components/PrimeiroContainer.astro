@@ -1,0 +1,10 @@
+---
+import { useTranslations } from "../i18n/translations";
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+
+<div class="text-start mb-12">
+  <h1 class="text-[2rem] font-bold text-[#ab090e] mb-4">{t("4.noticias")}</h1>
+  <p class="text-[#656565] font-light">{t("4.texto")}</p>
+</div>

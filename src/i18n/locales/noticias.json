@@ -1,0 +1,27 @@
+{
+    "noticias": [
+      {
+        "slug": "noticia-1",
+        "imagem": "/images/noticia-1.svg",
+        "titulo": "Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes)",
+        "texto": "Resumo da notícia...",
+        "botao": "Saiba mais",
+        "conteudo": [
+          "O discente do curso de Direito da FCHS, Matheus de Vilhena Moraes, foi contemplado com a bolsa BEPE...",
+          "Entre agosto e novembro de 2022, Matheus integrou o Programa de Justiça Global da Universidade de Yale..."
+        ]
+      },
+      {
+        "slug": "noticia-2",
+        "imagem": "/images/noticia-2.svg",
+        "titulo": "Experiências Internacionais – Universidade Paris-Nanterre (Ana Júlia Diniz Neves do Lago)",
+        "texto": "Resumo da notícia...",
+        "botao": "Saiba mais",
+        "conteudo": [
+          "Ana Júlia Diniz Neves do Lago, graduanda da Unesp...",
+          "Seu projeto de pesquisa, intitulado 'Subjetividade e opressão'..."
+        ]
+      }
+    ]
+  }
+  

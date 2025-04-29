@@ -1,0 +1,137 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Intro from "../../components/Intro.astro";
+import Fapesp from "../../components/Fapesp.astro";
+import Rodape from "../../components/Rodape.astro";
+import { useTranslations } from "../../i18n/translations";
+import publicacoes from "../../i18n/locales/publicacoes.json" assert { type: "json" };
+
+export async function getStaticPaths() {
+  return ["pt", "en"].map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+---
+
+<style>
+  /* Todas as seções de aba começam invisíveis e deslocadas para baixo */
+  .aba-section {
+    display: none; /* Inicialmente escondido */
+    opacity: 0;    /* Transparente */
+    transform: translateY(20px); /* Empurra 20px para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Suaviza a opacidade e o movimento */
+  }
+
+  /* Quando a seção é o alvo do link clicado */
+  .aba-section:target {
+    display: block; /* Mostra o conteúdo */
+    opacity: 1;     /* Torna visível */
+    transform: translateY(0); /* Volta para a posição normal */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Suaviza a transição */
+  }
+
+  /* Quando a página carrega pela primeira vez e nenhuma aba foi clicada */
+  body:not(:has(:target)) #livros {
+    display: block; /* Exibe a seção "Livros" */
+    opacity: 1;
+    transform: translateY(0); /* Sem deslocamento */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+</style>
+
+
+<Layout lang={lang}>
+  <Intro lang={lang} t={t} />
+
+  <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
+    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("5.publicacoes")}</h1>
+
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <a href="#livros" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba1")}</a>
+      <a href="#artigos" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba2")}</a>
+      <a href="#teses" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba3")}</a>
+      <a href="#tccs" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba4")}</a>
+      <a href="#relatorios" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba5")}</a>
+    </div>
+
+    <!-- Livros -->
+    <section id="livros" class="aba-section default mb-12">
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba1")}</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+        {publicacoes.abas.livros.map(item => (
+          <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold mb-1">{item.titulo}</h3>
+            {item.subtitulo && <p class="italic text-sm">{item.subtitulo}</p>}
+            <p class="text-sm mb-2">{item.autor} • {item.ano}</p>
+            <a href={item.link} target="_blank" class="inline-block px-4 py-2 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">Visualizar</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Artigos -->
+    <section id="artigos" class="aba-section mb-12">
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba2")}</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+        {publicacoes.abas.artigos.map(item => (
+          <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold mb-1">{item.titulo}</h3>
+            {item.subtitulo && <p class="italic text-sm">{item.subtitulo}</p>}
+            <p class="text-sm mb-2">{item.autor} • {item.ano}</p>
+            <a href={item.link} target="_blank" class="inline-block px-4 py-2 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">Visualizar</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Teses -->
+    <section id="teses" class="aba-section mb-12">
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba3")}</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+        {publicacoes.abas.teses.map(item => (
+          <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold mb-1">{item.titulo}</h3>
+            {item.subtitulo && <p class="italic text-sm">{item.subtitulo}</p>}
+            <p class="text-sm mb-2">{item.autor} • {item.ano}</p>
+            <a href={item.link} target="_blank" class="inline-block px-4 py-2 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">Visualizar</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- TCCs -->
+    <section id="tccs" class="aba-section mb-12">
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba4")}</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+        {publicacoes.abas.tccs.map(item => (
+          <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold mb-1">{item.titulo}</h3>
+            {item.subtitulo && <p class="italic text-sm">{item.subtitulo}</p>}
+            <p class="text-sm mb-2">{item.autor} • {item.ano}</p>
+            <a href={item.link} target="_blank" class="inline-block px-4 py-2 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">Visualizar</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Relatórios -->
+    <section id="relatorios" class="aba-section mb-12">
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba5")}</h2>
+      <div class="flex flex-wrap gap-6 justify-center">
+        {publicacoes.abas.relatorios.map(item => (
+          <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
+            <h3 class="text-lg font-bold mb-1">{item.titulo}</h3>
+            {item.subtitulo && <p class="italic text-sm">{item.subtitulo}</p>}
+            <p class="text-sm mb-2">{item.autor} • {item.ano}</p>
+            <a href={item.link} target="_blank" class="inline-block px-4 py-2 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">Visualizar</a>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </main>
+
+  <Fapesp lang={lang} t={t} />
+  <Rodape lang={lang} t={t} />
+</Layout>
