@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 // Redireciona para o idioma padrão
 return Astro.redirect('/pt');
 ---
@@ -19,3 +20,27 @@ return Astro.redirect('/pt');
     <p>Redirecionando para <a href="/pt">NEFITS</a>...</p>
   </body>
 </html> -->
+=======
+import HomeSite from './nefits/index.jsx';
+import LanguageSelector from '../components/LanguageSelector.jsx';
+import Translator from "../components/i18n/translator";
+import styles from "./styles.module.css";
+---
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEFITS</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon_nefits.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <!-- Usando o componente React dentro do Astro -->
+   <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <div style="background-color: #eeeeee; width: 100%"><LanguageSelector client:load /></div>
+      
+      <HomeSite client:load />
+    </div>
+</body>
+>>>>>>> 11babe2 (atualizando ajustes nos idiomas do site)
