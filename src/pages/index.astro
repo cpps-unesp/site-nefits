@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 // Redireciona para o idioma padrão
@@ -43,4 +44,25 @@ import styles from "./styles.module.css";
       <HomeSite client:load />
     </div>
 </body>
+<<<<<<< HEAD
 >>>>>>> 11babe2 (atualizando ajustes nos idiomas do site)
+=======
+=======
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecionando...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <p class="text-center text-gray-700 p-8">Redirecionando para o idioma preferido...</p>
+    <script is:inline>
+      const supportedLangs = ["pt", "en"];
+      const savedLang = localStorage.getItem("language") || navigator.language?.split('-')[0] || "pt";
+      const lang = supportedLangs.includes(savedLang) ? savedLang : "pt";
+      window.location.pathname = "/" + lang;
+    </script>
+  </body>
+</html>
+>>>>>>> 868aff2 (refatorando site)
+>>>>>>> 27b4553 (ajustes nos idiomas do site)
