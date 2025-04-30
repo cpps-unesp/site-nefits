@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Intro from "../../../components/Intro.astro";
 import Fapesp from "../../../components/Fapesp.astro";
@@ -8,12 +8,12 @@ import { useTranslations } from "../../../i18n/translations";
 
 export async function getStaticPaths() {
   const noticias = await getCollection("noticias");
-  
+
   return noticias.map((noticia) => {
     const alternativeVersion = noticias.find(
       n => n.data.slug === noticia.data.slug && n.data.lang !== noticia.data.lang
     );
-    
+
     return {
       params: {
         lang: noticia.data.lang,
@@ -35,30 +35,42 @@ const noticia = noticias.find(
   (n) => n.data.slug === slug && n.data.lang === lang
 );
 
+if (!noticia) {
+  throw new Error(`Notícia não encontrada para slug: ${slug} e idioma: ${lang}`);
+}
+
 const outroLang = lang === "pt" ? "en" : "pt";
 const noticiaOutroIdioma = noticias.find(
   (n) => n.data.slug === slug && n.data.lang === outroLang
 );
 
-if (!noticia) {
-  throw new Error(`Notícia não encontrada para slug: ${slug} e idioma: ${lang}`);
-}
+// Renderiza o conteúdo Markdown com formatação
+const { Content } = await render(noticia);
 ---
 
 <Layout lang={lang}>
   <Intro lang={lang} t={t} />
 
   <main class="max-w-5xl mx-auto p-8">
-    <div class="text-center mb-8">
-      <h1 class="text-[2rem] font-bold text-[#ab090e] mb-4">
+    <div class="mb-12">
+      <h1 class="text-[2rem] font-bold text-primary text-center mb-6">
         {noticia.data.title}
       </h1>
-      <img src={noticia.data.imagem} alt={noticia.data.title} class="mx-auto mb-6 rounded-lg shadow-md max-h-[400px] object-contain" />
+    
+      <img
+        src={noticia.data.imagem}
+        alt={noticia.data.title}
+        class="mx-auto mb-8 rounded-lg shadow-md max-h-[400px] object-contain"
+      />
+    
+      <article class="prose prose-neutral prose-lg max-w-4xl mx-auto">
+        <Content />
+      </article>
     </div>
-
-    <article class="prose prose-neutral text-[#656565] font-light space-y-6">
-      {noticia.body}
-    </article>
+    
+      </div>
+    </div>
+    
 
     {noticiaOutroIdioma && (
       <div class="text-center mt-8">
