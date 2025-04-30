@@ -1,8 +1,18 @@
 ---
-const supportedLangs = {
-  pt: "🇧🇷",
-  en: "🇬🇧",
-};
+const { lang, currentPath = "", noticias } = Astro.props; // Garante que currentPath tenha um valor padrão
+
+// Define o idioma alternativo
+const otherLang = lang === "pt" ? "en" : "pt";
+
+// Verifica se a página atual é a listagem de notícias
+let targetUrl;
+if (currentPath && currentPath.startsWith(`/${lang}/noticias`)) {
+  // Redireciona para a listagem de notícias no outro idioma
+  targetUrl = `/${otherLang}/noticias`;
+} else {
+  // Para outras páginas, troca apenas o idioma na URL
+  targetUrl = currentPath.replace(`/${lang}`, `/${otherLang}`);
+}
 ---
 
 <div class="relative inline-block text-left">
@@ -53,7 +63,7 @@ const supportedLangs = {
 
     const parts = window.location.pathname.split("/").filter(Boolean);
     const hasLang = Object.keys(supportedLangs).includes(parts[0]);
-    const currentSlug = parts.length >= 3 ? parts[2] : null;  // [lang]/noticias/[slug]
+    const currentSlug = parts.length >= 3 ? parts[2] : null; // [lang]/noticias/[slug]
 
     let newPath;
 
