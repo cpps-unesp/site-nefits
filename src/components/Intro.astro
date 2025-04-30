@@ -1,10 +1,6 @@
 ---
 import LanguageSelector from "./LanguageSelector.astro";
 const { lang, t } = Astro.props;
-
-const parts = Astro.url.pathname.split("/").filter(Boolean);
-const slugAtual = parts.length >= 3 && parts[1] === "noticias" ? parts[2] : null;
-
 const link = (slug = '') => `/${lang}${slug ? '/' + slug : ''}`;
 ---
 <section class="bg-gray-100 py-4">
@@ -19,7 +15,7 @@ const link = (slug = '') => `/${lang}${slug ? '/' + slug : ''}`;
       <li><a href={link('noticias')}>{t("7.noticias")}</a></li>
       <li><a href={link('publicacoes')}>{t("7.publicacoes")}</a></li>
       <li><a href={link('videos')}>{t("7.videos")}</a></li>
-      <li><LanguageSelector lang={lang} slugAtual={slugAtual} /></li>
+      <li><LanguageSelector lang={lang} currentPath={Astro.url.pathname} /></li>
     </ul>
     <div class="mt-4 md:mt-0">
       <img src="/images/logo_unesp.svg" alt="Unesp" class="h-10" />

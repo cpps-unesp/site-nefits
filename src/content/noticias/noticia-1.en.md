@@ -1,6 +1,6 @@
 ---
 title: "International Experience – Yale University (Matheus de Vilhena Moraes)"
-slug: "noticiaB"
+slug: "noticia-1"
 imagem: "/images/noticia-1.svg"
 date: "2022-11-15"
 lang: "en"

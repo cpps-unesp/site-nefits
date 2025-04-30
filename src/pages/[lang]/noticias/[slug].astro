@@ -8,30 +8,34 @@ import { useTranslations } from "../../../i18n/translations";
 
 export async function getStaticPaths() {
   const noticias = await getCollection("noticias");
-
-  return noticias.map((noticia) => ({
-    params: {
-      lang: noticia.data.lang,  // Cada notícia define seu idioma
-      slug: noticia.slug,
-    },
-  }));
+  
+  return noticias.map((noticia) => {
+    const alternativeVersion = noticias.find(
+      n => n.data.slug === noticia.data.slug && n.data.lang !== noticia.data.lang
+    );
+    
+    return {
+      params: {
+        lang: noticia.data.lang,
+        slug: noticia.data.slug,
+      },
+      props: {
+        hasAlternativeVersion: !!alternativeVersion
+      }
+    };
+  });
 }
 
 const { lang, slug } = Astro.params;
+const { hasAlternativeVersion } = Astro.props;
 const t = useTranslations(lang);
 
-// Pegando as notícias
 const noticias = await getCollection("noticias");
-
-// Procurar a notícia correta baseada em slug e idioma
 const noticia = noticias.find(
   (n) => n.data.slug === slug && n.data.lang === lang
 );
 
-
-// Descobre se existe a versão no outro idioma
 const outroLang = lang === "pt" ? "en" : "pt";
-
 const noticiaOutroIdioma = noticias.find(
   (n) => n.data.slug === slug && n.data.lang === outroLang
 );
@@ -55,16 +59,17 @@ if (!noticia) {
     <article class="prose prose-neutral text-[#656565] font-light space-y-6">
       {noticia.body}
     </article>
+
     {noticiaOutroIdioma && (
-        <div class="text-center mt-8">
-          <a 
-            href={`/${outroLang}/noticias/${slug}`}
-            class="inline-block px-6 py-3 bg-gray-200 hover:bg-gray-300 text-[#656565] rounded font-bold text-sm"
-          >
-            {outroLang === "pt" ? "Ver em Português" : "View in English"}
-          </a>
-        </div>
-      )}
+      <div class="text-center mt-8">
+        <a 
+          href={`/${outroLang}/noticias/${slug}`}
+          class="inline-block px-6 py-3 bg-gray-200 hover:bg-gray-300 text-[#656565] rounded font-bold text-sm"
+        >
+          {outroLang === "pt" ? "Ver em Português" : "View in English"}
+        </a>
+      </div>
+    )}
 
     <div class="text-center mt-12">
       <a href={`/${lang}/noticias`} class="inline-block px-6 py-3 bg-[#ab090e] hover:bg-[#90070b] text-white rounded font-bold text-sm">

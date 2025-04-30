@@ -4,6 +4,8 @@ import Layout from "../../../layouts/Layout.astro";
 import Intro from "../../../components/Intro.astro";
 import Fapesp from "../../../components/Fapesp.astro";
 import Rodape from "../../../components/Rodape.astro";
+import PrimeiroContainer from "../../../components/PrimeiroContainer.astro"; // supondo que você tenha esse componente
+import NoticiasCards from "../../../components/NoticiasCards.astro"; // para renderizar cada card
 import { useTranslations } from "../../../i18n/translations";
 
 export async function getStaticPaths() {
@@ -13,46 +15,46 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang);
 
-// Pega todas as notícias DO IDIOMA atual
-const noticias = (await getCollection("noticias")).filter(
-  (n) => n.data.lang === lang,
-);
+// Buscar todas as notícias da Content Collection
+const noticias = (await getCollection("noticias"))
+  .filter((noticia) => noticia.data.lang === lang)
+  
 ---
 
 <Layout lang={lang}>
   <Intro lang={lang} t={t} />
 
   <main class="max-w-7xl mx-auto p-8">
-    <h1 class="text-3xl font-bold text-[#ab090e] mb-8">{t("7.noticias")}</h1>
+    <!-- TESTE de contagem de notícias -->
+    <p class="text-center text-red-500 font-bold mb-4">
+      {noticias.length} notícias carregadas para {lang.toUpperCase()}
+    </p>
 
-    {
-      noticias.length === 0 ? (
-        <p class="text-center text-gray-500 text-lg">
-          {lang === "pt"
-            ? "Nenhuma notícia disponível no momento."
-            : "No news available at the moment."}
-        </p>
-      ) : (
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {noticias.map((item) => (
-            <a
-              href={`/${lang}/noticias/${item.data.slug}`}
-              class="block p-4 bg-gray-100 hover:bg-gray-200 rounded-lg shadow transition"
-            >
-              <img
-                src={item.data.imagem}
-                alt={item.data.title}
-                class="w-full h-48 object-cover rounded mb-4"
-              />
-              <h2 class="text-xl font-bold text-[#ab090e] mb-2">
-                {item.data.title}
-              </h2>
-              <p class="text-sm text-gray-600">{item.data.resumo}</p>
-            </a>
-          ))}
-        </div>
-      )
-    }
+    <ul class="text-center mb-8">
+      {
+        noticias.map((n) => (
+          <li>
+            {n.data.slug} ({n.data.lang})
+          </li>
+        ))
+      }
+    </ul>
+    <PrimeiroContainer />
+    <!-- Seu título principal "Notícias" e subtítulo -->
+
+    <div class="flex flex-wrap gap-8 justify-center">
+      {
+        noticias.map((item) => (
+          <NoticiasCards
+            imagem={item.data.imagem}
+            titulo={item.data.title}
+            texto={item.data.resumo}
+            link={`/${lang}/noticias/${item.data.slug}`}
+            botao={t("4.btn")}
+          />
+        ))
+      }
+    </div>
   </main>
 
   <Fapesp lang={lang} t={t} />
