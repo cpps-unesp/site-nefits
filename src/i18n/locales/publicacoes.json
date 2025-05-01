@@ -1,93 +1,357 @@
 {
-    "abas": {
-      "livros": [
-        {
-          "titulo": "Paixões Humanas",
-          "subtitulo": null,
-          "autor": "Hélio Alexandre da Silva",
-          "ano": "2009",
-          "link": "/arquivos/2009-Helio_Alexandre_da_Silva-Paixoes humanas-Livro.pdf"
-        },
-        {
-          "titulo": "Sob os Olhos da Crítica",
-          "subtitulo": null,
-          "autor": "Hélio Alexandre da Silva",
-          "ano": "2017",
-          "link": "/arquivos/2017-Helio_Alexandre_da_Silva-Sob_os_olhos_da_critica-Livro.pdf"
-        },
-        {
-          "titulo": "Sonhos e Resistências",
-          "subtitulo": "MTST e os testemunhos da luta popular urbana",
-          "autor": "Hélio Alexandre da Silva",
-          "ano": "2023",
-          "link": "/arquivos/2023-Helio_Alexandre_da_Silva-Sonhos e resistencias- MTST e os testemunhos da luta popular urbana.pdf"
-        },
-        {
-          "titulo": "Experiências Sociais Negativas",
-          "subtitulo": "Um conceito de filosofia social",
-          "autor": "Hélio Alexandre da Silva; Leonardo da Hora; Paulo Bodziak; Vinícius dos Santos",
-          "ano": "2024",
-          "link": "/arquivos/Experiencias sociais negativas - um conceito de filosofia social.pdf"
-        }
-      ],
-      "artigos": [
-        {
-          "titulo": "Ethical Challenges in the Climate Crisis",
-          "subtitulo": "Thomas Pogge's Perspective and the Challenges for Global Cooperation",
-          "autor": "Matheus de Vilhena Moraes",
-          "ano": "2023",
-          "link": "/arquivos/2023-Matheus_de_Vilhena_Moraes-ETHICAL_CHALLENGES_IN_THE_CLIMATE.pdf"
-        },
-        {
-          "titulo": "As formas de opressão e violência de negras e negros em Achille Mbembe",
-          "subtitulo": null,
-          "autor": "Matheus Sena Asevedo Campanhã",
-          "ano": "2023",
-          "link": "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-As_formas_de_opressao_e_violencia_de_negras_e_negros_em_Achille_Mbembe.pdf"
-        }
-      ],
-      "teses": [
-        {
-          "titulo": "O Benefício de Prestação Continuada",
-          "subtitulo": "Um estudo sobre a centralidade da pobreza no seu quadro normativo",
-          "autor": "Andreia Celia Silva de Oliveira",
-          "ano": "2022",
-          "link": "/arquivos/2022-Andreia_Celia-O_BENEFICIO_DE_PRESTACAO_CONTINUADA.docx"
-        },
-        {
-          "titulo": "Teoria Democrática Deliberativa",
-          "subtitulo": "Uma análise dos conselhos municipais de assistência social",
-          "autor": "Talismara Guilherme Molina",
-          "ano": "2022",
-          "link": "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf"
-        }
-      ],
-      "tccs": [
-        {
-          "titulo": "A Autodeterminação Negra",
-          "subtitulo": "Uma análise da filosofia social e política de Achille Mbembe",
-          "autor": "Matheus Sena Asevedo Campanhã",
-          "ano": "2023",
-          "link": "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-TCC.pdf"
-        },
-        {
-          "titulo": "Malucos de Estrada",
-          "subtitulo": "A (r)existência de uma forma de vida no Brasil",
-          "autor": "Daniela Leonardi Polizio",
-          "ano": "2021",
-          "link": "/arquivos/2021-Daniela_Leonardi_Polizio-TCC.pdf"
-        }
-
-      ],
-      "relatorios": [
-        {
-          "titulo": "Liberdades e opressões",
-          "subtitulo": "A interseccionalidade como crítica do neoliberalismo",
-          "autor": "Ana Júlia Diniz Neves do Lago",
-          "ano": "2023-2024",
-          "link": "/arquivos/Ana_Julia_Diniz-Projeto_FAPESP.pdf"
-        }
-      ]
-    }
+  "abas": {
+    "livros": [
+      {
+        "titulo": "Paixões Humanas",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2009",
+        "link": "/arquivos/2009-Helio_Alexandre_da_Silva-Paixoes humanas-Livro.pdf"
+      },
+      {
+        "titulo": "Sob os Olhos da Crítica",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2017",
+        "link": "/arquivos/2017-Helio_Alexandre_da_Silva-Sob_os_olhos_da_critica-Livro.pdf"
+      },
+      {
+        "titulo": "Sonhos e Resistências",
+        "subtitulo": "MTST e os testemunhos da luta popular urbana",
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2023",
+        "link": "/arquivos/2023-Helio_Alexandre_da_Silva-Sonhos e resistencias- MTST e os testemunhos da luta popular urbana.pdf"
+      },
+      {
+        "titulo": "Experiencias Sociais Negativas - um conceito de filosofia social",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva; Leonardo da Hora; Paulo Bodziak; Vinícius dos Santos",
+        "ano": "2024",
+        "link": "/arquivos/Experiencias sociais negativas - um conceito de filosofia social.pdf"
+      }
+    ],
+    "artigos": [
+      {
+        "titulo": "Ethical Challenges in the Climate Crisis",
+        "subtitulo": "Thomas Pogge's Perspective and the Challenges for Global Cooperation",
+        "autor": "Matheus de Vilhena Moraes",
+        "ano": "2023",
+        "link": "/arquivos/2023-Matheus_de_Vilhena_Moraes-ETHICAL_CHALLENGES_IN_THE_CLIMATE.pdf"
+      },
+      {
+        "titulo": "As forma de opressão e violência de negras e negros em Achille Mbembe",
+        "subtitulo": null,
+        "autor": "Matheus Sena Asevedo Campanhã",
+        "ano": "2023",
+        "link": "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-As_formas_de_opressao_e_violencia_de_negras_e_negros_em_Achille_Mbembe.pdf"
+      },
+      {
+        "titulo": "Pobreza como Déficit dos Direitos Humanos em Thomas Pogge",
+        "subtitulo": null,
+        "autor": "Matheus de Vilhena Moraes",
+        "ano": "2023",
+        "link": "/arquivos/2023-Matheus_de_Vilhena_Moraes-POBREZA_COMO_DEFICIT_DOS_DIREITOS_HUMANOS_EM_THOMAS_POGGE.pdf"
+      },
+      {
+        "titulo": "Ciência e Filosofia",
+        "subtitulo": "Notas acerca da re-significação de conceitos científicos na filosofia hobbesiana",
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2009",
+        "link": "/arquivos/2009-Helio_Alexandre_da_Silva-Ciencia_e_Filosofia.pdf"
+      },
+      {
+        "titulo": "Cinismo e Falência da Crítica (Resenha)",
+        "subtitulo": null,
+        "autor": "Leonardo Jorge da Hora e Hélio Alexandre da Silva",
+        "ano": "2010",
+        "link": "/arquivos/2010-Helio_Alexandre_da_Silva-Cinismo_e_Falencia_da_Critica_de_Vladimir_Safatle-Resenha.pdf"
+      },
+      {
+        "titulo": "Estruturas e Fundamentos Sociais",
+        "subtitulo": "A leitura honnethiana de Habermas",
+        "autor": "Hélio Alexandre da Silva e Herbert Barucci Ravagnani",
+        "ano": "2013",
+        "link": "/arquivos/2013-Helio_Alexandre_da_Silva-Estruturas_e_fundamentos_sociais_a leitura honnethiana de habermas.pdf"
+      },
+      {
+        "titulo": "Patologias da Autoridade",
+        "subtitulo": "Alguns aspectos da noção de “personalidade autoritária” na escola de Frankfurt",
+        "autor": "Stéphane Haber. Trad. Hélio Alexandre da Silva",
+        "ano": "2014",
+        "link": "/arquivos/2014-Stephane_Haber-Patologias_da_autoridade-Traducao.pdf"
+      },
+      {
+        "titulo": "Habermas, Honneth e os movimentos sociais",
+        "subtitulo": "Repensando diagnósticos e alternativas",
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2016",
+        "link": "/arquivos/2016-Helio_Alexandre_da_Silva-Habermas_e_Honneth_repensando_diagnosticos_e_alternativas.pdf"
+      },
+      {
+        "titulo": "O Iluminismo Relutante de Jean-Jacques Rousseau",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2016",
+        "link": "/arquivos/2016-Helio_Alexandre_da_Silva-O_Iluminismo_relutante_de_Jean-Jacques_Rousseau.pdf"
+      },
+      {
+        "titulo": "Como pensar filosoficamente o social?",
+        "subtitulo": null,
+        "autor": "Franck Fischbach. Trad. Hélio Alexandre da Silva",
+        "ano": "2017",
+        "link": "/arquivos/2017-Helio_Alexandre_da_Silva-Como_pensar_filosoficamente_o_social-Traducao.pdf"
+      },
+      {
+        "titulo": "Thomas Hobbes: Política, medo e conflitos sociais",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2017",
+        "link": "/arquivos/2017-Helio_Alexandre_da_Silva-Thomas Hobbes_ política, medo e conflitos sociais.pdf"
+      },
+      {
+        "titulo": "A experiência da pobreza em “Vidas Secas” e no “Auto da Compadecida”",
+        "subtitulo": null,
+        "autor": "Heurisgleides Sousa Teixeira e Hélio Alexandre da Silva",
+        "ano": "2018",
+        "link": "/arquivos/2018-Helio_Alexandre_da_Silva-A experiencia da pobreza em Vidas secas e no Auto da compadecida.pdf"
+      },
+      {
+        "titulo": "Alienação como dimensão constitutiva da pobreza",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2018",
+        "link": "/arquivos/2018-Helio_Alexandre_da_Silva-Alienacao como dimensao constitutiva da pobreza.pdf"
+      },
+      {
+        "titulo": "Por que razão pretendeis ser pagos às nossas expensas? Pobreza e desigualdade no Segundo discurso de Rousseau",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2019",
+        "link": "/arquivos/2019-Helio_Alexandre_da_Silva-Por que razao pretendeis ser pagos as nossas expensas_ Pobreza e desigualdade no Segundo discurso de Rousseau_.pdf"
+      },
+      {
+        "titulo": "Ainda é mais fácil pensar no fim do mundo que no fim do capitalismo? (Resenha)",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2020",
+        "link": "/arquivos/2020-Helio_Alexandre_da_Silva-Ainda e mais facil pensar no fim do mundo que no fim do capitalismo_ Piketty capital e ideologia.pdf"
+      },
+      {
+        "titulo": "A Critique of Poverty",
+        "subtitulo": "Exploring the Underground of Social Philosophy",
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2021",
+        "link": "/arquivos/2021-Helio_Alexandre_da_Silva-A Critique of Poverty- Exploring the Underground of Social Philosophy.pdf"
+      },
+      {
+        "titulo": "Quem são os mais pobres? Explorando tensões sociais e horizontes políticos",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2021",
+        "link": "/arquivos/2021-Helio_Alexandre_da_Silva-Quem sao os mais pobres_ Explorando tensoes sociais e horizontes politicos.pdf"
+      },
+      {
+        "titulo": "Sofrimento social como dimensão da pobreza",
+        "subtitulo": null,
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2022",
+        "link": "/arquivos/2022-Helio_Alexandre_da_Silva-Sofrimento social como dimensao da pobreza.pdf"
+      },
+      {
+        "titulo": "A interseccionalidade como crítica do neoliberalismo: uma análise das relações desiguais de gênero",
+        "subtitulo": null,
+        "autor": "Ana Júlia Diniz Neves do Lago",
+        "ano": "2025",
+        "link": "/arquivos/A interseccionalidade como crítica do neoliberalismo uma análise das relações.pdf"
+      }
+    ],
+    "teses": [
+      {
+        "titulo": "O Benefício de Prestação Continuada",
+        "subtitulo": "Um estudo sobre a centralidade da pobreza no seu quadro normativo",
+        "autor": "Andreia Celia Silva de Oliveira",
+        "ano": "2022",
+        "link": "/arquivos/2022-Andreia_Celia-O_BENEFICIO_DE_PRESTACAO_CONTINUADA.docx"
+      },
+      {
+        "titulo": "Teoria Democrática Deliberativa",
+        "subtitulo": "Uma análise dos conselhos municipais de assistência social",
+        "autor": "Talismara Guilherme Molina",
+        "ano": "2022",
+        "link": "/arquivos/2022-Talismara_Molina-TEORIA_DEMOCRATICA_DELIBERATIVA.pdf"
+      },
+      {
+        "titulo": "A inteligência de ninguém",
+        "subtitulo": "Igualdade, emancipação e pobreza em O mestre ignorante de Jacques Rancière",
+        "autor": "Tark Fraig",
+        "ano": "2024",
+        "link": "/arquivos/2024-Tark_Fraig-A_Inteligencia_de_Ninguem.pdf"
+      },
+      {
+        "titulo": "Hobbes, Rousseau e a Teoria Crítica",
+        "subtitulo": "Características e consequências de uma apropriação",
+        "autor": "Hélio Alexandre da Silva",
+        "ano": "2013",
+        "link": "/arquivos/2013-Helio_Alexandre_da_Silva-Hobbes_Rousseau_e_a_Teoria Critica-caracteristicas_e_consequencias_de_uma_apropriacao-Tese.pdf"
+      }
+    ],
+    "tccs": [
+      {
+        "titulo": "A Autodeterminação Negra",
+        "subtitulo": "Uma análise da filosofia social e política de Achille Mbembe",
+        "autor": "Matheus Sena Asevedo Campanhã",
+        "ano": "2023",
+        "link": "/arquivos/2023-Matheus_Sena_Asevedo_Campanha-TCC.pdf"
+      },
+      {
+        "titulo": "Malucos de Estrada",
+        "subtitulo": "A (r)existência de uma forma de vida no Brasil",
+        "autor": "Daniela Leonardi Polizio",
+        "ano": "2021",
+        "link": "/arquivos/2021-Daniela_Leonardi_Polizio-TCC.pdf"
+      },
+      {
+        "titulo": "Necropolítica",
+        "subtitulo": "A Política de Negação do Negro",
+        "autor": "Mayara Cristina Oliveira Pires",
+        "ano": "2021",
+        "link": "/arquivos/2021-Mayara_Cristina_Oliveira_Pires-TCC.docx"
+      },
+      {
+        "titulo": "O Cotidiano e o Estranhamento em Lukács",
+        "subtitulo": null,
+        "autor": "Roan Matthaeus Chimello Dias",
+        "ano": "2020",
+        "link": "/arquivos/2020-Roan_Matheus_Chimello_Dias-TCC.pdf"
+      },
+      {
+        "titulo": "Relações entre a Ética da Responsabilidade Jonasiana e o Direito",
+        "subtitulo": null,
+        "autor": "Péricles de Freitas Nogueira",
+        "ano": "2021",
+        "link": "/arquivos/2021-Pericles_de_Freitas_Nogueira-TCC.pdf"
+      },
+      {
+        "titulo": "Os Contornos da Questão Social em Sobre a Revolução de Hannah Arendt",
+        "subtitulo": null,
+        "autor": "Larissa Barcellos Rodrigues",
+        "ano": "2022",
+        "link": "/arquivos/2022-Larissa_Barcellos_Rodrigues-TCC.pdf"
+      },
+      {
+        "titulo": "Vítimas, Ética e Libertação na Obra de Enrique Dussel",
+        "subtitulo": null,
+        "autor": "Beatriz Batista do Nascimento Alkmin",
+        "ano": "2021",
+        "link": "/arquivos/2021-Beatriz_Batista_do_Nascimento_Alkmin-TCC.docx"
+      },
+      {
+        "titulo": "Desigualdade e Diferença",
+        "subtitulo": null,
+        "autor": "Luana Ambiel Marachini",
+        "ano": "2020",
+        "link": "/arquivos/2020-Luana_Ambiel_Marachini-TCC.pdf"
+      },
+      {
+        "titulo": "Igualdade material como instrumento de inclusão social-debate sobre a constitucionalidade das cotas raciais nas Universidades Públicas",
+        "subtitulo": null,
+        "autor": "Gabriel Ferreira dos Santos",
+        "ano": "2020",
+        "link": "/arquivos/2020-Gabriel_Ferreira_dos_Santos-TCC.pdf"
+      },
+      {
+        "titulo": "Entre Freire e Jacotot",
+        "subtitulo": null,
+        "autor": "Tark Fraig",
+        "ano": "2020",
+        "link": "/arquivos/2020-Tark_Fraig-TCC.pdf"
+      }
+    ],
+    "relatorios": [
+      {
+        "titulo": "Liberdades e opressões",
+        "subtitulo": "A interseccionalidade como crítica do neoliberalismo",
+        "autor": "Ana Júlia Diniz Neves do Lago",
+        "ano": "2023-2024",
+        "link": "/arquivos/Ana_Julia_Diniz-Projeto_FAPESP.pdf"
+      },
+      {
+        "titulo": "A relação entre ideologia, propriedade e desigualdade na obra Capital e Ideologia de Thomas Piketty",
+        "subtitulo": null,
+        "autor": "Eduarda Pereira Pires Barboza",
+        "ano": "2023-2024",
+        "link": "/arquivos/2023_2024-Eduarda_Barboza_Projeto_PIBIC.docx"
+      },
+      {
+        "titulo": "Pobreza e dever moral na Metafísica dos Costumes de Kant",
+        "subtitulo": null,
+        "autor": "Julia de Andrade Fernandes Francisco",
+        "ano": "2023-2024",
+        "link": "/arquivos/2023_2024-Julia_Andrade-Projeto_PIBIC.pdf"
+      },
+      {
+        "titulo": "Entendendo o Feminismo Islâmico",
+        "subtitulo": "Uma Análise sobre os Desafios que Obstam ente Movimento Político-Religioso Transnacional",
+        "autor": "Bianca Regina Poltronieri",
+        "ano": "2022-2023",
+        "link": "/arquivos/Feminismo_Islamico--Margot_Badran-Projeto_PIBIC.docx"
+      },
+      {
+        "titulo": "Religião, Política e Retórica",
+        "subtitulo": "Contornos da Relação entre Fé e Razão no Estado Civil de Thomas Hobbes.",
+        "autor": "Vinícius Antonio Ramos Zecca",
+        "ano": "2020-2021",
+        "link": "/arquivos/Vinicius_Antonio_Ramos_Zecca-Projeto_FAPESP.pdf"
+      },
+      {
+        "titulo": "A erradicação da pobreza extrema através da reforma das instituições compartilhadas proposta por Thomas Pogge",
+        "subtitulo": null,
+        "autor": "Matheus de Vilhena Moraes",
+        "ano": "2022-2023",
+        "link": "/arquivos/MATHEUS_VILHENA-Projeto_FAPESP.docx"
+      },
+      {
+        "titulo": "Alienação de Negras e Negros em Achille Mbembe",
+        "subtitulo": null,
+        "autor": "Matheus Sena Asevedo Campanhã",
+        "ano": "2022-2023",
+        "link": "/arquivos/Matheus_Sena-Projeto_FAPESP.pdf"
+      },
+      {
+        "titulo": "Critério de Justiça Universal, Dever Negativo e Dever Positivo de Justiça",
+        "subtitulo": null,
+        "autor": "Matheus de Vilhena Moraes",
+        "ano": "2022-2023",
+        "link": "/arquivos/2022-Matheus_de_Vilhena_Moraes-PROJETO_BEPE.docx"
+      },
+      {
+        "titulo": "Subjetividade e Opressão",
+        "subtitulo": "Um Recorte de Gênero no Neoliberalismo",
+        "autor": "Ana Júlia Diniz Neves do Lago",
+        "ano": "2023-2024",
+        "link": "/arquivos/2023-Ana_Julia-Projeto_BEPE.pdf"
+      },
+      {
+        "titulo": "O conceito de interseccionalidade e seu uso para análise da justiça social nas políticas globais",
+        "subtitulo": null,
+        "autor": "Ana Júlia Diniz Neves do Lago",
+        "ano": "2021-2022",
+        "link": "/arquivos/Interseccionalidade--Silma_Bilge_e_Patricia_Hill_Collins-Projeto_PIBIC.pdf"
+      },
+      {
+        "titulo": "Pobreza, funcionamentos [functionings] e capacidades [capabilities] na obra Desigualdade Reexaminada de Amartya Sen",
+        "subtitulo": null,
+        "autor": "Guilherme Vicente Moura",
+        "ano": "2021-2022",
+        "link": "/arquivos/Amartya_Sen--Pobreza_functionings_e_capabilities-Projeto_PIBIC.pdf"
+      },
+      {
+        "titulo": "Alienação De Negras E Negros Em Achille Mbembe",
+        "subtitulo": null,
+        "autor": "Matheus Sena Asevedo Campanhã",
+        "ano": "2021-2022",
+        "link": "/arquivos/Achille_Mbembe--Alienacao_escravidao_colonizacao_e_apartheid-Projeto_PIBIC.pdf"
+      }
+    ]
   }
-  
+}

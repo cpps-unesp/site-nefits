@@ -1,24 +1,15 @@
 {
-    "home": {
-        "apresentar": {
-            "texto": "O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas."
-        },
+    "1": {
+        "home": "O espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas.",
         "sobre": {
             "titulo": "Sobre",
-            "texto": "O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais.",
-            "btn": "Saiba Mais"
+            "texto": "O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais."
         },
-        
-        "noticias": {
-            "titulo": "Notícias",
-            "texto": "Acesse as notícias mais recentes sobre o NéFiTs e suas atividades.",
-            "btn": "Saiba Mais"
-        },
-        "publicacoes": {
-            "titulo": "Publicações",
-            "texto": "Acesse as publicações dos membros do NéFiTs.",
-            "btn": "Saiba Mais"
-        },
+        "btn": "Saiba Mais",
+        "noticias": "Notícias",
+        "publicacoes": "Publicações",
+        "textoNoticias": "Acesse as notícias mais recentes sobre o NéFiTs e suas atividades.",
+        "textoPublicacoes": "Acesse as publicações desenvolvidas e publicadas pela equipe NéFiTs.",
         "fapesp1": "Esse site foi construído com apoio da Fapesp através do ",
         "fapesp2": "Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI - Processo 2022/02922-1",
         "contato": "Contato",
@@ -154,17 +145,41 @@
             "sobre": "Curso o quinto semestre de Relações Internacionais pela UNESP (Universidade Estadual Paulista “Júlio de Mesquita Filho”) - Campus Franca. Fiz parte da administração do grupo de extensão GEPESOI por 2 anos. Além disso, também fiz parte do âmbito administrativo do Cursinho Popular atrelado à universidade, bem como lecionei a matéria de biologia aos cursistas por mais de 1 ano. Atualmente, faço parte do time de Relações Comerciais da ORBE - Consultoria Internacional como Analista do Projeto Governamental e sou membro do Núcleo de Pesquisa em Ética, Filosofia, Teoria Política e Social (NéFTis) desde agosto de 2022."
         }
     },
-    "noticias": {
+    "4": {
         "noticiaNaoEncontrada": "Notícia não encontrada",
         "noticiaIndisponivelNesseIdioma": "Esta notícia não está disponível nesse idioma.",
         "voltarParaNoticias": "Voltar para Notícias",
-        "titulo": "Notícias",
+        "noticias": "Notícias",
         "texto": "Leia as últimas notícias sobre o Núcleo de Estudos em Filosofia, Teoria e Sociedade.",
-        "tags_titulo": "Notícias relacionadas a: ",
-        "todas_tags": "Todas as Tags",
-        "sem_tags": "Nenhuma tag encontrada.",
-        "texto_categorias": "Para visualizar as categorias de notícias",
-        "ver_categorias": "clique aqui"
+        "1": {
+            "titulo": "Experiências Internacionais – Universidade Yale (Matheus de Vilhena Moraes)",
+            "texto": "O discente do curso de Direito da FCHS, Matheus de Vilhena Moraes, foi contemplado com a bolsa BEPE – Bolsa de Estágio de Pesquisa no Exterior para desenvolver parte da sua pesquisa realizada no Brasil com o financiamento da FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob a orientação do Prof. Dr. Hélio Alexandre da Silva. Entre agosto e novembro de 2022, Matheus integrou o Programa de Justiça Global da Universidade de Yale..."
+        },
+        "2": {
+            "titulo": "Experiências Internacionais – Universidade Paris-Nanterre (Ana Júlia Diniz Neves do Lago)",
+            "texto": "Ana Júlia Diniz Neves do Lago, graduanda do curso de Relações Internacionais da Unesp e bolsista de Iniciação Científica, foi contemplada com uma Bolsa Estágio de Pesquisa no Exterior - BEPE (Processo nº 2023/08867-5) na Universidade Paris-Nanterre, França, financiada pela FAPESP (Fundação de Amparo à Pesquisa do Estado de São Paulo), sob supervisão do Prof. Dr. Pierre Sauvêtre. O projeto de pesquisa de Ana Júlia, intitulado 'Subjetividade e opressão: um recorte de gênero no neoliberalismo', foi desenvolvido entre 01/11/2023 e 29/02/2024..."
+        },
+        "3": {
+            "titulo": "Experiências Internacionais: Universidade de Santiago do Chile (Gabrielle Nascimento)",
+            "texto": "Gabrielle Nascimento, discente do curso de Relações Internacionais, que estuda Planejamento Econômico como crítica anti-capitalista, foi contemplada com uma oportunidade de intercâmbio na Universidad de Santiago de Chile. Entre agosto de 2023 e janeiro de 2024, Gabrielle desenvolveu sua pesquisa focada na conceituação e mapeamento do debate sobre a planificação econômica, suas experiências e sua efetividade na construção do socialismo. Durante sua estadia no Chile, Gabrielle esteve presente no aniversário de 50 anos da ditadura militar..."
+        },
+        "4": {
+            "titulo": "Experiências Internacionais: Universidad de Playa Ancha (Eduarda Pereira Pires Barboza)",
+            "texto": "Entre 3 de março e 18 de julho, Eduarda Pereira Pires Barboza, discente do curso de Relações Internacionais, realizou uma visita na Universidad de Playa Ancha (UPLA), no Chile. Seu estudo centraliza-se na desigualdade social, e o intercâmbio foi crucial para expandir sua compreensão desse tema. Durante sua estadia, Eduarda observou uma abordagem diferente em relação à desigualdade. Participando de congressos e jornadas, e conversando com colegas e professores, a discente notou que a distinção entre público e estatal é frequentemente enfatizada..."
+        },
+        "5": {
+            "titulo": "Lançamento do Livro: Experiências Sociais Negativas",
+            "texto": "O Núcleo de Estudos em Ética e Teoria Política e Social tem o prazer de anunciar o lançamento do livro 'Experiências Sociais Negativas', uma obra que explora o sofrimento e outras experiências negativas que acompanham a vivência de determinados indivíduos, sob uma perspectiva interdisciplinar e crítica. O livro questiona se a Filosofia e as Ciências Sociais podem se ocupar do problema do sofrimento, tradicionalmente considerado objeto exclusivo da psicologia e das terapias. A resposta afirmativa baseia-se na compreensão de que tais experiências não são meramente individuais..."
+        },
+        "6": {
+            "titulo": "II Seminário Permanente de Filosofia Crítica e Sociedade",
+            "texto": "Nos dias 24 e 25 de abril, o campus de Franca da UNESP sediou o II Encontro do Seminário Permanente de Filosofia, Crítica e Sociedade. O evento, que surgiu como um esforço de construção de um espaço de debates durante a pandemia, reuniu pesquisadores do Brasil e da América Latina. Com o tema 'Crítica e subjetividade: experiências do presente para imaginar o futuro', o encontro privilegiou a profundidade dos debates, focando em cada sessão em uma única apresentação, seja um trabalho em progresso ou uma publicação recente..."
+        },
+        "7": {
+            "titulo": "XXXVI Congresso de Iniciação Científica da Unesp",
+            "texto": "Nesta semana, os membros do grupo Néfits participaram do XXXVI Congresso de Iniciação Científica da Unesp, cujo tema foi 'Ciência em tempos de crise climática e social'. O evento destacou discussões fundamentais para o momento atual, e nossos integrantes contribuíram com temas relevantes em diversas áreas da filosofia, ciências humanas e sociais..."
+        },
+        "btn": "Leia Mais"
     },
     "5": {
         "publicacoes": "Publicações",

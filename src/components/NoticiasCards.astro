@@ -4,15 +4,48 @@ export interface Props {
   titulo: string;
   texto: string;
   link: string;
-  botao: string;
+  tags?: string[];
+  lang: string;
 }
-const { imagem, titulo, texto, link, botao } = Astro.props;
 
+const { imagem, titulo, texto, link, tags, lang } = Astro.props;
 ---
 
-<div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] rounded-lg shadow-md overflow-hidden flex flex-col justify-between p-4">
-  <img src={imagem} alt={titulo} class="w-full object-cover mb-4" />
-  <h2 class="text-lg font-bold text-[#ab090e] mb-2">{titulo}</h2>
-  <p class="text-sm text-[#656565] mb-4">{texto}</p>
-  <a href={link} class="inline-block bg-[#ab090e] hover:bg-[#90070b] text-white font-bold py-2 px-4 rounded text-center">{botao}</a>
-</div>
+<article
+  class="relative w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] rounded-lg shadow-md overflow-hidden flex flex-col justify-between p-4 hover:shadow-lg transition-shadow duration-200 cursor-pointer group"
+>
+{tags && tags.length > 0 && (
+  <div class="flex flex-wrap gap-2 mb-2 z-20 relative">
+    {tags.map((tag) => (
+      <a
+        href={`/${lang}/tags/${tag}`}
+        class="bg-primary/10 text-primary text-xs font-medium px-2 py-1 rounded transition-colors duration-200 hover:bg-primary hover:text-white"
+      >
+        {tag}
+      </a>
+    ))}
+  </div>
+)}
+
+  <a
+    href={link}
+    class="absolute inset-0 z-10"
+    aria-label={`Ver notícia: ${titulo}`}
+  >
+    <span class="sr-only">{titulo}</span>
+  </a>
+
+  <div class="aspect-w-4 aspect-h-3 mb-3 relative overflow-hidden rounded">
+    <img
+      src={imagem}
+      alt={titulo}
+      class="object-cover w-full h-full absolute inset-0 transform transition-transform duration-300 ease-in-out group-hover:scale-105"
+    />
+  </div>
+
+  <h2 class="text-base font-bold text-primary mb-2 z-0 relative">
+    {titulo}
+  </h2>
+
+  <p class="text-sm text-neutral z-0 relative">{texto}</p>
+</article>

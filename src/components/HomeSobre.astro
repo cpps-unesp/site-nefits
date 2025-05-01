@@ -1,0 +1,27 @@
+---
+import * as homeData from "../i18n/locales/home.json" assert { type: "json" };
+import { useTranslations } from "../i18n/translations";
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const imagem = homeData.sobre.imagem;
+const link = homeData.sobre.link;
+---
+
+<section class="py-12">
+  <div class="flex flex-col md:flex-row gap-8 items-center max-w-7xl mx-auto px-4">
+    <div class="md:w-1/2 w-full text-start">
+      <h2 class="text-2xl font-bold text-primary mb-4">{t("home.sobre.titulo")}</h2>
+      <p class="text-neutral mb-4">{t("home.sobre.texto")}</p>
+      <a href={`/${lang}${link}`} class="inline-block bg-primary text-white px-5 py-2 rounded hover:bg-[#90070b] font-semibold text-sm transition">
+        {t("home.sobre.btn")}
+      </a>
+    </div>
+    <div class="md:w-1/2 w-full text-center">
+      <a  href={`/${lang}${link}`}>
+        <img src={imagem} alt="Imagem sobre" class="w-full max-w-md rounded mx-auto" />
+      </a>
+    </div>
+  </div>
+</section>
