@@ -17,6 +17,7 @@
     padding: 0 0 1rem 0 ;
     position: relative;
     margin-bottom: 0;
+    padding-top: 1rem;
 }
 
 [data-theme='dark'] .heroBanner{
@@ -381,6 +382,7 @@ a{
 
 .logoMenu img{
     width: 8rem;
+    
 }
 
 /*
