@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import Intro from "../../../components/Intro.astro";
+import Fapesp from "../../../components/Fapesp.astro";
+import Rodape from "../../../components/Rodape.astro";
+import NoticiasCards from "../../../components/NoticiasCards.astro";
+
+import { useTranslations } from "../../../i18n/translations";
+
+
+export async function getStaticPaths() {
+  return ["pt", "en"].map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang);
+
+// Buscar todas as notícias e extrair as tags
+const noticias = (await getCollection("noticias")).filter(
+  (n) => n.data.lang === lang
+);
+
+const allTags = noticias.flatMap((n) => n.data.tags || []);
+const uniqueTags = [...new Set(allTags)].sort();
+---
+
+<Layout lang={lang}>
+    <Intro lang={lang} t={t} />
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold text-center mb-8">
+      {t("noticias.todas_tags")}
+    </h1>
+
+    {uniqueTags.length > 0 ? (
+      <ul class="flex flex-wrap gap-4 justify-center">
+        {uniqueTags.map((tag) => (
+          <li>
+            <a
+              href={`/${lang}/tags/${tag}`}
+              class="bg-[#ab090e]/10 text-[#ab090e] px-3 py-1 rounded text-sm hover:underline"
+            >
+              {tag}
+            </a>
+          </li>
+        ))}
+      </ul>
+    ) : (
+      <p class="text-center text-gray-600">
+        {t("noticias.sem_tags")}
+
+      </p>
+    )}
+  </main>
+    <Fapesp lang={lang} t={t} />
+    <Rodape lang={lang} t={t} />
+</Layout>

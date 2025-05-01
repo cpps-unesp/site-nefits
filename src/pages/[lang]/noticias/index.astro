@@ -4,8 +4,8 @@ import Layout from "../../../layouts/Layout.astro";
 import Intro from "../../../components/Intro.astro";
 import Fapesp from "../../../components/Fapesp.astro";
 import Rodape from "../../../components/Rodape.astro";
-import PrimeiroContainer from "../../../components/PrimeiroContainer.astro"; // supondo que você tenha esse componente
-import NoticiasCards from "../../../components/NoticiasCards.astro"; // para renderizar cada card
+import PrimeiroContainer from "../../../components/PrimeiroContainer.astro";
+import NoticiasCards from "../../../components/NoticiasCards.astro";
 import { useTranslations } from "../../../i18n/translations";
 
 export async function getStaticPaths() {
@@ -16,31 +16,16 @@ const { lang } = Astro.params;
 const t = useTranslations(lang);
 
 // Buscar todas as notícias da Content Collection
-const noticias = (await getCollection("noticias"))
-  .filter((noticia) => noticia.data.lang === lang)
-  
+const noticias = (await getCollection("noticias")).filter(
+  (noticia) => noticia.data.lang === lang,
+);
 ---
 
 <Layout lang={lang}>
   <Intro lang={lang} t={t} />
 
   <main class="max-w-7xl mx-auto p-8">
-    <!-- TESTE de contagem de notícias -->
-    <!-- <p class="text-center text-red-500 font-bold mb-4">
-      {noticias.length} notícias carregadas para {lang.toUpperCase()}
-    </p>
-
-    <ul class="text-center mb-8">
-      {
-        noticias.map((n) => (
-          <li>
-            {n.data.slug} ({n.data.lang})
-          </li>
-        ))
-      }
-    </ul> -->
     <PrimeiroContainer />
-    <!-- Seu título principal "Notícias" e subtítulo -->
 
     <div class="flex flex-wrap gap-8 justify-center">
       {
@@ -50,7 +35,8 @@ const noticias = (await getCollection("noticias"))
             titulo={item.data.title}
             texto={item.data.resumo}
             link={`/${lang}/noticias/${item.data.slug}`}
-            botao={t("4.btn")}
+            tags={item.data.tags}
+            lang={lang}
           />
         ))
       }

@@ -1,4 +1,5 @@
 import typography from '@tailwindcss/typography'
+import aspectRatio from '@tailwindcss/aspect-ratio'
 
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -16,5 +17,5 @@ export default {
       },
     },
   },
-  plugins: [typography],
+  plugins: [typography, aspectRatio],
 }

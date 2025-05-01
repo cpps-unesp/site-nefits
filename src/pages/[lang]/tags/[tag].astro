@@ -1,0 +1,68 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import Intro from "../../../components/Intro.astro";
+import Fapesp from "../../../components/Fapesp.astro";
+import Rodape from "../../../components/Rodape.astro";
+import NoticiasCards from "../../../components/NoticiasCards.astro";
+
+import { useTranslations } from "../../../i18n/translations";
+
+export async function getStaticPaths() {
+  const noticias = await getCollection("noticias");
+
+  // Obtem combinações únicas de [lang, tag]
+  const paths = noticias.flatMap((noticia) =>
+    (noticia.data.tags || []).map((tag) => ({
+      params: { lang: noticia.data.lang, tag },
+    }))
+  );
+
+  // Remove duplicatas
+  const uniquePaths = Array.from(
+    new Map(paths.map((p) => [`${p.params.lang}-${p.params.tag}`, p])).values()
+  );
+
+  return uniquePaths;
+}
+
+const { lang, tag } = Astro.params;
+const t = useTranslations(lang);
+
+// Filtra notícias por idioma e tag
+const noticias = (await getCollection("noticias")).filter(
+  (noticia) =>
+    noticia.data.lang === lang &&
+    noticia.data.tags?.includes(tag)
+);
+---
+
+<Layout lang={lang}>
+    <Intro lang={lang} t={t} />
+    <main class="max-w-7xl mx-auto px-4 py-8">
+      <h1 class="text-2xl font-bold mb-6 text-center">
+        {t("noticias.tags_titulo")} {tag}
+      </h1>
+  
+      <div class="flex flex-wrap gap-8 justify-center">
+        {noticias.length > 0 ? (
+          noticias.map((item) => (
+            <NoticiasCards
+              imagem={item.data.imagem}
+              titulo={item.data.title}
+              texto={item.data.resumo}
+              link={`/${lang}/noticias/${item.slug}`}
+              tags={item.data.tags}
+              lang={lang}  
+            />
+          ))
+        ) : (
+          <p class="text-center text-gray-600">
+            {t("noticias.sem_resultado") || "Nenhuma notícia encontrada com essa tag."}
+          </p>
+        )}
+      </div>
+    </main>
+    <Fapesp lang={lang} t={t} />
+    <Rodape lang={lang} t={t} />
+  </Layout>

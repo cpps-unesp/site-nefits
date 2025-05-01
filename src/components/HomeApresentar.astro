@@ -1,0 +1,19 @@
+---
+
+// Carrega o JSON com os dados fixos
+import * as homeData from "../i18n/locales/home.json" assert { type: "json" };
+const { lang, imagem } = Astro.props;
+import { useTranslations } from "../i18n/translations";
+const t = useTranslations(lang);
+---
+
+<div class="flex flex-col md:flex-row gap-6 items-center my-10">
+  <div class="md:w-1/2 w-full text-center">
+    <img src={homeData.apresentar.imagem} alt="Imagem introdutória" class="rounded w-full h-auto max-w-md mx-auto" />
+  </div>
+  <div class="md:w-1/2 w-full text-start">
+    <p class="text-neutral text-lg leading-relaxed">
+      {t("home.apresentar.texto")}
+    </p>
+  </div>
+</div>
