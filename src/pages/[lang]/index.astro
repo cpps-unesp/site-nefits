@@ -8,6 +8,8 @@ import HomePublicacao from "../../components/HomePublicacoes.astro";
 
 import { useTranslations } from "../../i18n/translations";
 
+
+
 // define quais idiomas o Astro deve gerar (ex: /pt, /en)
 export async function getStaticPaths() {
   return [{ params: { lang: "pt" } }, { params: { lang: "en" } }];
