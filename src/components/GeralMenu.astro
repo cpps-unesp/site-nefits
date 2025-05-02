@@ -1,0 +1,34 @@
+---
+import geralRodapeJson from "../i18n/locales/links.json" assert { type: "json" };
+import LanguageSelector from "./LanguageSelector.astro";
+const { lang, t } = Astro.props;
+const link = (slug = "") => `/${lang}${slug ? "/" + slug : ""}`;
+// Dados do JSON
+const links = geralRodapeJson;
+---
+
+<section class="bg-gray-100 py-4">
+  <div
+    class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4"
+  >
+    <a href={link()} class="mb-4 md:mb-0">
+      <img src={links.nefits.logo} alt="Logo NéFiTs" class="h-16" />
+    </a>
+    <ul
+      class="flex flex-wrap justify-center gap-4 font-semibold text-sm md:text-base"
+    >
+      <li><a href={link()}>{t("menu.home")}</a></li>
+      <li><a href={link("sobre")}>{t("menu.sobre")}</a></li>
+      <li><a href={link("equipe")}>{t("menu.equipe")}</a></li>
+      <li><a href={link("noticias")}>{t("menu.noticias")}</a></li>
+      <li><a href={link("publicacoes")}>{t("menu.publicacoes")}</a></li>
+      <li><a href={link("videos")}>{t("menu.videos")}</a></li>
+      <li><LanguageSelector lang={lang} currentPath={Astro.url.pathname} /></li>
+    </ul>
+    <div class="mt-4 md:mt-0">
+      <a href={links.unesp.site} target="_blank" rel="noopener noreferrer"
+        ><img src={links.unesp.logo} alt="Unesp" class="h-10" /></a
+      >
+    </div>
+  </div>
+</section>

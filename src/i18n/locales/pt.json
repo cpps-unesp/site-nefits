@@ -8,7 +8,6 @@
             "texto": "O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais.",
             "btn": "Saiba Mais"
         },
-        
         "noticias": {
             "titulo": "Notícias",
             "texto": "Acesse as notícias mais recentes sobre o NéFiTs e suas atividades.",
@@ -18,46 +17,60 @@
             "titulo": "Publicações",
             "texto": "Acesse as publicações dos membros do NéFiTs.",
             "btn": "Saiba Mais"
-        },
-        "fapesp1": "Esse site foi construído com apoio da Fapesp através do ",
-        "fapesp2": "Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI - Processo 2022/02922-1",
-        "contato": "Contato",
-        "social": "Rede Social",
-        "1": {
-            "titulo": "Experiências Internacionais – Universidade Yale",
-            "btn": "Leia Mais"
-        },
-        "2": {
-            "titulo": "Experiências Internacionais – Universidade Paris-Nanterre",
-            "btn": "Leia Mais"
-        },
-        "3": {
-            "titulo": "Experiências Internacionais: Universidade de Santiago do Chile",
-            "btn": "Leia Mais"
-        },
-        "4": {
-            "titulo": "Experiências Internacionais: Universidad de Playa Ancha",
-            "btn": "Leia Mais"
-        },
-        "5": {
-            "titulo": "Lançamento do Livro: Experiências Sociais Negativas",
-            "btn": "Leia Mais"
-        },
-        "6": {
-            "titulo": "II Seminário Permanente de Filosofia Crítica e Sociedade",
-            "btn": "Leia Mais"
         }
     },
-    "2": {
-        "sobre": "Quem somos",
+    "fapesp": {
+        "texto1": "Esse site foi construído com apoio da Fapesp através do ",
+        "texto2": "Auxílio à Pesquisa-Programas Especiais-Programa Nova Geração de Pesquisadores/PI - Processo 2022/02922-1"
+    },
+    "rodape":{
+        "contato": "Contato",
+        "social": "Rede Social"
+    },
+    
+    "sobre": {
+        "titulo": "Quem somos",
+        "objetivos": "Objetivos",
         "paragrafo1": "O NéFiTs (Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social) é um núcleo de pesquisa, sediado na Unesp, campus de Franca, que se constrói em torno de pesquisas orientadas por um enfoque primordialmente filosófico construído a partir de um íntimo diálogo com as ciências humanas e sociais. Nesse sentido, ele se estrutura a partir da articulação de pesquisas que reúnem disciplinas como filosofia, sociologia, história, antropologia, psicologia, direito, relações internacionais entre outras.",
         "paragrafo2": "Os temas analisados e os trabalhos produzidos pelo NéFiTs, a partir desse enfoque teórico de matriz abertamente interdisciplinar, lidam com questões que articulam, ao mesmo tempo, diferentes abordagens de crítica social sem perder de vista o esforço de imaginar novas formas de vida e de combate às injustiças e desigualdades que marcam a forma atual do capitalismo neoliberal.",
-        "objetivos": "Objetivos",
-        "texto1": "O objetivo do NéFiTs é incentivar e promover pesquisas que se orientam pela articulação de duas dimensões estruturantes: a primeira busca construir diagnósticos críticos sobre as diversas dimensões das sociedades capitalistas, isso significa, entre outras coisas, pesquisar e analisar os obstáculos que impedem com que essas sociedades superem diferentes formas de experiências sociais negativas. Nesse sentido, ganham maior interesse a investigação crítica de temas ligados às diferentes formas de opressão e injustiça que estão no centro dos debates que informam as sociedades capitalistas neoliberais tais como pobreza, sofrimento social, alienação, desigualdade e os desafios da emergência climática e da ameaça de colapso ambiental.",
-        "texto2": "A segunda dimensão estruturante procura reunir esforços de pesquisa que buscam analisar movimentos sociais, com um intuito particular de procurar neles elementos que incentivam a imaginação e a criação que possam emergir da mobilização e articulação de diferentes formas de ação no espaço público. Assim, o espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas."
+        "parafrafo3": "O objetivo do NéFiTs é incentivar e promover pesquisas que se orientam pela articulação de duas dimensões estruturantes: a primeira busca construir diagnósticos críticos sobre as diversas dimensões das sociedades capitalistas, isso significa, entre outras coisas, pesquisar e analisar os obstáculos que impedem com que essas sociedades superem diferentes formas de experiências sociais negativas. Nesse sentido, ganham maior interesse a investigação crítica de temas ligados às diferentes formas de opressão e injustiça que estão no centro dos debates que informam as sociedades capitalistas neoliberais tais como pobreza, sofrimento social, alienação, desigualdade e os desafios da emergência climática e da ameaça de colapso ambiental.",
+        "paragrafo4": "A segunda dimensão estruturante procura reunir esforços de pesquisa que buscam analisar movimentos sociais, com um intuito particular de procurar neles elementos que incentivam a imaginação e a criação que possam emergir da mobilização e articulação de diferentes formas de ação no espaço público. Assim, o espírito que mobiliza o Núcleo de pesquisa em Ética, Filosofia, Teoria política e Social pretende sempre friccionar a dimensão do diagnóstico das opressões e injustiças com os esforços de compreensão dos potenciais criativos e imaginativos que brotam dos conflitos que compõem as dinâmicas sociais. Os resultados dessa fricção podem, através das mediações necessárias, servir de impulso para análise e formulação de políticas públicas."
     },
-    "3": {
+    "noticias": {
+        "noticiaNaoEncontrada": "Notícia não encontrada",
+        "noticiaIndisponivelNesseIdioma": "Esta notícia não está disponível nesse idioma.",
+        "voltarParaNoticias": "Voltar para Notícias",
+        "titulo": "Notícias",
+        "texto": "Leia as últimas notícias sobre o Núcleo de Estudos em Filosofia, Teoria e Sociedade.",
+        "tags_titulo": "Notícias relacionadas a: ",
+        "todas_tags": "Todas as Tags",
+        "sem_tags": "Nenhuma tag encontrada.",
+        "texto_categorias": "Para visualizar as categorias de notícias",
+        "ver_categorias": "clique aqui"
+    },
+    "publicacoes": {
+        "titulo": "Publicações",
+        "livros": "Livros",
+        "artigos": "Capítulos de Livros e Artigos",
+        "teses": "Teses e Dissertações",
+        "tccs": "TCCs",
+        "relatorios": "Relatórios de Pesquisa"
+    },
+    "videos": {
+        "titulo": "Vídeos",
+        "texto": "Confira os vídeos postados em nosso canal do ",
+        "btn": "Ver Lista Completa"
+    },
+    "menu": {
+        "home": "Home",
+        "sobre": "Sobre",
         "equipe": "Equipe",
+        "noticias": "Notícias",
+        "publicacoes": "Publicações",
+        "videos": "Vídeos"
+    },
+    "equipe": {
+        "titulo": "Equipe",
         "1": {
             "nome": "Hélio Alexandre da Silva",
             "cargo": "Pesquisador – Coordenador",
@@ -153,38 +166,5 @@
             "cargo": "Graduando",
             "sobre": "Curso o quinto semestre de Relações Internacionais pela UNESP (Universidade Estadual Paulista “Júlio de Mesquita Filho”) - Campus Franca. Fiz parte da administração do grupo de extensão GEPESOI por 2 anos. Além disso, também fiz parte do âmbito administrativo do Cursinho Popular atrelado à universidade, bem como lecionei a matéria de biologia aos cursistas por mais de 1 ano. Atualmente, faço parte do time de Relações Comerciais da ORBE - Consultoria Internacional como Analista do Projeto Governamental e sou membro do Núcleo de Pesquisa em Ética, Filosofia, Teoria Política e Social (NéFTis) desde agosto de 2022."
         }
-    },
-    "noticias": {
-        "noticiaNaoEncontrada": "Notícia não encontrada",
-        "noticiaIndisponivelNesseIdioma": "Esta notícia não está disponível nesse idioma.",
-        "voltarParaNoticias": "Voltar para Notícias",
-        "titulo": "Notícias",
-        "texto": "Leia as últimas notícias sobre o Núcleo de Estudos em Filosofia, Teoria e Sociedade.",
-        "tags_titulo": "Notícias relacionadas a: ",
-        "todas_tags": "Todas as Tags",
-        "sem_tags": "Nenhuma tag encontrada.",
-        "texto_categorias": "Para visualizar as categorias de notícias",
-        "ver_categorias": "clique aqui"
-    },
-    "5": {
-        "publicacoes": "Publicações",
-        "aba1": "Livros",
-        "aba2": "Capítulos de Livros e Artigos",
-        "aba3": "Teses e Dissertações",
-        "aba4": "TCCs",
-        "aba5": "Relatórios de Pesquisa"
-    },
-    "6": {
-        "videos": "Vídeos",
-        "texto": "Confira os vídeos postados em nosso canal do ",
-        "btn": "Ver Lista Completa"
-    },
-    "7": {
-        "home": "Home",
-        "sobre": "Sobre",
-        "equipe": "Equipe",
-        "noticias": "Notícias",
-        "publicacoes": "Publicações",
-        "videos": "Vídeos"
     }
 }

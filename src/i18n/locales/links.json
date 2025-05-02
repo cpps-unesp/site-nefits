@@ -1,0 +1,32 @@
+{
+    "redes": {
+        "youtube": {
+            "link": "https://www.youtube.com/@nefits8028/videos",
+            "icon": "/images/logos/youtube_icon_cinza.svg"
+        },
+        "instagram": {
+            "link": "https://www.instagram.com/nefits.unesp",
+            "icon": "/images/logos/instagram_icon_cinza.svg"
+        },
+        "email": {
+            "link": "nefits.unesp@gmail.com",
+            "icon": ""
+        },
+        "linkedin": {
+            "": ""
+        }
+    },
+    "nefits": {
+        "logo": "/images/logos/nefits_logo.png",
+        "site":"/"
+    },
+    "fapesp": {
+        "logo": "/images/logos/fapesp_logo_preta.svg",
+        "site":"https://fapesp.br",
+        "auxilio_2022":"https://bv.fapesp.br/pt/auxilios/112006"
+    },
+    "unesp": {
+        "logo": "/images/logos/unesp_logo.svg",
+        "site":"https://unesp.br"
+    }
+}

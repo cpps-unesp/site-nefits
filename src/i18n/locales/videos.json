@@ -1,8 +1,8 @@
 {
-    "primeiroContainer": {
-      "Youtube": "https://www.youtube.com/@nefits8028/videos"
+    "canal": {
+      "youtube": "https://www.youtube.com/@nefits8028/videos"
     },
-    "videos": [
+    "urls": [
       { "url": "https://www.youtube.com/embed/8jm3WiNnTJg?si=y30xatmohRaJyu7n" },
       { "url": "https://www.youtube.com/embed/UDwJN2f_SyU?si=cThK2Og541iyl6TP" },
       { "url": "https://www.youtube.com/embed/0IxnnS-fJWw?si=2sffqYb5ScFUckww" },

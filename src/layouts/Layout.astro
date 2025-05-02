@@ -1,15 +1,30 @@
 ---
-const { title = 'NéFiTs', lang = 'pt' } = Astro.props;
+import Menu from "../components/GeralMenu.astro";
+import Fapesp from "../components/GeralFapesp.astro";
+import Rodape from "../components/GeralRodape.astro";
+import { useTranslations } from "../i18n/translations";
+
+
+const { lang: rawLang, title = "NéFITS" } = Astro.params;
+const lang = rawLang ?? "pt";
+const t = useTranslations(lang);
 ---
+
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link rel="icon" href="/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-white text-gray-900 font-sans">
-    <slot />
+    <Menu lang={lang} t={t} />
+    <main><slot /></main>
+    <Fapesp lang={lang} t={t} />
+    <Rodape lang={lang} t={t} />
   </body>
 </html>

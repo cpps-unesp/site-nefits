@@ -13,8 +13,8 @@ const noticiasCollection = defineCollection({
     imagem: z.string(),
     date: z.string(),
     tags: z.array(z.string()).optional(),
-    lang: z.string(),     // "pt" ou "en"
-    resumo: z.string(),   // resumo curto
+    lang: z.enum(["pt", "en"]),    
+    resumo: z.string(),   
   }).transform((data) => ({
     ...data,
     slug: createSlug(data.date,data.lang,data.num),

@@ -1,8 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Intro from "../../components/Intro.astro";
-import Fapesp from "../../components/Fapesp.astro";
-import Rodape from "../../components/Rodape.astro";
 import { useTranslations } from "../../i18n/translations";
 import videosJson from "../../i18n/locales/videos.json" assert { type: "json" };
 
@@ -13,21 +10,25 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 const t = useTranslations(lang);
 
-const primeiroContainer = videosJson.primeiroContainer;
-const videos = videosJson.videos;
+// Dados do JSON
+const youtube = videosJson.canal.youtube;
+const videos = videosJson.urls;
 ---
 
-<Layout lang={lang}>
-  <Intro lang={lang} t={t} />
-
+<Layout lang={lang} t={t}>
   <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
-    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("6.videos")}</h1>
+    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("videos.titulo")}</h1>
 
     <p class="mb-8 text-center">
-      {t("6.texto")} 
-      <a href={primeiroContainer.Youtube} target="_blank" class="text-[#ab090e] underline hover:text-[#90070b]">
-        {t("Youtube")}
-      </a>.
+      {t("videos.texto")}{" "}
+      <a 
+        href={youtube}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="bg-primary/10 text-primary text-sm font-medium px-4 py-1 rounded transition-colors duration-200 hover:bg-primary hover:text-white"
+      >
+        YouTube
+      </a>
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
@@ -45,13 +46,14 @@ const videos = videosJson.videos;
     </div>
 
     <div class="text-center mt-10">
-      <a href={primeiroContainer.Youtube} target="_blank" class="inline-block px-6 py-3 bg-[#ab090e] text-white rounded hover:bg-[#90070b]">
-        {t("6.btn")}
+      <a 
+        href={youtube}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-6 py-3 bg-[#ab090e] text-white rounded hover:bg-[#90070b] transition font-semibold"
+      >
+        {t("videos.btn")}
       </a>
     </div>
-
   </main>
-
-  <Fapesp lang={lang} t={t} />
-  <Rodape lang={lang} t={t} />
 </Layout>

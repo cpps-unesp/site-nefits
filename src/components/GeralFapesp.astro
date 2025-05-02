@@ -1,0 +1,27 @@
+---
+import geralRodapeJson from "../i18n/locales/links.json" assert { type: "json" };
+
+const { lang, t } = Astro.props;
+// Dados do JSON
+const links = geralRodapeJson;
+---
+
+<section class="bg-[#f1e6e6] w-full py-2">
+  <a
+    href={links.fapesp.auxilio_2022}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="max-w-7xl mx-auto px-4 py-6 flex items-center gap-4 cursor-pointer"
+  >
+    <img
+      src={links.fapesp.logo}
+      alt="Logo FAPESP"
+      class="w-20 h-auto object-contain"
+    />
+    <p class="text-xs text-[#656565] font-light">
+      {t("fapesp.texto1")}{" "}
+      <b class="text-[#ab090e] font-bold">{t("fapesp.texto2")}</b>.
+    </p>
+  </a>
+</section>
+
