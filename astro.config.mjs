@@ -9,7 +9,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   site: 'https://labriunesp.github.io',
   base: '/',
-
   integrations: [
     react({
       include: ['**/react/*']
