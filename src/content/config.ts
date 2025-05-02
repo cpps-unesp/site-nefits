@@ -13,7 +13,9 @@ const noticiasCollection = defineCollection({
     imagem: z.string(),
     date: z.string(),
     tags: z.array(z.string()).optional(),
-    lang: z.enum(["pt", "en"]),    
+    lang: z.enum(["pt", "en"]),
+    autor: z.string().optional(),
+    destaque: z.boolean().optional(),    
     resumo: z.string(),   
   }).transform((data) => ({
     ...data,
