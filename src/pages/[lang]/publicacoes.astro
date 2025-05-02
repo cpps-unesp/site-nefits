@@ -1,8 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Intro from "../../components/Intro.astro";
-import Fapesp from "../../components/Fapesp.astro";
-import Rodape from "../../components/Rodape.astro";
 import { useTranslations } from "../../i18n/translations";
 import publicacoes from "../../i18n/locales/publicacoes.json" assert { type: "json" };
 
@@ -41,23 +38,21 @@ const t = useTranslations(lang);
 </style>
 
 
-<Layout lang={lang}>
-  <Intro lang={lang} t={t} />
-
+<Layout lang={lang} t={t}>
   <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
-    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("5.publicacoes")}</h1>
+    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("publicacoes.titulo")}</h1>
 
     <div class="flex flex-wrap justify-center gap-4 mb-8">
-      <a href="#livros" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba1")}</a>
-      <a href="#artigos" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba2")}</a>
-      <a href="#teses" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba3")}</a>
-      <a href="#tccs" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba4")}</a>
-      <a href="#relatorios" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("5.aba5")}</a>
+      <a href="#livros" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("publicacoes.livros")}</a>
+      <a href="#artigos" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("publicacoes.artigos")}</a>
+      <a href="#teses" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("publicacoes.teses")}</a>
+      <a href="#tccs" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("publicacoes.tccs")}</a>
+      <a href="#relatorios" class="px-4 py-2 bg-[#f1f1f1] rounded hover:bg-[#e1e1e1]">{t("publicacoes.relatorios")}</a>
     </div>
 
-    <!-- Livros -->
+    <!-- livros -->
     <section id="livros" class="aba-section default mb-12">
-      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba1")}</h2>
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("publicacoes.livros")}</h2>
       <div class="flex flex-wrap gap-6 justify-center">
         {publicacoes.abas.livros.map(item => (
           <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
@@ -72,7 +67,7 @@ const t = useTranslations(lang);
 
     <!-- Artigos -->
     <section id="artigos" class="aba-section mb-12">
-      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba2")}</h2>
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("publicacoes.artigos")}</h2>
       <div class="flex flex-wrap gap-6 justify-center">
         {publicacoes.abas.artigos.map(item => (
           <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
@@ -87,7 +82,7 @@ const t = useTranslations(lang);
 
     <!-- Teses -->
     <section id="teses" class="aba-section mb-12">
-      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba3")}</h2>
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("publicacoes.teses")}</h2>
       <div class="flex flex-wrap gap-6 justify-center">
         {publicacoes.abas.teses.map(item => (
           <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
@@ -102,7 +97,7 @@ const t = useTranslations(lang);
 
     <!-- TCCs -->
     <section id="tccs" class="aba-section mb-12">
-      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba4")}</h2>
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("publicacoes.tccs")}</h2>
       <div class="flex flex-wrap gap-6 justify-center">
         {publicacoes.abas.tccs.map(item => (
           <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
@@ -117,7 +112,7 @@ const t = useTranslations(lang);
 
     <!-- Relatórios -->
     <section id="relatorios" class="aba-section mb-12">
-      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("5.aba5")}</h2>
+      <h2 class="text-xl font-bold text-[#ab090e] mb-4">{t("publicacoes.relatorios")}</h2>
       <div class="flex flex-wrap gap-6 justify-center">
         {publicacoes.abas.relatorios.map(item => (
           <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
@@ -131,7 +126,4 @@ const t = useTranslations(lang);
     </section>
 
   </main>
-
-  <Fapesp lang={lang} t={t} />
-  <Rodape lang={lang} t={t} />
 </Layout>

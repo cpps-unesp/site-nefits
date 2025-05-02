@@ -1,0 +1,63 @@
+---
+import geralRodapeJson from "../i18n/locales/links.json" assert { type: "json" };
+const { lang, t } = Astro.props;
+
+// Dados do JSON
+const links = geralRodapeJson;
+---
+
+<footer class="bg-[#eeeeee] w-full px-6 py-8 text-sm text-neutral font-light">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Redes sociais -->
+    <div>
+      <h4
+        class="text-[#ab090e] font-bold uppercase tracking-wider text-base mb-2"
+      >
+        {t("rodape.social")}
+      </h4>
+      <div class="flex gap-4 items-center">
+        <a href={links.redes.instagram.link}>
+          <img src={links.redes.instagram.icon} alt="Instagram" class="w-8" />
+        </a>
+        <a href={links.redes.youtube.link}>
+          <img src={links.redes.youtube.icon} alt="YouTube" class="w-8" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Contato -->
+    <div>
+      <h4
+        class="text-[#ab090e] font-bold uppercase tracking-wider text-base mb-2"
+      >
+        {t("rodape.contato")}
+      </h4>
+      <p class="text-[0.85rem]">{links.redes.email.link}</p>
+    </div>
+
+    <!-- Logos -->
+    <div class="flex items-center justify-center md:justify-end gap-4">
+      <a href={links.fapesp.site} target="_blank" rel="noopener noreferrer">
+        <img src={links.fapesp.logo} alt="FAPESP" class="h-10" />
+      </a>
+      <div class="w-px h-8 bg-gray-400"></div>
+      <a href={links.nefits.site} target="_blank" rel="noopener noreferrer">
+        <img src={links.nefits.logo} alt="NéFiTs" class="h-10" />
+      </a>
+      <div class="w-px h-8 bg-gray-400"></div>
+      <a href={links.unesp.site} target="_blank" rel="noopener noreferrer">
+        <img src={links.unesp.logo} alt="UNESP" class="h-10" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Centraliza a linha e o parágrafo -->
+  <div class="max-w-7xl mx-auto mt-6">
+    <hr class="mb-4 border-[#B1B2B5]" />
+    <p class="text-center text-[0.8rem]">
+      Design por <b class="text-[#ab090e] font-bold"
+        >Júlia dos Santos Silveira</b
+      > © 2024 Current
+    </p>
+  </div>
+</footer>

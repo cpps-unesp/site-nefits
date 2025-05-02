@@ -1,9 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
-import Intro from "../../../components/Intro.astro";
-import Fapesp from "../../../components/Fapesp.astro";
-import Rodape from "../../../components/Rodape.astro";
 import { useTranslations } from "../../../i18n/translations";
 
 export async function getStaticPaths() {
@@ -48,8 +45,7 @@ const noticiaOutroIdioma = noticias.find(
 const { Content } = await render(noticia);
 ---
 
-<Layout lang={lang}>
-  <Intro lang={lang} t={t} />
+<Layout lang={lang} t={t}>
 
   <main class="max-w-5xl mx-auto p-8">
     <div class="mb-12">
@@ -89,7 +85,4 @@ const { Content } = await render(noticia);
       </a>
     </div>
   </main>
-
-  <Fapesp lang={lang} t={t} />
-  <Rodape lang={lang} t={t} />
 </Layout>

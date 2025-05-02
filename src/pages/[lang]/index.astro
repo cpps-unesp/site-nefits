@@ -1,11 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Intro from "../../components/Intro.astro";
-import FooterSection from "../../components/FooterSection.astro";
 import Apresentar from "../../components/HomeApresentar.astro";
 import Sobre from "../../components/HomeSobre.astro";
-import CardNoticia from "../../components/HomeNoticia.astro";
-import CardPublicacao from "../../components/HomePublicacoes.astro";
+import HomeNoticia from "../../components/HomeNoticia.astro";
+import HomePublicacao from "../../components/HomePublicacoes.astro";
 
 import { useTranslations } from "../../i18n/translations";
 
@@ -18,16 +16,13 @@ const { lang } = Astro.params;
 const t = useTranslations(lang);
 ---
 
-<Layout lang={lang}>
-  <Intro lang={lang} t={t} />
+<Layout lang={lang} t={t}>
   <Apresentar lang={lang} t={t} />
-  <Sobre lang={lang} />
+  <Sobre lang={lang} t={t}/>
   <section class="py-12 bg-light">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <CardNoticia lang={lang} />
-      <CardPublicacao lang={lang} />
+      <HomeNoticia lang={lang} />
+      <HomePublicacao lang={lang} />
     </div>
   </section>
-
-  <FooterSection lang={lang} t={t} />
 </Layout>

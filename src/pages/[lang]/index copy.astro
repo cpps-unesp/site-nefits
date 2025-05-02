@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Intro from "../../components/Intro.astro";
-import FooterSection from "../../components/FooterSection.astro";
+import Menu from "../../components/GeralMenu.astro";
+import FooterSection from "../../components/GeralFooterSection.astro";
 
 import { useTranslations } from "../../i18n/translations";
 
@@ -18,7 +18,7 @@ const t = useTranslations(lang);
 ---
 
 <Layout lang={lang}>
-  <Intro lang={lang} t={t} />
+  <Menu lang={lang} t={t} />
 
   <main class="max-w-7xl mx-auto p-4">
     <h1 class="text-3xl font-bold mb-4">{t("7.home")}</h1>

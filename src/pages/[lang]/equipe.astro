@@ -1,12 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Intro from "../../components/Intro.astro";
 import { useTranslations } from "../../i18n/translations";
-import FooterSection from "../../components/FooterSection.astro";
+
 
 // Carrega o JSON com os dados fixos
-import * as fotoJson from "../../i18n/locales/equipe.json" assert { type: "json" };
-
+import fotoJson from "../../i18n/locales/equipe.json";
 
 export async function getStaticPaths() {
   return ["pt", "en"].map(lang => ({ params: { lang } }));
@@ -31,12 +29,12 @@ type DadosFixos = {
 };
 
 // Extrai os membros traduzidos
-const membrosObj = t("3") as Record<string, Membro | string>;
+const membrosObj = t("equipe") as Record<string, Membro | string>;
 
 const membros = Object.entries(membrosObj)
   .filter(([key]) => !isNaN(Number(key)))
   .map(([key, membro]) => {
-    const dadosFixos: Record<string, DadosFixos> = fotoJson.default ?? {};
+    const dadosFixos: Record<string, DadosFixos> = fotoJson;
     const dados = dadosFixos[key] ?? {};
     const m = membro as Membro;
     return {
@@ -50,10 +48,9 @@ const membros = Object.entries(membrosObj)
   });
 ---
 
-<Layout lang={lang}>
-  <Intro lang={lang} t={t} />
+<Layout lang={lang} t={t}>
   <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
-    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("3.equipe")}</h1>
+    <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("equipe.titulo")}</h1>
 
     <div class="flex flex-wrap justify-center gap-6">
       {membros.map((membro) => (
@@ -89,7 +86,4 @@ const membros = Object.entries(membrosObj)
       
     </div>
   </main>
-
-  <FooterSection lang={lang} t={t} />
-
 </Layout>
