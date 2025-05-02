@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import HomeCarrossel from "../../components/HomeCarrossel.astro";
 import Apresentar from "../../components/HomeApresentar.astro";
 import Sobre from "../../components/HomeSobre.astro";
 import HomeNoticia from "../../components/HomeNoticia.astro";
@@ -17,6 +18,7 @@ const t = useTranslations(lang);
 ---
 
 <Layout lang={lang} t={t}>
+  <HomeCarrossel lang={lang} t={t} />
   <Apresentar lang={lang} t={t} />
   <Sobre lang={lang} t={t}/>
   <section class="py-12 bg-light">
