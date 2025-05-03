@@ -2,3 +2,20 @@
 // Redireciona para o idioma padrão
 return Astro.redirect('/pt');
 ---
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0;url=/pt" />
+    <script>
+      // Detectação do idioma do navegador (opcional)
+      const userLang = navigator.language || navigator.userLanguage;
+      const targetLang = userLang.startsWith('en') ? '/en' : '/pt';
+      window.location.replace(targetLang);
+    </script>
+    <title>Redirecionando...</title>
+  </head>
+  <body>
+    <p>Redirecionando para <a href="/pt">NEFITS</a>...</p>
+  </body>
+</html> -->

@@ -2,9 +2,9 @@ import { z, defineCollection } from "astro:content";
 import slugify from "slugify"; // Certifique-se de ter instalado: npm install slugify
 
 // Função auxiliar para gerar slug
-function createSlug(date: string, lang: string, num: string): string {
+function createSlug(date: string, num: string): string {
   
-  return slugify(`${date}-${lang}-${num}`, { lower: true, strict: true });
+  return slugify(`${date}-${num}`, { lower: true, strict: true });
 }
 const noticiasCollection = defineCollection({
   schema: z.object({
@@ -19,7 +19,7 @@ const noticiasCollection = defineCollection({
     resumo: z.string(),   
   }).transform((data) => ({
     ...data,
-    slug: createSlug(data.date,data.lang,data.num),
+    slug: createSlug(data.date,data.num),
   })),
 });
 
