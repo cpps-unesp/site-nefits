@@ -2,6 +2,7 @@
 import Menu from "../components/GeralMenu.astro";
 import Fapesp from "../components/GeralFapesp.astro";
 import Rodape from "../components/GeralRodape.astro";
+import ScrollToTop from "../components/GeralScrollToTop.astro"
 import { useTranslations } from "../i18n/translations";
 
 
@@ -24,7 +25,11 @@ const t = useTranslations(lang);
   </head>
   <body class="bg-white text-gray-900 font-sans">
     <Menu lang={lang} t={t} />
-    <main><slot /></main>
+    <main>
+      <slot />
+      
+    </main>
+    <ScrollToTop />
     <Fapesp lang={lang} t={t} />
     <Rodape lang={lang} t={t} />
   </body>
