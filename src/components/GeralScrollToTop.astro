@@ -1,0 +1,40 @@
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById("scrollToTop");
+      
+      // Função para verificar a posição de rolagem
+      function checkScroll() {
+        if (window.scrollY > 300) {
+          btn?.classList.remove("opacity-0");
+          btn?.classList.remove("pointer-events-none");
+          btn?.classList.remove("hidden");
+        } else {
+          btn?.classList.add("opacity-0");
+          btn?.classList.add("pointer-events-none");
+          // Não adicione "hidden" para manter a transição suave
+        }
+      }
+      
+      // Verificar inicialmente
+      checkScroll();
+      
+      // Adicionar evento de rolagem
+      window.addEventListener("scroll", checkScroll);
+      
+      // Adicionar evento de clique via JavaScript
+      btn?.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  </script>
+  
+  <button
+    id="scrollToTop"
+    aria-label="Voltar para o topo"
+    class="fixed bottom-4 right-4 z-50 p-2 rounded-full bg-gray-300 text-white opacity-0 transition duration-300 ease-in-out pointer-events-none items-center justify-center shadow-sm flex"
+  >
+    <svg class="w-5 h-5 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"
+      viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7 7 7M5 20h14" />
+    </svg>
+  </button>
