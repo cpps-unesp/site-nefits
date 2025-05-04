@@ -1,93 +1,44 @@
 ---
-const { lang, currentPath = "", noticias } = Astro.props; // Garante que currentPath tenha um valor padrão
+const { lang, currentPath = "" } = Astro.props;
 
-// Define o idioma alternativo
-const otherLang = lang === "pt" ? "en" : "pt";
+// Idiomas disponíveis (pode adicionar quantos idimoas quiser)
+const supportedLangs: Record<string, string> = {
+  pt: "🇧🇷 Português",
+  en: "🇬🇧 English",
+};
 
-// Verifica se a página atual é a listagem de notícias
-let targetUrl;
-if (currentPath && currentPath.startsWith(`/${lang}/noticias`)) {
-  // Redireciona para a listagem de notícias no outro idioma
-  targetUrl = `/${otherLang}/noticias`;
-} else {
-  // Para outras páginas, troca apenas o idioma na URL
-  targetUrl = currentPath.replace(`/${lang}`, `/${otherLang}`);
-}
+const langKeys = Object.keys(supportedLangs);
+const otherLangs = langKeys.filter(key => key !== lang);
+const needsDropdown = langKeys.length > 2;
+
+const generateUrl = (targetLang: string) =>
+  currentPath.startsWith(`/${lang}`)
+    ? currentPath.replace(`/${lang}`, `/${targetLang}`)
+    : `/${targetLang}${currentPath}`;
 ---
-
-<div class="relative inline-block text-left">
-  <button
-    class="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-3 py-1 text-sm font-medium text-gray-700 hover:bg-gray-50"
-    type="button"
-    onclick="document.getElementById('lang-menu').classList.toggle('hidden')"
-    id="lang-button"
-  >
-    <span id="lang-flag">🌐</span>
-  </button>
-
-  <div
-    id="lang-menu"
-    class="hidden absolute right-0 mt-2 w-40 rounded-md bg-white shadow-lg z-10 ring-1 ring-black ring-opacity-5"
-  >
-    <div class="py-1">
-      <button
-        onclick="changeLang('pt')"
-        class="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
-      >
-        🇧🇷 Português
-      </button>
-      <button
-        onclick="changeLang('en')"
-        class="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
-      >
-        🇬🇧 English
-      </button>
+{needsDropdown ? (
+  <div class="relative inline-block text-left group">
+    <button class="inline-flex items-center justify-center w-full px-4 py-2 bg-gray-200 rounded-md text-sm font-medium hover:bg-gray-300 transition">
+      {supportedLangs[lang]} <span class="ml-1">▼</span>
+    </button>
+    <div
+      class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white border border-gray-200 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-400"
+    >
+      {otherLangs.map((code) => (
+        <a
+          href={generateUrl(code)}
+          class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition"
+        >
+          {supportedLangs[code]}
+        </a>
+      ))}
     </div>
   </div>
-</div>
-
-<script is:inline>
-  const supportedLangs = {
-    pt: "🇧🇷",
-    en: "🇬🇧",
-  };
-
-  function updateLangFlag() {
-    const parts = window.location.pathname.split("/").filter(Boolean);
-    const currentLang = supportedLangs[parts[0]] ? parts[0] : "pt";
-    document.getElementById("lang-flag").textContent = supportedLangs[currentLang];
-  }
-
-  async function changeLang(lang) {
-    localStorage.setItem("language", lang);
-
-    const parts = window.location.pathname.split("/").filter(Boolean);
-    const hasLang = Object.keys(supportedLangs).includes(parts[0]);
-    const currentSlug = parts.length >= 3 ? parts[2] : null; // [lang]/noticias/[slug]
-
-    let newPath;
-
-    if (currentSlug) {
-      // Estamos numa página de notícia individual!
-      try {
-        const response = await fetch(`/${lang}/noticias/${currentSlug}`);
-        if (response.ok) {
-          newPath = `/${lang}/noticias/${currentSlug}`; // A notícia existe no outro idioma
-        } else {
-          newPath = `/${lang}/noticias`; // Não existe, volta para a listagem
-        }
-      } catch (e) {
-        newPath = `/${lang}/noticias`; // Em caso de erro, vai para a listagem
-      }
-    } else {
-      // Estamos numa página normal
-      newPath = hasLang
-        ? `/${lang}/${parts.slice(1).join("/")}`
-        : `/${lang}/${parts.join("/")}`;
-    }
-
-    window.location.pathname = newPath;
-  }
-
-  updateLangFlag();
-</script>
+) : (
+<a
+  href={generateUrl(otherLangs[0])}
+  class="inline-flex items-center justify-center px-4 py-2 bg-gray-200 rounded-md text-sm hover:bg-gray-300 transition"
+>
+  {supportedLangs[lang]} <span class="ml-1">⇄</span>
+</a>
+)}

@@ -8,27 +8,55 @@ const links = geralRodapeJson;
 ---
 
 <section class="bg-gray-100 py-4">
-  <div
-    class="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-4"
-  >
-    <a href={link()} class="mb-4 md:mb-0">
-      <img src={links.nefits.logo} alt="Logo NéFiTs" class="h-16" />
-    </a>
-    <ul
-      class="flex flex-wrap justify-center gap-4 font-semibold text-sm md:text-base"
-    >
+  <!-- Layout para telas pequenas (logos acima do menu) -->
+  <div class="max-w-7xl mx-auto px-4 flex flex-col gap-4 lg:hidden">
+    <!-- Logos lado a lado centralizadas -->
+    <div class="w-full flex justify-center items-center gap-6">
+      <a href={link()} class="flex-shrink-0">
+        <img src={links.nefits.logo} alt="Logo NéFiTs" class="h-16" />
+      </a>
+      <a href={links.unesp.site}  rel="noopener noreferrer" class="flex-shrink-0">
+        <img src={links.unesp.logo} alt="Unesp" class="h-10" />
+      </a>
+    </div>
+
+    <!-- Menu centralizado abaixo -->
+    <ul class="flex flex-wrap justify-center items-center gap-4 font-semibold text-sm md:text-base">
       <li><a href={link()}>{t("menu.home")}</a></li>
       <li><a href={link("sobre")}>{t("menu.sobre")}</a></li>
       <li><a href={link("equipe")}>{t("menu.equipe")}</a></li>
       <li><a href={link("noticias")}>{t("menu.noticias")}</a></li>
       <li><a href={link("publicacoes")}>{t("menu.publicacoes")}</a></li>
       <li><a href={link("videos")}>{t("menu.videos")}</a></li>
-      <li><LanguageSelector lang={lang} currentPath={Astro.url.pathname} /></li>
+      <li class="!text-base">
+        <LanguageSelector lang={lang} currentPath={Astro.url.pathname}/>
+      </li>
     </ul>
-    <div class="mt-4 md:mt-0">
-      <a href={links.unesp.site} target="_blank" rel="noopener noreferrer"
-        ><img src={links.unesp.logo} alt="Unesp" class="h-10" /></a
-      >
-    </div>
+  </div>
+
+  <!-- Layout para telas médias e grandes (tudo na mesma linha) -->
+  <div class="max-w-7xl mx-auto px-4 hidden lg:flex lg:flex-row lg:items-center lg:justify-between">
+    <!-- Logo esquerda -->
+    <a href={link()} class="flex-shrink-0">
+      <img src={links.nefits.logo} alt="Logo NéFiTs" class="h-16" />
+    </a>
+    
+    <!-- Menu central -->
+    <ul class="flex flex-wrap justify-center items-center gap-4 font-semibold text-base">
+      <li><a href={link()}>{t("menu.home")}</a></li>
+      <li><a href={link("sobre")}>{t("menu.sobre")}</a></li>
+      <li><a href={link("equipe")}>{t("menu.equipe")}</a></li>
+      <li><a href={link("noticias")}>{t("menu.noticias")}</a></li>
+      <li><a href={link("publicacoes")}>{t("menu.publicacoes")}</a></li>
+      <li><a href={link("videos")}>{t("menu.videos")}</a></li>
+      <li class="!text-base">
+        <LanguageSelector lang={lang} currentPath={Astro.url.pathname} />
+      </li>
+    </ul>
+    
+    <!-- Logo direita -->
+    <a href={links.unesp.site}  rel="noopener noreferrer" class="flex-shrink-0">
+      <img src={links.unesp.logo} alt="Unesp" class="h-10" />
+    </a>
   </div>
 </section>
