@@ -3,7 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import HomeCarrossel from "../../components/HomeCarrossel.astro";
 import Apresentar from "../../components/HomeApresentar.astro";
 import Sobre from "../../components/HomeSobre.astro";
-import HomeNoticia from "../../components/HomeNoticia.astro";
+import HomeNoticias from "../../components/HomeNoticias.astro";
 import HomePublicacao from "../../components/HomePublicacoes.astro";
 
 import { useTranslations } from "../../i18n/translations";
@@ -25,8 +25,8 @@ const t = useTranslations(lang);
   <Sobre lang={lang} t={t}/>
   <section class="py-12 bg-light">
     <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <HomeNoticia lang={lang} />
-      <HomePublicacao lang={lang} />
+      <HomeNoticias lang={lang} t={t}/>
+      <HomePublicacao lang={lang} t={t}/>
     </div>
   </section>
 </Layout>

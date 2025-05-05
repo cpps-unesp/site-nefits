@@ -11,15 +11,17 @@ const link = homeData.sobre.link;
 
 <section class="py-12">
   <div class="flex flex-col md:flex-row gap-8 items-center max-w-7xl mx-auto px-4">
-    <div class="md:w-1/2 w-full text-start">
+    <div class="md:w-1/2 w-full">
       <h2 class="text-2xl font-bold text-primary mb-4">{t("home.sobre.titulo")}</h2>
-      <p class="text-neutral mb-4">{t("home.sobre.texto")}</p>
-      <a href={`/${lang}${link}`} class="inline-block bg-primary text-white px-5 py-2 rounded hover:bg-[#90070b] font-semibold text-sm transition">
-        {t("home.sobre.btn")}
-      </a>
+      <p class="paragrafos_institucionais">{t("home.sobre.texto")}</p>
+      <div class="text-right">
+        <a href={`/${lang}${link}`} class="inline-block bg-primary text-white px-5 py-2 rounded hover:bg-[#90070b] font-semibold text-sm transition">
+          {t("home.sobre.btn")}
+        </a>
+      </div>
     </div>
     <div class="md:w-1/2 w-full text-center">
-      <a  href={`/${lang}${link}`}>
+      <a href={`/${lang}${link}`}>
         <img src={imagem} alt="Imagem sobre" class="w-full max-w-md rounded mx-auto" />
       </a>
     </div>
