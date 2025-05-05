@@ -1,0 +1,16 @@
+/* src/styles/utilitarios.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Classe utilitária para parágrafos institucionais:
+  - Cores neutras
+  - Tamanhos de texto responsivos
+  - Espaçamento entre linhas adequado
+  - Justificação ativada apenas em telas grandes
+  - Largura máxima limitada para melhor legibilidade
+*/
+.paragrafos_institucionais {
+    @apply text-neutral md:text-sm lg:text-lg leading-normal md:leading-snug lg:leading-relaxed text-left lg:text-justify max-w-prose;
+}
