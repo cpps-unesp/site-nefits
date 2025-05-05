@@ -32,25 +32,32 @@ const image = (path) => path.startsWith("/") ? path : `/${path}`;
     </section>
 
     <!-- OBJETIVOS -->
-    <section class="mb-10">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-[2rem] font-bold text-[#ab090e] mb-4">{t("sobre.objetivos")}</h2>
-    
-        <div class="relative">
-          <!-- Imagem flutuando à esquerda -->
-          <img 
-            src={image("images/sobre2.svg")} 
-            alt="Objetivos" 
-            class="float-left mr-6 mb-4 w-[22rem] object-contain" 
-          />
-    
-          <!-- Parágrafos que envolvem a imagem -->
-          <p class="text-[1rem] mb-4">{t("sobre.paragrafo3")}</p>
-          <p class="text-[1rem]">{t("sobre.paragrafo4")}</p>
-        </div>
-    
-        <!-- Limpeza do float -->
-        <div class="clear-both"></div>
-      </div>
+<section class="mb-10">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-[2rem] font-bold text-[#ab090e] mb-4">{t("sobre.objetivos")}</h2>
+
+    <!-- Imagem no topo no mobile -->
+    <div class="mb-4 text-center md:hidden">
+      <img src={image("images/sobre2.svg")} alt="Objetivos" class="mx-auto w-[18rem]" />
+    </div>
+
+    <!-- Texto com imagem flutuante no desktop -->
+    <div class="relative">
+      <!-- Imagem desktop com float -->
+      <img 
+        src={image("images/sobre2.svg")} 
+        alt="Objetivos" 
+        class="hidden md:block md:float-left md:mr-6 md:mb-4 md:w-[22rem] object-contain"
+      />
+
+      <!-- Parágrafos que envolvem ou seguem a imagem -->
+      <p class="text-[1rem] mb-4">{t("sobre.paragrafo3")}</p>
+      <p class="text-[1rem]">{t("sobre.paragrafo4")}</p>
+    </div>
+
+    <div class="clear-both"></div>
+  </div>
+</section>
+
   </main>
 </Layout>
