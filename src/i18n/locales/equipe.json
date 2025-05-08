@@ -1,135 +1,143 @@
 {
-    "1": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "",
+    "helio_silva": {
+      "ordem": 1,
+      "foto": "/images/equipe/Professor_Helio.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
       "rede2": "https://lattes.cnpq.br/0000000000000001",
-      "icone2": ""
+      "icone2": "/images/logos/lattes_icon.svg"
     },
-    "2": {
-      "foto": "/images/Ana_Julia_Diniz_Neves_do_Lago.svg",
-      "rede1": "https://instagram.com/ana_julia_diniz_neves_do_lago",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000002",
-      "icone2": "/images/icon_lattes.svg"
+    "julia_lago": {
+      "foto": "/images/equipe/Ana_Julia_Diniz_Neves_do_Lago.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
-    "3": {
-      "foto": "/images/Kemilly_Victoria_Conceicao_da_Silva.jpeg",
-      "rede1": "https://instagram.com/kemilly_victoria_conceicao_da_silva",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000003",
-      "icone2": "/images/icon_lattes.svg"
+    "kemilly_silva": {
+      "foto": "/images/equipe/Kemilly_Victoria_Conceicao_da_Silva.jpeg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "4": {
-      "foto": "/images/Eduarda_Barboza.svg",
-      "rede1": "https://instagram.com/eduarda_barboza",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000004",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Eduarda_Barboza.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "5": {
-      "foto": "/images/Gabriel_Henrique_de_Andrade.svg",
-      "rede1": "https://instagram.com/gabriel_henrique_de_andrade",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000005",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Gabriel_Henrique_de_Andrade.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "6": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000006",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Maria_Laura_Cruz.jpeg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "7": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000007",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Natalie.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "8": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000008",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Roan.jpg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "9": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000009",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Sofia_Grandini.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "10": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000010",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Icaro_Costa_Ferreira.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "11": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000011",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Julia_de_Andrade.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "12": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000012",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Matheus_Sena.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "13": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000013",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Matheus_Vilhena.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "14": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000014",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Bruno_Gomes.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "15": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000015",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Beatriz_Furlan.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "16": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000016",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Isabela-Masciarelli.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "17": {
-      "foto": "/images/Rafael_Golucci.jpeg",
-      "rede1": "https://instagram.com/rafael_golucci",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000017",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Rafael_Golucci.jpeg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "18": {
-      "foto": "/images/Professor_Helio.svg",
-      "rede1": "https://instagram.com/professor_helio",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000018",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/00-person.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     },
     "19": {
-      "foto": "/images/Laura_Capucci.svg",
-      "rede1": "https://instagram.com/laura_capucci",
-      "icone1": "/images/icon_instagram.svg",
-      "rede2": "https://lattes.cnpq.br/0000000000000019",
-      "icone2": "/images/icon_lattes.svg"
+      "foto": "/images/equipe/Laura_Capucci.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
+    },
+    "larrissa_armane": {
+      "foto": "/images/equipe/Laura_Capucci.svg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
     }
   }

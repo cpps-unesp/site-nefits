@@ -1,9 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { useTranslations } from "../../i18n/translations";
-
-
-// Carrega o JSON com os dados fixos
 import fotoJson from "../../i18n/locales/equipe.json";
 
 export async function getStaticPaths() {
@@ -26,25 +23,51 @@ type DadosFixos = {
   icone1?: string;
   rede2?: string;
   icone2?: string;
+  ordem?: number;
 };
 
-// Extrai os membros traduzidos
+// Funções auxiliares
+function sanitizeFoto(foto?: string): string {
+  return typeof foto === "string" && foto.trim() !== ""
+    ? foto.trim()
+    : "/images/equipe/00-person.svg";
+}
+
+function sanitizeIcon(icon?: string): string | undefined {
+  return typeof icon === "string" && icon.trim().endsWith(".svg")
+    ? icon.trim()
+    : undefined;
+}
+
+function sanitizeURL(url?: string): string | undefined {
+  return typeof url === "string" && /^https?:\/\//.test(url.trim())
+    ? url.trim()
+    : undefined;
+}
+
 const membrosObj = t("equipe") as Record<string, Membro | string>;
 
 const membros = Object.entries(membrosObj)
-  .filter(([key]) => !isNaN(Number(key)))
+  .filter(([key, val]) => typeof val === "object" && key !== "titulo")
   .map(([key, membro]) => {
     const dadosFixos: Record<string, DadosFixos> = fotoJson;
     const dados = dadosFixos[key] ?? {};
     const m = membro as Membro;
     return {
       ...m,
-      foto: dados.foto?.trim() || "/images/icon.svg",
-      rede1: dados.rede1,
-      icone1: dados.icone1,
-      rede2: dados.rede2,
-      icone2: dados.icone2,
+      ordem: dados.ordem ?? null,
+      foto: sanitizeFoto(dados.foto),
+      rede1: sanitizeURL(dados.rede1),
+      icone1: sanitizeIcon(dados.icone1),
+      rede2: sanitizeURL(dados.rede2),
+      icone2: sanitizeIcon(dados.icone2),
     };
+  })
+  .sort((a, b) => {
+    if (a.ordem != null && b.ordem != null) return a.ordem - b.ordem;
+    if (a.ordem != null) return -1;
+    if (b.ordem != null) return 1;
+    return a.nome.localeCompare(b.nome);
   });
 ---
 
@@ -63,27 +86,25 @@ const membros = Object.entries(membrosObj)
               loading="lazy" 
             />
           </div>
-      
-          <!-- Ícones logo abaixo da imagem -->
-          <div class="flex gap-3 justify-center mb-3">
+
+          <div class="flex gap-3 justify-center items-center mb-3">
             {membro.rede1 && membro.icone1 && (
               <a href={membro.rede1} target="_blank" rel="noopener noreferrer">
-                <img src={membro.icone1} alt="Ícone rede social 1" class="w-6 h-6" />
+                <img src={membro.icone1} alt="Ícone rede social 1" class="w-8 h-8" />
               </a>
             )}
             {membro.rede2 && membro.icone2 && (
               <a href={membro.rede2} target="_blank" rel="noopener noreferrer">
-                <img src={membro.icone2} alt="Ícone rede social 2" class="w-6 h-6" />
+                <img src={membro.icone2} alt="Ícone rede social 2" class="w-12 h-12" />
               </a>
             )}
           </div>
-      
+
           <h2 class="text-[#ab090e] text-lg font-bold mb-1">{membro.nome}</h2>
           <p class="text-sm font-semibold mb-2">{membro.cargo}</p>
           <p class="text-sm mb-3">{membro.sobre}</p>
         </div>
       ))}
-      
     </div>
   </main>
 </Layout>

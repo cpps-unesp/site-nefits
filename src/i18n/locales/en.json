@@ -70,19 +70,19 @@
     },
     "equipe": {
         "titulo": "Team",
-        "1": {
+        "helio_silva": {
             "nome": "Hélio Alexandre da Silva",
             "cargo": "Researcher - Coordinator",
             "foto": "",
             "sobre": "He is an Assistant Professor at UNESP, Franca campus, and of the Graduate Program in Philosophy at UNESP, Marília campus. He is also the Coordinator of the Postgraduate Program in Planning and Analysis of Public Policies at UNESP, Franca campus. He has a bachelor’s and master’s degree in Philosophy from UNESP, Marília campus, and a doctoral degree in Philosophy from the State University of Campinas (UNICAMP). He has an inter-university doctoral degree in Philosophy from École des Hautes Études en Sciences Sociales (2011) and a postdoctoral degree in Philosophy (2018) from École des Hautes Études en Sciences Sociales. He is interested in the following topics: social and political philosophy, poverty, social criticism, modernity, inequality, alienation, social suffering, social conflicts, and social movements. Currently, he is developing the research “Critique of poverty as an object of social philosophy”, funded by the São Paulo Research Foundation process No. 22/02922-1."
         },
-        "2": {
+        "julia_lago": {
             "nome": "Ana Júlia Diniz Neves do Lago",
             "cargo": "Undergraduate student",
             "foto": "",
             "sobre": "She is an undergraduate International Relations student at the School of Humanities and Social Sciences of Franca (FCHS) from São Paulo State University (UNESP). Currently, she is a researcher funded by FAPESP and supervised by Professor Hélio Alexandre da Silva, with the theme “Freedoms and oppressions: intersectionality as a critique of neoliberalism” process No. 2022/08490-6. She has carried out a research internship abroad funded by the Research Internships Abroad Scholarship (BEPE/FAPESP) at Université Paris-Nanterre, supervised by Professor Pierre Sauvêtre, with the theme “Subjectivity and oppression: a gender perspective in neoliberalism” process No. 2023/08867-5."
         },
-        "3": {
+        "kemilly_silva": {
             "nome": "Kemilly Victoria Conceição da Silva",
             "cargo": "Undergraduate student",
             "sobre": "She is an undergraduate International Relations student at the School of Humanities and Social Sciences of Franca (FCHS) from São Paulo State University (UNESP). Currently, she is part of the Research Center in Ethics, Philosophy, Political and Social Theory (NéFiTs)."
