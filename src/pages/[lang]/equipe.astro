@@ -78,7 +78,8 @@ const membros = Object.entries(membrosObj)
     <div class="flex flex-wrap justify-center gap-6">
       {membros.map((membro) => (
         <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
-          <div class="aspect-square w-full overflow-hidden rounded-md mb-4">
+          <div class="aspect-square w-full overflow-hidden rounded-md mb-4 max-h-64">
+
             <img 
               src={membro.foto} 
               alt={`Foto de ${membro.nome}`} 
