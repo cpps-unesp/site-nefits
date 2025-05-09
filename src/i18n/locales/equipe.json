@@ -21,6 +21,13 @@
       "rede2": "",
       "icone2": "/images/logos/lattes_icon.svg"
     },
+    "larrissa_armane": {
+      "foto": "/images/equipe/larissa-armane.jpeg",
+      "rede1": "",
+      "icone1": "/images/logos/linkedin_icon2.svg",
+      "rede2": "",
+      "icone2": "/images/logos/lattes_icon.svg"
+    },
     "4": {
       "foto": "/images/equipe/Eduarda_Barboza.svg",
       "rede1": "",
@@ -127,13 +134,6 @@
       "icone2": "/images/logos/lattes_icon.svg"
     },
     "19": {
-      "foto": "/images/equipe/Laura_Capucci.svg",
-      "rede1": "",
-      "icone1": "/images/logos/linkedin_icon2.svg",
-      "rede2": "",
-      "icone2": "/images/logos/lattes_icon.svg"
-    },
-    "larrissa_armane": {
       "foto": "/images/equipe/Laura_Capucci.svg",
       "rede1": "",
       "icone1": "/images/logos/linkedin_icon2.svg",
