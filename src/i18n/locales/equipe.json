@@ -18,17 +18,10 @@
     },
     "kemilly_silva": {
       "foto": "/images/equipe/Kemilly_Victoria_Conceicao_da_Silva.jpeg",
-<<<<<<< HEAD
-      "rede1": "https://www.instagram.com/kemmy_victoria",
-      "icone1": "/images/logos/instagram_icon_cinza.svg",
-      "rede2": "http://lattes.cnpq.br/5199321865427541",
-      "icone2": "/images/logos/lattes_icon.svg"
-=======
       "rede1": "",
       "icone1": "/images/logos/lattes_icon.svg",
       "rede2": "/images/logos/instagram_icon_cinza.svg",
       "icone2": "/images/logos/instagram_icon_cinza.svg"
->>>>>>> 34d16a5 (atualização ordem das redes sociais #25)
     },
     "larrissa_santos": {
       "foto": "/images/equipe/larissa-armane.jpeg",
@@ -64,18 +57,11 @@
     },
     "natalie": {
       "foto": "/images/equipe/Natalie.svg",
-<<<<<<< HEAD
-      "rede1": "https://www.instagram.com/nataliecorbani/",
-      "icone1": "/images/logos/instagram_icon_cinza.svg",
-      "rede2": "http://lattes.cnpq.br/9857593902838923",
-      "icone2": "/images/logos/lattes_icon.svg"
-=======
       "rede1": "http://lattes.cnpq.br/9857593902838923",
       "icone1": "/images/logos/lattes_icon.svg",
       "rede2": "https://www.instagram.com/nataliecorbani/",
       "icone2": "/images/logos/linkedin_icon2.svg"
       
->>>>>>> 34d16a5 (atualização ordem das redes sociais #25)
     },
     "roan": {
       "foto": "/images/equipe/Roan.jpg",
@@ -107,18 +93,11 @@
     },
     "matheus_sena": {
       "foto": "/images/equipe/Matheus_Sena.svg",
-<<<<<<< HEAD
-      "rede1": "https://www.instagram.com/msenaac",
-      "icone1": "/images/logos/instagram_icon_cinza.svg",
-      "rede2": "http://lattes.cnpq.br/5632394586949111",
-      "icone2": "/images/logos/lattes_icon.svg"
-=======
       "rede1": "",
       "icone1": "/images/logos/lattes_icon.svg",
       "rede2": "/images/logos/instagram_icon_cinza.svg",
       "icone2": "/images/logos/linkedin_icon2.svg"
       
->>>>>>> 34d16a5 (atualização ordem das redes sociais #25)
     },
     "matheus_vilhena": {
       "foto": "/images/equipe/Matheus_Vilhena.svg",
@@ -171,8 +150,8 @@
       "icone2": "/images/logos/instagram_icon_cinza.svg"
     },
     "Heloise_Pinheiro": {
-      "foto": "",
-      "rede1": "",
+      "foto": "/images/equipe/Heloise_Helena_Moreira_Pinheiro.jpeg",
+      "rede1": " http://lattes.cnpq.br/3649431853153461",
       "icone1": "/images/logos/lattes_icon.svg",
       "rede2": "",
       "icone2": "/images/logos/instagram_icon_cinza.svg"

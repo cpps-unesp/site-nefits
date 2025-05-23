@@ -80,7 +80,7 @@
             "nome": "Ana Júlia Diniz Neves do Lago",
             "cargo": "Master’s student",
             "foto": "",
-            "sobre": "She is an undergraduate International Relations student at the School of Humanities and Social Sciences of Franca (FCHS) from São Paulo State University (UNESP). Currently, she is a researcher funded by FAPESP and supervised by Professor Hélio Alexandre da Silva, with the theme “Freedoms and oppressions: intersectionality as a critique of neoliberalism” process No. 2022/08490-6. She has carried out a research internship abroad funded by the Research Internships Abroad Scholarship (BEPE/FAPESP) at Université Paris-Nanterre, supervised by Professor Pierre Sauvêtre, with the theme “Subjectivity and oppression: a gender perspective in neoliberalism” process No. 2023/08867-5."
+            "sobre": "Master's student in the Philosophy Graduate Program at the Faculty of Philosophy and Sciences (FFC) - UNESP/Marília with the project Reproducing the crisis? How neoliberalism becomes responsible for its own destruction, where she works with the concepts of neoliberalism and social reproduction. Bachelor's degree in International Relations from the Faculty of Human and Social Sciences of Franca (FCHS) - UNESP/Franca. She was a FAPESP research fellow under the guidance of Prof. Dr. Hélio Alexandre da Silva, with the topic Freedoms and oppressions: intersectionality as a critique of neoliberalism (Process nº 2022/08490-6). She conducted a Research Internship Abroad with a BEPE/Fapesp scholarship (Scholarship for Research Internship Abroad) at Université Paris-Nanterre (Process nº 2023/08867-5), under the supervision of Prof. Dr. Pierre Sauvêtre. She was also a PIBIC scholarship recipient in the 2021/2022 and 2022/2023 calls."
         },
         "kemilly_silva": {
             "nome": "Kemilly Victoria Conceição da Silva",
@@ -90,7 +90,7 @@
         "eduarda_barboza": {
             "nome": "Eduarda Pereira Pires Barboza",
             "cargo": "Undergraduate student",
-            "sobre": "She is an undergraduate International Relations student at the School of Humanities and Social Sciences of Franca (FCHS) from São Paulo State University (UNESP). She was a researcher funded by the Institutional Scientific Initiation Scholarship Program (PIBIC) - National Council for Scientific and Technological Development (CNPq), from 2022 to 2023. She joined the AUGM’s Scale Grade Program at Playa Ancha University (UPLA) during the first school term of 2024. Currently, she develops research for PIBIC with the theme “A centralidade da propriedade privada na justificativa ideológica para o colonialismo e a desigualdade social” supervised by Professor Hélio Alexandre da Silva. She is also part of the Conflict Observatory, linked to the Defence and Security Study Group (GEDES-UNESP)."
+            "sobre": "Undergraduate student in International Relations at the Faculty of Human and Social Sciences (FCHS) of UNESP. She was a research fellow of the Institutional Program of Scientific Initiation Scholarships (PIBIC) - CNPq in the 2022-2023 cycle and an unfunded researcher in the 2023-2024 cycle. She participated in the AUGM Student Exchange Program at the University of Playa Ancha (UPLA) during the first academic semester of 2024. Currently, she is developing research for FAPESP on the topic Inequality, ideology and colonialism in Thomas Piketty's 'Capital and Ideology' under the guidance of Prof. Dr. Hélio Alexandre da Silva, conducting her BEPE at the University of Sussex with the topic Beyond Piketty: A different perspective to social inequality guided by Prof. Dr. Gurminder K. Bhambra. She is also part of the Research Center on Ethics, Philosophy, and Social Theory (NéFiTs)."
         },
         "gabriel_andrade": {
             "nome": "Gabriel Henrique de Andrade",
@@ -115,7 +115,7 @@
         "sofia_grandini": {
             "nome": "Sofia Grandini",
             "cargo": "Undergraduate student",
-            "sobre": "She is an undergraduate International Relations student at the School of Humanities and Social Sciences of Franca (FCHS) from São Paulo State University (UNESP). She develops research funded by the Institutional Program of Scientific Initiation Grants (PIBIC) about the cultural industry and the concepts of free time, leisure and spare time with the title “Tempo livre, lazer e ócio: dimensões da indústria cultural em Adorno e Horkheimer”. Currently, she is part of the Research Center in Ethics, Philosophy, Political and Social Theory (NéFiTs)."
+            "sobre": "Undergraduate student in International Relations at the Faculty of Human and Social Sciences (FCHS) of UNESP. She conducted research in the Institutional Program of Scientific Initiation Scholarships (PIBIC) on cultural industry and the concepts of free time, leisure, and idleness titled Free time, leisure, and idleness: dimensions of the cultural industry in Adorno and Horkheimer. Currently, she is developing research at the São Paulo Research Foundation (FAPESP) on os batalhadores as a new social class and the forms of suffering resulting from their position in society, titled Os batalhadores as an object of social philosophy: characterization and forms of suffering. She participates in the Research Center on Ethics, Philosophy, and Social Theory (NéFiTs)." 
         },
         "icaro_ferreira": {
             "nome": "Ícaro Costa Ferreira",
@@ -170,6 +170,10 @@
         "larrissa_santos": {"nome":"Larissa Moraes Cardoso dos Santos",
         "cargo":"Undergraduate student",
         "sobre":"Undergraduate student in International Relations at São Paulo State University Júlio de Mesquita Filho (FCHS). She completed a CNPq-PIBIT research project in the field of Public Policy, participating in study groups such as the Observatory of Public Policies (OPPs) and the Center for Studies in Public Policies (NEEPs). She has a strong interest in the Social Sciences and is also dedicated to the study of Social Philosophy and Anthropology. Researcher at the Research Center in Ethics, Philosophy, Political and Social Theory (NéFiTs) and at the Study and Research Group on Culture and Anthropology (GECA)"
+    },
+    "Heloise_Pinheiro": {"nome":"Heloise Helena Moreira Pinheiro",
+        "cargo":"Graduanda",
+        "sobre":"Undergraduate student in International Relations at the Faculty of Human and Social Sciences of Franca (FCHS) of São Paulo State University Júlio de Mesquita Filho (Unesp). Currently participates in the Research Center on Ethics, Philosophy, and Social Theory (NéFiTs)." 
     }
     }
 }
