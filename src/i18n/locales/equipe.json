@@ -16,9 +16,9 @@
     },
     "kemilly_silva": {
       "foto": "/images/equipe/Kemilly_Victoria_Conceicao_da_Silva.jpeg",
-      "rede1": "",
-      "icone1": "/images/logos/linkedin_icon2.svg",
-      "rede2": "/images/logos/instagram_icon_cinza.svg",
+      "rede1": "https://www.instagram.com/kemmy_victoria",
+      "icone1": "/images/logos/instagram_icon_cinza.svg",
+      "rede2": "http://lattes.cnpq.br/5199321865427541",
       "icone2": "/images/logos/lattes_icon.svg"
     },
     "larrissa_santos": {
