@@ -1,4 +1,3 @@
-/* src/styles/utilitarios.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,4 +12,10 @@
 */
 .paragrafos_institucionais {
     @apply text-neutral md:text-sm lg:text-lg leading-normal md:leading-snug lg:leading-relaxed text-left lg:text-justify max-w-prose;
+}
+
+/* Estilo global para imagens dentro de conteúdo Markdown (.prose) */
+.prose img {
+    @apply mx-auto my-6 rounded-md max-w-full h-auto;
+    max-height: 400px;
 }
