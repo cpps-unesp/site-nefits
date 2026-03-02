@@ -25,6 +25,10 @@
         "site":"https://fapesp.br",
         "auxilio_2022":"https://bv.fapesp.br/pt/auxilios/112006"
     },
+    "dgp": {
+        "logo": "/images/logos/image.png",
+        "site":"https://dgp.cnpq.br/dgp/espelhogrupo/6415267380334952"
+    },
     "unesp": {
         "logo": "/images/logos/unesp_logo.svg",
         "site":"https://unesp.br"
