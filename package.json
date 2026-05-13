@@ -15,7 +15,7 @@
     "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^6.1.6",
+    "astro": "^6.1.10",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "i18next": "^23.15.1",
