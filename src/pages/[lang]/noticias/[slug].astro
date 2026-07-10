@@ -8,7 +8,7 @@ export async function getStaticPaths() {
 
   return noticias.map((noticia) => {
     const alternativeVersion = noticias.find(
-      n => n.slug === noticia.slug && n.data.lang !== noticia.data.lang
+      n => n.data.slug === noticia.data.slug && n.data.lang !== noticia.data.lang
     );
 
     return {
@@ -38,7 +38,7 @@ if (!noticia) {
 
 const outroLang = lang === "pt" ? "en" : "pt";
 const noticiaOutroIdioma = noticias.find(
-  (n) => n.slug === slug && n.data.lang === outroLang
+  (n) => n.data.slug === slug && n.data.lang === outroLang
 );
 
 // Renderiza o conteúdo Markdown com formatação

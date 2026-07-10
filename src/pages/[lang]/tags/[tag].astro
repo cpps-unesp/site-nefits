@@ -47,7 +47,7 @@ const noticias = (await getCollection("noticias")).filter(
               imagem={item.data.imagem}
               titulo={item.data.title}
               texto={item.data.resumo}
-              link={`/${lang}/noticias/${item.slug}`}
+              link={`/${lang}/noticias/${item.data.slug}`}
               tags={item.data.tags}
               lang={lang}  
             />
