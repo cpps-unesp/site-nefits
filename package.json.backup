@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/mdx": "^7.0.5",
     "@astrojs/react": "^4.2.6",
+    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.16",
     "astro": "^7.2.2",
     "bootstrap": "^5.3.3",
