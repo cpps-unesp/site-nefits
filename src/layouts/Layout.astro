@@ -4,6 +4,7 @@ import Fapesp from "../components/GeralFapesp.astro";
 import Rodape from "../components/GeralRodape.astro";
 import ScrollToTop from "../components/GeralScrollToTop.astro"
 import { useTranslations } from "../i18n/translations";
+import "../styles/global.css";
 
 
 const { lang: rawLang, title = "NéFITS" } = Astro.params;
@@ -14,7 +15,6 @@ const t = useTranslations(lang);
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/src/styles/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link rel="icon" href="/images/logos/nefits_favicon.ico" />
