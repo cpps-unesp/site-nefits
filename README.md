@@ -57,9 +57,15 @@ ficam em `.wrangler/`, só localmente.
 ## Publicação no Cloudflare
 
 O site roda no Cloudflare Workers, com o banco no D1 e as mídias no R2
-(`wrangler.jsonc`). O Worker do EmDash passa do limite do plano gratuito do
-Workers (3 MB compactado; o build tem cerca de 4,2 MB), então a conta precisa
-do plano **Workers Paid**.
+(`wrangler.jsonc`).
+
+O plano gratuito do Workers serve para começar. A configuração não usa o que só o
+plano pago oferece: plugins em sandbox (`worker_loaders`). O Worker tem cerca de
+16 MB, dentro do limite de 64 MiB, e inicia em bem menos de 1 segundo. O limite
+do plano gratuito que merece atenção é o de 10 ms de CPU por requisição: depois
+do primeiro deploy, acompanhe o tempo de CPU em **Workers & Pages > site-nefits >
+Metrics** no painel do Cloudflare. Se aparecerem erros 1102 (CPU excedida), mude
+para o plano **Workers Paid**.
 
 Primeira publicação:
 
