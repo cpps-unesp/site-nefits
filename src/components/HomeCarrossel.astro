@@ -1,16 +1,15 @@
 ---
-import { getCollection } from "astro:content";
+import { Image } from "emdash/ui";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { listarNoticias } from "../lib/conteudo";
 
 const { lang, t } = Astro.props;
 
-const todasNoticias = await getCollection("noticias");
-
-const slides = todasNoticias
-  .filter(n => n.data.lang === lang && n.data.destaque)
-  .sort((a, b) => new Date(b.data.date) - new Date(a.data.date));
+// Notícias marcadas como "Destaque" no EmDash, da mais recente para a mais antiga
+const { entries: noticias } = await listarNoticias(lang);
+const slides = noticias.filter((noticia) => noticia.data.destaque);
 ---
 
 {slides.length > 0 && (
@@ -34,15 +33,17 @@ const slides = todasNoticias
                 />
 
                 <div class="flex flex-col md:flex-row items-center gap-6 p-6 relative z-10">
-                  <img
-                    src={data.imagem}
-                    alt={data.title}
-                    class="w-full md:w-1/2 max-h-64 object-contain rounded-md transition-transform duration-500 group-hover:scale-[1.02]"
-                  />
+                  {data.imagem && (
+                    <Image
+                      image={data.imagem}
+                      alt={data.title}
+                      placeholder={false}
+                      class="w-full md:w-1/2 max-h-64 object-contain rounded-md transition-transform duration-500 group-hover:scale-[1.02]"
+                    />
+                  )}
 
                   <div class="md:w-1/2 text-[#333]">
                     <h3 class="text-xl font-bold mb-2 group-hover:text-[#ab090e] transition-colors duration-300">{data.title}</h3>
-                    {data.autor && <p class="text-sm italic text-gray-600 mb-2">{data.autor}</p>}
                     <p class="text-sm text-gray-700 line-clamp-3">{data.resumo}</p>
                   </div>
                 </div>

@@ -1,17 +1,20 @@
 ---
-import * as homeData from "../i18n/locales/home.json" assert { type: "json" };
+import { PortableText } from "emdash/ui";
 import { useTranslations } from "../i18n/translations";
+import { buscarTexto } from "../lib/conteudo";
 
+// Texto "inicio-noticias" em Textos do site, no EmDash
 const { lang } = Astro.props;
 const t = useTranslations(lang);
-
-const info = homeData.noticias;
+const texto = await buscarTexto("inicio-noticias", lang);
 ---
 
 <div class="bg-light rounded shadow-md p-6 flex flex-col items-center text-center h-full">
-  <h3 class="text-xl font-bold text-primary mb-2">{t("home.noticias.titulo")}</h3>
-  <p class="text-neutral mb-4">{t("home.noticias.texto")}</p>
-  <a href={`/${lang}${info.link}`} class="inline-block bg-primary text-white px-5 py-2 rounded hover:bg-[#90070b] text-sm font-semibold transition">
+  <h3 class="text-xl font-bold text-primary mb-2">{texto?.titulo ?? t("home.noticias.titulo")}</h3>
+  <div class="text-neutral mb-4 texto-cms">
+    <PortableText value={texto?.texto ?? []} />
+  </div>
+  <a href={`/${lang}/noticias`} class="inline-block bg-primary text-white px-5 py-2 rounded hover:bg-[#90070b] text-sm font-semibold transition">
     {t("home.noticias.btn")}
   </a>
 </div>

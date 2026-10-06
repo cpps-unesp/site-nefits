@@ -1,18 +1,18 @@
 import { defineConfig } from 'astro/config';
 
-import node from '@astrojs/node';
+import cloudflare from '@astrojs/cloudflare';
 import react from '@astrojs/react';
 import mdx from "@astrojs/mdx";
-import emdash, { local } from 'emdash/astro';
-import { sqlite } from 'emdash/db';
+import { d1, r2 } from '@emdash-cms/cloudflare';
+import emdash from 'emdash/astro';
 
 export default defineConfig({
   site: 'https://labriunesp.github.io',
   base: '/',
-  // O EmDash precisa de renderização no servidor. As páginas que não usam
-  // conteúdo do EmDash continuam pré-renderizadas (export const prerender = true).
+  // O site roda no Cloudflare Workers: o conteúdo editado no EmDash fica no
+  // D1 (banco) e no R2 (imagens e arquivos), definidos em wrangler.jsonc.
   output: 'server',
-  adapter: node({ mode: 'standalone' }),
+  adapter: cloudflare(),
   // O EmDash lê os idiomas daqui. O roteamento /pt e /en continua sendo feito
   // pelas páginas [lang] e por src/middleware.ts, por isso "manual".
   i18n: {
@@ -25,11 +25,9 @@ export default defineConfig({
     react(),
     mdx(),
     emdash({
-      database: sqlite({ url: 'file:./data.db' }),
-      storage: local({
-        directory: './uploads',
-        baseUrl: '/_emdash/api/media/file',
-      }),
+      database: d1({ binding: 'DB' }),
+      storage: r2({ binding: 'MEDIA' }),
     }),
   ],
+  devToolbar: { enabled: false },
 });

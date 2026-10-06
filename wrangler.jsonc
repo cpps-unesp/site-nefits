@@ -1,0 +1,31 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "site-nefits",
+	"main": "./src/worker.ts",
+	"compatibility_date": "2026-02-24",
+	"compatibility_flags": ["nodejs_compat"],
+	// Banco do EmDash. No primeiro `wrangler deploy` o Wrangler cria o banco
+	// com este nome na conta Cloudflare, se ainda não existir.
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "site-nefits",
+		},
+	],
+	// Imagens e arquivos (PDFs) enviados pelo painel
+	"r2_buckets": [
+		{
+			"binding": "MEDIA",
+			"bucket_name": "site-nefits-media",
+		},
+	],
+	// Publicação agendada e manutenção do EmDash
+	"triggers": {
+		"crons": ["* * * * *"],
+	},
+	// Endereço público do site. Defina antes da configuração inicial do painel
+	// em produção: as passkeys ficam presas a este endereço.
+	// "vars": {
+	// 	"EMDASH_SITE_URL": "https://www.exemplo.unesp.br",
+	// },
+}

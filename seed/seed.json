@@ -4,12 +4,12 @@
   "defaultLocale": "pt",
   "meta": {
     "name": "NéFiTs",
-    "description": "Notícias do site do NéFiTs em português e inglês",
+    "description": "Conteúdo do site do NéFiTs em português e inglês",
     "author": "NéFiTs"
   },
   "settings": {
     "title": "NéFiTs",
-    "tagline": "Núcleo de Estudos em Ética e Teoria Política e Social",
+    "tagline": "Núcleo de Pesquisa em Ética, Filosofia, Teoria Política e Social",
     "timezone": "America/Sao_Paulo"
   },
   "collections": [
@@ -19,12 +19,13 @@
       "labelSingular": "Notícia",
       "description": "Notícias publicadas em /pt/noticias e /en/noticias",
       "icon": "newspaper",
+      "sortOrder": 1,
       "supports": ["drafts", "revisions", "search"],
       "urlPattern": "/noticias/{slug}",
       "titleField": "title",
       "dateField": "data_noticia",
       "admin": {
-        "listColumns": ["data_noticia"]
+        "listColumns": ["data_noticia", "destaque"]
       },
       "fields": [
         {
@@ -57,10 +58,217 @@
           "translatable": false
         },
         {
+          "slug": "destaque",
+          "label": "Destaque no carrossel da página inicial",
+          "type": "boolean",
+          "defaultValue": false,
+          "translatable": false
+        },
+        {
           "slug": "conteudo",
           "label": "Conteúdo",
           "type": "portableText",
           "searchable": true
+        }
+      ]
+    },
+    {
+      "slug": "membros",
+      "label": "Equipe",
+      "labelSingular": "Membro",
+      "description": "Pessoas exibidas em /pt/equipe e /en/equipe. Sem ordem definida, a lista segue o nome.",
+      "icon": "users",
+      "sortOrder": 2,
+      "supports": ["drafts", "revisions", "search"],
+      "routable": false,
+      "titleField": "nome",
+      "admin": {
+        "listColumns": ["cargo", "ordem"]
+      },
+      "fields": [
+        {
+          "slug": "nome",
+          "label": "Nome",
+          "type": "string",
+          "required": true,
+          "searchable": true,
+          "translatable": false
+        },
+        {
+          "slug": "cargo",
+          "label": "Cargo",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "sobre",
+          "label": "Sobre",
+          "type": "text",
+          "searchable": true,
+          "options": { "rows": 8 }
+        },
+        {
+          "slug": "foto",
+          "label": "Foto",
+          "type": "image",
+          "translatable": false
+        },
+        {
+          "slug": "lattes",
+          "label": "Currículo Lattes (link)",
+          "type": "url",
+          "translatable": false
+        },
+        {
+          "slug": "instagram",
+          "label": "Instagram (link)",
+          "type": "url",
+          "translatable": false
+        },
+        {
+          "slug": "ordem",
+          "label": "Ordem (opcional; menores aparecem primeiro)",
+          "type": "integer",
+          "translatable": false
+        }
+      ]
+    },
+    {
+      "slug": "publicacoes",
+      "label": "Publicações",
+      "labelSingular": "Publicação",
+      "description": "Publicações exibidas em /pt/publicacoes, por tipo e do ano mais recente para o mais antigo.",
+      "icon": "books",
+      "sortOrder": 3,
+      "supports": ["drafts", "revisions", "search"],
+      "routable": false,
+      "titleField": "titulo",
+      "admin": {
+        "listColumns": ["tipo", "autor", "ano"]
+      },
+      "fields": [
+        {
+          "slug": "titulo",
+          "label": "Título",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "subtitulo",
+          "label": "Subtítulo",
+          "type": "string",
+          "searchable": true
+        },
+        {
+          "slug": "autor",
+          "label": "Autoria",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "ano",
+          "label": "Ano (ex.: 2024 ou 2023-2024)",
+          "type": "string",
+          "required": true,
+          "indexed": true
+        },
+        {
+          "slug": "tipo",
+          "label": "Tipo",
+          "type": "select",
+          "required": true,
+          "indexed": true,
+          "validation": {
+            "options": [
+              "Livros",
+              "Capítulos de Livros e Artigos",
+              "Teses e Dissertações",
+              "TCCs",
+              "Relatórios de Pesquisa"
+            ]
+          }
+        },
+        {
+          "slug": "arquivo",
+          "label": "Arquivo (PDF ou Word)",
+          "type": "file",
+          "validation": {
+            "allowedMimeTypes": [
+              "application/pdf",
+              "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+              "application/msword"
+            ]
+          }
+        },
+        {
+          "slug": "link",
+          "label": "Link externo (se não houver arquivo)",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "slug": "videos",
+      "label": "Vídeos",
+      "labelSingular": "Vídeo",
+      "description": "Vídeos do YouTube exibidos em /pt/videos. Cole o link do vídeo.",
+      "icon": "youtube-logo",
+      "sortOrder": 4,
+      "supports": ["drafts", "revisions"],
+      "routable": false,
+      "titleField": "titulo",
+      "admin": {
+        "listColumns": ["ordem"]
+      },
+      "fields": [
+        {
+          "slug": "titulo",
+          "label": "Título",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "url",
+          "label": "Link do YouTube",
+          "type": "url",
+          "required": true
+        },
+        {
+          "slug": "ordem",
+          "label": "Ordem (menores aparecem primeiro)",
+          "type": "integer",
+          "defaultValue": 0
+        }
+      ]
+    },
+    {
+      "slug": "textos",
+      "label": "Textos do site",
+      "labelSingular": "Texto",
+      "description": "Textos da página inicial e da página Sobre. O slug indica onde cada texto aparece; não altere o slug.",
+      "icon": "text-aa",
+      "sortOrder": 5,
+      "supports": ["drafts", "revisions"],
+      "titleField": "titulo",
+      "fields": [
+        {
+          "slug": "titulo",
+          "label": "Título",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "texto",
+          "label": "Texto",
+          "type": "portableText"
+        },
+        {
+          "slug": "imagem",
+          "label": "Imagem",
+          "type": "image",
+          "translatable": false
         }
       ]
     }

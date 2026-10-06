@@ -19,3 +19,8 @@
     @apply mx-auto my-6 rounded-md max-w-full w-auto h-auto;
     max-height: 400px;
 }
+
+/* Textos vindos do EmDash (Textos do site): espaço entre parágrafos */
+.texto-cms > p + p {
+    @apply mt-4;
+}

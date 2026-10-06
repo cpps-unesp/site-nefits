@@ -2,19 +2,17 @@
 import Layout from "../../layouts/Layout.astro";
 import { useTranslations } from "../../i18n/translations";
 import videosJson from "../../i18n/locales/videos.json" assert { type: "json" };
-
-export const prerender = true;
-
-export async function getStaticPaths() {
-  return ["pt", "en"].map(lang => ({ params: { lang } }));
-}
+import { embedDoYoutube, idiomaValido, listarVideos } from "../../lib/conteudo";
 
 const { lang } = Astro.params;
+if (!idiomaValido(lang)) return Astro.rewrite("/404");
 const t = useTranslations(lang);
 
-// Dados do JSON
 const youtube = videosJson.canal.youtube;
-const videos = videosJson.urls;
+// Vídeos cadastrados no EmDash
+const videos = (await listarVideos())
+  .map(({ data }) => ({ titulo: data.titulo, url: embedDoYoutube(data.url) }))
+  .filter((video) => video.url);
 ---
 
 <Layout lang={lang} t={t}>
@@ -23,7 +21,7 @@ const videos = videosJson.urls;
 
     <p class="mb-8 text-center">
       {t("videos.texto")}{" "}
-      <a 
+      <a
         href={youtube}
         target="_blank"
         rel="noopener noreferrer"
@@ -36,10 +34,11 @@ const videos = videosJson.urls;
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
       {videos.map(video => (
         <div class="w-full flex justify-center">
-          <iframe 
-            src={video.url} 
-            width="420" 
-            height="315" 
+          <iframe
+            src={video.url}
+            title={video.titulo}
+            width="420"
+            height="315"
             class="rounded-lg shadow-md"
             allowfullscreen
           ></iframe>
@@ -48,7 +47,7 @@ const videos = videosJson.urls;
     </div>
 
     <div class="text-center mt-10">
-      <a 
+      <a
         href={youtube}
         target="_blank"
         rel="noopener noreferrer"

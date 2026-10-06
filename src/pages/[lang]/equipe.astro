@@ -1,76 +1,15 @@
 ---
+import { Image } from "emdash/ui";
 import Layout from "../../layouts/Layout.astro";
 import { useTranslations } from "../../i18n/translations";
-import fotoJson from "../../i18n/locales/equipe.json";
-
-export const prerender = true;
-
-export async function getStaticPaths() {
-  return ["pt", "en"].map(lang => ({ params: { lang } }));
-}
+import { idiomaValido, listarMembros } from "../../lib/conteudo";
 
 const { lang } = Astro.params;
+if (!idiomaValido(lang)) return Astro.rewrite("/404");
 const t = useTranslations(lang);
 
-// Tipos
-type Membro = {
-  nome: string;
-  cargo: string;
-  sobre: string;
-};
-
-type DadosFixos = {
-  foto?: string;
-  rede1?: string;
-  icone1?: string;
-  rede2?: string;
-  icone2?: string;
-  ordem?: number;
-};
-
-// Funções auxiliares
-function sanitizeFoto(foto?: string): string {
-  return typeof foto === "string" && foto.trim() !== ""
-    ? foto.trim()
-    : "/images/equipe/00-person.svg";
-}
-
-function sanitizeIcon(icon?: string): string | undefined {
-  return typeof icon === "string" && icon.trim().endsWith(".svg")
-    ? icon.trim()
-    : undefined;
-}
-
-function sanitizeURL(url?: string): string | undefined {
-  return typeof url === "string" && /^https?:\/\//.test(url.trim())
-    ? url.trim()
-    : undefined;
-}
-
-const membrosObj = t("equipe") as Record<string, Membro | string>;
-
-const membros = Object.entries(membrosObj)
-  .filter(([key, val]) => typeof val === "object" && key !== "titulo")
-  .map(([key, membro]) => {
-    const dadosFixos: Record<string, DadosFixos> = fotoJson;
-    const dados = dadosFixos[key] ?? {};
-    const m = membro as Membro;
-    return {
-      ...m,
-      ordem: dados.ordem ?? null,
-      foto: sanitizeFoto(dados.foto),
-      rede1: sanitizeURL(dados.rede1),
-      icone1: sanitizeIcon(dados.icone1),
-      rede2: sanitizeURL(dados.rede2),
-      icone2: sanitizeIcon(dados.icone2),
-    };
-  })
-  .sort((a, b) => {
-    if (a.ordem != null && b.ordem != null) return a.ordem - b.ordem;
-    if (a.ordem != null) return -1;
-    if (b.ordem != null) return 1;
-    return a.nome.localeCompare(b.nome);
-  });
+// Membros cadastrados em Equipe, no EmDash
+const membros = await listarMembros(lang);
 ---
 
 <Layout lang={lang} t={t}>
@@ -78,27 +17,34 @@ const membros = Object.entries(membrosObj)
     <h1 class="text-[2rem] font-bold text-[#ab090e] mb-6">{t("equipe.titulo")}</h1>
 
     <div class="flex flex-wrap justify-center gap-6">
-      {membros.map((membro) => (
+      {membros.map(({ data: membro }) => (
         <div class="w-full sm:w-[45%] lg:w-[30%] bg-[#f1f1f1] p-4 rounded-lg shadow-md">
-          <div class="aspect-square w-full overflow-hidden rounded-md mb-4 max-h-64">
-
-            <img 
-  src={membro.foto} 
-  alt={`Foto de ${membro.nome}`} 
-  class="object-cover object-center w-full h-full min-h-full rounded-md bg-gray-200" 
-  loading="lazy" 
-/>
+          <div class="w-full h-64 overflow-hidden rounded-md mb-4">
+            {membro.foto ? (
+              <Image
+                image={membro.foto}
+                alt={`Foto de ${membro.nome}`}
+                class="object-cover object-center w-full h-full min-h-full rounded-md bg-gray-200"
+              />
+            ) : (
+              <img
+                src="/images/equipe/00-person.svg"
+                alt={`Foto de ${membro.nome}`}
+                class="object-cover object-center w-full h-full min-h-full rounded-md bg-gray-200"
+                loading="lazy"
+              />
+            )}
           </div>
 
           <div class="flex gap-3 justify-center items-center mb-3">
-            {membro.rede1 && membro.icone1 && (
-              <a href={membro.rede1} target="_blank" rel="noopener noreferrer">
-                <img src={membro.icone1} alt="Ícone rede social 1" class="w-12 h-12" />
+            {membro.lattes && (
+              <a href={membro.lattes} target="_blank" rel="noopener noreferrer">
+                <img src="/images/logos/lattes_icon.svg" alt="Currículo Lattes" class="w-12 h-12" />
               </a>
             )}
-            {membro.rede2 && membro.icone2 && (
-              <a href={membro.rede2} target="_blank" rel="noopener noreferrer">
-                <img src={membro.icone2} alt="Ícone rede social 2" class="w-8 h-8" />
+            {membro.instagram && (
+              <a href={membro.instagram} target="_blank" rel="noopener noreferrer">
+                <img src="/images/logos/instagram_icon_cinza.svg" alt="Instagram" class="w-8 h-8" />
               </a>
             )}
           </div>
@@ -106,9 +52,6 @@ const membros = Object.entries(membrosObj)
           <h2 class="text-[#ab090e] text-lg font-bold mb-1">{membro.nome}</h2>
           <p class="text-sm font-semibold mb-2">{membro.cargo}</p>
           <p class="text-[1.05rem] mb-3 leading-relaxed text-justify hyphens-auto">{membro.sobre}</p>
-
-
-
         </div>
       ))}
     </div>

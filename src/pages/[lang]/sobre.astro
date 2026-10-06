@@ -1,78 +1,78 @@
 ---
+import { Image, PortableText } from "emdash/ui";
 import Layout from "../../layouts/Layout.astro";
 import { useTranslations } from "../../i18n/translations";
-
-export const prerender = true;
-
-export async function getStaticPaths() {
-  const langs = ["pt", "en"];
-  return langs.map((lang) => ({ params: { lang } }));
-}
+import { buscarTexto, idiomaValido } from "../../lib/conteudo";
 
 const { lang } = Astro.params;
+if (!idiomaValido(lang)) return Astro.rewrite("/404");
 const t = useTranslations(lang);
-const image = (path) => (path.startsWith("/") ? path : `/${path}`);
+
+// Textos "sobre-quem-somos" e "sobre-objetivos" em Textos do site, no EmDash
+const [quemSomos, objetivos] = await Promise.all([
+  buscarTexto("sobre-quem-somos", lang),
+  buscarTexto("sobre-objetivos", lang),
+]);
 ---
 
 <Layout lang={lang} t={t}>
   <main class="max-w-6xl mx-auto px-4 py-8 text-[#656565] font-light">
     <!-- QUEM SOMOS -->
-    <section class="md:flex md:items-center md:justify-between gap-8 mb-10">
-      <div class="md:w-2/3">
-        <h1 class="text-[2rem] font-bold text-[#ab090e] mb-4">
-          {t("sobre.titulo")}
-        </h1>
-        <div class="mb-4 text-center md:hidden">
-          <img
-            src={image("images/equipe_nefits_2.svg")}
-            alt="Equipe NéFiTs"
-            class="mx-auto w-[18rem]"
-          />
+    {quemSomos && (
+      <section class="md:flex md:items-center md:justify-between gap-8 mb-10">
+        <div class="md:w-2/3">
+          <h1 class="text-[2rem] font-bold text-[#ab090e] mb-4">
+            {quemSomos.titulo}
+          </h1>
+          {quemSomos.imagem && (
+            <div class="mb-4 text-center md:hidden">
+              <Image image={quemSomos.imagem} alt={quemSomos.imagem.alt || "Equipe NéFiTs"} class="mx-auto w-[18rem]" />
+            </div>
+          )}
+          <div class="text-[1.1rem] texto-cms">
+            <PortableText value={quemSomos.texto ?? []} />
+          </div>
         </div>
-        <p class="mb-4 text-[1.1rem]">{t("sobre.paragrafo1")}</p>
-        <p class="text-[1.1rem]">{t("sobre.paragrafo2")}</p>
-      </div>
-      <div class="hidden md:block md:w-1/3 text-center">
-        <img
-          src={image("images/equipe_nefits_2.svg")}
-          alt="Equipe NéFiTs"
-          class="mx-auto w-[18rem]"
-        />
-      </div>
-    </section>
+        {quemSomos.imagem && (
+          <div class="hidden md:block md:w-1/3 text-center">
+            <Image image={quemSomos.imagem} alt={quemSomos.imagem.alt || "Equipe NéFiTs"} class="mx-auto w-[18rem]" />
+          </div>
+        )}
+      </section>
+    )}
 
     <!-- OBJETIVOS -->
-    <section class="mb-10">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-[2rem] font-bold text-[#ab090e] mb-4">
-          {t("sobre.objetivos")}
-        </h2>
+    {objetivos && (
+      <section class="mb-10">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-[2rem] font-bold text-[#ab090e] mb-4">
+            {objetivos.titulo}
+          </h2>
 
-        <!-- Imagem no topo no mobile -->
-        <div class="mb-4 text-center md:hidden">
-          <img
-            src={image("images/sobre2.svg")}
-            alt="Objetivos"
-            class="mx-auto w-[18rem]"
-          />
+          <!-- Imagem no topo no mobile -->
+          {objetivos.imagem && (
+            <div class="mb-4 text-center md:hidden">
+              <Image image={objetivos.imagem} alt={objetivos.imagem.alt || "Objetivos"} class="mx-auto w-[18rem]" />
+            </div>
+          )}
+
+          <!-- Texto com imagem flutuante no desktop -->
+          <div class="relative">
+            {objetivos.imagem && (
+              <Image
+                image={objetivos.imagem}
+                alt={objetivos.imagem.alt || "Objetivos"}
+                class="hidden md:block md:float-left md:mr-6 md:mb-4 md:w-[22rem] object-contain"
+              />
+            )}
+            <div class="text-[1.1rem] texto-cms">
+              <PortableText value={objetivos.texto ?? []} />
+            </div>
+          </div>
+
+          <div class="clear-both"></div>
         </div>
-
-        <!-- Texto com imagem flutuante no desktop -->
-        <div class="relative">
-          <!-- Imagem desktop com float -->
-          <img
-            src={image("images/sobre2.svg")}
-            alt="Objetivos"
-            class="hidden md:block md:float-left md:mr-6 md:mb-4 md:w-[22rem] object-contain"
-          />
-
-          <!-- Parágrafos que envolvem ou seguem a imagem -->
-          <p class="text-[1.1rem] mb-4">{t("sobre.paragrafo3")}</p>
-          <p class="text-[1.1rem]">{t("sobre.paragrafo4")}</p>
-        </div>
-
-        <div class="clear-both"></div>
-      </div>
-    </section>
+      </section>
+    )}
   </main>
 </Layout>

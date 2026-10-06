@@ -10,57 +10,74 @@ All commands are run from the root of the project, from a terminal:
 | :-------------------------- | :--------------------------------------------------------- |
 | `npm install`               | Installs dependencies                                      |
 | `npm run dev`               | Starts the site and the EmDash admin at `localhost:4321`   |
-| `npm run importar-noticias` | Imports the Markdown news into EmDash (see below)          |
+| `npm run importar-conteudo` | Imports the old site content into EmDash (see below)       |
 | `npm run build`             | Build your production site to `./dist/`                    |
-| `npm run preview`           | Preview your build locally, before deploying               |
+| `npm run deploy`            | Build and deploy to Cloudflare Workers                     |
 | `npm run astro ...`         | Run CLI commands like `astro add`, `astro check`           |
 | `npm run astro -- --help`   | Get help using the Astro CLI                               |
 
 
 ## Conteúdo
 
-As **notícias** são editadas no painel do [EmDash](https://emdashcms.com), em
-`/_emdash/admin`. O resto do site (textos, equipe, publicações, vídeos) continua em:
+O conteúdo é editado no painel do [EmDash](https://emdashcms.com), em
+`/_emdash/admin`. Ao publicar, a mudança aparece no site na hora, sem novo build.
 
-```
-src/i18n/locales
-```
+| No painel          | Onde aparece                                   | Idiomas                         |
+| :----------------- | :--------------------------------------------- | :------------------------------ |
+| **Notícias**       | `/noticias`, carrossel da página inicial (campo "Destaque") e `/tags` | pt e en (botão **Traduzir**) |
+| **Categorias**     | etiquetas das notícias                         | pt e en                         |
+| **Equipe**         | `/equipe`                                      | pt e en; sem tradução, aparece em português |
+| **Publicações**    | `/publicacoes`, separadas pelo campo "Tipo"    | uma versão, usada nos dois idiomas |
+| **Vídeos**         | `/videos` (cole o link do YouTube)             | uma versão, usada nos dois idiomas |
+| **Textos do site** | página inicial (`inicio-...`) e `/sobre` (`sobre-...`) | pt e en                 |
 
-### Notícias (EmDash)
+Menu, rodapé, rótulos de botões e títulos fixos continuam em `src/i18n/locales`
+(`pt.json`, `en.json`, `links.json`).
 
-Cada notícia tem título, resumo, imagem, data e conteúdo, em português e, se
-houver, em inglês (botão **Traduzir** no editor). As categorias ficam em
-**Categorias** no painel. Ao publicar, a notícia aparece em `/pt/noticias` ou
-`/en/noticias` na hora, sem novo build. Sem versão em inglês, `/en/noticias/...`
-mostra a versão em português com um aviso.
-
-- `seed/seed.json`: modelo de conteúdo (campos da notícia e categorias), aplicado
-  na primeira configuração do painel.
-- `src/content/noticias`: notícias antigas em Markdown. Servem só para a
+- `seed/seed.json`: modelo de conteúdo (campos de cada tipo), aplicado na primeira
+  configuração do painel.
+- `src/content/noticias` e as partes de equipe, textos, publicações e vídeos dos
+  arquivos em `src/i18n/locales`: conteúdo do site antigo. Servem só para a
   importação; editar esses arquivos não muda mais o site.
 
-### Rodar localmente pela primeira vez
+## Rodar localmente pela primeira vez
 
 1. `npm install`
-2. `npx emdash secrets generate --write .env` (cria a chave local; o `.env` não vai para o git)
+2. `npx emdash secrets generate --write .dev.vars` (cria a chave local; o `.dev.vars` não vai para o git)
 3. `npm run dev` e abra `http://localhost:4321/_emdash/admin`: preencha os dados do
    site, crie a conta de administrador e registre uma passkey.
-4. Com o `npm run dev` ainda rodando, em outro terminal: `npm run importar-noticias`.
-   O script envia as imagens para a biblioteca de mídia, cria as notícias em português,
-   liga as versões em inglês como traduções, atribui as categorias e publica. Pode
-   rodar de novo: o que já existe é ignorado.
+4. Com o `npm run dev` ainda rodando, em outro terminal: `npm run importar-conteudo`.
+   O script envia imagens e arquivos para a biblioteca de mídia, cria o conteúdo em
+   português, liga as versões em inglês como traduções e publica. Pode rodar de
+   novo: o que já existe é ignorado.
 
-O banco (`data.db`) e as imagens enviadas (`uploads/`) ficam só na sua máquina.
+O `npm run dev` simula o Cloudflare na sua máquina: banco (D1) e mídias (R2)
+ficam em `.wrangler/`, só localmente.
 
-### Publicação (deploy)
+## Publicação no Cloudflare
 
-Com o EmDash o site precisa de um servidor Node.js, então o GitHub Pages
-(`.github/workflows/deploy.yml`) não serve mais para ele. Antes de levar estas
-mudanças para a `main`, é preciso escolher onde hospedar:
+O site roda no Cloudflare Workers, com o banco no D1 e as mídias no R2
+(`wrangler.jsonc`). O Worker do EmDash passa do limite do plano gratuito do
+Workers (3 MB compactado; o build tem cerca de 4,2 MB), então a conta precisa
+do plano **Workers Paid**.
 
-- um servidor Node.js com disco persistente para `data.db` e `uploads/`
-  ([guia](https://docs.emdashcms.com/deployment/nodejs/)), ou
-- Cloudflare Workers com D1 e R2 ([guia](https://docs.emdashcms.com/deployment/cloudflare/)).
+Primeira publicação:
 
-No servidor, defina `EMDASH_SITE_URL` (endereço público do site, no build e na
-execução) e `EMDASH_ENCRYPTION_KEY` (guarde uma cópia da chave).
+1. `npx wrangler login`
+2. Defina o endereço público em `wrangler.jsonc` (`vars.EMDASH_SITE_URL`) antes da
+   configuração inicial: as passkeys ficam presas a esse endereço.
+3. `npx emdash secrets generate` e grave a chave com
+   `npx wrangler secret put EMDASH_ENCRYPTION_KEY`. Guarde uma cópia da chave.
+4. `npm run deploy`. No primeiro deploy o Wrangler cria o banco D1 `site-nefits` e
+   o bucket R2 `site-nefits-media`.
+5. Abra `/_emdash/admin` no endereço publicado e conclua a configuração logo em
+   seguida: enquanto ela não é feita, quem abrir o painel primeiro vira administrador.
+6. Importe o conteúdo: no painel, crie um token de API com acesso de administrador e rode
+   `EMDASH_URL=https://endereco-do-site EMDASH_TOKEN=... npm run importar-conteudo`.
+   Apague o token depois.
+
+Para publicar automaticamente a cada push na `main`, conecte o repositório ao
+[Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/) do
+Cloudflare com o comando de build `npm run build` e o de deploy
+`npx wrangler deploy`. O antigo deploy para o GitHub Pages foi removido: o
+GitHub Pages só serve arquivos estáticos e não roda o EmDash.

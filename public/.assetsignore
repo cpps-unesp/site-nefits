@@ -1,0 +1,3 @@
+# Arquivos de public/ que não vão para o Cloudflare (limite de 25 MiB por
+# arquivo estático). sobre1.svg não é usado pelo site.
+images/sobre1.svg

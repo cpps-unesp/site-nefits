@@ -3,7 +3,7 @@ import { getTaxonomyTerms } from "emdash";
 import Layout from "../../../layouts/Layout.astro";
 
 import { useTranslations } from "../../../i18n/translations";
-import { idiomaValido } from "../../../lib/noticias";
+import { idiomaValido } from "../../../lib/conteudo";
 
 const { lang } = Astro.params;
 if (!idiomaValido(lang)) return Astro.rewrite("/404");

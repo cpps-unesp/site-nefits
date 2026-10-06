@@ -7,17 +7,10 @@ import HomeNoticias from "../../components/HomeNoticias.astro";
 import HomePublicacao from "../../components/HomePublicacoes.astro";
 
 import { useTranslations } from "../../i18n/translations";
-
-
-
-export const prerender = true;
-
-// define quais idiomas o Astro deve gerar (ex: /pt, /en)
-export async function getStaticPaths() {
-  return [{ params: { lang: "pt" } }, { params: { lang: "en" } }];
-}
+import { idiomaValido } from "../../lib/conteudo";
 
 const { lang } = Astro.params;
+if (!idiomaValido(lang)) return Astro.rewrite("/404");
 const t = useTranslations(lang);
 ---
 

@@ -23,10 +23,9 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# EmDash (banco local, mídias enviadas e arquivos gerados)
-data.db
-data.db-*
-uploads/
+# EmDash e Cloudflare (banco e mídias locais do `npm run dev`, segredos locais)
+.wrangler/
+.dev.vars
 .emdash/types.ts
 .emdash/schema.json
 .emdash/migrations.json
