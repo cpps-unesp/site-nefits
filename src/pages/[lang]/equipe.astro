@@ -3,6 +3,8 @@ import Layout from "../../layouts/Layout.astro";
 import { useTranslations } from "../../i18n/translations";
 import fotoJson from "../../i18n/locales/equipe.json";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   return ["pt", "en"].map(lang => ({ params: { lang } }));
 }

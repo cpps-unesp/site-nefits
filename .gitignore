@@ -22,3 +22,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# EmDash (banco local, mídias enviadas e arquivos gerados)
+data.db
+data.db-*
+uploads/
+.emdash/types.ts
+.emdash/schema.json
+.emdash/migrations.json

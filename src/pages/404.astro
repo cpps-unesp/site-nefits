@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { useTranslations } from "../i18n/translations";
+
+// Com o site no servidor, as páginas que não encontram conteúdo do EmDash
+// (ex.: notícia inexistente) caem aqui com status 404.
+const lang = Astro.originPathname.startsWith("/en/") ? "en" : "pt";
+const t = useTranslations(lang);
+const naoEncontrada = lang === "en" ? "Page not found" : "Página não encontrada";
+const caminho = Astro.originPathname.includes("/noticias/") ? `/${lang}/noticias` : `/${lang}`;
+---
+
+<Layout lang={lang} t={t}>
+  <main class="max-w-3xl mx-auto px-8 py-20 text-center">
+    <h1 class="text-[2rem] font-bold text-primary mb-6">
+      {caminho.endsWith("/noticias") ? t("noticias.noticiaNaoEncontrada") : naoEncontrada}
+    </h1>
+    <a href={caminho} class="inline-block px-6 py-3 bg-[#ab090e] hover:bg-[#90070b] text-white rounded font-bold text-sm">
+      {caminho.endsWith("/noticias") ? t("noticias.voltarParaNoticias") : "NéFiTs"}
+    </a>
+  </main>
+</Layout>

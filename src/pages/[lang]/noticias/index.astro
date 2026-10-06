@@ -1,30 +1,25 @@
 ---
-import { getCollection } from "astro:content";
-import type { CollectionEntry } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import Noticias from "../../../components/Noticias.astro";
 import NoticiasCards from "../../../components/NoticiasCards.astro";
 import { useTranslations } from "../../../i18n/translations";
+import { categoriasDa, idiomaValido, listarNoticias } from "../../../lib/noticias";
 
-export async function getStaticPaths() {
-  return [
-    { params: { lang: "pt" } },
-    { params: { lang: "en" } }
-  ];
-}
-
+// Conteúdo vem do EmDash a cada requisição: o que for publicado no painel
+// aparece aqui sem novo build.
 const { lang } = Astro.params;
+if (!idiomaValido(lang)) return Astro.rewrite("/404");
 const t = useTranslations(lang);
 
-// Buscar todas as notícias da Content Collection
-const noticias = (await getCollection("noticias"))
-  .filter((noticia: CollectionEntry<"noticias">) => noticia.data.lang === lang)
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
-
+const { entries: noticias, error } = await listarNoticias(lang);
+if (error) {
+  console.error("Erro ao carregar notícias:", error);
+  return new Response("Não foi possível carregar as notícias.", { status: 500 });
+}
 ---
 
 <Layout lang={lang} t={t}>
- 
+
 
   <main class="max-w-7xl mx-auto p-8">
     <Noticias />
@@ -36,8 +31,8 @@ const noticias = (await getCollection("noticias"))
             imagem={item.data.imagem}
             titulo={item.data.title}
             texto={item.data.resumo}
-            link={`/${lang}/noticias/${item.data.slug ?? item.id}`}
-            tags={item.data.tags}
+            link={`/${lang}/noticias/${item.data.slug}`}
+            tags={categoriasDa(item)}
             lang={lang}
           />
         ))

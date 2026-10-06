@@ -1,10 +1,13 @@
 ---
+import { Image } from "emdash/ui";
+import type { ComponentProps } from "astro/types";
+
 export interface Props {
-  imagem: string;
+  imagem?: ComponentProps<typeof Image>["image"];
   titulo: string;
   texto: string;
   link: string;
-  tags?: string[];
+  tags?: { slug: string; label: string }[];
   lang: string;
 }
 
@@ -18,10 +21,10 @@ const { imagem, titulo, texto, link, tags, lang } = Astro.props;
   <div class="flex flex-wrap gap-2 mb-2 z-20 relative">
     {tags.map((tag) => (
       <a
-        href={`/${lang}/tags/${tag}`}
+        href={`/${lang}/tags/${tag.slug}`}
         class="bg-primary/10 text-primary text-xs font-medium px-2 py-1 rounded transition-colors duration-200 hover:bg-primary hover:text-white"
       >
-        {tag}
+        {tag.label}
       </a>
     ))}
   </div>
@@ -36,11 +39,13 @@ const { imagem, titulo, texto, link, tags, lang } = Astro.props;
   </a>
 
   <div class="aspect-w-4 aspect-h-3 mb-3 relative overflow-hidden rounded">
-    <img
-      src={imagem}
-      alt={titulo}
-      class="object-cover w-full h-full absolute inset-0 transform transition-transform duration-300 ease-in-out group-hover:scale-105"
-    />
+    {imagem && (
+      <Image
+        image={imagem}
+        alt={titulo}
+        class="object-cover w-full h-full absolute inset-0 transform transition-transform duration-300 ease-in-out group-hover:scale-105"
+      />
+    )}
   </div>
 
   <h2 class="text-base font-bold text-primary mb-2 z-0 relative">

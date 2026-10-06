@@ -1,45 +1,49 @@
 ---
-import { getCollection } from "astro:content";
+import { getTerm } from "emdash";
+import slugify from "slugify";
 import Layout from "../../../layouts/Layout.astro";
 import NoticiasCards from "../../../components/NoticiasCards.astro";
 
 import { useTranslations } from "../../../i18n/translations";
+import { categoriasDa, idiomaValido, listarNoticias } from "../../../lib/noticias";
 
-export async function getStaticPaths() {
-  const noticias = await getCollection("noticias");
-
-  // Obtem combinações únicas de [lang, tag]
-  const paths = noticias.flatMap((noticia) =>
-    (noticia.data.tags || []).map((tag) => ({
-      params: { lang: noticia.data.lang, tag },
-    }))
-  );
-
-  // Remove duplicatas
-  const uniquePaths = Array.from(
-    new Map(paths.map((p) => [`${p.params.lang}-${p.params.tag}`, p])).values()
-  );
-
-  return uniquePaths;
+function decodificar(valor = "") {
+  try {
+    return decodeURIComponent(valor);
+  } catch {
+    return valor;
+  }
 }
 
-const { lang, tag } = Astro.params;
+const { lang } = Astro.params;
+const tag = decodificar(Astro.params.tag);
+if (!idiomaValido(lang) || !tag) return Astro.rewrite("/404");
 const t = useTranslations(lang);
 
-// Filtra notícias por idioma e tag
-const noticias = (await getCollection("noticias")).filter(
-  (noticia) =>
-    noticia.data.lang === lang &&
-    noticia.data.tags?.includes(tag)
-);
+const categoria = await getTerm("tag", tag, { locale: lang });
+if (!categoria) {
+  // Links antigos usavam o nome da categoria (ex.: /pt/tags/Evento)
+  const slug = slugify(tag, { lower: true, strict: true });
+  if (slug !== tag && (await getTerm("tag", slug, { locale: lang }))) {
+    return Astro.redirect(`/${lang}/tags/${slug}`, 301);
+  }
+}
+
+const { entries: noticias, error } = categoria
+  ? await listarNoticias(lang, categoria.slug)
+  : { entries: [], error: undefined };
+if (error) {
+  console.error("Erro ao carregar notícias:", error);
+  return new Response("Não foi possível carregar as notícias.", { status: 500 });
+}
 ---
 
 <Layout lang={lang} t={t}>
     <main class="max-w-7xl mx-auto px-4 py-8">
       <h1 class="text-2xl font-bold mb-6 text-center">
-        {t("noticias.tags_titulo")} {tag}
+        {t("noticias.tags_titulo")} {categoria?.label ?? tag}
       </h1>
-  
+
       <div class="flex flex-wrap gap-8 justify-center">
         {noticias.length > 0 ? (
           noticias.map((item) => (
@@ -48,8 +52,8 @@ const noticias = (await getCollection("noticias")).filter(
               titulo={item.data.title}
               texto={item.data.resumo}
               link={`/${lang}/noticias/${item.data.slug}`}
-              tags={item.data.tags}
-              lang={lang}  
+              tags={categoriasDa(item)}
+              lang={lang}
             />
           ))
         ) : (

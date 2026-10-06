@@ -1,0 +1,97 @@
+{
+  "$schema": "https://emdashcms.com/seed.schema.json",
+  "version": "1",
+  "defaultLocale": "pt",
+  "meta": {
+    "name": "NéFiTs",
+    "description": "Notícias do site do NéFiTs em português e inglês",
+    "author": "NéFiTs"
+  },
+  "settings": {
+    "title": "NéFiTs",
+    "tagline": "Núcleo de Estudos em Ética e Teoria Política e Social",
+    "timezone": "America/Sao_Paulo"
+  },
+  "collections": [
+    {
+      "slug": "noticias",
+      "label": "Notícias",
+      "labelSingular": "Notícia",
+      "description": "Notícias publicadas em /pt/noticias e /en/noticias",
+      "icon": "newspaper",
+      "supports": ["drafts", "revisions", "search"],
+      "urlPattern": "/noticias/{slug}",
+      "titleField": "title",
+      "dateField": "data_noticia",
+      "admin": {
+        "listColumns": ["data_noticia"]
+      },
+      "fields": [
+        {
+          "slug": "title",
+          "label": "Título",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "resumo",
+          "label": "Resumo",
+          "type": "text",
+          "required": true,
+          "searchable": true,
+          "options": { "rows": 2 }
+        },
+        {
+          "slug": "imagem",
+          "label": "Imagem",
+          "type": "image",
+          "translatable": false
+        },
+        {
+          "slug": "data_noticia",
+          "label": "Data da notícia",
+          "type": "datetime",
+          "required": true,
+          "indexed": true,
+          "translatable": false
+        },
+        {
+          "slug": "conteudo",
+          "label": "Conteúdo",
+          "type": "portableText",
+          "searchable": true
+        }
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "id": "tag-pt",
+      "name": "tag",
+      "locale": "pt",
+      "label": "Categorias",
+      "labelSingular": "Categoria",
+      "hierarchical": false,
+      "collections": ["noticias"],
+      "terms": [
+        { "id": "evento-pt", "slug": "evento", "label": "Evento" },
+        { "id": "experiencias-pt", "slug": "experiencias-internacionais", "label": "Experiências Internacionais" },
+        { "id": "lancamento-pt", "slug": "lancamento", "label": "Lançamento" }
+      ]
+    },
+    {
+      "id": "tag-en",
+      "name": "tag",
+      "locale": "en",
+      "translationOf": "tag-pt",
+      "label": "Categories",
+      "labelSingular": "Category",
+      "terms": [
+        { "id": "evento-en", "slug": "event", "label": "Event", "locale": "en", "translationOf": "evento-pt" },
+        { "id": "experiencias-en", "slug": "international-experience", "label": "International Experience", "locale": "en", "translationOf": "experiencias-pt" },
+        { "id": "lancamento-en", "slug": "launch", "label": "Launch", "locale": "en", "translationOf": "lancamento-pt" }
+      ]
+    }
+  ]
+}

@@ -1,24 +1,18 @@
 ---
-import { getCollection } from "astro:content";
+import { getTaxonomyTerms } from "emdash";
 import Layout from "../../../layouts/Layout.astro";
 
 import { useTranslations } from "../../../i18n/translations";
-
-
-export async function getStaticPaths() {
-  return ["pt", "en"].map((lang) => ({ params: { lang } }));
-}
+import { idiomaValido } from "../../../lib/noticias";
 
 const { lang } = Astro.params;
+if (!idiomaValido(lang)) return Astro.rewrite("/404");
 const t = useTranslations(lang);
 
-// Buscar todas as notícias e extrair as tags
-const noticias = (await getCollection("noticias")).filter(
-  (n) => n.data.lang === lang
-);
-
-const allTags = noticias.flatMap((n) => n.data.tags || []);
-const uniqueTags = [...new Set(allTags)].sort();
+// Categorias cadastradas no EmDash que têm ao menos uma notícia publicada
+const categorias = (await getTaxonomyTerms("tag", { locale: lang }))
+  .filter((categoria) => (categoria.count ?? 0) > 0)
+  .sort((a, b) => a.label.localeCompare(b.label, lang));
 ---
 
 <Layout lang={lang} t={t}>
@@ -27,15 +21,15 @@ const uniqueTags = [...new Set(allTags)].sort();
       {t("noticias.todas_tags")}
     </h1>
 
-    {uniqueTags.length > 0 ? (
+    {categorias.length > 0 ? (
       <ul class="flex flex-wrap gap-4 justify-center">
-        {uniqueTags.map((tag) => (
+        {categorias.map((categoria) => (
           <li>
             <a
-              href={`/${lang}/tags/${tag}`}
+              href={`/${lang}/tags/${categoria.slug}`}
               class="bg-[#ab090e]/10 text-[#ab090e] px-3 py-1 rounded text-sm hover:underline"
             >
-              {tag}
+              {categoria.label}
             </a>
           </li>
         ))}
